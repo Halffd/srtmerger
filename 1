@@ -1,0 +1,212 @@
+let s:cpo_save=&cpo
+set cpo&vim
+inoremap <silent> <Plug>(bullets-promote) :BulletPromote
+inoremap <silent> <Plug>(bullets-demote) :BulletDemote
+imap <silent> <M-w> :VCoolIns raa
+imap <silent> <M-v> :VCoolIns ha
+imap <silent> <M-r> :VCoolIns ra
+imap <silent> <M-c> :VCoolora
+inoremap <silent> <Plug>NERDCommenterInsert :call nerdcommenter#Comment('i', "Insert")
+inoremap <silent> <SNR>47_AutoPairsReturn =AutoPairsReturn()
+imap <C-G>S <Plug>ISurround
+imap <C-G>s <Plug>Isurround
+imap <C-S> <Plug>Isurround
+cnoremap <silent> <Plug>(TelescopeFuzzyCommandSearch) e "lua require('telescope.builtin').command_history { default_text = [=[" . escape(getcmdline(), '"') . "]=] }"
+inoremap <C-W> u
+inoremap <C-U> u
+nmap 	 :bnext
+nnoremap  <Cmd>nohlsearch|diffupdate|normal! 
+tmap  
+nmap  d
+tmap  
+nnoremap <silent>  q <Cmd>lua vim.diagnostic.setloclist()
+nnoremap <silent>  e <Cmd>lua vim.diagnostic.open_float()
+omap <silent> % <Plug>(MatchitOperationForward)
+xmap <silent> % <Plug>(MatchitVisualForward)
+nmap <silent> % <Plug>(MatchitNormalForward)
+nnoremap & :&&
+nmap ,p :Black
+nmap ,d <Plug>(pydocstring)
+nmap ,ca <Plug>NERDCommenterAltDelims
+xmap ,cu <Plug>NERDCommenterUncomment
+nmap ,cu <Plug>NERDCommenterUncomment
+xmap ,cb <Plug>NERDCommenterAlignBoth
+nmap ,cb <Plug>NERDCommenterAlignBoth
+xmap ,cl <Plug>NERDCommenterAlignLeft
+nmap ,cl <Plug>NERDCommenterAlignLeft
+nmap ,cA <Plug>NERDCommenterAppend
+xmap ,cy <Plug>NERDCommenterYank
+nmap ,cy <Plug>NERDCommenterYank
+xmap ,cs <Plug>NERDCommenterSexy
+nmap ,cs <Plug>NERDCommenterSexy
+xmap ,ci <Plug>NERDCommenterInvert
+nmap ,ci <Plug>NERDCommenterInvert
+nmap ,c$ <Plug>NERDCommenterToEOL
+xmap ,cn <Plug>NERDCommenterNested
+nmap ,cn <Plug>NERDCommenterNested
+xmap ,cm <Plug>NERDCommenterMinimal
+nmap ,cm <Plug>NERDCommenterMinimal
+xmap ,c  <Plug>NERDCommenterToggle
+nmap ,c  <Plug>NERDCommenterToggle
+xmap ,cc <Plug>NERDCommenterComment
+nmap ,cc <Plug>NERDCommenterComment
+nnoremap ,f/ <Cmd>Telescope current_buffer_fuzzy_find
+nnoremap ,fc <Cmd>Telescope colorscheme
+nnoremap ,fh <Cmd>Telescope help_tags
+nnoremap ,fb <Cmd>Telescope buffers
+nnoremap ,fg <Cmd>Telescope live_grep
+nnoremap ,ff <Cmd>Telescope find_files
+nmap ,$v vl:terminal:set nonumberA
+nmap ,$s sj:terminal:set nonumberA
+nmap <silent> ,, :noh
+xmap ,l :Limelight!!
+nmap ,l :Limelight!!
+nmap ,k :ColorToggle
+nmap ,j :set filetype=journal
+nmap ,h :RainbowParentheses!!
+nmap ,a gaip*
+xmap ,a gaip*
+nmap ,t :call TrimWhitespace()
+nmap ,r :so ~/.config/nvim/init.vim
+nmap ,q :NvimTreeFindFileToggle
+xnoremap <silent> <expr> @ mode() ==# 'V' ? ':normal! @'.getcharstr().'' : '@'
+nnoremap <silent> <expr> H context#util#map_H()
+xnoremap <silent> <expr> Q mode() ==# 'V' ? ':normal! @=reg_recorded()' : 'Q'
+xmap S <Plug>VSurround
+nnoremap Y y$
+omap <silent> [% <Plug>(MatchitOperationMultiBackward)
+xmap <silent> [% <Plug>(MatchitVisualMultiBackward)
+nmap <silent> [% <Plug>(MatchitNormalMultiBackward)
+nmap [C 9999[c
+nmap [c <Plug>(signify-prev-hunk)
+nnoremap <silent> [d <Cmd>lua vim.diagnostic.goto_prev()
+nmap \ ,q
+omap <silent> ]% <Plug>(MatchitOperationMultiForward)
+xmap <silent> ]% <Plug>(MatchitVisualMultiForward)
+nmap <silent> ]% <Plug>(MatchitNormalMultiForward)
+nmap ]C 9999]c
+nmap ]c <Plug>(signify-next-hunk)
+nnoremap <silent> ]d <Cmd>lua vim.diagnostic.goto_next()
+xmap a% <Plug>(MatchitVisualTextObject)
+nmap cr <Plug>(abolish-coerce-word)
+nmap cS <Plug>CSurround
+nmap cs <Plug>Csurround
+nmap ds <Plug>Dsurround
+omap <silent> g% <Plug>(MatchitOperationBackward)
+xmap <silent> g% <Plug>(MatchitVisualBackward)
+nmap <silent> g% <Plug>(MatchitNormalBackward)
+xmap gS <Plug>VgSurround
+nmap ySS <Plug>YSsurround
+nmap ySs <Plug>YSsurround
+nmap yss <Plug>Yssurround
+nmap yS <Plug>YSurround
+nmap ys <Plug>Ysurround
+nnoremap <silent> <expr> zt context#util#map_zt()
+tnoremap <silent> <Plug>(fzf-normal) 
+tnoremap <silent> <Plug>(fzf-insert) i
+nnoremap <silent> <Plug>(fzf-normal) <Nop>
+nnoremap <silent> <Plug>(fzf-insert) i
+xmap <silent> <Plug>(MatchitVisualTextObject) <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+onoremap <silent> <Plug>(MatchitOperationMultiForward) :call matchit#MultiMatch("W",  "o")
+onoremap <silent> <Plug>(MatchitOperationMultiBackward) :call matchit#MultiMatch("bW", "o")
+xnoremap <silent> <Plug>(MatchitVisualMultiForward) :call matchit#MultiMatch("W",  "n")m'gv``
+xnoremap <silent> <Plug>(MatchitVisualMultiBackward) :call matchit#MultiMatch("bW", "n")m'gv``
+nnoremap <silent> <Plug>(MatchitNormalMultiForward) :call matchit#MultiMatch("W",  "n")
+nnoremap <silent> <Plug>(MatchitNormalMultiBackward) :call matchit#MultiMatch("bW", "n")
+onoremap <silent> <Plug>(MatchitOperationBackward) :call matchit#Match_wrapper('',0,'o')
+onoremap <silent> <Plug>(MatchitOperationForward) :call matchit#Match_wrapper('',1,'o')
+xnoremap <silent> <Plug>(MatchitVisualBackward) :call matchit#Match_wrapper('',0,'v')m'gv``
+xnoremap <silent> <Plug>(MatchitVisualForward) :call matchit#Match_wrapper('',1,'v'):if col("''") != col("$") | exe ":normal! m'" | endifgv``
+nnoremap <silent> <Plug>(MatchitNormalBackward) :call matchit#Match_wrapper('',0,'n')
+nnoremap <silent> <Plug>(MatchitNormalForward) :call matchit#Match_wrapper('',1,'n')
+xnoremap <silent> <Plug>(Limelight) :Limelight
+nnoremap <silent> <Plug>(Limelight) :set opfunc=limelight#operatorg@
+vnoremap <silent> <Plug>(bullets-promote) :BulletPromoteVisual
+nnoremap <silent> <Plug>(bullets-promote) :BulletPromote
+vnoremap <silent> <Plug>(bullets-demote) :BulletDemoteVisual
+nnoremap <silent> <Plug>(bullets-demote) :BulletDemote
+nnoremap <silent> <Plug>(bullets-toggle-checkbox) :ToggleCheckbox
+nnoremap <silent> <Plug>(bullets-renumber) :RenumberList
+vnoremap <silent> <Plug>(bullets-renumber) :RenumberSelection
+nmap <silent> <M-w> :silent VCoolIns ra
+nmap <silent> <M-v> :silent VCoolIns h
+nmap <silent> <M-r> :VCoolIns r
+nmap <silent> <M-c> :VCoolor
+xnoremap <Plug>ColorFgBg :ColorSwapFgBg
+nnoremap <Plug>ColorFgBg :ColorSwapFgBg
+xnoremap <Plug>ColorContrast :ColorContrast
+nnoremap <Plug>ColorContrast :ColorContrast
+xnoremap <Plug>Colorizer :ColorHighlight
+nnoremap <Plug>Colorizer :ColorToggle
+nnoremap <Plug>NERDCommenterAltDelims :call nerdcommenter#SwitchToAlternativeDelimiters(1)
+xnoremap <silent> <Plug>NERDCommenterUncomment :call nerdcommenter#Comment("x", "Uncomment")
+nnoremap <silent> <Plug>NERDCommenterUncomment :call nerdcommenter#Comment("n", "Uncomment")
+xnoremap <silent> <Plug>NERDCommenterAlignBoth :call nerdcommenter#Comment("x", "AlignBoth")
+nnoremap <silent> <Plug>NERDCommenterAlignBoth :call nerdcommenter#Comment("n", "AlignBoth")
+xnoremap <silent> <Plug>NERDCommenterAlignLeft :call nerdcommenter#Comment("x", "AlignLeft")
+nnoremap <silent> <Plug>NERDCommenterAlignLeft :call nerdcommenter#Comment("n", "AlignLeft")
+nnoremap <silent> <Plug>NERDCommenterAppend :call nerdcommenter#Comment("n", "Append")
+xnoremap <silent> <Plug>NERDCommenterYank :call nerdcommenter#Comment("x", "Yank")
+nnoremap <silent> <Plug>NERDCommenterYank :call nerdcommenter#Comment("n", "Yank")
+xnoremap <silent> <Plug>NERDCommenterSexy :call nerdcommenter#Comment("x", "Sexy")
+nnoremap <silent> <Plug>NERDCommenterSexy :call nerdcommenter#Comment("n", "Sexy")
+xnoremap <silent> <Plug>NERDCommenterInvert :call nerdcommenter#Comment("x", "Invert")
+nnoremap <silent> <Plug>NERDCommenterInvert :call nerdcommenter#Comment("n", "Invert")
+nnoremap <silent> <Plug>NERDCommenterToEOL :call nerdcommenter#Comment("n", "ToEOL")
+xnoremap <silent> <Plug>NERDCommenterNested :call nerdcommenter#Comment("x", "Nested")
+nnoremap <silent> <Plug>NERDCommenterNested :call nerdcommenter#Comment("n", "Nested")
+xnoremap <silent> <Plug>NERDCommenterMinimal :call nerdcommenter#Comment("x", "Minimal")
+nnoremap <silent> <Plug>NERDCommenterMinimal :call nerdcommenter#Comment("n", "Minimal")
+xnoremap <silent> <Plug>NERDCommenterToggle :call nerdcommenter#Comment("x", "Toggle")
+nnoremap <silent> <Plug>NERDCommenterToggle :call nerdcommenter#Comment("n", "Toggle")
+xnoremap <silent> <Plug>NERDCommenterComment :call nerdcommenter#Comment("x", "Comment")
+nnoremap <silent> <Plug>NERDCommenterComment :call nerdcommenter#Comment("n", "Comment")
+xnoremap <silent> <Plug>(signify-motion-outer-visual) :call sy#util#hunk_text_object(1)
+onoremap <silent> <Plug>(signify-motion-outer-pending) :call sy#util#hunk_text_object(1)
+xnoremap <silent> <Plug>(signify-motion-inner-visual) :call sy#util#hunk_text_object(0)
+onoremap <silent> <Plug>(signify-motion-inner-pending) :call sy#util#hunk_text_object(0)
+nnoremap <silent> <expr> <Plug>(signify-prev-hunk) &diff ? '[c' : ":\call sy#jump#prev_hunk(v:count1)\"
+nnoremap <silent> <expr> <Plug>(signify-next-hunk) &diff ? ']c' : ":\call sy#jump#next_hunk(v:count1)\"
+nnoremap <silent> <Plug>SurroundRepeat .
+nnoremap <Plug>PlenaryTestFile :lua require('plenary.test_harness').test_file(vim.fn.expand("%:p"))
+snoremap <expr> <BS> ("\<BS>" . (&virtualedit ==# '' && getcurpos()[2] >= col('$') - 1 ? 'a' : 'i'))
+nmap <S-Tab> :bprevious
+tmap <C-W> 
+nmap <C-W><C-D> d
+nnoremap <C-L> <Cmd>nohlsearch|diffupdate|normal! 
+imap S <Plug>ISurround
+imap s <Plug>Isurround
+imap  <Plug>Isurround
+inoremap  u
+inoremap  u
+let &cpo=s:cpo_save
+unlet s:cpo_save
+set clipboard=unnamedplus
+set completeopt=menu,menuone,noselect
+set display=lastline,truncate
+set eventignore=CursorHoldI,CursorHold
+set expandtab
+set fillchars=vert:\ 
+set grepformat=%f:%l:%c:%m
+set grepprg=rg\ --vimgrep\ -uu\ 
+set helplang=en
+set history=1000
+set ignorecase
+set indentkeys=0{,0},0),0],:,!^F,o,O,e,<:>,=elif,=except
+set listchars=trail:»,tab:»-
+set mouse=a
+set runtimepath=~/.config/nvim,~/.local/share/nvim/plugged/nvim-treesitter,~/.local/share/nvim/plugged/playground,~/.local/share/nvim/plugged/nvim-lspconfig,~/.local/share/nvim/plugged/cmp-nvim-lsp,~/.local/share/nvim/plugged/cmp-buffer,~/.local/share/nvim/plugged/cmp-path,~/.local/share/nvim/plugged/cmp-cmdline,~/.local/share/nvim/plugged/nvim-cmp,~/.local/share/nvim/plugged/cmp-vsnip,~/.local/share/nvim/plugged/vim-vsnip,~/.local/share/nvim/plugged/cmp-nvim-lsp-signature-help,~/.local/share/nvim/plugged/plenary.nvim,~/.local/share/nvim/plugged/telescope.nvim,~/.local/share/nvim/plugged/telescope-fzf-native.nvim,~/.local/share/nvim/plugged/lualine.nvim,~/.local/share/nvim/plugged/nvim-web-devicons,~/.local/share/nvim/plugged/nvim-tree.lua,~/.local/share/nvim/plugged/vim-fugitive,~/.local/share/nvim/plugged/vim-sensible,~/.local/share/nvim/plugged/vim-surround,~/.local/share/nvim/plugged/vim-signify,~/.local/share/nvim/plugged/auto-pairs,~/.local/share/nvim/plugged/vim-closetag,~/.local/share/nvim/plugged/vim-abolish,~/.local/share/nvim/plugged/vim-easy-align,~/.local/share/nvim/plugged/nerdcommenter,~/.local/share/nvim/plugged/indentLine,~/.local/share/nvim/plugged/Colorizer,~/.local/share/nvim/plugged/vCoolor.vim,~/.local/share/nvim/plugged/bullets.vim,~/.local/share/nvim/plugged/context.vim,~/.local/share/nvim/plugged/FixCursorHold.nvim,~/.local/share/nvim/plugged/black,~/.local/share/nvim/plugged/vim-pydocstring,~/.local/share/nvim/plugged/zazen,~/.local/share/nvim/plugged/hydrangea-vim,~/.local/share/nvim/plugged/rainbow_parentheses.vim,~/.local/share/nvim/plugged/limelight.vim,~/.local/share/nvim/plugged/vim-journal,/etc/xdg/nvim,~/.local/share/nvim/site,~/.local/share/flatpak/exports/share/nvim/site,/var/lib/flatpak/exports/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/share/nvim/runtime,/usr/share/nvim/runtime/pack/dist/opt/matchit,/usr/lib/nvim,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/var/lib/flatpak/exports/share/nvim/site/after,~/.local/share/flatpak/exports/share/nvim/site/after,~/.local/share/nvim/site/after,/etc/xdg/nvim/after,~/.config/nvim/after,/usr/share/vim/vimfiles,~/.local/share/nvim/plugged/playground/after,~/.local/share/nvim/plugged/cmp-nvim-lsp/after,~/.local/share/nvim/plugged/cmp-buffer/after,~/.local/share/nvim/plugged/cmp-path/after,~/.local/share/nvim/plugged/cmp-cmdline/after,~/.local/share/nvim/plugged/cmp-vsnip/after,~/.local/share/nvim/plugged/cmp-nvim-lsp-signature-help/after,~/.local/share/nvim/plugged/indentLine/after,/usr/share/vim/vimfiles/after
+set scrolloff=1
+set shiftwidth=4
+set showmatch
+set sidescrolloff=2
+set smartcase
+set softtabstop=4
+set statusline=%#Normal#
+set tabstop=4
+set termguicolors
+set title
+set wildignore=*.pyc
+set wildmode=longest,list,full
+set window=13
+" vim: set ft=vim :

@@ -1,0 +1,4421 @@
+﻿1
+00:00:00,000 --> 00:00:29,980
+<font color="yellow">ご視聴ありがとうございました
+</font>
+
+2
+00:00:08,110 --> 00:00:10,370
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Unforgivable!</font>
+</font>
+
+3
+00:00:11,120 --> 00:00:13,240
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">You unforgivable humans!</font>
+</font>
+
+4
+00:00:13,740 --> 00:00:17,000
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I will invade...</font>
+</font>
+
+5
+00:00:17,000 --> 00:00:19,290
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">that putrid surface of yours!</font>
+</font>
+
+6
+00:00:22,750 --> 00:00:28,010
+<font color="#FFFFFF"><font face="I hate Comic Sans" size="43" color="#e6fdfe"><b>{↑}shinryaku shinryaku shinryaku shinryaku shinryaku shinryaku ika musume (kyun!)</b></font>
+</font>
+00:00:22,750 --> 00:00:28,010
+<font color="#FFFFFF"><font face="Segoe Print" size="60" color="#edf6f6"><b>Squid Girl, invade!</b></font>
+</font>
+
+7
+00:00:30,000 --> 00:00:59,980
+<font color="yellow">ご視聴ありがとうございました
+</font>
+
+8
+00:00:30,300 --> 00:00:37,480
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">{←}<font size="60"><font face="EFN Blackout"><font color="#e6f6fe">SHINRYAKU!</font></font></font></font>
+</font>
+
+9
+00:00:31,760 --> 00:00:37,480
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">{←}<font size="100"><font face="EFN Blackout"><font color="#e6f6fe">IKA MUSUME</font></font></font></font>
+</font>
+
+10
+00:00:32,850 --> 00:00:37,480
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">{←}<font size="35"><font face="EFN Blackout"><font color="#e6f6fe">FFFpeeps Presents</font></font></font></font>
+</font>
+
+11
+00:00:38,440 --> 00:00:43,400
+<font color="#FFFFFF"><font face="I hate Comic Sans" size="43" color="#e6fdfe"><b>{↑}kira kira na umi to kaze kagayaku atoriumu</b></font>
+</font>
+00:00:38,440 --> 00:00:43,400
+<font color="#FFFFFF"><font face="Segoe Print" size="60" color="#edf6f6"><b>The sea's radiant, the breeze's blowing, and the atrium's sparkling</b></font>
+</font>
+
+12
+00:00:43,400 --> 00:00:48,320
+<font color="#FFFFFF"><font face="I hate Comic Sans" size="43" color="#e6fdfe"><b>{↑}minna de atsumatte hajimemasho hajimemasho</b></font>
+</font>
+00:00:43,400 --> 00:00:48,320
+<font color="#FFFFFF"><font face="Segoe Print" size="60" color="#edf6f6"><b>Everyone, get together! Let's begin!</b></font>
+</font>
+
+13
+00:00:48,320 --> 00:00:53,580
+<font color="#FFFFFF"><font face="I hate Comic Sans" size="43" color="#e6fdfe"><b>{↑}hora hora soko no kimi, wagamama na taido de</b></font>
+</font>
+00:00:48,320 --> 00:00:53,580
+<font color="#FFFFFF"><font face="Segoe Print" size="60" color="#edf6f6"><b>Hey you over there! What's with that attitude?!</b></font>
+</font>
+
+14
+00:00:53,580 --> 00:00:58,710
+<font color="#FFFFFF"><font face="I hate Comic Sans" size="43" color="#e6fdfe"><b>{↑}ochitari itakushitara ikandesho ikandesho</b></font>
+</font>
+00:00:53,580 --> 00:00:58,710
+<font color="#FFFFFF"><font face="Segoe Print" size="60" color="#edf6f6"><b>It's no good if you fall and hurt yourself!</b></font>
+</font>
+
+15
+00:00:58,710 --> 00:01:08,920
+<font color="#FFFFFF"><font face="I hate Comic Sans" size="43" color="#e6fdfe"><b>{↑}honto wa motto yasashii kimochi wo motteru deshou anata mo</b></font>
+</font>
+00:00:58,710 --> 00:01:08,920
+<font color="#FFFFFF"><font face="Segoe Print" size="60" color="#edf6f6"><b>I'm sure you're compassionate as well, right?</b></font>
+</font>
+
+16
+00:01:00,000 --> 00:01:29,980
+<font color="yellow">ご視聴ありがとうございました
+</font>
+
+17
+00:01:08,920 --> 00:01:14,220
+<font color="#FFFFFF"><font face="I hate Comic Sans" size="43" color="#e6fdfe"><b>{↑}hitoribocchi mo umi no heiwa mo</b></font>
+</font>
+
+18
+00:01:09,550 --> 00:01:14,220
+<font color="#FFFFFF"><font face="Segoe Print" size="60" color="#edf6f6"><b>Even if I'm alone</b></font>
+</font>
+
+19
+00:01:14,760 --> 00:01:21,100
+<font color="#FFFFFF"><font face="Segoe Print" size="60" color="#edf6f6"><b>I'll protect the sea and everyone's happiness!</b></font>
+</font>
+00:01:14,220 --> 00:01:21,100
+<font color="#FFFFFF"><font face="I hate Comic Sans" size="43" color="#e6fdfe"><b>{↑}ichigen kigen mo shiawase mo mamorimasu!</b></font>
+</font>
+
+20
+00:01:21,100 --> 00:01:22,440
+<font color="#FFFFFF"><font face="I hate Comic Sans" size="43" color="#e6fdfe"><b>{↑}(Uuuuu sanhai!)</b></font>
+</font>
+00:01:21,100 --> 00:01:22,440
+<font color="#FFFFFF"><font face="Segoe Print" size="60" color="#edf6f6"><b>Uu~~~  Here we go!</b></font>
+</font>
+
+21
+00:01:22,440 --> 00:01:27,280
+<font color="#FFFFFF"><font face="I hate Comic Sans" size="43" color="#e6fdfe"><b>{↑}ii kanji muteki ni susume ii kanji mujaki ni susume</b></font>
+</font>
+00:01:22,440 --> 00:01:27,280
+<font color="#FFFFFF"><font face="Segoe Print" size="60" color="#edf6f6"><b>Great! Invincible Squid Girl, go! Great! Innocent Squid Girl, go!</b></font>
+</font>
+
+22
+00:01:27,280 --> 00:01:32,870
+<font color="#FFFFFF"><font face="I hate Comic Sans" size="43" color="#e6fdfe"><b>{↑}higashi no shima ittara otakara ippai daishouri! (waii!)</b></font>
+</font>
+00:01:27,280 --> 00:01:32,870
+<font color="#FFFFFF"><font face="Segoe Print" size="60" color="#edf6f6"><b>You'll find treasure in the island to the east!</b></font>
+</font>
+
+23
+00:01:30,000 --> 00:01:32,439
+<font color="yellow">お宝いっぱい大勝利
+</font>
+
+24
+00:01:32,439 --> 00:01:35,000
+<font color="yellow">いい金も棒にすすめ
+</font>
+
+25
+00:01:32,870 --> 00:01:37,750
+<font color="#FFFFFF"><font face="I hate Comic Sans" size="43" color="#e6fdfe"><b>{↑}ii kanji mubou ni susume ii kanji muchuu ni susume</b></font>
+</font>
+00:01:32,870 --> 00:01:37,750
+<font color="#FFFFFF"><font face="Segoe Print" size="60" color="#edf6f6"><b>Great! Reckless Squid Girl, go! Great! Irresistible Squid Girl, go!</b></font>
+</font>
+
+26
+00:01:35,000 --> 00:01:37,739
+<font color="yellow">いい金も銃にすすめ
+</font>
+
+27
+00:01:37,739 --> 00:01:40,219
+<font color="yellow">単狂的 嬉しい
+</font>
+
+28
+00:01:37,750 --> 00:01:42,920
+<font color="#FFFFFF"><font face="I hate Comic Sans" size="43" color="#e6fdfe"><b>{↑}tanjouseki ureshii konomama tenka wo torenaika?</b></font>
+</font>
+00:01:37,750 --> 00:01:42,920
+<font color="#FFFFFF"><font face="Segoe Print" size="60" color="#edf6f6"><b>Yay, it's my birthday! Shall I just take over the world?</b></font>
+</font>
+
+29
+00:01:40,219 --> 00:01:43,000
+<font color="yellow">このまま天下を取れないか
+</font>
+
+30
+00:01:42,920 --> 00:01:48,130
+<font color="#FFFFFF"><font face="I hate Comic Sans" size="43" color="#e6fdfe"><b>{↑}shinryaku kouryaku keikaku seikou!</b></font>
+</font>
+00:01:42,920 --> 00:01:48,130
+<font color="#FFFFFF"><font face="Segoe Print" size="60" color="#edf6f6"><b>Invade! Conquer! Plan success!</b></font>
+</font>
+
+31
+00:01:43,000 --> 00:01:47,680
+<font color="yellow">侵略 攻略 計画 成功
+</font>
+
+32
+00:01:47,680 --> 00:01:50,420
+<font color="yellow">侵略 攻略 ギト娘
+</font>
+
+33
+00:01:48,130 --> 00:01:51,050
+<font color="#FFFFFF"><font face="I hate Comic Sans" size="43" color="#e6fdfe"><b>{↑}shinryaku kouryaku ika musume (kyun!)</b></font>
+</font>
+00:01:48,130 --> 00:01:51,050
+<font color="#FFFFFF"><font face="Segoe Print" size="60" color="#edf6f6"><b>Squid Girl, invade and conquer!</b></font>
+</font>
+
+34
+00:01:50,420 --> 00:01:56,099
+<font color="yellow">侵略しないか?
+</font>
+
+35
+00:01:53,180 --> 00:01:57,060
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="50" color="#f1f2f2">Won't You Invade?</font>
+</font>
+
+36
+00:01:54,180 --> 00:01:57,060
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">"Won't You Invade?"</font>
+</font>
+
+37
+00:02:00,000 --> 00:02:02,480
+<font color="yellow">侵略 攻略 ギト娘
+</font>
+
+38
+00:02:02,480 --> 00:02:05,739
+<font color="yellow">侵略 攻略 ギト娘
+</font>
+
+39
+00:02:05,739 --> 00:02:11,639
+<font color="yellow">侵略 攻略 ギト娘
+</font>
+
+40
+00:02:11,639 --> 00:02:13,520
+<font color="yellow">侵略 攻略 ギト娘
+</font>
+
+41
+00:02:12,990 --> 00:02:14,910
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Sis, is the yakisoba ready?</font>
+</font>
+
+42
+00:02:13,520 --> 00:02:14,900
+<font color="yellow">姉貴 焼きそばまだ?
+</font>
+
+43
+00:02:14,900 --> 00:02:18,219
+<font color="yellow">上がったわよ アエコちゃん
+</font>
+
+44
+00:02:16,160 --> 00:02:17,490
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">It's almost done,</font>
+</font>
+
+45
+00:02:17,490 --> 00:02:18,370
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Eiko!</font>
+</font>
+
+46
+00:02:18,219 --> 00:02:20,180
+<font color="yellow">生ビールお待ちどうさま
+</font>
+
+47
+00:02:18,580 --> 00:02:20,120
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Thanks for waiting. Here's your beer!</font>
+</font>
+
+48
+00:02:20,180 --> 00:02:21,280
+<font color="yellow">こっちもビール
+</font>
+
+49
+00:02:20,120 --> 00:02:21,580
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I'd like some beer, too.</font>
+</font>
+
+50
+00:02:21,280 --> 00:02:22,280
+<font color="yellow">はーい
+</font>
+
+51
+00:02:21,580 --> 00:02:22,500
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Okay!</font>
+</font>
+
+52
+00:02:30,000 --> 00:02:35,919
+<font color="yellow">人類よ、よく聞け
+</font>
+
+53
+00:02:33,880 --> 00:02:36,260
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Listen carefully, you scumbags!</font>
+</font>
+
+54
+00:02:35,919 --> 00:02:41,300
+<font color="yellow">今からこの家を人類侵略の拠点にさせていただくでゲソ
+</font>
+
+55
+00:02:36,850 --> 00:02:41,140
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Starting now, I will make this my home base, to invade and punish humanity.</font>
+</font>
+
+56
+00:02:48,219 --> 00:02:50,620
+<font color="yellow">恐怖で言葉が出ないようでゲソね
+</font>
+
+57
+00:02:48,190 --> 00:02:51,190
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">It seems you are too afraid to even speak, eh?</font>
+</font>
+
+58
+00:02:50,620 --> 00:02:54,659
+<font color="yellow">心配しなくてもお主たちを殺したりはしないでゲソ
+</font>
+
+59
+00:02:51,190 --> 00:02:55,030
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">You don't have to worry though, I won't be killing you humans.</font>
+</font>
+
+60
+00:02:54,659 --> 00:02:57,960
+<font color="yellow">雑用係としてコキ使ってやるでゲソ
+</font>
+
+61
+00:02:55,030 --> 00:02:57,780
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">At worst, you'll just become my servants!</font>
+</font>
+
+62
+00:02:57,960 --> 00:02:59,560
+<font color="yellow">はいはい、そこまで
+</font>
+
+63
+00:02:57,780 --> 00:02:59,990
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">All right, that's enough.</font>
+</font>
+
+64
+00:02:59,560 --> 00:03:06,259
+<font color="yellow">なんなんでゲソ、私をどこへ連れて行くつもりでゲソ
+</font>
+
+65
+00:03:01,950 --> 00:03:03,910
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">What's the matter?</font>
+</font>
+
+66
+00:03:03,910 --> 00:03:06,130
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Where are you taking me?</font>
+</font>
+
+67
+00:03:06,259 --> 00:03:09,539
+<font color="yellow">ひとつ聞くが、そのコスプレはなんだ
+</font>
+
+68
+00:03:06,330 --> 00:03:08,040
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I have one question.</font>
+</font>
+
+69
+00:03:08,040 --> 00:03:09,840
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">What's with that cosplay?</font>
+</font>
+
+70
+00:03:09,539 --> 00:03:13,080
+<font color="yellow">そういえば自己紹介がまだだったでゲソ
+</font>
+
+71
+00:03:09,840 --> 00:03:13,090
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Oh yeah, I have yet to introduce myself.</font>
+</font>
+
+72
+00:03:13,080 --> 00:03:15,099
+<font color="yellow">私は海からの使者
+</font>
+
+73
+00:03:13,300 --> 00:03:15,550
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I'm a messenger from the sea.</font>
+</font>
+
+74
+00:03:16,879 --> 00:03:18,159
+<font color="yellow">イカ娘でゲソ
+</font>
+
+75
+00:03:16,800 --> 00:03:18,180
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I'm Ika Musume!</font>
+</font>
+
+76
+00:03:18,159 --> 00:03:25,480
+<font color="yellow">あれ、反応薄いでゲソ
+</font>
+
+77
+00:03:23,100 --> 00:03:25,390
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe"><i>Huh? What's with her?</i></font>
+</font>
+
+78
+00:03:25,480 --> 00:03:27,620
+<font color="yellow">なんでうちの店に
+</font>
+
+79
+00:03:25,980 --> 00:03:27,600
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">And why did you come to our shop?</font>
+</font>
+
+80
+00:03:27,620 --> 00:03:29,539
+<font color="yellow">海から一番近いから
+</font>
+
+81
+00:03:27,900 --> 00:03:30,400
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Because it's the closest to the sea.</font>
+</font>
+
+82
+00:03:29,560 --> 00:03:33,680
+<font color="yellow">でゲソ、ここを拠点に人類侵略を進めるでゲソ
+</font>
+
+83
+00:03:30,400 --> 00:03:33,070
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I'll make this my home base and invade humanity!</font>
+</font>
+
+84
+00:03:33,680 --> 00:03:36,259
+<font color="yellow">なんで人類侵略なんてするんだ
+</font>
+
+85
+00:03:33,530 --> 00:03:36,030
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">And why do you want to invade humanity in the first place?</font>
+</font>
+
+86
+00:03:36,259 --> 00:03:38,060
+<font color="yellow">決まってるでゲソ
+</font>
+
+87
+00:03:36,030 --> 00:03:37,320
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">That's obvious!</font>
+</font>
+
+88
+00:03:37,870 --> 00:03:41,330
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Those filthy humans have forgotten what the sea has given them...</font>
+</font>
+
+89
+00:03:38,060 --> 00:03:41,340
+<font color="yellow">人間どもは今まで海の恩恵を忘れて
+</font>
+
+90
+00:03:41,340 --> 00:03:44,740
+<font color="yellow">私利私欲のために平気で海を汚してきた
+</font>
+
+91
+00:03:41,330 --> 00:03:44,710
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">and have been polluting the sea for their own gain.</font>
+</font>
+
+92
+00:03:44,740 --> 00:03:49,599
+<font color="yellow">私たち海の生き物にとって人類など百害あって一利なし
+</font>
+
+93
+00:03:44,710 --> 00:03:46,870
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">To creatures of the sea,</font>
+</font>
+
+94
+00:03:46,870 --> 00:03:49,290
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">humans have done nothing but harm to us.</font>
+</font>
+
+95
+00:03:49,599 --> 00:03:53,039
+<font color="yellow">だから私が人類を懲らしめる
+</font>
+
+96
+00:03:49,290 --> 00:03:52,420
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">That's why I will punish them!</font>
+</font>
+
+97
+00:03:52,840 --> 00:03:54,470
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">In order to protect the sea!</font>
+</font>
+
+98
+00:03:53,039 --> 00:03:56,480
+<font color="yellow">海を守るために
+</font>
+
+99
+00:03:56,480 --> 00:03:57,400
+<font color="yellow">あれ
+</font>
+
+100
+00:03:56,300 --> 00:03:57,380
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Eh?</font>
+</font>
+
+101
+00:03:57,400 --> 00:03:58,680
+<font color="yellow">わかった
+</font>
+
+102
+00:03:57,380 --> 00:03:58,720
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I get it.</font>
+</font>
+
+103
+00:03:58,680 --> 00:03:59,360
+<font color="yellow">けど今日は急がないでゲソ
+</font>
+
+104
+00:03:58,720 --> 00:04:02,100
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">But we are busy today. We have work to do here, you see?</font>
+</font>
+
+105
+00:03:59,360 --> 00:04:00,300
+<font color="yellow">あ、忙しい
+</font>
+
+106
+00:04:00,300 --> 00:04:02,320
+<font color="yellow">こっちも仕事があるんでな
+</font>
+
+107
+00:04:02,320 --> 00:04:03,880
+<font color="yellow">またにしてくれ
+</font>
+
+108
+00:04:02,100 --> 00:04:03,430
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Please come back later.</font>
+</font>
+
+109
+00:04:03,880 --> 00:04:05,140
+<font color="yellow">気をつけて帰れよ
+</font>
+
+110
+00:04:03,430 --> 00:04:05,100
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Go back safely.</font>
+</font>
+
+111
+00:04:05,140 --> 00:04:06,160
+<font color="yellow">じゃあな
+</font>
+
+112
+00:04:05,770 --> 00:04:08,900
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">T-Thank you...</font>
+</font>
+00:04:05,100 --> 00:04:05,770
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">See ya...</font>
+</font>
+
+113
+00:04:06,160 --> 00:04:11,140
+<font color="yellow">あ、ああ、ありがとうでゲソ
+</font>
+
+114
+00:04:11,140 --> 00:04:13,560
+<font color="yellow">ちょ、ちょっと待たないか
+</font>
+
+115
+00:04:11,940 --> 00:04:13,480
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Hold it right there!</font>
+</font>
+
+116
+00:04:13,560 --> 00:04:16,439
+<font color="yellow">嘘やハッタリだと思ったら大間違いでゲソ
+</font>
+
+117
+00:04:13,480 --> 00:04:16,400
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">You thought I was lying back there, didn't you?</font>
+</font>
+
+118
+00:04:16,439 --> 00:04:17,920
+<font color="yellow">話を聞かないか
+</font>
+
+119
+00:04:16,400 --> 00:04:17,950
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Listen to what I have to say!</font>
+</font>
+
+120
+00:04:17,920 --> 00:04:19,680
+<font color="yellow">はい、焼きそば
+</font>
+
+121
+00:04:17,950 --> 00:04:18,820
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Here's the yakisoba.</font>
+</font>
+
+122
+00:04:19,680 --> 00:04:21,740
+<font color="yellow">3番テーブルにお願いね
+</font>
+
+123
+00:04:19,360 --> 00:04:21,660
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Take these to Table 3, please.</font>
+</font>
+
+124
+00:04:21,740 --> 00:04:24,040
+<font color="yellow">醤油ラーメンは5番
+</font>
+
+125
+00:04:21,660 --> 00:04:23,200
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">The soy sauce ramen goes to Table 5.</font>
+</font>
+
+126
+00:04:24,040 --> 00:04:26,060
+<font color="yellow">ん?
+</font>
+
+127
+00:04:26,060 --> 00:04:27,360
+<font color="yellow">や、焼きそば3番、ラーメン5番…
+</font>
+
+128
+00:04:26,460 --> 00:04:28,460
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Yakisoba to Table 3...</font>
+</font>
+
+129
+00:04:27,360 --> 00:04:28,360
+<font color="yellow">焼きそば3番、ラーメン5番…
+</font>
+
+130
+00:04:28,360 --> 00:04:29,160
+<font color="yellow">焼きそば3番、ラーメン5番…
+</font>
+
+131
+00:04:28,460 --> 00:04:29,540
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Ramen to 5...</font>
+</font>
+
+132
+00:04:29,160 --> 00:04:30,000
+<font color="yellow">焼きそば3番、ラーメン5番…
+</font>
+
+133
+00:04:29,540 --> 00:04:31,540
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I have no chopsticks...</font>
+</font>
+
+134
+00:04:30,000 --> 00:04:31,620
+<font color="yellow">箸がないんだけど
+</font>
+
+135
+00:04:31,620 --> 00:04:32,840
+<font color="yellow">お冷やください
+</font>
+
+136
+00:04:31,540 --> 00:04:32,750
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Ice water please.</font>
+</font>
+
+137
+00:04:32,840 --> 00:04:33,920
+<font color="yellow">同じやつ、おかおり
+</font>
+
+138
+00:04:32,750 --> 00:04:33,880
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Another jug please!</font>
+</font>
+
+139
+00:04:33,920 --> 00:04:35,380
+<font color="yellow">油そばとヨーザ
+</font>
+
+140
+00:04:33,880 --> 00:04:35,300
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I want some aburasoba and gyoza.</font>
+</font>
+
+141
+00:04:35,380 --> 00:04:36,840
+<font color="yellow">ちょ、ちょっと待つでゲソ
+</font>
+
+142
+00:04:35,300 --> 00:04:36,300
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Please wait a minute!</font>
+</font>
+
+143
+00:04:36,840 --> 00:04:39,120
+<font color="yellow">かき氷1つ、いちごと練乳ね
+</font>
+
+144
+00:04:36,590 --> 00:04:39,050
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Two shaved ice, one with strawberries and one with condensed milk!</font>
+</font>
+
+145
+00:04:39,680 --> 00:04:40,320
+<font color="yellow">ペペロンチーノ
+</font>
+00:04:39,120 --> 00:04:39,680
+<font color="yellow">ハイボール
+</font>
+
+146
+00:04:39,720 --> 00:04:40,390
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Spaghetti pepperoncino!</font>
+</font>
+00:04:39,050 --> 00:04:39,720
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">A highball!</font>
+</font>
+
+147
+00:04:40,320 --> 00:04:41,160
+<font color="yellow">ハッピーネー、唐揚げとシューマイ
+</font>
+
+148
+00:04:40,840 --> 00:04:41,760
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Namashirasu-don!</font>
+</font>
+00:04:40,390 --> 00:04:41,760
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Some fried chicken...</font>
+</font>
+
+149
+00:04:41,160 --> 00:04:42,220
+<font color="yellow">生シラス丼
+</font>
+
+150
+00:04:41,760 --> 00:04:43,140
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Got it!</font>
+</font>
+
+151
+00:04:42,220 --> 00:04:43,220
+<font color="yellow">わかったでゲソ
+</font>
+
+152
+00:04:43,220 --> 00:04:44,460
+<font color="yellow">これ片付けてくれる?
+</font>
+
+153
+00:04:43,140 --> 00:04:44,390
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Could you take these?</font>
+</font>
+
+154
+00:04:44,460 --> 00:04:45,640
+<font color="yellow">今やるでゲソ
+</font>
+
+155
+00:04:44,390 --> 00:04:45,220
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I'll do it right away!</font>
+</font>
+
+156
+00:04:45,640 --> 00:04:47,160
+<font color="yellow">焼きそば2つ持ち帰りで
+</font>
+
+157
+00:04:45,220 --> 00:04:47,680
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Two yakisobas to go...</font>
+</font>
+
+158
+00:04:46,980 --> 00:04:47,680
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Ice cream!</font>
+</font>
+00:04:46,270 --> 00:04:47,680
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">One more...</font>
+</font>
+
+159
+00:04:47,920 --> 00:04:48,680
+<font color="yellow">ヨーザさん、はい
+</font>
+00:04:47,160 --> 00:04:47,920
+<font color="yellow">アイスクリーム
+</font>
+
+160
+00:04:47,680 --> 00:04:49,650
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Please hold onto our bags.</font>
+</font>
+
+161
+00:04:48,680 --> 00:04:49,180
+<font color="yellow">荷物お願いします
+</font>
+
+162
+00:04:48,480 --> 00:04:49,650
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I'd like to borrow...</font>
+</font>
+
+163
+00:04:49,960 --> 00:04:57,280
+<font color="yellow">ごめんなさい、ごめんなさい、ごめんなさいでゲソ
+</font>
+00:04:49,180 --> 00:04:49,960
+<font color="yellow">もう借りたいんですけど
+</font>
+
+164
+00:04:54,860 --> 00:04:57,280
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I'm sorry! I'm sorry! I'm sorry!</font>
+</font>
+
+165
+00:04:57,280 --> 00:04:58,580
+<font color="yellow">触るな!
+</font>
+
+166
+00:04:57,280 --> 00:04:58,070
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Don't touch it!</font>
+</font>
+
+167
+00:04:58,580 --> 00:05:00,440
+<font color="yellow">ケガしたらどうするんだ
+</font>
+
+168
+00:04:58,280 --> 00:05:00,360
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">What if you cut yourself?</font>
+</font>
+
+169
+00:05:00,440 --> 00:05:02,920
+<font color="yellow">ったか危ないだろ?
+</font>
+
+170
+00:05:00,360 --> 00:05:01,950
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">That's dangerous you know.</font>
+</font>
+
+171
+00:05:02,920 --> 00:05:05,520
+<font color="yellow">そそうした私を叱ることなく
+</font>
+
+172
+00:05:02,320 --> 00:05:05,450
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe"><i>She didn't scold me for my blunder...</i></font>
+</font>
+
+173
+00:05:05,520 --> 00:05:08,100
+<font color="yellow">心配をしてくれるなんて
+</font>
+
+174
+00:05:05,450 --> 00:05:08,000
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe"><i>but was worried about me instead!</i></font>
+</font>
+
+175
+00:05:08,100 --> 00:05:09,420
+<font color="yellow">顔は怖いけど
+</font>
+
+176
+00:05:08,000 --> 00:05:11,500
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe"><i>She might look scary, but she's actually kind.</i></font>
+</font>
+
+177
+00:05:09,420 --> 00:05:11,580
+<font color="yellow">意外といい人じゃないか
+</font>
+
+178
+00:05:11,580 --> 00:05:14,120
+<font color="yellow">ほら、ここはいいから料理運べ
+</font>
+
+179
+00:05:11,500 --> 00:05:13,840
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Hey, I'll do this, so deliver the food.</font>
+</font>
+
+180
+00:05:13,840 --> 00:05:15,050
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Understood!</font>
+</font>
+
+181
+00:05:14,120 --> 00:05:15,420
+<font color="yellow">わかったでゲソ!
+</font>
+
+182
+00:05:18,420 --> 00:05:20,120
+<font color="yellow">なんか違わないか?
+</font>
+
+183
+00:05:18,220 --> 00:05:20,050
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Isn't this wrong?!</font>
+</font>
+
+184
+00:05:20,120 --> 00:05:22,740
+<font color="yellow">私は人類を侵略しに来たんでゲソ
+</font>
+
+185
+00:05:20,050 --> 00:05:22,680
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I came to invade and punish humans!</font>
+</font>
+
+186
+00:05:22,740 --> 00:05:24,720
+<font color="yellow">バイトに来たんじゃないでゲソ!
+</font>
+
+187
+00:05:22,680 --> 00:05:24,680
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I didn't come here for work!</font>
+</font>
+
+188
+00:05:24,720 --> 00:05:27,260
+<font color="yellow">はいはい、わかったわかった
+</font>
+
+189
+00:05:24,680 --> 00:05:26,430
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Yeah, yeah, I got it, I got it.</font>
+</font>
+
+190
+00:05:27,259 --> 00:05:30,800
+<font color="yellow">働くつもりがないなら邪魔をしないで帰ってくれ
+</font>
+
+191
+00:05:27,470 --> 00:05:30,690
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">If you aren't here to work, then please don't bother us and go home.</font>
+</font>
+
+192
+00:05:30,800 --> 00:05:32,180
+<font color="yellow">遊びじゃないでゲソ!
+</font>
+
+193
+00:05:30,690 --> 00:05:32,100
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I'm not fooling around!</font>
+</font>
+
+194
+00:05:32,180 --> 00:05:33,539
+<font color="yellow">私は本当に侵略を
+</font>
+
+195
+00:05:32,100 --> 00:05:33,520
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I really came to invade-</font>
+</font>
+
+196
+00:05:33,539 --> 00:05:36,420
+<font color="yellow">侵略、侵略って簡単に言うけどな
+</font>
+
+197
+00:05:33,520 --> 00:05:36,280
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">It's not that easy, you know?</font>
+</font>
+
+198
+00:05:36,420 --> 00:05:40,620
+<font color="yellow">今日のうちの客、何人だと思う?
+</font>
+
+199
+00:05:36,280 --> 00:05:38,780
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Do you know how many customers we have here today?</font>
+</font>
+
+200
+00:05:40,620 --> 00:05:44,719
+<font color="yellow">たくさん、いっぱい、大勢か?
+</font>
+
+201
+00:05:40,400 --> 00:05:42,030
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">It's full...</font>
+</font>
+
+202
+00:05:42,030 --> 00:05:43,490
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">so it's...</font>
+</font>
+
+203
+00:05:43,490 --> 00:05:44,370
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">many?</font>
+</font>
+
+204
+00:05:44,719 --> 00:05:46,800
+<font color="yellow">30人だ30人
+</font>
+
+205
+00:05:44,370 --> 00:05:46,740
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">It's thirty people, thirty!</font>
+</font>
+
+206
+00:05:46,800 --> 00:05:49,000
+<font color="yellow">たったそんだけの客もさばけないで
+</font>
+
+207
+00:05:46,740 --> 00:05:48,950
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">You can't even handle that many...</font>
+</font>
+
+208
+00:05:48,950 --> 00:05:51,790
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">and you still think you will be able to invade all humanity?</font>
+</font>
+
+209
+00:05:49,000 --> 00:05:52,379
+<font color="yellow">人類を侵略できると思ってるのか?
+</font>
+
+210
+00:05:52,379 --> 00:05:54,259
+<font color="yellow">侵略ってのはつまり
+</font>
+
+211
+00:05:52,120 --> 00:05:53,790
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">In other words, an invasion...</font>
+</font>
+
+212
+00:05:53,790 --> 00:05:58,260
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">would mean ruling over 6.4 billion humans by yourself!</font>
+</font>
+
+213
+00:05:54,259 --> 00:05:56,180
+<font color="yellow">64億人の人間を
+</font>
+
+214
+00:05:56,180 --> 00:05:57,019
+<font color="yellow">お前一人で
+</font>
+
+215
+00:05:57,019 --> 00:05:59,939
+<font color="yellow">支配するってことだ
+</font>
+
+216
+00:05:59,939 --> 00:06:01,459
+<font color="yellow">僕
+</font>
+
+217
+00:05:59,670 --> 00:06:00,800
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Billions...?!</font>
+</font>
+
+218
+00:06:01,459 --> 00:06:03,359
+<font color="yellow">何人だと思ってたんだよ
+</font>
+
+219
+00:06:01,220 --> 00:06:02,970
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">How many did you think there were?</font>
+</font>
+
+220
+00:06:03,359 --> 00:06:06,259
+<font color="yellow">せ、1000人くらいだと思ってたでゲソ
+</font>
+
+221
+00:06:03,640 --> 00:06:06,180
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I was thinking, about a thousand...</font>
+</font>
+
+222
+00:06:06,259 --> 00:06:09,479
+<font color="yellow">1000人ならなんとかなると思ってたのかよ
+</font>
+
+223
+00:06:06,180 --> 00:06:09,350
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">And you thought you could manage with a thousand people?</font>
+</font>
+
+224
+00:06:09,479 --> 00:06:12,519
+<font color="yellow">あとな、人類を敵に回すってことは
+</font>
+
+225
+00:06:09,350 --> 00:06:11,770
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Also, if you make all humanity your enemy...</font>
+</font>
+
+226
+00:06:11,770 --> 00:06:14,980
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">that would also mean you are making all the armies around the world your enemy.</font>
+</font>
+
+227
+00:06:12,519 --> 00:06:15,419
+<font color="yellow">世界中の軍隊を敵に回すってことだぞ
+</font>
+
+228
+00:06:14,980 --> 00:06:17,020
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Do you think you can go against all that by yourself?</font>
+</font>
+
+229
+00:06:15,419 --> 00:06:17,500
+<font color="yellow">お前一人で相手できんのか?
+</font>
+
+230
+00:06:17,500 --> 00:06:18,959
+<font color="yellow">軍隊ってなんでゲソ?
+</font>
+
+231
+00:06:17,020 --> 00:06:18,940
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">What's an army?</font>
+</font>
+
+232
+00:06:18,959 --> 00:06:20,680
+<font color="yellow">そっからかよ!
+</font>
+
+233
+00:06:18,940 --> 00:06:19,990
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">You don't even know that?!</font>
+</font>
+
+234
+00:06:20,680 --> 00:06:22,019
+<font color="yellow">じゃあ銃は?
+</font>
+
+235
+00:06:20,360 --> 00:06:21,900
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">What's a gun?</font>
+</font>
+
+236
+00:06:21,900 --> 00:06:22,860
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Ten?</font>
+</font>
+
+237
+00:06:22,979 --> 00:06:24,139
+<font color="yellow">ミサイルは?
+</font>
+00:06:22,019 --> 00:06:22,979
+<font color="yellow">銃
+</font>
+
+238
+00:06:22,860 --> 00:06:24,070
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">A missile?</font>
+</font>
+
+239
+00:06:24,139 --> 00:06:25,139
+<font color="yellow">味噌汁
+</font>
+
+240
+00:06:24,070 --> 00:06:25,240
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Miso soup?</font>
+</font>
+
+241
+00:06:27,019 --> 00:06:29,379
+<font color="yellow">今日初めて地上に来たのに
+</font>
+
+242
+00:06:27,030 --> 00:06:29,240
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">It's the first time I've come to the surface...</font>
+</font>
+
+243
+00:06:29,379 --> 00:06:31,959
+<font color="yellow">そんなこと分かるわけないじゃないかー!
+</font>
+
+244
+00:06:29,240 --> 00:06:32,000
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">so there's no way I would know all that!</font>
+</font>
+
+245
+00:06:31,959 --> 00:06:34,159
+<font color="yellow">あっ
+</font>
+
+246
+00:06:34,859 --> 00:06:36,859
+<font color="yellow">あっ
+</font>
+
+247
+00:06:52,479 --> 00:06:55,139
+<font color="yellow">蚊一匹も死ぼつべきやけど
+</font>
+
+248
+00:06:52,180 --> 00:06:54,900
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">She can't even kill a single mosquito,</font>
+</font>
+
+249
+00:06:54,900 --> 00:06:56,060
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">and yet she wants to invade humanity...</font>
+</font>
+
+250
+00:06:55,139 --> 00:06:56,879
+<font color="yellow">人類死んできた・・・
+</font>
+
+251
+00:06:57,019 --> 00:07:02,740
+<font color="yellow">私の本気を見せてやるでゲソ
+</font>
+
+252
+00:06:59,270 --> 00:07:02,650
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Well then, I'll show you my true power!</font>
+</font>
+
+253
+00:07:14,740 --> 00:07:15,699
+<font color="yellow">そこでゲソ
+</font>
+
+254
+00:07:14,540 --> 00:07:15,620
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">There!</font>
+</font>
+
+255
+00:07:15,699 --> 00:07:21,879
+<font color="yellow">どうでゲソ
+</font>
+
+256
+00:07:20,750 --> 00:07:22,420
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">How's that?!</font>
+</font>
+
+257
+00:07:21,879 --> 00:07:24,659
+<font color="yellow">私もやればできるのでゲソ
+</font>
+
+258
+00:07:22,420 --> 00:07:24,800
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">If I put my mind to it I can do anything!</font>
+</font>
+
+259
+00:07:24,660 --> 00:07:29,900
+<font color="yellow">恐怖と感動で声も出ないようではないか
+</font>
+
+260
+00:07:25,130 --> 00:07:29,680
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Oh, you are so amazed that you're rendered speechless, aren't you?</font>
+</font>
+
+261
+00:07:29,900 --> 00:07:31,240
+<font color="yellow">よくも
+</font>
+
+262
+00:07:29,680 --> 00:07:31,810
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">How dare you...</font>
+</font>
+
+263
+00:07:31,240 --> 00:07:35,460
+<font color="yellow">うちの店の壁ぶち壊してくれたな
+</font>
+
+264
+00:07:31,810 --> 00:07:35,770
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">wreck our store's wall!</font>
+</font>
+
+265
+00:07:35,460 --> 00:07:39,520
+<font color="yellow">どの道私のものになるんだからいいじゃないか
+</font>
+
+266
+00:07:35,770 --> 00:07:39,610
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">This store is going to be mine either way, so it doesn't matter!</font>
+</font>
+
+267
+00:07:39,520 --> 00:07:41,260
+<font color="yellow">ならねえよ
+</font>
+
+268
+00:07:39,610 --> 00:07:40,730
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Like hell it will!</font>
+</font>
+
+269
+00:07:41,260 --> 00:07:45,580
+<font color="yellow">お前のこれは自分の意思で動かしてるのか
+</font>
+
+270
+00:07:41,940 --> 00:07:43,690
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">These things of yours...</font>
+</font>
+
+271
+00:07:43,690 --> 00:07:45,780
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Can you move them as you wish?</font>
+</font>
+
+272
+00:07:45,580 --> 00:07:46,920
+<font color="yellow">そうでゲソよ
+</font>
+
+273
+00:07:45,780 --> 00:07:46,700
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">That's right!</font>
+</font>
+
+274
+00:07:46,920 --> 00:07:48,200
+<font color="yellow">シード
+</font>
+
+275
+00:07:47,610 --> 00:07:49,030
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Speed!</font>
+</font>
+
+276
+00:07:48,200 --> 00:07:50,580
+<font color="yellow">パワー
+</font>
+
+277
+00:07:49,030 --> 00:07:50,490
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Power!</font>
+</font>
+
+278
+00:07:50,580 --> 00:07:51,780
+<font color="yellow">イッチ
+</font>
+
+279
+00:07:50,490 --> 00:07:51,950
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Range!</font>
+</font>
+
+280
+00:07:51,780 --> 00:07:53,760
+<font color="yellow">イパシー
+</font>
+
+281
+00:07:51,950 --> 00:07:53,410
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Precision!</font>
+</font>
+
+282
+00:07:53,759 --> 00:07:57,879
+<font color="yellow">10本の触手は狙った獲物を確実に捕らえ
+</font>
+
+283
+00:07:53,910 --> 00:07:58,170
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">These ten tentacles will capture any prey</font>
+</font>
+
+284
+00:07:57,879 --> 00:08:00,360
+<font color="yellow">絶対に逃がさないでゲソ
+</font>
+
+285
+00:07:58,170 --> 00:08:00,420
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">and won't let it escape!</font>
+</font>
+
+286
+00:08:00,360 --> 00:08:03,399
+<font color="yellow">ま、イカの常識ってところでゲソね
+</font>
+
+287
+00:08:00,420 --> 00:08:03,550
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Well, it's only normal for squids to do this, no?</font>
+</font>
+
+288
+00:08:03,399 --> 00:08:05,659
+<font color="yellow">超えてるっつのイカの常識
+</font>
+
+289
+00:08:03,550 --> 00:08:05,630
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">This is beyond normal for squids...</font>
+</font>
+
+290
+00:08:05,659 --> 00:08:09,659
+<font color="yellow">お前この家を拠点にしたいって言ってたの
+</font>
+
+291
+00:08:06,680 --> 00:08:09,390
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">You said you wanted to make this your home base right?</font>
+</font>
+
+292
+00:08:09,659 --> 00:08:10,420
+<font color="yellow">そうでゲソ
+</font>
+
+293
+00:08:09,390 --> 00:08:10,760
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">That's right!</font>
+</font>
+
+294
+00:08:10,420 --> 00:08:11,699
+<font color="yellow">いいぜ
+</font>
+
+295
+00:08:10,760 --> 00:08:11,680
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Go ahead, then!</font>
+</font>
+
+296
+00:08:11,699 --> 00:08:14,259
+<font color="yellow">ほんとでゲソか
+</font>
+
+297
+00:08:12,760 --> 00:08:14,310
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Really?!</font>
+</font>
+
+298
+00:08:14,740 --> 00:08:21,019
+<font color="yellow">なんで私が働かされなきゃいかんのでゲソ
+</font>
+00:08:14,259 --> 00:08:14,740
+<font color="yellow">ああ
+</font>
+
+299
+00:08:14,310 --> 00:08:15,180
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Yes!</font>
+</font>
+
+300
+00:08:17,100 --> 00:08:21,150
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Why do I have to work here against my will?!</font>
+</font>
+
+301
+00:08:21,019 --> 00:08:22,300
+<font color="yellow">修理代
+</font>
+
+302
+00:08:21,360 --> 00:08:24,780
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">You'll be paying for the damages with those tentacles!</font>
+</font>
+
+303
+00:08:22,300 --> 00:08:23,740
+<font color="yellow">触手で払ってもらえないのか
+</font>
+
+304
+00:08:23,759 --> 00:08:24,860
+<font color="yellow">もらうからなあ
+</font>
+
+305
+00:08:24,860 --> 00:08:27,860
+<font color="yellow">あらあら新しいバイトさんね
+</font>
+
+306
+00:08:24,780 --> 00:08:27,610
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I see, so we got a new employee, huh?</font>
+</font>
+
+307
+00:08:27,860 --> 00:08:30,719
+<font color="yellow">ゲソゲソ
+</font>
+
+308
+00:08:30,719 --> 00:08:36,059
+<font color="yellow">イカ娘ちゃんこれ4番テーブルね
+</font>
+
+309
+00:08:32,830 --> 00:08:34,370
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Ika Musume,</font>
+</font>
+
+310
+00:08:34,370 --> 00:08:35,950
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">take this to Table 4, please.</font>
+</font>
+
+311
+00:08:35,950 --> 00:08:36,870
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Okay!</font>
+</font>
+
+312
+00:08:36,059 --> 00:08:37,000
+<font color="yellow">はいでゲソ
+</font>
+
+313
+00:08:36,870 --> 00:08:38,750
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Stock some coke in the fridge, too.</font>
+</font>
+
+314
+00:08:37,000 --> 00:08:38,819
+<font color="yellow">ほらクーラーに貸しとけよ
+</font>
+
+315
+00:08:38,819 --> 00:08:40,200
+<font color="yellow">今やるでゲソ
+</font>
+
+316
+00:08:38,750 --> 00:08:40,130
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I will do it right now!</font>
+</font>
+
+317
+00:08:40,200 --> 00:08:48,200
+<font color="yellow">同胞じゃないか
+</font>
+
+318
+00:08:41,380 --> 00:08:45,130
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="50" color="#f1f2f2">Aren't You My Comrade?</font>
+</font>
+
+319
+00:08:42,380 --> 00:08:45,130
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">"Aren't You My Comrade?"</font>
+</font>
+
+320
+00:08:47,880 --> 00:08:50,430
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I came here to invade them.</font>
+</font>
+
+321
+00:08:48,200 --> 00:08:51,120
+<font color="yellow">侵略しに来たのに
+</font>
+
+322
+00:08:50,800 --> 00:08:52,890
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">This isn't what I had in mind!</font>
+</font>
+
+323
+00:08:51,120 --> 00:08:52,559
+<font color="yellow">こんなはずじゃないでゲソ
+</font>
+
+324
+00:08:53,759 --> 00:09:06,960
+<font color="yellow">気のせいでゲソか
+</font>
+
+325
+00:09:05,280 --> 00:09:07,320
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Was it just my imagination?</font>
+</font>
+
+326
+00:09:06,960 --> 00:09:21,759
+<font color="yellow">うおーな視線を感じるでゲソ
+</font>
+
+327
+00:09:19,500 --> 00:09:22,130
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I felt someone staring!</font>
+</font>
+
+328
+00:09:21,799 --> 00:09:23,740
+<font color="yellow">うおーな視線を感じるでゲソ
+</font>
+00:09:21,759 --> 00:09:21,799
+<font color="yellow">うおーな視線を感じるでゲソ
+</font>
+
+329
+00:09:23,759 --> 00:09:35,980
+<font color="yellow">女いいね!
+</font>
+
+330
+00:09:40,639 --> 00:09:41,439
+<font color="yellow">このうねうね
+</font>
+
+331
+00:09:40,230 --> 00:09:42,850
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">This twisting thingy is funny!</font>
+</font>
+
+332
+00:09:41,439 --> 00:09:42,860
+<font color="yellow">面白いね
+</font>
+
+333
+00:09:42,860 --> 00:09:43,759
+<font color="yellow">ネutz
+</font>
+
+334
+00:09:42,850 --> 00:09:45,070
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Twisting thingy?</font>
+</font>
+
+335
+00:09:43,759 --> 00:09:46,759
+<font color="yellow">私の触手はよくもそんな風に
+</font>
+
+336
+00:09:45,070 --> 00:09:47,820
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">How dare he humiliate my tentacles like that!</font>
+</font>
+
+337
+00:09:47,820 --> 00:09:49,780
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Ah it's moving!</font>
+</font>
+
+338
+00:09:48,100 --> 00:09:49,759
+<font color="yellow">ああ動く
+</font>
+
+339
+00:09:49,759 --> 00:09:51,100
+<font color="yellow">変なの
+</font>
+
+340
+00:09:49,780 --> 00:09:51,280
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">This is so weird!</font>
+</font>
+
+341
+00:09:51,100 --> 00:09:52,899
+<font color="yellow">いかんなめられてるでゲソ
+</font>
+
+342
+00:09:51,280 --> 00:09:52,530
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe"><i>It's no good!</i></font>
+</font>
+
+343
+00:09:52,899 --> 00:09:53,620
+<font color="yellow">まずゲシャする seeming cool
+</font>
+
+344
+00:09:52,530 --> 00:09:54,240
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe"><i>He's looking down on me!</i></font>
+</font>
+
+345
+00:09:53,620 --> 00:09:58,519
+<font color="yellow">ここは一つ私の怖さを教えてあげようじゃないか
+</font>
+
+346
+00:09:54,240 --> 00:09:58,750
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe"><i>I'll show him how scary I can be!</i></font>
+</font>
+
+347
+00:09:58,519 --> 00:10:07,179
+<font color="yellow">面白い
+</font>
+
+348
+00:10:06,920 --> 00:10:07,920
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">It backfired?</font>
+</font>
+00:10:06,040 --> 00:10:06,920
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">That was fun!</font>
+</font>
+
+349
+00:10:07,960 --> 00:10:08,799
+<font color="yellow">もう一回やって
+</font>
+00:10:07,179 --> 00:10:07,960
+<font color="yellow">逆効果
+</font>
+
+350
+00:10:07,920 --> 00:10:10,220
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Do it again, do it aga....</font>
+</font>
+
+351
+00:10:08,799 --> 00:10:09,340
+<font color="yellow">もう一回
+</font>
+
+352
+00:10:09,340 --> 00:10:10,700
+<font color="yellow">もう一回
+</font>
+
+353
+00:10:10,700 --> 00:10:11,220
+<font color="yellow">もう一回
+</font>
+
+354
+00:10:10,220 --> 00:10:11,550
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Again, again!</font>
+</font>
+
+355
+00:10:11,220 --> 00:10:13,360
+<font color="yellow">そうでげそ
+</font>
+
+356
+00:10:12,260 --> 00:10:13,300
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">That's it!</font>
+</font>
+
+357
+00:10:13,360 --> 00:10:16,279
+<font color="yellow">遊んでやるから私の部下になるでげそ
+</font>
+
+358
+00:10:13,590 --> 00:10:16,100
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I'll play with you, but you'll have to become my subordinate!</font>
+</font>
+
+359
+00:10:16,279 --> 00:10:18,440
+<font color="yellow">部下
+</font>
+
+360
+00:10:17,640 --> 00:10:18,560
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Subordinate?</font>
+</font>
+
+361
+00:10:18,440 --> 00:10:21,279
+<font color="yellow">私は海からの死者イカ娘でげそ
+</font>
+
+362
+00:10:18,560 --> 00:10:21,640
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I'm a messenger from the sea, Ika Musume!</font>
+</font>
+
+363
+00:10:21,279 --> 00:10:23,600
+<font color="yellow">私のことは隊長と呼ぶこと
+</font>
+
+364
+00:10:21,640 --> 00:10:26,310
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">You will now refer to me as "Boss" and respect me as one!</font>
+</font>
+
+365
+00:10:23,600 --> 00:10:26,919
+<font color="yellow">あとちゃんと敬語を使うでげそ
+</font>
+
+366
+00:10:26,919 --> 00:10:29,000
+<font color="yellow">了解であります隊長
+</font>
+
+367
+00:10:27,110 --> 00:10:28,980
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Understood, Boss!</font>
+</font>
+
+368
+00:10:28,980 --> 00:10:31,650
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">This is just fine!</font>
+</font>
+
+369
+00:10:29,000 --> 00:10:31,659
+<font color="yellow">これはいいでげそ
+</font>
+
+370
+00:10:31,659 --> 00:10:37,100
+<font color="yellow">早速地上を侵略するための作戦に取り掛かるでげそ
+</font>
+
+371
+00:10:33,320 --> 00:10:37,410
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Let's begin our first mission to invade the world right away!</font>
+</font>
+
+372
+00:10:37,100 --> 00:10:38,299
+<font color="yellow">はい隊長
+</font>
+
+373
+00:10:37,410 --> 00:10:38,660
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Yes, Boss!</font>
+</font>
+
+374
+00:10:39,519 --> 00:10:41,620
+<font color="yellow">まずはここを占拠するでげそ
+</font>
+
+375
+00:10:39,330 --> 00:10:41,960
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">We'll start by taking this place!</font>
+</font>
+
+376
+00:10:41,620 --> 00:10:42,659
+<font color="yellow">おう
+</font>
+
+377
+00:10:42,659 --> 00:10:44,120
+<font color="yellow">突撃でげそ
+</font>
+
+378
+00:10:42,410 --> 00:10:44,330
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Let's initiate the assault!</font>
+</font>
+
+379
+00:10:44,120 --> 00:10:45,299
+<font color="yellow">おう
+</font>
+
+380
+00:10:46,559 --> 00:10:48,620
+<font color="yellow">何やってんだイカ娘
+</font>
+
+381
+00:10:47,000 --> 00:10:49,130
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">What are you doing, Ika Musume?</font>
+</font>
+
+382
+00:10:48,620 --> 00:10:51,199
+<font color="yellow">今から
+</font>
+
+383
+00:10:50,460 --> 00:10:52,880
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Starting now, this place is all mine!</font>
+</font>
+
+384
+00:10:51,259 --> 00:10:52,799
+<font color="yellow">ここは私のものでげそ
+</font>
+00:10:51,220 --> 00:10:51,259
+<font color="yellow">今から
+</font>
+00:10:51,199 --> 00:10:51,220
+<font color="yellow">今から
+</font>
+
+385
+00:10:52,799 --> 00:10:53,740
+<font color="yellow">してたのかタケル
+</font>
+
+386
+00:10:52,880 --> 00:10:53,930
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Oh, were you here, Takeru?</font>
+</font>
+
+387
+00:10:53,740 --> 00:10:54,779
+<font color="yellow">うん姉ちゃん
+</font>
+
+388
+00:10:53,930 --> 00:10:55,140
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Yeah, Sis.</font>
+</font>
+
+389
+00:10:54,779 --> 00:10:57,960
+<font color="yellow">姉ちゃんってことは弟
+</font>
+
+390
+00:10:55,640 --> 00:10:58,680
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Sis? Then... is he her younger brother?</font>
+</font>
+
+391
+00:10:57,960 --> 00:11:01,360
+<font color="yellow">僕この隊長の部下になったんだよ
+</font>
+
+392
+00:10:58,680 --> 00:11:01,600
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I just became Boss's subordinate.</font>
+</font>
+
+393
+00:11:01,360 --> 00:11:03,480
+<font color="yellow">地上を一緒に侵略するんだ
+</font>
+
+394
+00:11:01,600 --> 00:11:03,690
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">We are going to invade humanity together!</font>
+</font>
+
+395
+00:11:03,480 --> 00:11:05,460
+<font color="yellow">うちの弟
+</font>
+
+396
+00:11:03,690 --> 00:11:06,020
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Oh, with my brother...?</font>
+</font>
+
+397
+00:11:05,460 --> 00:11:06,939
+<font color="yellow">遊びでげそ
+</font>
+
+398
+00:11:06,939 --> 00:11:09,059
+<font color="yellow">侵略ごっこのつもりだったでげそ
+</font>
+
+399
+00:11:06,020 --> 00:11:07,020
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">We were p-playing!</font>
+</font>
+
+400
+00:11:07,020 --> 00:11:09,480
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">We were pretending to invade humanity!</font>
+</font>
+
+401
+00:11:09,059 --> 00:11:11,419
+<font color="yellow">部下にしてくれるって言ったのに
+</font>
+
+402
+00:11:09,480 --> 00:11:11,440
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">But you said you'll make me your subordinate!</font>
+</font>
+
+403
+00:11:11,419 --> 00:11:14,319
+<font color="yellow">人間の子供の相手はしてられないでげそ
+</font>
+
+404
+00:11:11,440 --> 00:11:14,400
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I can't waste time dealing with human kids!</font>
+</font>
+
+405
+00:11:14,319 --> 00:11:16,319
+<font color="yellow">私は忙しいんでげそ
+</font>
+
+406
+00:11:14,400 --> 00:11:16,240
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I'm busy right now!</font>
+</font>
+
+407
+00:11:16,319 --> 00:11:17,600
+<font color="yellow">イカ姉ちゃん
+</font>
+
+408
+00:11:16,240 --> 00:11:17,950
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Sis!</font>
+</font>
+
+409
+00:11:17,600 --> 00:11:21,200
+<font color="yellow">人間の子供の相手はしてられないでげそ
+</font>
+
+410
+00:11:20,200 --> 00:11:22,330
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Human kids won't do...</font>
+</font>
+
+411
+00:11:21,200 --> 00:11:22,200
+<font color="yellow">子供の相手は
+</font>
+
+412
+00:11:22,200 --> 00:11:23,200
+<font color="yellow">子供の相手は
+</font>
+
+413
+00:11:23,200 --> 00:11:24,200
+<font color="yellow">子供の相手は
+</font>
+
+414
+00:11:23,580 --> 00:11:24,790
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">That's it!</font>
+</font>
+
+415
+00:11:24,200 --> 00:11:25,200
+<font color="yellow">そうだ
+</font>
+
+416
+00:11:24,790 --> 00:11:26,250
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">What are you doing, Takeru?</font>
+</font>
+
+417
+00:11:25,200 --> 00:11:26,720
+<font color="yellow">何やってんだタケル
+</font>
+
+418
+00:11:26,720 --> 00:11:28,720
+<font color="yellow">これでイカ息子に見えるかな
+</font>
+
+419
+00:11:26,500 --> 00:11:28,670
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">With this I could look more like a Squid Boy.</font>
+</font>
+
+420
+00:11:28,720 --> 00:11:29,700
+<font color="yellow">息子
+</font>
+
+421
+00:11:28,670 --> 00:11:30,460
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Squid Boy... oh.</font>
+</font>
+
+422
+00:11:29,700 --> 00:11:30,540
+<font color="yellow">ああ
+</font>
+
+423
+00:11:30,540 --> 00:11:32,240
+<font color="yellow">イカ娘ちゃんのあれね
+</font>
+
+424
+00:11:30,460 --> 00:11:32,550
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Oh, you mean that thing on Ika Musume.</font>
+</font>
+
+425
+00:11:32,240 --> 00:11:35,340
+<font color="yellow">見分けがつかないほど完成度高いわ
+</font>
+
+426
+00:11:32,550 --> 00:11:35,260
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">It's so well done that I almost can't tell the difference.</font>
+</font>
+
+427
+00:11:35,340 --> 00:11:39,480
+<font color="yellow">むしろ小学生に作れてしまうほど簡単ということでは
+</font>
+
+428
+00:11:35,260 --> 00:11:39,970
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">It's just so simple that even a kid can make it.</font>
+</font>
+
+429
+00:11:39,480 --> 00:11:45,360
+<font color="yellow">あいつのことだから真似するんじゃないでげそ
+</font>
+
+430
+00:11:41,970 --> 00:11:44,890
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Knowing her, though, she'll just go "Stop copying me~"</font>
+</font>
+
+431
+00:11:44,890 --> 00:11:47,310
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">and get all angry about it.</font>
+</font>
+
+432
+00:11:45,360 --> 00:11:47,180
+<font color="yellow">とかって怒るんじゃないか
+</font>
+
+433
+00:11:47,180 --> 00:11:49,660
+<font color="yellow">ほら怒らせた
+</font>
+
+434
+00:11:48,150 --> 00:11:49,360
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">See, she got mad.</font>
+</font>
+
+435
+00:11:49,660 --> 00:11:51,200
+<font color="yellow">そんなところで出たのかよ
+</font>
+
+436
+00:11:49,900 --> 00:11:52,860
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I never thought I would meet a comrade in a place like this!</font>
+</font>
+
+437
+00:11:51,200 --> 00:11:53,200
+<font color="yellow">どこに会えるなんて
+</font>
+
+438
+00:11:53,200 --> 00:11:54,200
+<font color="yellow">えええ
+</font>
+
+439
+00:11:54,200 --> 00:11:57,200
+<font color="yellow">きっとお主も地上を侵略しに来たのでげそね
+</font>
+
+440
+00:11:54,110 --> 00:11:57,240
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">You came to the surface to invade as well, right?</font>
+</font>
+
+441
+00:11:57,200 --> 00:11:59,200
+<font color="yellow">そ、そうでげそ
+</font>
+
+442
+00:11:57,240 --> 00:11:59,320
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Eh? Th-that's right...</font>
+</font>
+
+443
+00:11:59,200 --> 00:12:02,200
+<font color="yellow">もしかしてタケルだって気づいてない
+</font>
+
+444
+00:11:59,320 --> 00:12:02,330
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Maybe she doesn't realize that's Takeru?</font>
+</font>
+
+445
+00:12:02,200 --> 00:12:08,200
+<font color="yellow">たぶんあのパーツさえあれば仲間と認識するのに十分なんじゃないかしら
+</font>
+
+446
+00:12:02,330 --> 00:12:03,290
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Probably.</font>
+</font>
+
+447
+00:12:03,290 --> 00:12:07,710
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">So that hat is enough to make her think he's one of them...</font>
+</font>
+
+448
+00:12:07,710 --> 00:12:11,540
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">There is no time to waste. Let me explain my invasion plan!</font>
+</font>
+
+449
+00:12:08,200 --> 00:12:11,200
+<font color="yellow">さっそく今後の侵略計画を話そうじゃないか
+</font>
+
+450
+00:12:11,200 --> 00:12:13,200
+<font color="yellow">ないか
+</font>
+
+451
+00:12:11,540 --> 00:12:12,590
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Let's do it!</font>
+</font>
+
+452
+00:12:12,800 --> 00:12:17,050
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Currently I'm in charge of cleaning in that house.</font>
+</font>
+
+453
+00:12:13,200 --> 00:12:17,200
+<font color="yellow">今私はあの家の床掃除を任されているでげそ
+</font>
+
+454
+00:12:17,200 --> 00:12:20,200
+<font color="yellow">つまり地盤はもう占拠したも同然
+</font>
+
+455
+00:12:17,050 --> 00:12:20,100
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">That means we've already occupied a secure base!</font>
+</font>
+
+456
+00:12:20,200 --> 00:12:23,200
+<font color="yellow">次は椅子テーブル方面に侵攻するでげそ
+</font>
+
+457
+00:12:20,100 --> 00:12:23,060
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Next we'll advance to the chairs and tables!</font>
+</font>
+
+458
+00:12:23,200 --> 00:12:26,200
+<font color="yellow">仲間に会えてすごく嬉しいんだろうな
+</font>
+
+459
+00:12:23,060 --> 00:12:26,730
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe"><i>She seems pretty happy to have found a partner.</i></font>
+</font>
+
+460
+00:12:26,200 --> 00:12:28,200
+<font color="yellow">なのに僕本当は
+</font>
+
+461
+00:12:26,730 --> 00:12:29,060
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe"><i>But I'm just a...</i></font>
+</font>
+
+462
+00:12:27,730 --> 00:12:32,770
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I will assign you to take over the counter!</font>
+</font>
+
+463
+00:12:28,200 --> 00:12:32,200
+<font color="yellow">というわけでお主には主にカウンター方面を任せるでげそ
+</font>
+
+464
+00:12:32,200 --> 00:12:35,200
+<font color="yellow">え、あ、い、いいんじゃないか
+</font>
+
+465
+00:12:33,730 --> 00:12:35,740
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Yeah, th-that'll be fine.</font>
+</font>
+
+466
+00:12:35,200 --> 00:12:38,200
+<font color="yellow">ところでお主触手は
+</font>
+
+467
+00:12:36,190 --> 00:12:38,950
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">By the way... where are your tentacles?</font>
+</font>
+
+468
+00:12:38,200 --> 00:12:41,200
+<font color="yellow">あ、ちょ、ちょっと待っててくれないか
+</font>
+
+469
+00:12:39,530 --> 00:12:41,490
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Wo-would you wait a little?</font>
+</font>
+
+470
+00:12:41,200 --> 00:12:43,200
+<font color="yellow">え、どうしたの
+</font>
+
+471
+00:12:42,120 --> 00:12:43,490
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">What's the matter?</font>
+</font>
+
+472
+00:12:43,200 --> 00:12:45,200
+<font color="yellow">あ、お姉ちゃんあのね
+</font>
+
+473
+00:12:43,490 --> 00:12:45,410
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Sis, you see...</font>
+</font>
+
+474
+00:12:45,200 --> 00:12:47,200
+<font color="yellow">あ
+</font>
+
+475
+00:12:47,200 --> 00:12:49,200
+<font color="yellow">あ
+</font>
+
+476
+00:12:49,200 --> 00:12:52,200
+<font color="yellow">ただいま、でげそ
+</font>
+
+477
+00:12:49,580 --> 00:12:51,330
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I'm back...</font>
+</font>
+
+478
+00:12:52,200 --> 00:12:55,200
+<font color="yellow">よかったなお主、触手が生え変わって
+</font>
+
+479
+00:12:52,340 --> 00:12:54,000
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">That's great!</font>
+</font>
+
+480
+00:12:54,000 --> 00:12:55,380
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Your tentacles grew back!</font>
+</font>
+
+481
+00:12:55,200 --> 00:12:57,200
+<font color="yellow">よかった、ごまかせたわ
+</font>
+
+482
+00:12:55,380 --> 00:12:57,510
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I'm so glad she fell for it.</font>
+</font>
+
+483
+00:12:57,200 --> 00:12:59,200
+<font color="yellow">よかったのかよ
+</font>
+
+484
+00:12:57,510 --> 00:12:58,840
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">You're happy about that?</font>
+</font>
+
+485
+00:12:59,200 --> 00:13:03,200
+<font color="yellow">しかしお主の触手は細くて元気がないのではないか
+</font>
+
+486
+00:12:59,130 --> 00:13:03,760
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">But still, aren't those tentacles kind of limp and lifeless?</font>
+</font>
+
+487
+00:13:03,200 --> 00:13:05,200
+<font color="yellow">ええ、そんなことないよ
+</font>
+
+488
+00:13:03,760 --> 00:13:05,810
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Eh? It's nothing like that.</font>
+</font>
+
+489
+00:13:05,200 --> 00:13:10,200
+<font color="yellow">垂れ下がっているだけみたいだし、大丈夫でげそか
+</font>
+
+490
+00:13:05,810 --> 00:13:08,180
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">It looks like they're just hanging...</font>
+</font>
+
+491
+00:13:08,480 --> 00:13:10,190
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Will they be all right?</font>
+</font>
+
+492
+00:13:10,200 --> 00:13:12,200
+<font color="yellow">ちょっと待っててでげそ
+</font>
+
+493
+00:13:10,400 --> 00:13:12,150
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Please wait a minute!</font>
+</font>
+
+494
+00:13:19,200 --> 00:13:23,200
+<font color="yellow">おお、なんと元気な触手ではないか
+</font>
+
+495
+00:13:20,160 --> 00:13:23,120
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Wow, they seem all lively now!</font>
+</font>
+
+496
+00:13:23,200 --> 00:13:25,200
+<font color="yellow">これなら大丈夫でげそ
+</font>
+
+497
+00:13:23,120 --> 00:13:25,080
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">They'll be fine!</font>
+</font>
+
+498
+00:13:25,200 --> 00:13:28,200
+<font color="yellow">よし、さっそく今から出撃でげそ
+</font>
+
+499
+00:13:25,450 --> 00:13:28,080
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Okay, now that's settled, let's start our mission!</font>
+</font>
+
+500
+00:13:28,200 --> 00:13:30,200
+<font color="yellow">え、今から
+</font>
+
+501
+00:13:28,080 --> 00:13:29,620
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Eh?! Right now?</font>
+</font>
+
+502
+00:13:29,870 --> 00:13:32,080
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">With the two of us...</font>
+</font>
+
+503
+00:13:30,200 --> 00:13:33,200
+<font color="yellow">二人もいれば案内へ、余裕でげそ
+</font>
+
+504
+00:13:32,080 --> 00:13:33,590
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">that place will be nothing!</font>
+</font>
+
+505
+00:13:33,200 --> 00:13:37,200
+<font color="yellow">ていうか、その安易な計画はどうなんだろう
+</font>
+
+506
+00:13:33,590 --> 00:13:36,590
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe"><i>Wouldn't a simplistic plan like that be a problem?</i></font>
+</font>
+
+507
+00:13:40,200 --> 00:13:43,200
+<font color="yellow">どこへ行くー
+</font>
+
+508
+00:13:40,220 --> 00:13:42,800
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Where are you going?</font>
+</font>
+
+509
+00:13:49,200 --> 00:13:55,200
+<font color="yellow">せっかく
+</font>
+
+510
+00:13:53,610 --> 00:13:55,070
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">After...</font>
+</font>
+
+511
+00:13:55,200 --> 00:13:57,200
+<font color="yellow">ばれた
+</font>
+
+512
+00:13:55,070 --> 00:13:56,520
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">She found out!</font>
+</font>
+
+513
+00:13:56,520 --> 00:13:59,030
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">After I finally found a comrade...</font>
+</font>
+
+514
+00:13:57,200 --> 00:14:02,200
+<font color="yellow">せっかく同胞に会えたのに、なんで突然死んだりするのでげそー
+</font>
+
+515
+00:13:59,030 --> 00:14:01,740
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Why did he have to die so suddenly?!</font>
+</font>
+
+516
+00:14:02,200 --> 00:14:04,200
+<font color="yellow">ええ
+</font>
+
+517
+00:14:04,200 --> 00:14:07,200
+<font color="yellow">いかねー、ちゃん
+</font>
+
+518
+00:14:04,280 --> 00:14:06,580
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Sis...</font>
+</font>
+
+519
+00:14:06,990 --> 00:14:10,000
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">You and I are no longer subordinate and boss!</font>
+</font>
+
+520
+00:14:07,200 --> 00:14:10,200
+<font color="yellow">おぬしとはもはや部下でも隊長でもない
+</font>
+
+521
+00:14:10,200 --> 00:14:12,200
+<font color="yellow">また人間扱いに戻った
+</font>
+
+522
+00:14:10,000 --> 00:14:11,660
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe"><i>She's treating me as a human again.</i></font>
+</font>
+
+523
+00:14:12,200 --> 00:14:15,200
+<font color="yellow">うう、同胞よ
+</font>
+
+524
+00:14:13,790 --> 00:14:15,250
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">My dearest comrade...</font>
+</font>
+
+525
+00:14:15,200 --> 00:14:17,200
+<font color="yellow">うう
+</font>
+
+526
+00:14:17,200 --> 00:14:19,200
+<font color="yellow">せめて
+</font>
+
+527
+00:14:18,250 --> 00:14:23,640
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">At least, you'll finally be able to rest in peace back where you belong.</font>
+</font>
+
+528
+00:14:19,200 --> 00:14:21,200
+<font color="yellow">故郷で安らかに
+</font>
+
+529
+00:14:22,200 --> 00:14:23,200
+<font color="yellow">眠るでげそ
+</font>
+
+530
+00:14:40,200 --> 00:14:44,200
+<font color="yellow">まあ、なんだ、ご苦労さん
+</font>
+
+531
+00:14:40,030 --> 00:14:41,440
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Well...</font>
+</font>
+
+532
+00:14:41,440 --> 00:14:42,860
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Uhh...</font>
+</font>
+
+533
+00:14:42,860 --> 00:14:44,160
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">You did well.</font>
+</font>
+
+534
+00:14:44,200 --> 00:14:48,200
+<font color="yellow">もう会いに来ないと
+</font>
+
+535
+00:14:47,910 --> 00:14:52,370
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Farewell!</font>
+</font>
+
+536
+00:14:48,200 --> 00:14:51,200
+<font color="yellow">さらばでげそー
+</font>
+
+537
+00:14:51,200 --> 00:14:53,200
+<font color="yellow">はーはーはー
+</font>
+
+538
+00:14:59,380 --> 00:15:02,970
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="50" color="#f1f2f2">Am I Not The Strongest?</font>
+</font>
+
+539
+00:15:00,210 --> 00:15:02,970
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">"Am I Not The Strongest?"</font>
+</font>
+
+540
+00:15:01,200 --> 00:15:04,200
+<font color="yellow">最強じゃないか?
+</font>
+
+541
+00:15:14,200 --> 00:15:17,200
+<font color="yellow">雨だとお店も静かね
+</font>
+
+542
+00:15:14,640 --> 00:15:17,600
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">The store is rather quiet when it rains.</font>
+</font>
+
+543
+00:15:17,200 --> 00:15:20,620
+<font color="yellow">どうした
+</font>
+
+544
+00:15:19,940 --> 00:15:20,980
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">What's the matter?</font>
+</font>
+
+545
+00:15:20,620 --> 00:15:24,660
+<font color="yellow">あそこにいる髪の毛の長い女は誰でゲソ
+</font>
+
+546
+00:15:21,360 --> 00:15:25,110
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Who's that woman over there with the long hair?</font>
+</font>
+
+547
+00:15:24,660 --> 00:15:27,320
+<font color="yellow">ずっといただろうが
+</font>
+
+548
+00:15:25,700 --> 00:15:27,320
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">She's always been there.</font>
+</font>
+
+549
+00:15:27,320 --> 00:15:28,980
+<font color="yellow">それは知ってるでゲソ
+</font>
+
+550
+00:15:27,320 --> 00:15:28,820
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I know that much!</font>
+</font>
+
+551
+00:15:28,980 --> 00:15:33,080
+<font color="yellow">お主やお主の弟と何か関係があるのでゲソか
+</font>
+
+552
+00:15:28,820 --> 00:15:33,410
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Is she related to you and your brother?</font>
+</font>
+
+553
+00:15:33,080 --> 00:15:35,980
+<font color="yellow">気づいてなかったのか
+</font>
+
+554
+00:15:34,200 --> 00:15:36,170
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Didn't you notice it before?</font>
+</font>
+
+555
+00:15:35,980 --> 00:15:37,460
+<font color="yellow">姉貴だ姉貴
+</font>
+
+556
+00:15:36,170 --> 00:15:37,790
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">She's our big sister.</font>
+</font>
+
+557
+00:15:37,460 --> 00:15:39,100
+<font color="yellow">千鶴って名前の
+</font>
+
+558
+00:15:37,790 --> 00:15:39,290
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Her name is Chizuru.</font>
+</font>
+
+559
+00:15:39,100 --> 00:15:40,480
+<font color="yellow">姉貴
+</font>
+
+560
+00:15:39,290 --> 00:15:40,880
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Big sister...</font>
+</font>
+
+561
+00:15:40,480 --> 00:15:45,259
+<font color="yellow">全然違うでゲソ
+</font>
+
+562
+00:15:43,630 --> 00:15:45,300
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">She's totally different from you guys!</font>
+</font>
+
+563
+00:15:45,259 --> 00:15:49,399
+<font color="yellow">お主はバイオレンスだし弟の方はうるさいし追っかけてくるし
+</font>
+
+564
+00:15:45,300 --> 00:15:49,260
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">You're so violent, and your brother is rather noisy and bothersome.</font>
+</font>
+
+565
+00:15:49,399 --> 00:15:53,860
+<font color="yellow">でもあれはなんだかバイオレンスもないしものすごくまともに見えるでゲソ
+</font>
+
+566
+00:15:49,260 --> 00:15:53,850
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">But she is totally different! She's not the violent kind, and seems normal!</font>
+</font>
+
+567
+00:15:53,860 --> 00:15:56,259
+<font color="yellow">バイオレンスで悪かったな
+</font>
+
+568
+00:15:53,850 --> 00:15:56,190
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Well, I'm sorry for being so violent!</font>
+</font>
+
+569
+00:15:56,259 --> 00:15:58,600
+<font color="yellow">あらあらだめよ英子ちゃん
+</font>
+
+570
+00:15:56,640 --> 00:15:58,940
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Don't be so rude.</font>
+</font>
+
+571
+00:15:58,600 --> 00:16:00,580
+<font color="yellow">イカ娘ちゃんをいじめちゃ
+</font>
+
+572
+00:15:58,940 --> 00:16:00,560
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Don't pick on her.</font>
+</font>
+
+573
+00:16:00,580 --> 00:16:02,920
+<font color="yellow">やさしいでゲソ
+</font>
+
+574
+00:16:01,480 --> 00:16:02,980
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe"><i>She's so kind!</i></font>
+</font>
+
+575
+00:16:02,920 --> 00:16:06,279
+<font color="yellow">イカ娘ちゃん悪いけどこれ運んでくれる
+</font>
+
+576
+00:16:03,190 --> 00:16:04,570
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Ika Musume!</font>
+</font>
+
+577
+00:16:04,570 --> 00:16:06,530
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Sorry to bother you, but could you please take this?</font>
+</font>
+
+578
+00:16:06,279 --> 00:16:07,460
+<font color="yellow">了解でゲソ
+</font>
+
+579
+00:16:06,530 --> 00:16:08,320
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Got it!</font>
+</font>
+
+580
+00:16:10,480 --> 00:16:19,399
+<font color="yellow">今日は肌寒いでゲソ
+</font>
+
+581
+00:16:17,540 --> 00:16:19,500
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Today is kinda cold...</font>
+</font>
+
+582
+00:16:19,399 --> 00:16:21,399
+<font color="yellow">お前なんてもん吐いてんだよ
+</font>
+
+583
+00:16:19,500 --> 00:16:21,170
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">What did you sneeze out just now?!</font>
+</font>
+
+584
+00:16:21,399 --> 00:16:23,440
+<font color="yellow">何を焦っているのでゲソ
+</font>
+
+585
+00:16:21,540 --> 00:16:24,250
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Why are you so flustered?</font>
+</font>
+
+586
+00:16:23,440 --> 00:16:26,480
+<font color="yellow">イカスミを吐いただけじゃないか
+</font>
+
+587
+00:16:24,250 --> 00:16:26,300
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">All I did was cough up some squid ink.</font>
+</font>
+
+588
+00:16:26,480 --> 00:16:29,840
+<font color="yellow">溶けつかと思ったじゃねえか早く吹け
+</font>
+
+589
+00:16:27,130 --> 00:16:30,140
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I thought you were vomiting blood! Wipe it off right now!</font>
+</font>
+
+590
+00:16:29,840 --> 00:16:32,300
+<font color="yellow">あらほんとイカスミだわ
+</font>
+
+591
+00:16:30,140 --> 00:16:32,220
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Ah, this really is squid ink!</font>
+</font>
+
+592
+00:16:32,300 --> 00:16:33,340
+<font color="yellow">リアクション薄
+</font>
+
+593
+00:16:32,220 --> 00:16:33,720
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Such a mild reaction!</font>
+</font>
+
+594
+00:16:33,340 --> 00:16:34,879
+<font color="yellow">しかも舐めた
+</font>
+
+595
+00:16:33,720 --> 00:16:35,140
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">And she licked it...</font>
+</font>
+
+596
+00:16:34,879 --> 00:16:38,039
+<font color="yellow">イカ娘ちゃんって本当にイカ気味なのね
+</font>
+
+597
+00:16:35,140 --> 00:16:38,100
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">You really are like a squid!</font>
+</font>
+
+598
+00:16:38,039 --> 00:16:39,860
+<font color="yellow">イカ気味ってなんだよ
+</font>
+
+599
+00:16:38,100 --> 00:16:39,850
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">What do you mean "<i>like</i> a squid"?</font>
+</font>
+
+600
+00:16:39,860 --> 00:16:40,460
+<font color="yellow">てかシャオンのイカ娘ちゃん
+</font>
+
+601
+00:16:39,850 --> 00:16:41,400
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">And how about taking a shower?</font>
+</font>
+
+602
+00:16:40,460 --> 00:16:42,560
+<font color="yellow">今日は浴びてきたらイカスミ臭いよ
+</font>
+
+603
+00:16:41,400 --> 00:16:42,650
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Squid ink stinks, you know.</font>
+</font>
+
+604
+00:16:42,560 --> 00:16:45,460
+<font color="yellow">そうするわお店よろしくね
+</font>
+
+605
+00:16:42,650 --> 00:16:44,270
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I'll do that.</font>
+</font>
+
+606
+00:16:44,270 --> 00:16:46,190
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Please take care of the store.</font>
+</font>
+
+607
+00:16:46,120 --> 00:16:50,139
+<font color="yellow">お主なら私を許すまい
+</font>
+
+608
+00:16:47,990 --> 00:16:50,070
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">You'd never forgive me for that, if it were you.</font>
+</font>
+
+609
+00:16:50,139 --> 00:16:51,180
+<font color="yellow">当たり前だ
+</font>
+
+610
+00:16:50,070 --> 00:16:51,410
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Of course not!</font>
+</font>
+
+611
+00:16:51,180 --> 00:16:57,000
+<font color="yellow">お前のおかげでイカスミスパゲッティは当分食えないな
+</font>
+
+612
+00:16:52,990 --> 00:16:57,370
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Thanks to you, I won't be able to eat squid ink spaghetti for a while.</font>
+</font>
+
+613
+00:16:57,000 --> 00:16:59,800
+<font color="yellow">イカスミスパゲッティ
+</font>
+
+614
+00:16:57,370 --> 00:16:58,790
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Squid ink...</font>
+</font>
+
+615
+00:16:58,790 --> 00:17:00,000
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">spaghetti?</font>
+</font>
+
+616
+00:16:59,800 --> 00:17:04,100
+<font color="yellow">人間どもはこれを食べるのでゲソか
+</font>
+
+617
+00:17:01,540 --> 00:17:04,210
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Do humans really eat this?</font>
+</font>
+
+618
+00:17:04,100 --> 00:17:06,259
+<font color="yellow">だから目の前で吐くなっての
+</font>
+
+619
+00:17:04,210 --> 00:17:06,710
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Don't do that in front of me!</font>
+</font>
+
+620
+00:17:06,259 --> 00:17:09,140
+<font color="yellow">ああそうだよスパゲッティと絡めて
+</font>
+
+621
+00:17:06,710 --> 00:17:10,680
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">But yes, we mix it into the spaghetti along with the squid!</font>
+</font>
+
+622
+00:17:09,140 --> 00:17:10,440
+<font color="yellow">イカの実と一緒に
+</font>
+
+623
+00:17:10,460 --> 00:17:12,940
+<font color="yellow">まさか私を
+</font>
+
+624
+00:17:11,510 --> 00:17:12,970
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Does that mean that I too...</font>
+</font>
+
+625
+00:17:12,940 --> 00:17:13,960
+<font color="yellow">誰が食うか
+</font>
+
+626
+00:17:12,970 --> 00:17:14,010
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Who would eat you?</font>
+</font>
+
+627
+00:17:13,960 --> 00:17:16,440
+<font color="yellow">お主が食わずとも別の客が
+</font>
+
+628
+00:17:14,010 --> 00:17:16,390
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Even if you wouldn't, other customers could...</font>
+</font>
+
+629
+00:17:16,440 --> 00:17:26,819
+<font color="yellow">人間がいないでゲソね
+</font>
+
+630
+00:17:24,860 --> 00:17:27,480
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">There aren't any humans around.</font>
+</font>
+
+631
+00:17:26,819 --> 00:17:28,920
+<font color="yellow">雨が降ってるからな
+</font>
+
+632
+00:17:27,480 --> 00:17:29,190
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">That's because it's raining.</font>
+</font>
+
+633
+00:17:28,920 --> 00:17:32,160
+<font color="yellow">雨が降ると人間がいなくなるのでゲソか
+</font>
+
+634
+00:17:29,190 --> 00:17:32,570
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">So when it rains, do people just vanish like that?</font>
+</font>
+
+635
+00:17:32,160 --> 00:17:35,420
+<font color="yellow">こんな天気の日に遊ぶ物好きはいないだろ
+</font>
+
+636
+00:17:32,570 --> 00:17:36,080
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">No one would want to go out in such weather.</font>
+</font>
+
+637
+00:17:35,420 --> 00:17:39,579
+<font color="yellow">今この辺りにいるのは
+</font>
+
+638
+00:17:37,370 --> 00:17:39,790
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe"><i>Right now, there's no one but</i></font>
+</font>
+
+639
+00:17:39,579 --> 00:17:40,440
+<font color="yellow">チズルとか
+</font>
+
+640
+00:17:39,790 --> 00:17:44,920
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe"><i>the quiet, black-haired Chizuru, the little brat Takeru,</i></font>
+</font>
+
+641
+00:17:40,460 --> 00:17:42,940
+<font color="yellow">言う事なし黒髪の女と
+</font>
+
+642
+00:17:42,940 --> 00:17:45,019
+<font color="yellow">うざったい子供タケル
+</font>
+
+643
+00:17:44,920 --> 00:17:48,420
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe"><i>and that somewhat strong person in here.</i></font>
+</font>
+
+644
+00:17:45,019 --> 00:17:46,519
+<font color="yellow">それに少し強いが
+</font>
+
+645
+00:17:46,519 --> 00:17:50,480
+<font color="yellow">そこにいるこいつだけ
+</font>
+
+646
+00:17:50,480 --> 00:17:56,019
+<font color="yellow">ということは
+</font>
+
+647
+00:17:50,220 --> 00:17:52,180
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe"><i>That means...</i></font>
+</font>
+
+648
+00:17:55,390 --> 00:17:57,640
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe"><i>Eat before you get eaten!</i></font>
+</font>
+
+649
+00:17:56,019 --> 00:17:58,120
+<font color="yellow">割れる前に食え
+</font>
+
+650
+00:17:57,640 --> 00:18:00,480
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe"><i>This is my chance to take control of this place!</i></font>
+</font>
+
+651
+00:17:58,120 --> 00:18:00,539
+<font color="yellow">この家を支配するチャンスでゲソ
+</font>
+
+652
+00:18:00,539 --> 00:18:06,819
+<font color="yellow">今日こそ今日こそギャフンと言わせてやるでゲソ
+</font>
+
+653
+00:18:00,480 --> 00:18:04,100
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe"><i>Today, today at last, I shall pay back those who have mistreated me!</i></font>
+</font>
+
+654
+00:18:06,819 --> 00:18:09,980
+<font color="yellow">さてと私は掃除でもすっかのう?
+</font>
+
+655
+00:18:06,520 --> 00:18:09,990
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Well then, I might as well do some cleaning...</font>
+</font>
+
+656
+00:18:09,980 --> 00:18:12,440
+<font color="yellow">イカ娘お前も手伝えよ
+</font>
+
+657
+00:18:09,990 --> 00:18:12,070
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Ika Musume, you help out, too.</font>
+</font>
+
+658
+00:18:12,440 --> 00:18:14,539
+<font color="yellow">いやでゲソ
+</font>
+
+659
+00:18:12,070 --> 00:18:13,610
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">No way.</font>
+</font>
+
+660
+00:18:14,539 --> 00:18:17,579
+<font color="yellow">お前自分の立場が分かってんのか
+</font>
+
+661
+00:18:14,410 --> 00:18:17,530
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Do you understand your position here?</font>
+</font>
+
+662
+00:18:17,579 --> 00:18:20,339
+<font color="yellow">それはこっちのセリフでゲソ
+</font>
+
+663
+00:18:17,530 --> 00:18:19,750
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">That would be my line!</font>
+</font>
+
+664
+00:18:20,339 --> 00:18:23,660
+<font color="yellow">人間の分際で偉そうに
+</font>
+
+665
+00:18:20,120 --> 00:18:23,620
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Acting like that when you are nothing but a human...</font>
+</font>
+
+666
+00:18:23,660 --> 00:18:26,740
+<font color="yellow">私が何のために地上に来たと
+</font>
+
+667
+00:18:23,620 --> 00:18:28,420
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Have you forgotten why I came to the surface?</font>
+</font>
+
+668
+00:18:26,740 --> 00:18:29,120
+<font color="yellow">思っているのでゲソ
+</font>
+
+669
+00:18:28,920 --> 00:18:30,380
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Wasn't it for work?</font>
+</font>
+
+670
+00:18:29,120 --> 00:18:30,400
+<font color="yellow">アルバイトじゃないのか
+</font>
+
+671
+00:18:30,400 --> 00:18:32,319
+<font color="yellow">人類制服でゲソ
+</font>
+
+672
+00:18:30,380 --> 00:18:31,840
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">It was to invade humanity!</font>
+</font>
+
+673
+00:18:32,319 --> 00:18:36,500
+<font color="yellow">その拠点としてまずこの家が必要
+</font>
+
+674
+00:18:32,090 --> 00:18:35,840
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I first need this place as my base.</font>
+</font>
+
+675
+00:18:36,500 --> 00:18:38,000
+<font color="yellow">そのためには
+</font>
+
+676
+00:18:36,300 --> 00:18:37,640
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">For that to happen...</font>
+</font>
+
+677
+00:18:37,890 --> 00:18:39,680
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I gotta get rid of nuisances like you!</font>
+</font>
+
+678
+00:18:38,000 --> 00:18:39,980
+<font color="yellow">お主が邪魔のでゲソ
+</font>
+
+679
+00:18:39,980 --> 00:18:42,279
+<font color="yellow">どういうつもりだ話せ
+</font>
+
+680
+00:18:40,140 --> 00:18:41,810
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">What are you thinking? Let me go!</font>
+</font>
+
+681
+00:18:42,279 --> 00:18:46,079
+<font color="yellow">口の聞き方に気を付けた方がいいんじゃないか
+</font>
+
+682
+00:18:42,020 --> 00:18:45,940
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">You should watch how you speak to me, don't you think?</font>
+</font>
+
+683
+00:18:45,940 --> 00:18:48,650
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Just a little twist and your body will...</font>
+</font>
+
+684
+00:18:46,079 --> 00:18:48,039
+<font color="yellow">こんなひとひねりでお主の体など
+</font>
+
+685
+00:18:48,039 --> 00:18:50,299
+<font color="yellow">ああ何やってるのさ
+</font>
+
+686
+00:18:48,650 --> 00:18:50,230
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">What are you doing?</font>
+</font>
+
+687
+00:18:50,299 --> 00:18:51,380
+<font color="yellow">タケル危ない
+</font>
+
+688
+00:18:50,230 --> 00:18:51,360
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Takeru, it's dangerous!</font>
+</font>
+
+689
+00:18:51,380 --> 00:18:53,940
+<font color="yellow">エルヒア姉ちゃん一人だけ楽しそうにして
+</font>
+
+690
+00:18:51,360 --> 00:18:52,240
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">You're so unfair sis,</font>
+</font>
+
+691
+00:18:52,240 --> 00:18:53,820
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">having all the fun for yourself!</font>
+</font>
+
+692
+00:18:53,940 --> 00:18:55,599
+<font color="yellow">僕もイカ姉ちゃんと遊びたい
+</font>
+
+693
+00:18:53,820 --> 00:18:55,490
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I want to play with her, too!</font>
+</font>
+
+694
+00:18:55,599 --> 00:18:58,380
+<font color="yellow">お前はパニック映画もそんな風に見るのか
+</font>
+
+695
+00:18:55,490 --> 00:18:58,280
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Does it look like we're playing here?!</font>
+</font>
+
+696
+00:18:58,380 --> 00:19:01,220
+<font color="yellow">言わずとも同じ目に合わせてやるでゲソ
+</font>
+
+697
+00:18:58,280 --> 00:19:00,950
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I'll do the same to you even without you asking!</font>
+</font>
+
+698
+00:19:00,950 --> 00:19:02,000
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Yay!</font>
+</font>
+
+699
+00:19:01,220 --> 00:19:02,660
+<font color="yellow">はーい
+</font>
+
+700
+00:19:02,660 --> 00:19:04,519
+<font color="yellow">さてあとは一人
+</font>
+
+701
+00:19:02,000 --> 00:19:04,460
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Well then, there's only one left.</font>
+</font>
+
+702
+00:19:04,519 --> 00:19:06,039
+<font color="yellow">招きに手を出す気か
+</font>
+
+703
+00:19:04,460 --> 00:19:05,960
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Are you going to hurt my sister?</font>
+</font>
+
+704
+00:19:05,960 --> 00:19:07,580
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">It's a waste of time to try to stop me!</font>
+</font>
+
+705
+00:19:06,039 --> 00:19:07,740
+<font color="yellow">止めても無駄でゲソ
+</font>
+
+706
+00:19:07,740 --> 00:19:09,779
+<font color="yellow">今日の私は本気なのでゲソ
+</font>
+
+707
+00:19:07,580 --> 00:19:09,670
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I'm totally serious today!</font>
+</font>
+
+708
+00:19:09,779 --> 00:19:13,980
+<font color="yellow">いや私たちを解放した方が身のためだと思うぞ
+</font>
+
+709
+00:19:09,670 --> 00:19:13,840
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">No, really, it would be better for you to let us go.</font>
+</font>
+
+710
+00:19:13,980 --> 00:19:17,379
+<font color="yellow">この状況でまだそんなこと言っていられるでゲソか
+</font>
+
+711
+00:19:13,840 --> 00:19:17,390
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Still saying that when you are in this state?</font>
+</font>
+
+712
+00:19:17,379 --> 00:19:21,539
+<font color="yellow">だから私たちじゃなくてお前のためだって
+</font>
+
+713
+00:19:17,390 --> 00:19:19,850
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">It's not for us! It's for your own good!</font>
+</font>
+
+714
+00:19:20,220 --> 00:19:22,310
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Oh my, what's going on?</font>
+</font>
+
+715
+00:19:21,539 --> 00:19:22,779
+<font color="yellow">何事
+</font>
+
+716
+00:19:22,779 --> 00:19:24,559
+<font color="yellow">来たでゲソね
+</font>
+
+717
+00:19:22,310 --> 00:19:23,810
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">So you came!</font>
+</font>
+
+718
+00:19:24,559 --> 00:19:26,559
+<font color="yellow">お主もおとなしく捕まって
+</font>
+
+719
+00:19:24,230 --> 00:19:26,270
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Just stay there and be captured!</font>
+</font>
+
+720
+00:19:26,559 --> 00:19:30,879
+<font color="yellow">三人仲良く朽ち果てるでゲソ
+</font>
+
+721
+00:19:26,270 --> 00:19:29,020
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">You three can rot away together!</font>
+</font>
+
+722
+00:19:30,879 --> 00:19:31,779
+<font color="yellow">てい
+</font>
+
+723
+00:19:30,520 --> 00:19:31,480
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Here!</font>
+</font>
+
+724
+00:19:39,779 --> 00:19:47,000
+<font color="yellow">で巫女を大変恥もってくろうってイタリア人には
+</font>
+
+725
+00:19:47,000 --> 00:19:49,579
+<font color="yellow">ロスが壁に出るというよりも
+</font>
+
+726
+00:19:49,579 --> 00:19:53,299
+<font color="yellow">しかもゲソがご飯の中に住んでると
+</font>
+
+727
+00:19:52,000 --> 00:19:55,340
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">You shouldn't fool around inside the shop. Right?</font>
+</font>
+
+728
+00:19:53,299 --> 00:19:54,339
+<font color="yellow">ゲソちゃんたちが寝るときに
+</font>
+
+729
+00:19:54,339 --> 00:19:57,379
+<font color="yellow">ゲソに奇跡が見えない
+</font>
+
+730
+00:19:57,379 --> 00:19:58,740
+<font color="yellow">ゲシャンゲシャン
+</font>
+
+731
+00:19:58,740 --> 00:19:59,759
+<font color="yellow">私たちの姿を見守って
+</font>
+
+732
+00:19:58,300 --> 00:19:59,550
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">R-Right...</font>
+</font>
+
+733
+00:19:59,759 --> 00:20:01,240
+<font color="yellow">ゲソにお供えをする
+</font>
+
+734
+00:20:00,510 --> 00:20:02,310
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">It's good as long as you understand.</font>
+</font>
+
+735
+00:20:01,420 --> 00:20:02,660
+<font color="yellow"> contra
+</font>
+00:20:01,240 --> 00:20:01,420
+<font color="yellow">えぇ
+</font>
+
+736
+00:20:02,660 --> 00:20:04,079
+<font color="yellow">ポンポン
+</font>
+
+737
+00:20:04,879 --> 00:20:05,480
+<font color="yellow">ゲシャンゲシャン
+</font>
+00:20:04,079 --> 00:20:04,879
+<font color="yellow">ゲシャンゲシャン
+</font>
+
+738
+00:20:04,560 --> 00:20:07,560
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Okay, now apologize properly to both of them.</font>
+</font>
+
+739
+00:20:05,480 --> 00:20:06,720
+<font color="yellow">ギルヴギン
+</font>
+
+740
+00:20:06,720 --> 00:20:07,960
+<font color="yellow">ゲシャンゲシャン
+</font>
+
+741
+00:20:07,960 --> 00:20:09,480
+<font color="yellow">エルヒア姉ちゃんを連れて帰らないと
+</font>
+
+742
+00:20:09,480 --> 00:20:13,559
+<font color="yellow">ごめんなさいでけしょ
+</font>
+
+743
+00:20:11,820 --> 00:20:13,650
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I'm terribly sorry!</font>
+</font>
+
+744
+00:20:13,559 --> 00:20:14,319
+<font color="yellow">いいよ
+</font>
+
+745
+00:20:13,650 --> 00:20:14,610
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">It's fine.</font>
+</font>
+
+746
+00:20:14,319 --> 00:20:15,500
+<font color="yellow">楽しかったよ
+</font>
+
+747
+00:20:14,610 --> 00:20:15,570
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">It was fun!</font>
+</font>
+
+748
+00:20:15,500 --> 00:20:17,819
+<font color="yellow">だから言ったろお前のためだって
+</font>
+
+749
+00:20:15,570 --> 00:20:17,740
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">That's why I told you it was for your own good.</font>
+</font>
+
+750
+00:20:17,819 --> 00:20:19,500
+<font color="yellow">ところでイカ娘ちゃん
+</font>
+
+751
+00:20:17,740 --> 00:20:20,240
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">By the way...</font>
+</font>
+
+752
+00:20:19,500 --> 00:20:24,200
+<font color="yellow">なんか用意してる
+</font>
+
+753
+00:20:22,370 --> 00:20:24,160
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">She prepared something.</font>
+</font>
+
+754
+00:20:24,200 --> 00:20:25,240
+<font color="yellow">イカスミお願い
+</font>
+
+755
+00:20:24,160 --> 00:20:25,580
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Squid ink please.</font>
+</font>
+
+756
+00:20:25,240 --> 00:20:27,200
+<font color="yellow">イカスミってこいつの
+</font>
+
+757
+00:20:25,580 --> 00:20:27,330
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">This girl's squid ink?</font>
+</font>
+
+758
+00:20:27,700 --> 00:20:28,839
+<font color="yellow">冗談だろ
+</font>
+00:20:27,200 --> 00:20:27,700
+<font color="yellow">ええ
+</font>
+
+759
+00:20:27,910 --> 00:20:28,750
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">You're kidding right?</font>
+</font>
+00:20:27,330 --> 00:20:27,910
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Yes.</font>
+</font>
+
+760
+00:20:28,839 --> 00:20:31,759
+<font color="yellow">なんでだってイカスミじゃない
+</font>
+
+761
+00:20:28,750 --> 00:20:30,250
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Why?</font>
+</font>
+
+762
+00:20:30,250 --> 00:20:31,710
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">She's a squid, after all.</font>
+</font>
+
+763
+00:20:31,759 --> 00:20:34,559
+<font color="yellow">さっき私にかかった時
+</font>
+
+764
+00:20:32,590 --> 00:20:35,130
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Do it just like when you sneezed on me.</font>
+</font>
+
+765
+00:20:34,559 --> 00:20:37,539
+<font color="yellow">ごめんなさいごめんなさいごめんなさいでけしょ
+</font>
+
+766
+00:20:35,130 --> 00:20:37,880
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I'm sorry, I'm sorry, I'm really sorry!</font>
+</font>
+
+767
+00:20:37,539 --> 00:20:39,480
+<font color="yellow">ううん違うの
+</font>
+
+768
+00:20:37,880 --> 00:20:39,760
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">No, no, it's not that.</font>
+</font>
+
+769
+00:20:39,480 --> 00:20:42,480
+<font color="yellow">なめてみたけど味は確かだったわ
+</font>
+
+770
+00:20:39,760 --> 00:20:42,550
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I licked it and the taste was the real thing.</font>
+</font>
+
+771
+00:20:42,480 --> 00:20:44,559
+<font color="yellow">かけてもらっていいかしら
+</font>
+
+772
+00:20:42,970 --> 00:20:44,720
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">So could you put some of that on this,</font>
+</font>
+
+773
+00:20:44,559 --> 00:20:45,559
+<font color="yellow">イカ娘ちゃん
+</font>
+
+774
+00:20:44,720 --> 00:20:45,520
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Ika Musume?</font>
+</font>
+
+775
+00:20:45,559 --> 00:20:50,339
+<font color="yellow">イカスミならいくらでもかけるでけしょ
+</font>
+
+776
+00:20:47,230 --> 00:20:50,270
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I can give you as much as you want.</font>
+</font>
+
+777
+00:20:50,339 --> 00:20:58,079
+<font color="yellow">はい出来上がり
+</font>
+
+778
+00:20:56,230 --> 00:20:58,150
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">It's ready!</font>
+</font>
+
+779
+00:20:58,079 --> 00:21:00,599
+<font color="yellow">僕も食べる僕も
+</font>
+
+780
+00:20:58,530 --> 00:21:00,700
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I want to eat, too!</font>
+</font>
+
+781
+00:21:00,599 --> 00:21:04,079
+<font color="yellow">はいエイコちゃんも
+</font>
+
+782
+00:21:02,320 --> 00:21:04,160
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Here, Eiko, have some, too!</font>
+</font>
+
+783
+00:21:04,079 --> 00:21:05,839
+<font color="yellow">吐くとこ見せられて食え
+</font>
+
+784
+00:21:04,160 --> 00:21:06,830
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">How can I eat it after what I saw?</font>
+</font>
+
+785
+00:21:05,839 --> 00:21:07,519
+<font color="yellow">いいから
+</font>
+
+786
+00:21:06,830 --> 00:21:08,910
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">It's all right, so just try it.</font>
+</font>
+
+787
+00:21:07,539 --> 00:21:08,559
+<font color="yellow">食べてみなさい
+</font>
+
+788
+00:21:08,559 --> 00:21:14,559
+<font color="yellow">うまい
+</font>
+
+789
+00:21:13,460 --> 00:21:14,500
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Heavenly!</font>
+</font>
+
+790
+00:21:14,559 --> 00:21:19,379
+<font color="yellow">うまい
+</font>
+
+791
+00:21:16,460 --> 00:21:18,420
+<font color="#FFFFFF"><font face="@mangolove" size="27" color="#f5f5ee"><b>Squid Ink Spaghetti </b>500 yen</font>
+</font>
+
+792
+00:21:18,220 --> 00:21:19,380
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">It's great!</font>
+</font>
+
+793
+00:21:19,379 --> 00:21:22,559
+<font color="yellow">泳いだ後に塩気のあるイカスミがたまらん
+</font>
+
+794
+00:21:19,380 --> 00:21:22,430
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">This salty taste of squid ink is just irresistible after a swim!</font>
+</font>
+
+795
+00:21:22,559 --> 00:21:23,779
+<font color="yellow">イカスミスパゲッティ
+</font>
+
+796
+00:21:22,430 --> 00:21:24,680
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Squid ink spaghetti!</font>
+</font>
+
+797
+00:21:23,779 --> 00:21:24,759
+<font color="yellow">イカスミスパください
+</font>
+
+798
+00:21:23,550 --> 00:21:25,350
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Squid ink spaghetti, please!</font>
+</font>
+
+799
+00:21:24,759 --> 00:21:25,599
+<font color="yellow">イカスミおかわり
+</font>
+
+800
+00:21:24,680 --> 00:21:25,680
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">One more squid ink spaghetti!</font>
+</font>
+
+801
+00:21:25,599 --> 00:21:26,819
+<font color="yellow">イカスミスパゲッティ
+</font>
+
+802
+00:21:25,680 --> 00:21:26,720
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Squid ink spaghetti!</font>
+</font>
+
+803
+00:21:26,819 --> 00:21:28,480
+<font color="yellow">イカスミスパゲッティ二つ
+</font>
+
+804
+00:21:26,970 --> 00:21:29,390
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Two squid ink spaghetti!</font>
+</font>
+
+805
+00:21:28,480 --> 00:21:29,619
+<font color="yellow">イカスミスパゲッティ
+</font>
+
+806
+00:21:28,270 --> 00:21:29,940
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Squid ink spaghetti, please!</font>
+</font>
+
+807
+00:21:29,619 --> 00:21:31,079
+<font color="yellow">イカスミ持ち帰りで
+</font>
+
+808
+00:21:29,940 --> 00:21:31,480
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Squid ink spaghetti to go!</font>
+</font>
+00:21:29,390 --> 00:21:30,810
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Squid ink spaghetti!</font>
+</font>
+
+809
+00:21:30,810 --> 00:21:31,480
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Squid ink spaghetti!</font>
+</font>
+
+810
+00:21:31,420 --> 00:21:33,180
+<font color="yellow">大好評ね
+</font>
+00:21:31,079 --> 00:21:31,420
+<font color="yellow">イカスタ
+</font>
+
+811
+00:21:31,690 --> 00:21:33,230
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">It's become popular, hasn't it?</font>
+</font>
+
+812
+00:21:33,619 --> 00:21:35,680
+<font color="yellow">何も知らない客にはな
+</font>
+00:21:33,180 --> 00:21:33,619
+<font color="yellow">うん
+</font>
+
+813
+00:21:33,980 --> 00:21:36,150
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">For the customers who don't know the truth, yeah.</font>
+</font>
+00:21:33,230 --> 00:21:33,980
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Yes.</font>
+</font>
+
+814
+00:21:37,539 --> 00:21:40,659
+<font color="yellow">おいあと4人前な
+</font>
+
+815
+00:21:37,230 --> 00:21:39,990
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Hey, four more please.</font>
+</font>
+
+816
+00:21:40,659 --> 00:21:44,500
+<font color="yellow">持ってないでけそ
+</font>
+
+817
+00:21:42,780 --> 00:21:44,700
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">It's not coming out anymore...</font>
+</font>
+
+818
+00:21:44,500 --> 00:21:48,139
+<font color="yellow">もうこんな搾取ばかりのところにはいられないでけそ
+</font>
+
+819
+00:21:44,700 --> 00:21:48,450
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I'm not going to stay here getting exploited like this!</font>
+</font>
+
+820
+00:21:48,139 --> 00:21:51,619
+<font color="yellow">イカ娘ちゃんお願いね
+</font>
+
+821
+00:21:48,910 --> 00:21:50,620
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Ika Musume!</font>
+</font>
+
+822
+00:21:50,620 --> 00:21:51,460
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Pretty please.</font>
+</font>
+
+823
+00:21:51,619 --> 00:21:54,319
+<font color="yellow">お客様が待ってるの
+</font>
+
+824
+00:21:52,250 --> 00:21:54,250
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Our customers are waiting.</font>
+</font>
+
+825
+00:21:54,319 --> 00:21:58,680
+<font color="yellow">はいいいでけそ
+</font>
+
+826
+00:21:56,750 --> 00:21:58,760
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Yes, okay!</font>
+</font>
+
+827
+00:21:58,680 --> 00:22:06,579
+<font color="yellow">誰が一番怖いか
+</font>
+
+828
+00:22:04,850 --> 00:22:09,310
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I guess she finally found out who the scariest one really is.</font>
+</font>
+
+829
+00:22:07,380 --> 00:22:09,380
+<font color="yellow">ようやく悟ったようだな
+</font>
+00:22:07,139 --> 00:22:07,379
+<font color="yellow">はい
+</font>
+
+830
+00:22:10,100 --> 00:22:15,900
+<font color="#FFFFFF"><font face="Underwater Love" size="40" color="#ebf8f9">{↑}waratteiru ima ga itooshikute</font>
+</font>
+00:22:10,100 --> 00:22:15,900
+<font color="#FFFFFF"><font face="EFN Blackout" size="50" color="#ebf8f9">I'll treasure this moment, as I smiled</font>
+</font>
+
+831
+00:22:16,480 --> 00:22:22,110
+<font color="#FFFFFF"><font face="Underwater Love" size="40" color="#ebf8f9">{↑}hitori ja nai to omotta</font>
+</font>
+00:22:16,480 --> 00:22:22,110
+<font color="#FFFFFF"><font face="EFN Blackout" size="50" color="#ebf8f9">when I thought I wasn't alone</font>
+</font>
+
+832
+00:22:28,910 --> 00:22:32,580
+<font color="#FFFFFF"><font face="Underwater Love" size="40" color="#ebf8f9">{↑}hajimari wa subete guuzen de</font>
+</font>
+00:22:28,910 --> 00:22:32,580
+<font color="#FFFFFF"><font face="EFN Blackout" size="50" color="#ebf8f9">It all started by coincidence</font>
+</font>
+
+833
+00:22:34,790 --> 00:22:38,590
+<font color="#FFFFFF"><font face="Underwater Love" size="40" color="#ebf8f9">{↑}sore wa kiseki no meguriai</font>
+</font>
+00:22:34,790 --> 00:22:38,590
+<font color="#FFFFFF"><font face="EFN Blackout" size="50" color="#ebf8f9">That encounter was a miracle</font>
+</font>
+
+834
+00:22:37,380 --> 00:23:07,360
+<font color="yellow">ご視聴ありがとうございました
+</font>
+
+835
+00:22:40,960 --> 00:22:45,590
+<font color="#FFFFFF"><font face="EFN Blackout" size="50" color="#ebf8f9">I fumbled when we first met</font>
+</font>
+00:22:40,920 --> 00:22:45,640
+<font color="#FFFFFF"><font face="Underwater Love" size="40" color="#ebf8f9">{↑}deatta koro wa tesaguri de</font>
+</font>
+
+836
+00:22:46,140 --> 00:22:51,350
+<font color="#FFFFFF"><font face="Underwater Love" size="40" color="#ebf8f9">{↑}Demo kawasu kotoba ga ureshikute</font>
+</font>
+00:22:46,140 --> 00:22:51,350
+<font color="#FFFFFF"><font face="EFN Blackout" size="50" color="#ebf8f9">But I was happy just to exchange a few words</font>
+</font>
+
+837
+00:22:52,890 --> 00:22:56,900
+<font color="#FFFFFF"><font face="Underwater Love" size="40" color="#ebf8f9">{↑}dareka ga jibun no namae wo yobu</font>
+</font>
+00:22:52,890 --> 00:22:56,900
+<font color="#FFFFFF"><font face="EFN Blackout" size="50" color="#ebf8f9">Someone calls my name</font>
+</font>
+
+838
+00:22:57,730 --> 00:23:03,400
+<font color="#FFFFFF"><font face="Underwater Love" size="40" color="#ebf8f9">{↑}atarashii sekai ga mawari hajimeru</font>
+</font>
+00:22:57,730 --> 00:23:03,400
+<font color="#FFFFFF"><font face="EFN Blackout" size="50" color="#ebf8f9">And a new world begins to turn</font>
+</font>
+
+839
+00:23:04,150 --> 00:23:06,990
+<font color="#FFFFFF"><font face="Underwater Love" size="40" color="#ebf8f9">{↑}deatta koto</font>
+</font>
+00:23:04,150 --> 00:23:06,990
+<font color="#FFFFFF"><font face="EFN Blackout" size="50" color="#ebf8f9">Meeting each other</font>
+</font>
+
+840
+00:23:06,990 --> 00:23:10,080
+<font color="#FFFFFF"><font face="Underwater Love" size="40" color="#ebf8f9">{↑}shinjiru koto</font>
+</font>
+00:23:06,990 --> 00:23:10,080
+<font color="#FFFFFF"><font face="EFN Blackout" size="50" color="#ebf8f9">Trusting each other</font>
+</font>
+
+841
+00:23:07,380 --> 00:23:37,360
+<font color="yellow">ご視聴ありがとうございました
+</font>
+
+842
+00:23:10,080 --> 00:23:13,080
+<font color="#FFFFFF"><font face="Underwater Love" size="40" color="#ebf8f9">{↑}atarimae no you de</font>
+</font>
+00:23:10,080 --> 00:23:13,040
+<font color="#FFFFFF"><font face="EFN Blackout" size="50" color="#ebf8f9">It all seems so obvious</font>
+</font>
+
+843
+00:23:13,080 --> 00:23:16,120
+<font color="#FFFFFF"><font face="EFN Blackout" size="50" color="#ebf8f9">that it's difficult</font>
+</font>
+00:23:13,040 --> 00:23:16,120
+<font color="#FFFFFF"><font face="Underwater Love" size="40" color="#ebf8f9">{↑}sore ga muzukashii</font>
+</font>
+
+844
+00:23:16,120 --> 00:23:21,880
+<font color="#FFFFFF"><font face="Underwater Love" size="40" color="#ebf8f9">{↑}waratteiru ima ga itooshikute</font>
+</font>
+00:23:16,120 --> 00:23:21,880
+<font color="#FFFFFF"><font face="EFN Blackout" size="50" color="#ebf8f9">I'll treasure this moment, as I smiled</font>
+</font>
+
+845
+00:23:22,510 --> 00:23:27,590
+<font color="#FFFFFF"><font face="Underwater Love" size="40" color="#ebf8f9">{↑}hitori ja nai to omotta</font>
+</font>
+00:23:22,510 --> 00:23:27,590
+<font color="#FFFFFF"><font face="EFN Blackout" size="50" color="#ebf8f9">when I thought I wasn't alone</font>
+</font>
+
+846
+00:23:37,380 --> 00:24:07,360
+<font color="yellow">ご視聴ありがとうございました
+</font>
+
+847
+00:23:42,190 --> 00:23:44,950
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I'm a messenger from the sea, Ika Musume!</font>
+</font>
+
+848
+00:23:44,950 --> 00:23:45,860
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">Next time:</font>
+</font>
+
+849
+00:23:45,860 --> 00:23:54,960
+<font color="#FFFFFF"><font face="ScalaSans" size="75" color="#f6fff8"><b>{↙}Won't You Play?</b></font>
+</font>
+00:23:45,860 --> 00:23:54,960
+<font color="#FFFFFF"><font face="ScalaSans" size="75" color="#f6fff8"><b>{↙}Won't You Celebrate?</b></font>
+</font>
+00:23:45,860 --> 00:23:54,960
+<font color="#FFFFFF"><font face="ScalaSans" size="75" color="#f6fff8"><b>{↙}Aren't You My Companion?</b></font>
+</font>
+00:23:45,860 --> 00:23:47,530
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">"Aren't You My Companion?"</font>
+</font>
+
+850
+00:23:47,530 --> 00:23:49,120
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">"Won't You Celebrate?"</font>
+</font>
+
+851
+00:23:49,120 --> 00:23:50,830
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">"Won't You Play?"</font>
+</font>
+
+852
+00:23:50,830 --> 00:23:53,830
+<font color="#FFFFFF"><font face="@Adobe Heiti Std R" size="45" color="#e6f6fe">I'll subdue you if you don't watch it!</font>
+</font>
