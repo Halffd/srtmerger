@@ -1,0 +1,4 @@
+2025-01-24 02:46:18,512 - SubtitleMerger - INFO - GUI initialized successfully
+2025-01-24 02:47:37,002 - SubtitleMerger - DEBUG - Attempting to browse for directory...
+2025-01-24 02:48:03,351 - SubtitleMerger - DEBUG - Directory set: /home/half-arch/Documents/Subs/Onii-chan wa Oshimai! v2
+2025-01-24 02:48:12,807 - SubtitleMerger - ERROR - Error starting batch merge: No matching pairs found to merge!

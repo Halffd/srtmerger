@@ -1,0 +1,9 @@
+2025-01-24 02:03:36,269 - SubtitleMerger - INFO - GUI initialized successfully
+2025-01-24 02:03:36,269 - SubtitleMerger - ERROR - directory_entry is not initialized during init_ui!
+2025-01-24 02:03:48,633 - SubtitleMerger - DEBUG - Attempting to browse for directory...
+2025-01-24 02:03:48,634 - SubtitleMerger - ERROR - directory_entry is not initialized.
+2025-01-24 02:03:56,002 - SubtitleMerger - DEBUG - Attempting to browse for directory...
+2025-01-24 02:03:56,002 - SubtitleMerger - ERROR - directory_entry is not initialized.
+2025-01-24 02:03:56,353 - SubtitleMerger - DEBUG - Attempting to browse for directory...
+2025-01-24 02:03:56,353 - SubtitleMerger - ERROR - directory_entry is not initialized.
+2025-01-24 02:04:04,473 - SubtitleMerger - INFO - Application closing
