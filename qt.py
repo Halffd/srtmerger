@@ -11,10 +11,13 @@ from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
                             QHBoxLayout, QLabel, QLineEdit, QPushButton, 
                             QComboBox, QTextEdit, QFileDialog, QFrame, 
                             QGroupBox, QCheckBox, QTabWidget, QSlider,
-                            QSpinBox, QGridLayout, QMessageBox, QColorDialog)
-from PyQt6.QtCore import Qt, QRegularExpression, pyqtSignal, QThread
+                            QSpinBox, QGridLayout, QMessageBox, QColorDialog,
+                            QScrollArea, QScrollBar)
+from PyQt6.QtCore import Qt, QRegularExpression, pyqtSignal, QThread, QEvent
 from PyQt6.QtGui import QRegularExpressionValidator, QTextCursor
-from main import Merger
+from main import Merger, COLORS
+import json
+import shutil
 
 WHITE = '#FFFFFF'
 BLUE = '#0000FF'
@@ -30,23 +33,16 @@ class EpisodeMatch:
 
 class QTextEditLogger(logging.Handler):
     """Custom logging handler that writes to a QTextEdit widget."""
-    def __init__(self, widget: QTextEdit):
+    def __init__(self, widget):
         super().__init__()
         self.widget = widget
-        self.widget.setReadOnly(True)
-        formatter = logging.Formatter(
-            '%(asctime)s - %(levelname)s - %(message)s',
-            datefmt='%Y-%m-%d %H:%M:%S'
-        )
-        self.setFormatter(formatter)
 
     def emit(self, record):
-        msg = self.format(record)
-        self.widget.append(msg)
-        # Auto-scroll to bottom
-        cursor = self.widget.textCursor()
-        cursor.movePosition(QTextCursor.MoveOperation.End)
-        self.widget.setTextCursor(cursor)
+        try:
+            msg = self.format(record)
+            self.widget.append(msg)
+        except Exception as e:
+            print(f"Error writing to log widget: {e}", file=sys.stderr)
 
 class MergeWorker(QThread):
     """Worker thread for handling subtitle merging operations."""
@@ -191,363 +187,1237 @@ class EpisodeRangeSelector(QWidget):
             (self.start_spin.value(), self.end_spin.value())
             if self.enable_range.isChecked() else None
         )
-class SubtitleMergerGUI(QMainWindow):
-    """Main application window for the Subtitle Merger GUI."""
+
+class BaseTab(QWidget):
+    """Base class for tabs with common functionality."""
     
-    def __init__(self):
-        super().__init__()
-        self.merge_worker = None
+    def __init__(self, parent=None):
+        super().__init__(parent)
         
-        # Create log text area first
-        self.log_text_area = QTextEdit()
-        self.log_text_area.setReadOnly(True)
+        # Create config directory in the application folder
+        self.config_dir = Path(__file__).parent / 'conf'
+        self.config_dir.mkdir(exist_ok=True)
         
-        # Now setup logging and UI
+        # Define settings and log file paths
+        self.settings_file = self.config_dir / 'configs.json'
+        self.log_file = self.config_dir / 'subtitle_merger.log'
+        
+        # Setup logging first
         self.setup_logging()
-        self.init_ui()
-        
-    def setup_logging(self):
-        """Initialize logging configuration."""
         self.logger = logging.getLogger('SubtitleMerger')
-        self.logger.setLevel(logging.DEBUG)
         
-        # Create logs directory if it doesn't exist
-        log_dir = Path('logs')
-        log_dir.mkdir(exist_ok=True)
+        # Load settings before UI setup
+        self.settings = self.load_settings()
         
-        # File handler
-        log_file = log_dir / f'subtitle_merger_{datetime.now():%Y%m%d_%H%M%S}.log'
-        file_handler = logging.FileHandler(log_file)
-        file_handler.setLevel(logging.DEBUG)
-        file_formatter = logging.Formatter(
-            '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-        )
-        file_handler.setFormatter(file_formatter)
-        self.logger.addHandler(file_handler)
+        # Create main layout
+        main_layout = QVBoxLayout()
+        self.setLayout(main_layout)
+        
+        # Create scroll area
+        scroll = QScrollArea()
+        scroll.setWidgetResizable(True)
+        scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
+        main_layout.addWidget(scroll)
+        
+        # Create content widget and its layout
+        content_widget = QWidget()
+        self.layout = QVBoxLayout(content_widget)
+        scroll.setWidget(content_widget)
+        
+        # Enable focus for key events
+        self.setFocusPolicy(Qt.FocusPolicy.StrongFocus)
+        
+        # Setup UI after settings are loaded
+        self.setup_ui()
 
-        # Add text log handler
-        self.text_log_handler = QTextEditLogger(self.log_text_area)
-        self.text_log_handler.setLevel(logging.INFO)
-        self.logger.addHandler(self.text_log_handler)
+    def setup_logging(self):
+        """Setup logging configuration."""
+        try:
+            self.logger = logging.getLogger('SubtitleMerger')
+            self.logger.setLevel(logging.DEBUG)
+            
+            # Create formatters
+            file_formatter = logging.Formatter(
+                '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+            )
+            console_formatter = logging.Formatter(
+                '%(levelname)s: %(message)s'
+            )
+            
+            # File handler
+            try:
+                file_handler = logging.FileHandler(self.log_file)
+                file_handler.setLevel(logging.DEBUG)
+                file_handler.setFormatter(file_formatter)
+            except Exception as e:
+                print(f"Error setting up file handler: {e}", file=sys.stderr)
+                file_handler = None
+            
+            # Console handler (stderr)
+            console_handler = logging.StreamHandler(sys.stderr)
+            console_handler.setLevel(logging.INFO)
+            console_handler.setFormatter(console_formatter)
+            
+            # Clear existing handlers
+            self.logger.handlers.clear()
+            
+            # Add handlers
+            if file_handler:
+                self.logger.addHandler(file_handler)
+            self.logger.addHandler(console_handler)
+            
+            # Store handlers to add text widget handler later
+            self.file_handler = file_handler
+            self.console_handler = console_handler
+            self.log_formatter = file_formatter
+            
+        except Exception as e:
+            print(f"Error setting up logging: {e}", file=sys.stderr)
 
-    def log_message(self, message):
-        """Log a message to both file and text area."""
-        self.logger.info(message)
+    def eventFilter(self, obj, event):
+        """Handle scroll events with specific modifiers."""
+        if event.type() == QEvent.Type.Wheel:
+            modifiers = event.modifiers()
+            
+            # Block scrollbar scrolling when any modifier is pressed
+            if modifiers & (Qt.KeyboardModifier.ControlModifier |
+                          Qt.KeyboardModifier.ShiftModifier |
+                          Qt.KeyboardModifier.AltModifier |
+                          Qt.KeyboardModifier.MetaModifier):
+                
+                # If Ctrl is pressed, handle scaling
+                if modifiers & Qt.KeyboardModifier.ControlModifier:
+                    delta = event.angleDelta().y()
+                    if delta > 0:
+                        self.adjust_scale(25)
+                        self.logger.debug(f"Scale increased to {self.scale_slider.value()}%")
+                    elif delta < 0:
+                        self.adjust_scale(-25)
+                        self.logger.debug(f"Scale decreased to {self.scale_slider.value()}%")
+                
+                # If Meta (Win) is pressed and the target is a QComboBox, change its index
+                if modifiers & Qt.KeyboardModifier.MetaModifier and isinstance(obj, QComboBox):
+                    delta = event.angleDelta().y()
+                    current_index = obj.currentIndex()
+                    if delta > 0 and current_index > 0:
+                        obj.setCurrentIndex(current_index - 1)
+                    elif delta < 0 and current_index < obj.count() - 1:
+                        obj.setCurrentIndex(current_index + 1)
+                
+                return True
+            
+            # Only allow scrolling when the mouse is over the scrollbar
+            if isinstance(obj, QScrollBar):
+                return False  # Allow the scroll event
+            else:
+                return True  # Block the scroll event
+                
+        return super().eventFilter(obj, event)
 
-    def log_error(self, message):
-        """Log an error message to both file and text area."""
-        self.logger.error(message) 
-    def init_ui(self):
-        """Initialize the user interface."""
-        self.setWindowTitle("Subtitle Merger")
-        self.setMinimumSize(800, 800)
+    def adjust_scale(self, delta: int):
+        """Adjust scale by the given delta."""
+        new_value = self.scale_slider.value() + delta
+        new_value = max(10, min(500, new_value))  # Clamp between 10 and 500
+        self.scale_slider.setValue(new_value)
+        self.scale_input.setValue(new_value)
+        self.update_scale(new_value)
+        self.logger.debug(f"Scale adjusted to {new_value}%")
 
-        central_widget = QWidget()
-        self.setCentralWidget(central_widget)
-        main_layout = QVBoxLayout(central_widget)
+    def on_scale_changed(self, value: int):
+        """Handle scale changes from either slider or input."""
+        # Update both controls without triggering recursion
+        if self.sender() == self.scale_slider:
+            self.scale_input.setValue(value)
+        else:
+            self.scale_slider.setValue(value)
+        self.update_scale(value)
+        self.logger.debug(f"Scale changed to {value}%")
+        self.save_settings()  # Save immediately
 
-        # Create tabs
-        tab_widget = QTabWidget()
-        main_layout.addWidget(tab_widget)
+    def update_scale(self, value):
+        """Update the font scale."""
+        scale_factor = value / 100.0
+        
+        # Get the application instance
+        app = QApplication.instance()
+        
+        # Get the default font
+        font = app.font()
+        
+        # Calculate the new point size
+        base_size = 10  # Base font size
+        new_size = int(base_size * scale_factor)
+        
+        # Set the new font size
+        font.setPointSize(new_size)
+        
+        # Apply the font to the application
+        app.setFont(font)
+        
+        # Update stylesheet with new sizes
+        self.setStyleSheet(f"""
+            QWidget {{
+                background-color: #2b2b2b;
+                color: #ffffff;
+                font-size: {new_size}pt;
+            }}
+            QLineEdit, QTextEdit, QComboBox, QSpinBox {{
+                background-color: #3b3b3b;
+                border: 1px solid #555555;
+                padding: {int(5 * scale_factor)}px;
+                font-size: {new_size}pt;
+            }}
+            QPushButton {{
+                background-color: #444444;
+                border: 1px solid #555555;
+                padding: {int(5 * scale_factor)}px {int(10 * scale_factor)}px;
+                font-size: {new_size}pt;
+                min-height: {int(25 * scale_factor)}px;
+            }}
+            QPushButton:hover {{
+                background-color: #4f4f4f;
+            }}
+            QPushButton:pressed {{
+                background-color: #353535;
+            }}
+            QCheckBox {{
+                spacing: {int(5 * scale_factor)}px;
+                font-size: {new_size}pt;
+            }}
+            QCheckBox::indicator {{
+                width: {int(20 * scale_factor)}px;
+                height: {int(20 * scale_factor)}px;
+                background-color: #3b3b3b;
+                border: 1px solid #555555;
+            }}
+            QCheckBox::indicator:checked {{
+                background-color: #4f4f4f;
+                image: url(check.png);
+            }}
+            QCheckBox::indicator:hover {{
+                border-color: #666666;
+            }}
+            QGroupBox {{
+                border: 1px solid #555555;
+                margin-top: {int(20 * scale_factor)}px;
+                font-size: {new_size}pt;
+                padding-top: {int(10 * scale_factor)}px;
+            }}
+            QGroupBox::title {{
+                subcontrol-origin: margin;
+                left: {int(10 * scale_factor)}px;
+                padding: {int(3 * scale_factor)}px {int(5 * scale_factor)}px;
+            }}
+            QScrollBar:vertical {{
+                border: none;
+                background: #2b2b2b;
+                width: {int(14 * scale_factor)}px;
+                margin: {int(15 * scale_factor)}px 0;
+            }}
+            QScrollBar::handle:vertical {{
+                background: #444444;
+                min-height: {int(30 * scale_factor)}px;
+            }}
+            QScrollBar::handle:vertical:hover {{
+                background: #4f4f4f;
+            }}
+            QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {{
+                border: none;
+                background: none;
+            }}
+            QLabel {{
+                line-height: 130%;
+                font-size: {new_size}pt;
+            }}
+            QComboBox {{
+                padding: {int(5 * scale_factor)}px;
+                font-size: {new_size}pt;
+                min-height: {int(25 * scale_factor)}px;
+            }}
+            QSpinBox {{
+                padding: {int(5 * scale_factor)}px;
+                font-size: {new_size}pt;
+                min-height: {int(25 * scale_factor)}px;
+            }}
+            QComboBox::drop-down {{
+                border: none;
+                width: {int(20 * scale_factor)}px;
+            }}
+            QComboBox::down-arrow {{
+                width: {int(12 * scale_factor)}px;
+                height: {int(12 * scale_factor)}px;
+            }}
+            QSpinBox::up-button, QSpinBox::down-button {{
+                width: {int(20 * scale_factor)}px;
+            }}
+        """)
 
-        single_files_tab = QWidget()
-        directory_tab = QWidget()
-        tab_widget.addTab(single_files_tab, "Single Files")
-        tab_widget.addTab(directory_tab, "Directory")
+    def setup_dark_theme(self):
+        """Apply dark theme to the application."""
+        self.setStyleSheet("""
+            QWidget {
+                background-color: #2b2b2b;
+                color: #ffffff;
+            }
+            QLineEdit, QTextEdit, QComboBox, QSpinBox {
+                background-color: #3b3b3b;
+                border: 1px solid #555555;
+                padding: 5px;
+            }
+            QPushButton {
+                background-color: #444444;
+                border: 1px solid #555555;
+                padding: 5px 10px;
+            }
+            QPushButton:hover {
+                background-color: #4f4f4f;
+            }
+            QPushButton:pressed {
+                background-color: #353535;
+            }
+            QGroupBox {
+                border: 1px solid #555555;
+                margin-top: 1em;
+            }
+            QGroupBox::title {
+                subcontrol-origin: margin;
+                left: 10px;
+                padding: 0 3px;
+            }
+            QScrollBar:vertical {
+                border: none;
+                background: #2b2b2b;
+                width: 14px;
+                margin: 15px 0 15px 0;
+            }
+            QScrollBar::handle:vertical {
+                background: #444444;
+                min-height: 30px;
+            }
+            QScrollBar::handle:vertical:hover {
+                background: #4f4f4f;
+            }
+            QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+                border: none;
+                background: none;
+            }
+            QLabel {
+                line-height: 130%;
+            }
+        """)
 
-        # Setup tabs
-        self.setup_single_files_tab(single_files_tab)
-        self.setup_directory_tab(directory_tab)  # Ensure this is called
+    def setup_ui(self):
+        """Setup the base UI elements common to all tabs."""
+        # Scale selection (moved to top)
+        self.setup_scale_selection()
+        
+        # Add subtitle font size controls
+        self.setup_subtitle_sizes()
+        
+        # Color selection
+        self.setup_color_selection()
+        
+        # Codec selection
+        self.setup_codec_selection()
+        
+        # Options section
+        self.setup_options()
+        
+        # Add stretch to push log section to bottom
+        self.layout.addStretch()
+        
+        # Log section (moved to bottom)
+        self.setup_log_section()
+        
+        # Install event filter on combo boxes
+        for combo in self.findChildren(QComboBox):
+            combo.installEventFilter(self)
 
-        self.logger.info("GUI initialized successfully")
+    def setup_scale_selection(self):
+        """Setup scale selection group."""
+        scale_group = QGroupBox("UI Scale")
+        scale_layout = QVBoxLayout()
+        scale_layout.setSpacing(10)
+        
+        # Add description
+        description = QLabel("Adjust the size of the text:")
+        description.setWordWrap(True)
+        scale_layout.addWidget(description)
+        
+        # Controls layout
+        controls_layout = QHBoxLayout()
+        
+        # Decrease button
+        decrease_btn = QPushButton("-")
+        decrease_btn.setFixedWidth(40)
+        decrease_btn.clicked.connect(lambda: self.adjust_scale(-25))
+        controls_layout.addWidget(decrease_btn)
+        
+        # Scale slider
+        self.scale_slider = QSlider(Qt.Orientation.Horizontal)
+        self.scale_slider.setMinimum(10)
+        self.scale_slider.setMaximum(500)
+        self.scale_slider.setValue(375)  # Default to 375%
+        self.scale_slider.setTickPosition(QSlider.TickPosition.TicksBelow)
+        self.scale_slider.setTickInterval(25)
+        controls_layout.addWidget(self.scale_slider)
+        
+        # Increase button
+        increase_btn = QPushButton("+")
+        increase_btn.setFixedWidth(40)
+        increase_btn.clicked.connect(lambda: self.adjust_scale(25))
+        controls_layout.addWidget(increase_btn)
+        
+        # Scale input
+        self.scale_input = QSpinBox()
+        self.scale_input.setMinimum(10)
+        self.scale_input.setMaximum(500)
+        self.scale_input.setValue(375)
+        self.scale_input.setSuffix("%")
+        self.scale_input.setFixedWidth(80)
+        controls_layout.addWidget(self.scale_input)
+        
+        scale_layout.addLayout(controls_layout)
+        scale_group.setLayout(scale_layout)
+        
+        # Add scale group to the top of the layout
+        self.layout.insertWidget(0, scale_group)
+        
+        # Connect signals
+        self.scale_slider.valueChanged.connect(self.on_scale_changed)
+        self.scale_input.valueChanged.connect(self.on_scale_changed)
+        
+        # Set initial value from settings
+        initial_scale = self.settings.get('ui_scale', 375)
+        self.scale_slider.setValue(initial_scale)
+        self.scale_input.setValue(initial_scale)
+        self.update_scale(initial_scale)
 
-        # Ensure dir_entry is initialized at this point
-        if not hasattr(self, 'dir_entry'):
-            self.logger.error("dir_entry is not initialized during init_ui!")
-    def setup_directory_tab(self, tab):
-        """Set up the directory processing tab."""
-        layout = QVBoxLayout(tab)
+    def setup_subtitle_sizes(self):
+        """Setup font size controls for both subtitles."""
+        size_group = QGroupBox("Subtitle Font Sizes")
+        size_layout = QVBoxLayout()
+        
+        # Subtitle 1 size
+        sub1_size_layout = QHBoxLayout()
+        sub1_size_layout.addWidget(QLabel("Subtitle 1 Size:"))
+        
+        self.sub1_font_slider = QSlider(Qt.Orientation.Horizontal)
+        self.sub1_font_slider.setMinimum(8)
+        self.sub1_font_slider.setMaximum(72)
+        self.sub1_font_slider.setValue(self.settings.get('sub1_font_size', 16))
+        self.sub1_font_slider.setTickPosition(QSlider.TickPosition.TicksBelow)
+        self.sub1_font_slider.setTickInterval(4)
+        
+        self.sub1_font_spinbox = QSpinBox()
+        self.sub1_font_spinbox.setMinimum(8)
+        self.sub1_font_spinbox.setMaximum(72)
+        self.sub1_font_spinbox.setValue(self.settings.get('sub1_font_size', 16))
+        self.sub1_font_spinbox.setSuffix("px")
+        
+        sub1_size_layout.addWidget(self.sub1_font_slider)
+        sub1_size_layout.addWidget(self.sub1_font_spinbox)
+        size_layout.addLayout(sub1_size_layout)
+        
+        # Subtitle 2 size
+        sub2_size_layout = QHBoxLayout()
+        sub2_size_layout.addWidget(QLabel("Subtitle 2 Size:"))
+        
+        self.sub2_font_slider = QSlider(Qt.Orientation.Horizontal)
+        self.sub2_font_slider.setMinimum(8)
+        self.sub2_font_slider.setMaximum(72)
+        self.sub2_font_slider.setValue(self.settings.get('sub2_font_size', 16))
+        self.sub2_font_slider.setTickPosition(QSlider.TickPosition.TicksBelow)
+        self.sub2_font_slider.setTickInterval(4)
+        
+        self.sub2_font_spinbox = QSpinBox()
+        self.sub2_font_spinbox.setMinimum(8)
+        self.sub2_font_spinbox.setMaximum(72)
+        self.sub2_font_spinbox.setValue(self.settings.get('sub2_font_size', 16))
+        self.sub2_font_spinbox.setSuffix("px")
+        
+        sub2_size_layout.addWidget(self.sub2_font_slider)
+        sub2_size_layout.addWidget(self.sub2_font_spinbox)
+        size_layout.addLayout(sub2_size_layout)
+        
+        # Connect signals
+        self.sub1_font_slider.valueChanged.connect(self.sub1_font_spinbox.setValue)
+        self.sub1_font_spinbox.valueChanged.connect(self.sub1_font_slider.setValue)
+        self.sub2_font_slider.valueChanged.connect(self.sub2_font_spinbox.setValue)
+        self.sub2_font_spinbox.valueChanged.connect(self.sub2_font_slider.setValue)
+        
+        # Connect to settings save
+        self.sub1_font_slider.valueChanged.connect(lambda v: self.save_value_to_settings('sub1_font_size', v))
+        self.sub2_font_slider.valueChanged.connect(lambda v: self.save_value_to_settings('sub2_font_size', v))
+        
+        size_group.setLayout(size_layout)
+        self.layout.addWidget(size_group)
 
-        # Directory selection
-        dir_group = QGroupBox("Input Directory")
-        dir_layout = QHBoxLayout()
-        self.dir_entry = QLineEdit()
-        browse_dir_button = QPushButton("Browse")
-        browse_dir_button.clicked.connect(self.browse_directory)
-        dir_layout.addWidget(self.dir_entry)
-        dir_layout.addWidget(browse_dir_button)
-        dir_group.setLayout(dir_layout)
-        layout.addWidget(dir_group)
-        # Create color selection
+    def setup_color_selection(self):
+        """Setup color selection group."""
         color_group = QGroupBox("Color Selection")
         color_layout = QVBoxLayout()
         
-        # Create color combo box with more colors
+        # Add description
+        description = QLabel("Select the color for the first subtitle track:")
+        description.setWordWrap(True)
+        color_layout.addWidget(description)
+        
+        # Color selection row
+        color_row = QHBoxLayout()
+        
+        # Color combo
         self.color_combo = QComboBox()
         self.color_combo.addItems([
-            "White", "Black", "Red", "Green", "Blue", "Yellow", "Cyan", 
-            "Magenta", "Gray", "Orange", "Purple", "Pink", "Brown",
-            "Navy", "Lime", "Teal", "Maroon"
+            "Yellow", "White", "Blue"  # Changed order to make Yellow default
         ])
+        self.color_combo.currentTextChanged.connect(self.update_color_preview)
+        color_row.addWidget(self.color_combo)
         
-        # Add color picker button
-        color_picker_btn = QPushButton("Custom Color...")
-        color_picker_btn.clicked.connect(lambda: self.color_combo.setCurrentText(
-            QColorDialog.getColor().name() if QColorDialog.getColor().isValid() else self.color_combo.currentText()
-        ))
+        # Color picker button with fixed width
+        color_picker_btn = QPushButton("...")
+        color_picker_btn.setFixedWidth(40)
+        color_picker_btn.setToolTip("Open custom color picker")
+        color_picker_btn.clicked.connect(self.on_color_picker_clicked)
+        color_row.addWidget(color_picker_btn)
         
-        color_layout.addWidget(QLabel("Select Color:"))
-        color_layout.addWidget(self.color_combo)
-        color_layout.addWidget(color_picker_btn)
+        # Color preview label
+        self.color_preview = QLabel()
+        self.color_preview.setFixedSize(30, 30)
+        color_row.addWidget(self.color_preview)
+        
+        color_layout.addLayout(color_row)
         color_group.setLayout(color_layout)
-        layout.addWidget(color_group)
-
-        # Create codec combo box
-        self.codec_combo = QComboBox()
-
-        # Add codec options
-        self.codec_combo.addItems(["H264", "H265", "VP9", "AV1"])
-        layout.addWidget(QLabel("Select Codec:"))
-        layout.addWidget(self.codec_combo)
-        # Output directory
-        output_dir_group = QGroupBox("Output Directory")
-        output_dir_layout = QHBoxLayout()
-        self.output_dir_entry = QLineEdit()
-        browse_output_dir_button = QPushButton("Browse")
-        browse_output_dir_button.clicked.connect(self.browse_output_directory)
-        output_dir_layout.addWidget(self.output_dir_entry)
-        output_dir_layout.addWidget(browse_output_dir_button)
-        output_dir_group.setLayout(output_dir_layout)
-        layout.addWidget(output_dir_group)
-        # Add missing attributes
-        self.log_text = self.log_text_area  # Alias for compatibility
+        self.layout.addWidget(color_group)
         
-        # Color combo box
-        self.color_combo = QComboBox()
-        self.color_combo.addItems(["White", "Red", "Green", "Blue", "Yellow", "Black"])
-        layout.addWidget(QLabel("Select Color:"))
-        layout.addWidget(self.color_combo)
+        # Set initial color from settings
+        initial_color = self.settings.get('color', 'Yellow')
+        index = self.color_combo.findText(initial_color)
+        if index >= 0:
+            self.color_combo.setCurrentIndex(index)
+        self.update_color_preview(initial_color)
 
-        # Codec combo box
+        # Connect color change to save settings
+        self.color_combo.currentTextChanged.connect(self.save_value_to_settings)
+
+    def setup_codec_selection(self):
+        """Setup codec selection."""
+        codec_group = QGroupBox("Subtitle Encoding")
+        codec_layout = QVBoxLayout()
+        
+        # Add description
+        description = QLabel("Select the encoding for the subtitle files:")
+        description.setWordWrap(True)
+        codec_layout.addWidget(description)
+        
         self.codec_combo = QComboBox()
-        self.codec_combo.addItems(["utf-8", "H264", "H265", "VP9"])
-        layout.addWidget(QLabel("Select Codec:"))
-        layout.addWidget(self.codec_combo)
-        # Process button
-        process_button = QPushButton("Process Directory")
-        process_button.clicked.connect(self.process_directory)
-        process_button.setMinimumHeight(40)
-        layout.addWidget(process_button)
-    # Create options section
-    def create_options_section(self, parent_layout):
-        """Create an options section with checkboxes and dropdown menus."""
+        self.codec_combo.addItems(["UTF-8", "Windows-1252"])
+        
+        codec_layout.addWidget(self.codec_combo)
+        codec_group.setLayout(codec_layout)
+        self.layout.addWidget(codec_group)
+        
+        # Set initial codec from settings
+        initial_codec = self.settings.get('codec', 'UTF-8')
+        index = self.codec_combo.findText(initial_codec)
+        if index >= 0:
+            self.codec_combo.setCurrentIndex(index)
+
+        # Connect codec change to save settings
+        self.codec_combo.currentTextChanged.connect(self.save_value_to_settings)
+
+    def setup_options(self):
+        """Setup options section."""
         options_group = QGroupBox("Options")
         options_layout = QVBoxLayout()
 
-        # Example checkboxes
         self.option_merge_subtitles = QCheckBox("Merge Subtitles Automatically")
-        self.option_merge_subtitles.setChecked(True)
+        self.option_merge_subtitles.setChecked(
+            self.settings.get('merge_automatically', True)
+        )
+        self.option_merge_subtitles.stateChanged.connect(self.save_value_to_settings)
+        
         self.option_generate_log = QCheckBox("Generate Log File")
-        self.option_generate_log.setChecked(False)
-
+        self.option_generate_log.setChecked(
+            self.settings.get('generate_log', False)
+        )
+        self.option_generate_log.stateChanged.connect(self.save_value_to_settings)
+        
         options_layout.addWidget(self.option_merge_subtitles)
         options_layout.addWidget(self.option_generate_log)
-
-        # Example dropdown for subtitle format
-        format_label = QLabel("Output Subtitle Format:")
-        self.format_dropdown = QComboBox()
-        self.format_dropdown.addItems(["SRT", "ASS", "VTT"])
-
-        options_layout.addWidget(format_label)
-        options_layout.addWidget(self.format_dropdown)
-
+        
         options_group.setLayout(options_layout)
-        parent_layout.addWidget(options_group)
-    def create_log_section(self, parent_layout):
-        """Create a section to display or manage logs."""
+        self.layout.addWidget(options_group)
+
+    def setup_log_section(self):
+        """Setup log section."""
+        # Define QTextEditHandler class
+        class QTextEditHandler(logging.Handler):
+            """Custom logging handler that writes to a QTextEdit widget."""
+            def __init__(self, widget):
+                super().__init__()
+                self.widget = widget
+
+            def emit(self, record):
+                try:
+                    msg = self.format(record)
+                    self.widget.append(msg)
+                except Exception as e:
+                    print(f"Error writing to log widget: {e}", file=sys.stderr)
+
         log_group = QGroupBox("Logs")
         log_layout = QVBoxLayout()
 
-        # Text area for displaying logs
-        self.log_text_area = QTextEdit()
-        self.log_text_area.setReadOnly(True)
-        self.log_text_area.setPlaceholderText("Logs will appear here...")
+        self.log_text = QTextEdit()
+        self.log_text.setReadOnly(True)
+        self.log_text.setPlaceholderText("Logs will appear here...")
+        
+        # Add text widget handler
+        text_handler = QTextEditHandler(self.log_text)
+        text_handler.setFormatter(self.log_formatter)
+        self.logger.addHandler(text_handler)
 
-        # Button to clear logs
         clear_log_button = QPushButton("Clear Logs")
         clear_log_button.clicked.connect(self.clear_logs)
 
-        log_layout.addWidget(self.log_text_area)
+        log_layout.addWidget(self.log_text)
         log_layout.addWidget(clear_log_button)
 
         log_group.setLayout(log_layout)
-        parent_layout.addWidget(log_group)
-
+        self.layout.addWidget(log_group)
+    
+    def on_color_picker_clicked(self):
+        """Handle custom color picker."""
+        color = QColorDialog.getColor()
+        if color.isValid():
+            hex_color = color.name().upper()
+            self.color_combo.addItem(hex_color)
+            self.color_combo.setCurrentText(hex_color)
+            self.update_color_preview(hex_color)
+            self.logger.info(f"Custom color selected: {hex_color}")
+            self.save_settings()  # Save immediately
+    
+    def update_color_preview(self, color_name: str):
+        """Update the color preview label."""
+        # Convert common color names to hex
+        color_map = {
+            "White": "#FFFFFF",
+            "Yellow": "#FFFF00",
+            "Blue": "#0000FF"
+        }
+        
+        # Get hex color value
+        color_hex = color_map.get(color_name, color_name)
+        
+        # Update preview
+        self.color_preview.setStyleSheet(
+            f"background-color: {color_hex}; border: 1px solid black;"
+        )
+    
     def clear_logs(self):
-        """Clear the log text area."""
-        self.log_text_area.clear()
+        """Clear both the log text area and optionally the log file."""
+        self.log_text.clear()
+    
+    def get_merger_args(self):
+        """Get common merger arguments."""
+        # Convert color names to hex values
+        color_map = {
+            "White": "#FFFFFF",
+            "Yellow": "#FFFF00",
+            "Blue": "#0000FF"
+        }
+        color = self.color_combo.currentText()
+        color_hex = color_map.get(color, color)
+        
+        return {
+            'color': color_hex,
+            'codec': self.codec_combo.currentText()
+        }
+
+    def load_settings(self) -> dict:
+        """Load settings from JSON file."""
+        default_settings = {
+            'ui_scale': 375,
+            'sub1_font_size': 16,
+            'sub2_font_size': 16,
+            'color': 'Yellow',
+            'codec': 'UTF-8',
+            'merge_automatically': True,
+            'generate_log': False,
+            'last_directory': str(Path.home()),
+            'last_video_directory': str(Path.home()),
+            'last_subtitle_directory': str(Path.home()),
+            'sub1_pattern': 'Nanako',
+            'sub2_pattern': 'smol.*Clean',
+            'sub1_episode_pattern': r'(\d+)(?:v\d+)? (?:\(1080p\)|END)',
+            'sub2_episode_pattern': r'S\d+E(\d+)',
+            'episode_pattern': r'\d+'  # Legacy support
+        }
+        
+        try:
+            if self.settings_file.exists():
+                with open(self.settings_file, 'r', encoding='utf-8') as f:
+                    settings = json.load(f)
+                    self.logger.debug("Settings loaded successfully")
+                    # Merge with defaults in case new settings were added
+                    return {**default_settings, **settings}
+            else:
+                self.logger.info("No settings file found, creating with defaults")
+                with open(self.settings_file, 'w', encoding='utf-8') as f:
+                    json.dump(default_settings, f, indent=4)
+                return default_settings
+                
+        except Exception as e:
+            self.logger.error(f"Error loading settings: {e}")
+            return default_settings
+
+    def save_settings(self):
+        """Save current settings to JSON file."""
+        try:
+            # Ensure config directory exists
+            self.config_dir.mkdir(exist_ok=True)
+            
+            settings = {
+                'ui_scale': self.scale_slider.value(),
+                'sub1_font_size': self.sub1_font_slider.value(),
+                'sub2_font_size': self.sub2_font_slider.value(),
+                'color': self.color_combo.currentText(),
+                'codec': self.codec_combo.currentText(),
+                'merge_automatically': self.option_merge_subtitles.isChecked(),
+                'generate_log': self.option_generate_log.isChecked(),
+                'last_directory': getattr(self, 'last_directory', str(Path.home())),
+                'last_video_directory': getattr(self, 'last_video_directory', str(Path.home())),
+                'last_subtitle_directory': getattr(self, 'last_subtitle_directory', str(Path.home())),
+                'sub1_pattern': self.sub1_pattern_entry.text(),
+                'sub2_pattern': self.sub2_pattern_entry.text(),
+                'sub1_episode_pattern': self.sub1_episode_pattern_entry.text(),
+                'sub2_episode_pattern': self.sub2_episode_pattern_entry.text()
+            }
+            
+            with open(self.settings_file, 'w', encoding='utf-8') as f:
+                json.dump(settings, f, indent=4)
+            self.logger.debug("Settings saved successfully")
+        except Exception as e:
+            self.logger.error(f"Error saving settings: {e}")
+
+    def save_value_to_settings(self, key: str, value: str):
+        """Save a specific value to settings."""
+        try:
+            self.settings[key] = value
+            with open(self.settings_file, 'w', encoding='utf-8') as f:
+                json.dump(self.settings, f, indent=4)
+            self.logger.debug(f"Saved {key} to settings")
+        except Exception as e:
+            self.logger.error(f"Error saving {key} to settings: {e}")
+
+class SingleFilesTab(BaseTab):
+    """Tab for processing single files."""
+    
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        
+    def setup_ui(self):
+        """Setup specific UI for single files tab."""
+        super().setup_ui()
+        
+        # File selection
+        file_group = QGroupBox("Input Files")
+        file_layout = QVBoxLayout()
+        
+        # First subtitle
+        sub1_layout = QHBoxLayout()
+        self.sub1_entry = QLineEdit()
+        browse_sub1_button = QPushButton("Browse Sub 1")
+        browse_sub1_button.clicked.connect(lambda: self.browse_file(self.sub1_entry, "Select First Subtitle"))
+        sub1_layout.addWidget(QLabel("Subtitle 1:"))
+        sub1_layout.addWidget(self.sub1_entry)
+        sub1_layout.addWidget(browse_sub1_button)
+        
+        # Second subtitle
+        sub2_layout = QHBoxLayout()
+        self.sub2_entry = QLineEdit()
+        browse_sub2_button = QPushButton("Browse Sub 2")
+        browse_sub2_button.clicked.connect(lambda: self.browse_file(self.sub2_entry, "Select Second Subtitle"))
+        sub2_layout.addWidget(QLabel("Subtitle 2:"))
+        sub2_layout.addWidget(self.sub2_entry)
+        sub2_layout.addWidget(browse_sub2_button)
+        
+        file_layout.addLayout(sub1_layout)
+        file_layout.addLayout(sub2_layout)
+        file_group.setLayout(file_layout)
+        
+        # Add to main layout at the top
+        self.layout.insertWidget(0, file_group)
+        
+        # Merge button
+        self.merge_button = QPushButton("Merge Subtitles")
+        self.merge_button.clicked.connect(self.merge_subtitles)
+        self.merge_button.setMinimumHeight(40)
+        self.layout.addWidget(self.merge_button)
+    
+    def browse_file(self, entry: QLineEdit, title: str):
+        """Browse for a subtitle file."""
+        file_path, _ = QFileDialog.getOpenFileName(
+            self, title, "", "Subtitle Files (*.srt);;All Files (*)"
+        )
+        if file_path:
+            entry.setText(file_path)
+    
+    def merge_subtitles(self):
+        """Merge the subtitle files."""
+        # Save all current values before merging
+        self.save_all_values()
+        
+        sub1_file = self.sub1_entry.text()
+        sub2_file = self.sub2_entry.text()
+        
+        if not all([sub1_file, sub2_file]):
+            self.logger.error("Please select all required files")
+            return
+        
+        try:
+            # Get color and font sizes
+            sub1_color = self.color_combo.currentText()
+            sub1_size = self.sub1_font_slider.value()
+            sub2_size = self.sub2_font_slider.value()
+            
+            # Create output path
+            output_path = Path(sub1_file).parent
+            base_name = Path(sub1_file).stem
+            
+            # Create merger instance
+            merger = Merger(
+                output_path=str(output_path),
+                output_name=f'{base_name}_merged.srt',
+                output_encoding=self.codec_combo.currentText()
+            )
+            
+            # Add first subtitle with color and size
+            merger.add(
+                sub1_file,
+                codec=self.codec_combo.currentText(),
+                color=sub1_color,
+                size=sub1_size,
+                top=False
+            )
+            
+            # Add second subtitle with size
+            merger.add(
+                sub2_file,
+                codec=self.codec_combo.currentText(),
+                color=COLORS['WHITE'],  # Now COLORS is defined
+                size=sub2_size,
+                top=True
+            )
+            
+            merger.merge()
+            self.logger.info(f"Successfully merged subtitles to: {output_path}")
+            
+        except Exception as e:
+            self.logger.error(f"Error during merge operation: {e}")
+    
+    def on_merge_completed(self):
+        """Handle completion of merge operation."""
+        self.merge_button.setEnabled(True)
+        self.merge_worker = None
+        self.log_text.append("Merge operation completed")
+
+    def save_all_values(self):
+        """Save all current values to settings file."""
+        try:
+            # Update all settings
+            self.settings.update({
+                # UI Scale
+                'ui_scale': self.scale_slider.value(),
+                
+                # Font sizes
+                'sub1_font_size': self.sub1_font_slider.value(),
+                'sub2_font_size': self.sub2_font_slider.value(),
+                
+                # Colors and codec
+                'color': self.color_combo.currentText(),
+                'codec': self.codec_combo.currentText(),
+                
+                # Options
+                'merge_automatically': self.option_merge_subtitles.isChecked(),
+                'generate_log': self.option_generate_log.isChecked(),
+                
+                # File paths
+                'last_sub1_file': self.sub1_entry.text(),
+                'last_sub2_file': self.sub2_entry.text(),
+                'last_output_file': self.output_entry.text(),
+                
+                # Directories
+                'last_directory': str(Path(self.sub1_entry.text()).parent) if self.sub1_entry.text() else str(Path.home()),
+                'last_video_directory': str(Path(self.sub2_entry.text()).parent) if self.sub2_entry.text() else str(Path.home())
+            })
+            
+            # Save to file
+            with open(self.settings_file, 'w', encoding='utf-8') as f:
+                json.dump(self.settings, f, indent=4)
+            self.logger.debug("All settings saved before merge operation")
+            
+        except Exception as e:
+            self.logger.error(f"Error saving all settings: {e}")
+
+class DirectoryTab(BaseTab):
+    """Tab for processing directories."""
+    
+    def __init__(self, parent=None):
+        # Default patterns for this specific case
+        self.sub1_pattern = 'Nanako'  # Filter for English subs
+        self.sub2_pattern = 'smol.*Clean'  # Filter for Japanese subs
+        self.sub1_episode_pattern = r'(\d+)(?:v\d+)? (?:\(1080p\)|END)'  # Get episode section from Nanako
+        self.sub2_episode_pattern = r'S\d+E(\d+)'  # Get episode section from smol
+        
+        # Now call parent init which will setup UI
+        super().__init__(parent)
+
+    def setup_ui(self):
+        """Setup specific UI for directory tab."""
+        # Call parent's setup_ui first to get all base controls
+        super().setup_ui()
+        
+        # Directory selection group
+        dir_group = QGroupBox("Directory Selection")
+        dir_layout = QVBoxLayout()
+
+        # Input directory
+        input_layout = QHBoxLayout()
+        input_layout.addWidget(QLabel("Subtitles Directory:"))
+        self.dir_entry = QLineEdit()
+        self.dir_entry.setText(self.settings.get('last_subtitle_directory', ''))  # Load saved path
+        self.dir_entry.textChanged.connect(lambda text: self.save_value_to_settings('last_subtitle_directory', text))
+        input_layout.addWidget(self.dir_entry)
+        browse_btn = QPushButton("Browse")
+        browse_btn.clicked.connect(self.browse_directory)
+        input_layout.addWidget(browse_btn)
+        dir_layout.addLayout(input_layout)
+
+        # Video directory
+        video_layout = QHBoxLayout()
+        video_layout.addWidget(QLabel("Videos Directory:"))
+        self.video_dir_entry = QLineEdit()
+        self.video_dir_entry.setText(self.settings.get('last_video_directory', ''))  # Load saved path
+        self.video_dir_entry.textChanged.connect(lambda text: self.save_value_to_settings('last_video_directory', text))
+        video_layout.addWidget(self.video_dir_entry)
+        video_browse_btn = QPushButton("Browse")
+        video_browse_btn.clicked.connect(self.browse_video_directory)
+        video_layout.addWidget(video_browse_btn)
+        dir_layout.addLayout(video_layout)
+
+        # Patterns group
+        patterns_group = QGroupBox("File Patterns")
+        patterns_layout = QVBoxLayout()
+        
+        # Filter patterns
+        filter_group = QGroupBox("Filter Patterns")
+        filter_layout = QVBoxLayout()
+        
+        # Sub1 filter pattern
+        sub1_filter_layout = QHBoxLayout()
+        sub1_filter_layout.addWidget(QLabel("Sub1 Filter:"))
+        self.sub1_pattern_entry = QLineEdit(self.settings.get('sub1_pattern', self.sub1_pattern))
+        self.sub1_pattern_entry.setToolTip("Pattern to identify Sub1 files (e.g., 'Nanako')")
+        self.sub1_pattern_entry.textChanged.connect(lambda text: self.save_value_to_settings('sub1_pattern', text))
+        sub1_filter_layout.addWidget(self.sub1_pattern_entry)
+        filter_layout.addLayout(sub1_filter_layout)
+        
+        # Sub2 filter pattern
+        sub2_filter_layout = QHBoxLayout()
+        sub2_filter_layout.addWidget(QLabel("Sub2 Filter:"))
+        self.sub2_pattern_entry = QLineEdit(self.settings.get('sub2_pattern', self.sub2_pattern))
+        self.sub2_pattern_entry.setToolTip("Pattern to identify Sub2 files (e.g., 'smol.*Clean')")
+        self.sub2_pattern_entry.textChanged.connect(lambda text: self.save_value_to_settings('sub2_pattern', text))
+        sub2_filter_layout.addWidget(self.sub2_pattern_entry)
+        filter_layout.addLayout(sub2_filter_layout)
+        
+        filter_group.setLayout(filter_layout)
+        patterns_layout.addWidget(filter_group)
+        
+        # Episode patterns
+        episode_group = QGroupBox("Episode Number Patterns")
+        episode_layout = QVBoxLayout()
+        
+        # Sub1 episode pattern
+        sub1_ep_layout = QHBoxLayout()
+        sub1_ep_layout.addWidget(QLabel("Sub1 Episode:"))
+        self.sub1_episode_pattern_entry = QLineEdit(self.settings.get('sub1_episode_pattern', self.sub1_episode_pattern))
+        self.sub1_episode_pattern_entry.setToolTip("Pattern to find episode numbers in Sub1 files")
+        self.sub1_episode_pattern_entry.textChanged.connect(lambda text: self.save_value_to_settings('sub1_episode_pattern', text))
+        sub1_ep_layout.addWidget(self.sub1_episode_pattern_entry)
+        episode_layout.addLayout(sub1_ep_layout)
+        
+        # Sub2 episode pattern
+        sub2_ep_layout = QHBoxLayout()
+        sub2_ep_layout.addWidget(QLabel("Sub2 Episode:"))
+        self.sub2_episode_pattern_entry = QLineEdit(self.settings.get('sub2_episode_pattern', self.sub2_episode_pattern))
+        self.sub2_episode_pattern_entry.setToolTip("Pattern to find episode numbers in Sub2 files")
+        self.sub2_episode_pattern_entry.textChanged.connect(lambda text: self.save_value_to_settings('sub2_episode_pattern', text))
+        sub2_ep_layout.addWidget(self.sub2_episode_pattern_entry)
+        episode_layout.addLayout(sub2_ep_layout)
+        
+        episode_group.setLayout(episode_layout)
+        patterns_layout.addWidget(episode_group)
+        
+        patterns_group.setLayout(patterns_layout)
+        dir_layout.addWidget(patterns_group)
+
+        dir_group.setLayout(dir_layout)
+        self.layout.addWidget(dir_group)
+
+        # Reorder widgets to ensure proper layout
+        # First, remove all widgets and store them
+        widgets = []
+        while self.layout.count():
+            item = self.layout.takeAt(0)
+            if item.widget():
+                widgets.append(item.widget())
+        
+        # Add them back in the correct order
+        # 1. UI Scale
+        # 2. Font Size Controls
+        # 3. Color Selection
+        # 4. Directory Group
+        # 5. Merge Button
+        # 6. Log Section
+        for widget in widgets:
+            if isinstance(widget, QGroupBox):
+                if widget.title() == "UI Scale":
+                    self.layout.addWidget(widget)
+                elif widget.title() == "Subtitle Font Sizes":
+                    self.layout.addWidget(widget)
+                elif widget.title() == "Color Selection":
+                    self.layout.addWidget(widget)
+                elif widget.title() == "Directory Selection":
+                    self.layout.addWidget(widget)
+        
+        # Add merge button
+        self.batch_merge_button = QPushButton("Merge Subtitles")
+        self.batch_merge_button.clicked.connect(self.merge_subtitles)
+        self.batch_merge_button.setMinimumHeight(40)
+        self.layout.addWidget(self.batch_merge_button)
+        
+        # Add stretch
+        self.layout.addStretch()
+        
+        # Add log section last
+        for widget in widgets:
+            if isinstance(widget, QGroupBox) and widget.title() == "Logs":
+                self.layout.addWidget(widget)
+
+    def merge_subtitles(self):
+        """Merge the subtitle files in directory."""
+        try:
+            # Save all current values before merging
+            self.save_all_values()
+            
+            input_dir = self.dir_entry.text()
+            video_dir = self.video_dir_entry.text()
+            
+            if not input_dir or not video_dir:
+                self.logger.error("Please select both input and video directories")
+                return
+            
+            self.logger.info("Starting merge operation...")
+            self.logger.info(f"Input directory: {input_dir}")
+            self.logger.info(f"Video directory: {video_dir}")
+            
+            # Get patterns
+            sub1_pattern = self.sub1_pattern_entry.text().strip() or self.sub1_pattern
+            sub2_pattern = self.sub2_pattern_entry.text().strip() or self.sub2_pattern
+            sub1_episode_pattern = self.sub1_episode_pattern_entry.text().strip() or self.sub1_episode_pattern
+            sub2_episode_pattern = self.sub2_episode_pattern_entry.text().strip() or self.sub2_episode_pattern
+            
+            # Get color and font sizes
+            sub1_color = self.color_combo.currentText()
+            sub1_size = self.sub1_font_slider.value()
+            sub2_size = self.sub2_font_slider.value()
+            
+            self.logger.debug(f"Using patterns - Sub1: {sub1_pattern}, Sub2: {sub2_pattern}")
+            self.logger.debug(f"Episode patterns - Sub1: {sub1_episode_pattern}, Sub2: {sub2_episode_pattern}")
+            self.logger.debug(f"Styles - Sub1: color={sub1_color}, size={sub1_size}, Sub2: size={sub2_size}")
+            
+            # Find subtitle files (case insensitive)
+            try:
+                input_path = Path(input_dir)
+                video_path = Path(video_dir)
+                
+                # Filter sub1 files using regex pattern from GUI
+                sub1_files = [f for f in input_path.glob('*.srt') 
+                            if re.search(sub1_pattern.lower(), f.name.lower())
+                            and not f.name.endswith('Modified.srt')]
+                
+                # Filter sub2 files using regex pattern from GUI
+                sub2_files = [f for f in input_path.glob('*.srt')
+                            if re.search(sub2_pattern.lower(), f.name.lower())
+                            and not f.name.endswith('Modified.srt')]
+                
+                self.logger.info(f"Found {len(sub1_files)} sub1 files and {len(sub2_files)} sub2 files")
+                
+            except Exception as e:
+                self.logger.error(f"Error finding subtitle files: {e}")
+                return
+
+            # Create episode pairs dictionary
+            episode_subs = {}
+            
+            # Process sub1 files
+            for sub1 in sub1_files:
+                try:
+                    # First find the episode section using sub1 pattern
+                    ep_match = re.search(sub1_episode_pattern, sub1.stem)
+                    if ep_match:
+                        # Then extract just the number
+                        ep_num_match = re.search(r'\d+', ep_match.group(1))
+                        if ep_num_match:
+                            episode_num = ep_num_match.group().zfill(2)  # Ensure 2-digit format
+                            if episode_num not in episode_subs:
+                                episode_subs[episode_num] = {'sub1': sub1}
+                                self.logger.debug(f"Found sub1 for episode {episode_num}: {sub1.name}")
+                except Exception as e:
+                    self.logger.error(f"Error processing sub1 file {sub1}: {e}")
+            
+            # Process sub2 files
+            for sub2 in sub2_files:
+                try:
+                    # First find the episode section using sub2 pattern
+                    ep_match = re.search(sub2_episode_pattern, sub2.stem)
+                    if ep_match:
+                        # Then extract just the number
+                        ep_num_match = re.search(r'\d+', ep_match.group(1))
+                        if ep_num_match:
+                            episode_num = ep_num_match.group().zfill(2)  # Ensure 2-digit format
+                            if episode_num in episode_subs:
+                                episode_subs[episode_num]['sub2'] = sub2
+                                self.logger.debug(f"Found sub2 for episode {episode_num}: {sub2.name}")
+                except Exception as e:
+                    self.logger.error(f"Error processing sub2 file {sub2}: {e}")
+
+            # Find and process video files
+            video_files = list(video_path.glob('*.mkv'))
+            self.logger.info(f"Found {len(video_files)} video files")
+
+            # Process each video file
+            for video_file in video_files:
+                try:
+                    match = re.search(r'S\d+E(\d+)', video_file.stem)
+                    if not match:
+                        self.logger.warning(f"Could not find episode number in {video_file.name}")
+                        continue
+                    
+                    episode_num = match.group(1).zfill(2)
+                    
+                    if episode_num not in episode_subs or 'sub2' not in episode_subs[episode_num]:
+                        self.logger.warning(f"Missing subtitle pair for episode {episode_num}")
+                        continue
+                    
+                    sub1_file = episode_subs[episode_num]['sub1']
+                    sub2_file = episode_subs[episode_num]['sub2']
+                    
+                    # Copy subtitle files next to video with consistent naming
+                    try:
+                        shutil.copy2(sub1_file, video_file.parent / f'{video_file.stem}.sub1.srt')
+                        shutil.copy2(sub2_file, video_file.parent / f'{video_file.stem}.sub2.srt')
+                        self.logger.info(f"Copied subtitle files for episode {episode_num}")
+                    except Exception as e:
+                        self.logger.error(f"Error copying subtitle files for episode {episode_num}: {e}")
+                        continue
+                    
+                    # Create merger instance and merge
+                    try:
+                        merger = Merger(
+                            output_path=str(video_file.parent),
+                            output_name=f'{video_file.stem}_merged.srt',
+                            output_encoding=self.codec_combo.currentText()
+                        )
+                        
+                        # Add first subtitle with color and size
+                        merger.add(
+                            str(sub1_file),
+                            codec=self.codec_combo.currentText(),
+                            color=sub1_color,
+                            size=sub1_size,
+                            top=False
+                        )
+                        
+                        # Add second subtitle with size (using COLORS from import)
+                        merger.add(
+                            str(sub2_file),
+                            codec=self.codec_combo.currentText(),
+                            color=COLORS['WHITE'],  # Now COLORS is defined
+                            size=sub2_size,
+                            top=True
+                        )
+                        
+                        merger.merge()
+                        self.logger.info(f"Successfully merged subtitles for episode {episode_num}")
+                        
+                    except Exception as e:
+                        self.logger.error(f"Error merging subtitles for episode {episode_num}: {e}")
+                        continue
+                    
+                except Exception as e:
+                    self.logger.error(f"Error processing video file {video_file}: {e}")
+            
+            self.logger.info("Merge operation completed")
+            
+        except Exception as e:
+            self.logger.error(f"Error during merge operation: {e}")
+
+    def save_all_values(self):
+        """Save all current values to settings file."""
+        try:
+            # Update all settings
+            self.settings.update({
+                # UI Scale
+                'ui_scale': self.scale_slider.value(),
+                
+                # Colors and codec
+                'color': self.color_combo.currentText(),
+                'codec': self.codec_combo.currentText(),
+                
+                # Options
+                'merge_automatically': self.option_merge_subtitles.isChecked(),
+                'generate_log': self.option_generate_log.isChecked(),
+                
+                # Patterns
+                'sub1_pattern': self.sub1_pattern_entry.text(),
+                'sub2_pattern': self.sub2_pattern_entry.text(),
+                'sub1_episode_pattern': self.sub1_episode_pattern_entry.text(),
+                'sub2_episode_pattern': self.sub2_episode_pattern_entry.text(),
+                
+                # Directories
+                'last_directory': str(Path(self.dir_entry.text()).parent) if self.dir_entry.text() else str(Path.home()),
+                'last_video_directory': str(Path(self.video_dir_entry.text()).parent) if self.video_dir_entry.text() else str(Path.home()),
+                'last_subtitle_directory': self.dir_entry.text() or str(Path.home())
+            })
+            
+            # Save to file
+            with open(self.settings_file, 'w', encoding='utf-8') as f:
+                json.dump(self.settings, f, indent=4)
+            self.logger.debug("All settings saved successfully")
+            
+        except Exception as e:
+            self.logger.error(f"Error saving all settings: {e}")
+
     def browse_directory(self):
         """Browse for an input directory."""
-        self.logger.debug("Attempting to browse for directory...")  # Debug log
-        if not hasattr(self, 'dir_entry'):
-            self.logger.error("dir_entry is not initialized.")  # Error log if the attribute is missing
-        else:
-            directory = QFileDialog.getExistingDirectory(self, "Select Directory")
-            if directory:
-                self.dir_entry.setText(directory)
-                self.logger.debug(f"Directory set: {directory}")
-    def browse_output_directory(self):
-        """Browse for an output directory."""
-        directory = QFileDialog.getExistingDirectory(self, "Select Output Directory")
+        initial_dir = self.settings.get('last_subtitle_directory', str(Path.home()))
+        directory = QFileDialog.getExistingDirectory(self, "Select Directory", initial_dir)
         if directory:
-            self.output_dir_entry.setText(directory)
+            self.dir_entry.setText(directory)
+            self.save_value_to_settings('last_subtitle_directory', directory)
+            self.logger.debug(f"Subtitle directory set: {directory}")
 
-    def process_directory(self):
-        """Process all files in the selected directory."""
-        input_dir = self.dir_entry.text()
-        output_dir = self.output_dir_entry.text()
-
-        if not input_dir or not output_dir:
-            QMessageBox.warning(self, "Missing Directories", "Please select both input and output directories.")
-            return
-
-        try:
-            # Placeholder logic for directory processing
-            QMessageBox.information(self, "Success", f"Processed all files from {input_dir} to {output_dir}.")
-        except Exception as e:
-            QMessageBox.critical(self, "Error", f"Failed to process directory: {e}")
-    def setup_single_files_tab(self, tab):
-        """Set up the Single Files tab."""
-        layout = QVBoxLayout(tab)
-
-        # File selection components
-        file_group = QGroupBox("Input File")
-        file_layout = QHBoxLayout()
-        self.file_entry = QLineEdit()  # A line edit to display the selected file path
-        browse_file_button = QPushButton("Browse")
-        browse_file_button.clicked.connect(self.browse_file)  # Connect to a method for file browsing
-        file_layout.addWidget(self.file_entry)
-        file_layout.addWidget(browse_file_button)
-        file_group.setLayout(file_layout)
-        layout.addWidget(file_group)
-
-        # Merge subtitles button
-        merge_button = QPushButton("Merge Subtitles")
-        
-        # Create merge_worker with placeholder arguments
-        self.merge_worker = MergeWorker(
-            matches=[],  # Empty list of matches
-            merger_args={
-                'color': WHITE,  # Default color
-                'codec': 'utf-8'  # Default codec
-            }
-        )
-        
-        # Connect signals
-        merge_button.clicked.connect(self.merge_worker.run)
-        layout.addWidget(merge_button)
-    def browse_file(self):
-        """Open a file dialog to select an input file."""
-        file_path, _ = QFileDialog.getOpenFileName(self, "Select File", "", "Video Files (*.mp4 *.mkv);;All Files (*)")
-        if file_path:
-            self.file_entry.setText(file_path)  # Set the selected file path
-
-    def setup_directory_tab(self, tab):
-        """setup_directory_tab.
-
-        :param tab:
-        Set up the directory processing tab."""
-        layout = QVBoxLayout(tab)
-
-        # Input directory selection
-        dir_group = QGroupBox("Input Directory Selection")
-        dir_layout = QHBoxLayout()
-        self.dir_entry = QLineEdit()
-        browse_dir_button = QPushButton("Browse")
-        browse_dir_button.clicked.connect(self.browse_directory)
-        dir_layout.addWidget(self.dir_entry)
-        dir_layout.addWidget(browse_dir_button)
-        dir_group.setLayout(dir_layout)
-        layout.addWidget(dir_group)
-
-        # Video directory selection (optional)
-        video_dir_group = QGroupBox("Video Directory Selection (Optional)")
-        video_dir_layout = QHBoxLayout()
-        self.video_dir_entry = QLineEdit()
-        browse_video_dir_button = QPushButton("Browse")
-        browse_video_dir_button.clicked.connect(self.browse_video_directory)
-        video_dir_layout.addWidget(self.video_dir_entry)
-        video_dir_layout.addWidget(browse_video_dir_button)
-        video_dir_group.setLayout(video_dir_layout)
-        layout.addWidget(video_dir_group)
-
-        # File matching patterns
-        patterns_group = QGroupBox("File Matching Patterns")
-        patterns_layout = QVBoxLayout()
-
-        # Pattern input fields
-        pattern_fields = [
-            ("Base Filename Pattern:", "base_pattern", "Show.Name.S01"),
-            ("Episode Number Pattern:", "episode_pattern", "E(\\d+)"),
-            ("Subtitle 1 Pattern:", "sub1_pattern", ".fa.srt$"),
-            ("Subtitle 2 Pattern:", "sub2_pattern", ".en.srt$")
-        ]
-
-        for label_text, attr_name, placeholder in pattern_fields:
-            field_layout = QHBoxLayout()
-            field_layout.addWidget(QLabel(label_text))
-            line_edit = QLineEdit()
-            line_edit.setPlaceholderText(placeholder)
-            setattr(self, attr_name, line_edit)
-            field_layout.addWidget(line_edit)
-            patterns_layout.addLayout(field_layout)
-
-        # Add test pattern button
-        test_button = QPushButton("Test Patterns")
-        test_button.clicked.connect(self.test_patterns)
-        patterns_layout.addWidget(test_button)
-
-        patterns_group.setLayout(patterns_layout)
-        layout.addWidget(patterns_group)
-
-        # Episode range selector
-        self.episode_range = EpisodeRangeSelector()
-        self.episode_range.range_changed.connect(self.on_range_changed)
-        layout.addWidget(self.episode_range)
-
-        # Preview button
-        self.preview_button = QPushButton("Preview Matching Files")
-        self.preview_button.clicked.connect(self.preview_matches)
-        layout.addWidget(self.preview_button)
-
-        # Output options
-        output_group = QGroupBox("Output Options")
-        output_layout = QVBoxLayout()
-        
-        self.use_subfolder = QCheckBox("Create output in subfolder")
-        self.use_subfolder.setChecked(True)
-        output_layout.addWidget(self.use_subfolder)
-        
-        subfolder_layout = QHBoxLayout()
-        subfolder_layout.addWidget(QLabel("Subfolder name:"))
-        self.subfolder_name = QLineEdit("merged")
-        subfolder_layout.addWidget(self.subfolder_name)
-        output_layout.addLayout(subfolder_layout)
-        
-        output_group.setLayout(output_layout)
-        layout.addWidget(output_group)
-
-        # Create options section
-        self.create_options_section(layout)
-        
-        # Create log section
-        self.create_log_section(layout)
-        
-        # Batch merge button
-        self.batch_merge_button = QPushButton("Batch Merge Subtitles")
-        self.batch_merge_button.clicked.connect(self.batch_merge_subtitles)
-        self.batch_merge_button.setMinimumHeight(40)
-        layout.addWidget(self.batch_merge_button)
+    def browse_video_directory(self):
+        """Browse for a video directory."""
+        initial_dir = self.settings.get('last_video_directory', str(Path.home()))
+        directory = QFileDialog.getExistingDirectory(self, "Select Video Directory", initial_dir)
+        if directory:
+            self.video_dir_entry.setText(directory)
+            self.save_value_to_settings('last_video_directory', directory)
+            self.logger.debug(f"Video directory set: {directory}")
 
     def test_patterns(self):
         """Test if the current patterns are valid regex patterns."""
@@ -688,6 +1558,7 @@ class SubtitleMergerGUI(QMainWindow):
             self.logger.error(f"Error finding matches: {str(e)}")
             QMessageBox.warning(self, "Matching Error", str(e))
             return {}  
+
     def preview_matches(self):
         """Preview matched subtitle pairs before processing."""
         try:
@@ -713,68 +1584,89 @@ class SubtitleMergerGUI(QMainWindow):
             QMessageBox.warning(self, "Preview Error", str(e))
 
     def batch_merge_subtitles(self):
-        """Start the batch merging process."""
+        """Merge the subtitle files in directory."""
+        # Save all current values before merging
+        self.save_all_values()
+        
+        input_dir = self.dir_entry.text()
+        video_dir = self.video_dir_entry.text()
+        
+        if not input_dir or not video_dir:
+            self.logger.error("Please select both input and video directories")
+            return
+        
         try:
-            matches = self.find_episode_matches()
-            if not matches:
-                raise ValueError("No matching pairs found to merge!")
-
-            # Check for existing files
-            existing_files = []
-            for match in matches.values():
-                if match.output_path.exists():
-                    existing_files.append(match.output_path)
-                if hasattr(match, 'sub1_output') and match.sub1_output.exists():
-                    existing_files.append(match.sub1_output)
-                if hasattr(match, 'sub2_output') and match.sub2_output.exists():
-                    existing_files.append(match.sub2_output)
-
-            if existing_files and not self.confirm_overwrite(existing_files):
-                return
-
-            # Create output directory if needed
-            output_dir = match.output_path.parent
-            output_dir.mkdir(exist_ok=True)
-
-            # Copy original subtitles if video directory is specified
-            if self.video_dir_entry.text().strip():
-                for match in matches.values():
-                    if hasattr(match, 'sub1_output'):
-                        self.logger.info(f"Copying {match.sub1_path.name} to {match.sub1_output}")
-                        match.sub1_path.copy(match.sub1_output)
-                    if hasattr(match, 'sub2_output'):
-                        self.logger.info(f"Copying {match.sub2_path.name} to {match.sub2_output}")
-                        match.sub2_path.copy(match.sub2_output)
-
-            # Prepare merger arguments
-            merger_args = {
-                'color': self.color_combo.currentText(),
-                'codec': self.codec_combo.currentText()
-            }
-
-            # Create and start worker thread
-            self.merge_worker = MergeWorker(list(matches.values()), merger_args)
-            self.merge_worker.progress.connect(self.log_message)
-            self.merge_worker.error.connect(self.log_error)
-            self.merge_worker.finished.connect(self.on_merge_completed)
+            # Get all video files in the video directory
+            video_files = [f for f in Path(video_dir).glob('**/*') 
+                         if f.suffix.lower() in ['.mp4', '.mkv', '.avi']]
             
-            # Disable controls during processing
-            self.set_controls_enabled(False)
-            self.merge_worker.start()
-
+            if not video_files:
+                self.logger.error("No video files found in the specified directory")
+                return
+            
+            for video_file in video_files:
+                # Use video file name and location for output
+                output_dir = video_file.parent
+                base_name = video_file.stem
+                
+                # Find matching subtitle files in input directory
+                sub_files = sorted(Path(input_dir).glob(f'{base_name}*.srt'))
+                
+                if len(sub_files) >= 2:
+                    sub1_file = sub_files[0]
+                    sub2_file = sub_files[1]
+                    
+                    # Copy original subtitle files next to video with new naming convention
+                    shutil.copy2(sub1_file, output_dir / f'{base_name}.sub1.srt')
+                    shutil.copy2(sub2_file, output_dir / f'{base_name}.sub2.srt')
+                    
+                    self.logger.info(f"Processing {base_name}")
+                    self.logger.debug(f"Sub1: {sub1_file}")
+                    self.logger.debug(f"Sub2: {sub2_file}")
+                    
+                    # Create merger instance
+                    merger = Merger(
+                        output_path=str(output_dir),
+                        output_name=f'{base_name}_merged.srt',
+                        output_encoding=self.codec_combo.currentText()
+                    )
+                    
+                    # Add first subtitle
+                    merger.add(
+                        str(sub1_file),
+                        codec=self.codec_combo.currentText(),
+                        color=self.color_combo.currentText(),
+                        size=self.sub1_font_slider.value(),
+                        top=False
+                    )
+                    
+                    # Add second subtitle
+                    merger.add(
+                        str(sub2_file),
+                        codec=self.codec_combo.currentText(),
+                        color=self.color_combo.currentText(),
+                        size=self.sub2_font_slider.value(),
+                        top=True
+                    )
+                    
+                    # Merge subtitles
+                    merger.merge()
+                    
+                else:
+                    self.logger.warning(f"Not enough subtitle files found for {base_name}")
+            
         except Exception as e:
-            self.logger.error(f"Error starting batch merge: {str(e)}")
-            QMessageBox.warning(self, "Batch Merge Error", str(e))
+            self.logger.error(f"Error during merge operation: {e}")
 
     def confirm_overwrite(self, existing_files: List[Path]) -> bool:
         """Show confirmation dialog for overwriting existing files."""
         msg = QMessageBox()
         msg.setIcon(QMessageBox.Icon.Warning)
-        msg.setWindowTitle("Confirm Overwrite")
-        msg.setText(f"The following files already exist:\n\n" +
-                   "\n".join(str(f) for f in existing_files[:5]) +
+        msg.setWindowTitle("Files Already Exist")
+        msg.setText("The following files already exist:\n\n" + 
+                   "\n".join(str(f) for f in existing_files[:5]) + 
                    ("\n..." if len(existing_files) > 5 else ""))
-        msg.setInformativeText("Do you want to overwrite these files?")
+        msg.setInformativeText("Do you want to overwrite them?")
         msg.setStandardButtons(
             QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No
         )
@@ -794,7 +1686,7 @@ class SubtitleMergerGUI(QMainWindow):
 
     def closeEvent(self, event):
         """Handle application closure."""
-        if self.merge_worker and self.merge_worker.isRunning():
+        if hasattr(self, 'merge_worker') and self.merge_worker and self.merge_worker.isRunning():
             reply = QMessageBox.question(
                 self,
                 'Confirm Exit',
@@ -813,21 +1705,100 @@ class SubtitleMergerGUI(QMainWindow):
         self.logger.info("Application closing")
         event.accept()
 
-    def browse_video_directory(self):
-        """Browse for a video directory."""
-        self.logger.debug("Attempting to browse for video directory...")
-        directory = QFileDialog.getExistingDirectory(self, "Select Video Directory")
-        if directory:
-            self.video_dir_entry.setText(directory)
-            self.logger.debug(f"Video directory set: {directory}")
+    def check_existing_files(self, episode_subs: dict) -> bool:
+        """Check if any output files already exist."""
+        existing_files = []
+        
+        for episode_num, subs in episode_subs.items():
+            if 'sub1' in subs and 'sub2' in subs:
+                base_name = f"Episode_{episode_num}"
+                output_path = Path(self.video_dir_entry.text())
+                
+                # Check for potential output files
+                merged_file = output_path / f"{base_name}_merged.srt"
+                sub1_copy = output_path / f"{base_name}.sub1.srt"
+                sub2_copy = output_path / f"{base_name}.sub2.srt"
+                
+                for file in [merged_file, sub1_copy, sub2_copy]:
+                    if file.exists():
+                        existing_files.append(str(file.name))
+        
+        if existing_files:
+            msg = QMessageBox()
+            msg.setIcon(QMessageBox.Icon.Warning)
+            msg.setWindowTitle("Files Already Exist")
+            msg.setText("The following files already exist:\n\n" + 
+                       "\n".join(existing_files) + 
+                       "\n\nDo you want to overwrite them?")
+            msg.setStandardButtons(
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No
+            )
+            return msg.exec() == QMessageBox.StandardButton.Yes
+            
+        return True
+
+class SubtitleMergerGUI(QMainWindow):
+    """Main application window for the Subtitle Merger GUI."""
+    
+    def __init__(self):
+        super().__init__()
+        self.merge_worker = None
+        self.init_ui()
+    
+    def init_ui(self):
+        """Initialize the user interface."""
+        self.setWindowTitle("Subtitle Merger")
+        
+        # Set to fullscreen by default
+        self.showMaximized()
+        
+        central_widget = QWidget()
+        self.setCentralWidget(central_widget)
+        main_layout = QVBoxLayout(central_widget)
+        
+        # Create tabs
+        tab_widget = QTabWidget()
+        main_layout.addWidget(tab_widget)
+        
+        # Add tabs using the new classes
+        self.single_files_tab = SingleFilesTab()
+        self.directory_tab = DirectoryTab()
+        
+        tab_widget.addTab(self.single_files_tab, "Single Files")
+        tab_widget.addTab(self.directory_tab, "Directory")
+
+    def closeEvent(self, event):
+        """Handle application closure."""
+        # Check both tabs for running workers
+        for tab in [self.single_files_tab, self.directory_tab]:
+            if hasattr(tab, 'merge_worker') and tab.merge_worker and tab.merge_worker.isRunning():
+                reply = QMessageBox.question(
+                    self,
+                    'Confirm Exit',
+                    'A merge operation is in progress. Do you want to stop it and exit?',
+                    QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                    QMessageBox.StandardButton.No
+                )
+                
+                if reply == QMessageBox.StandardButton.Yes:
+                    tab.merge_worker.stop()
+                    tab.merge_worker.wait()
+                else:
+                    event.ignore()
+                    return
+        
+        event.accept()
 
 def main():
     """Main application entry point."""
     app = QApplication(sys.argv)
+    
+    # Set application-wide dark theme
+    app.setStyle("Fusion")  # Use Fusion style for better dark theme support
+    
     window = SubtitleMergerGUI()
     window.show()
     sys.exit(app.exec())
 
 if __name__ == "__main__":
     main()
-

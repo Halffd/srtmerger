@@ -1,0 +1,1768 @@
+2025-01-26 03:20:28,238 - SubtitleMerger - INFO - No settings file found, creating with defaults
+2025-01-26 03:20:28,308 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 03:20:48,830 - SubtitleMerger - DEBUG - Settings updated for Sub1Pattern
+2025-01-26 03:20:49,399 - SubtitleMerger - DEBUG - Settings updated for Sub1Pattern
+2025-01-26 03:20:49,549 - SubtitleMerger - DEBUG - Settings updated for Sub1Pattern
+2025-01-26 03:20:49,821 - SubtitleMerger - DEBUG - Settings updated for Sub1Pattern
+2025-01-26 03:20:50,085 - SubtitleMerger - DEBUG - Settings updated for Sub1Pattern
+2025-01-26 03:20:50,389 - SubtitleMerger - DEBUG - Settings updated for Sub1Pattern
+2025-01-26 03:20:53,925 - SubtitleMerger - DEBUG - Settings updated for Sub2Pattern
+2025-01-26 03:20:54,045 - SubtitleMerger - DEBUG - Settings updated for Sub2Pattern
+2025-01-26 03:20:54,422 - SubtitleMerger - DEBUG - Settings updated for Sub2Pattern
+2025-01-26 03:20:54,677 - SubtitleMerger - DEBUG - Settings updated for Sub2Pattern
+2025-01-26 03:20:56,358 - SubtitleMerger - DEBUG - All settings saved successfully
+2025-01-26 03:20:56,359 - SubtitleMerger - INFO - Starting merge operation...
+2025-01-26 03:20:56,359 - SubtitleMerger - INFO - Input directory: /home/half-arch/Documents/Subs/Onii-chan wa Oshimai! v2
+2025-01-26 03:20:56,360 - SubtitleMerger - INFO - Video directory: /mnt/ehdd/[smol] Onii-chan wa Oshimai! v2 (BD 1080p HEVC Opus)
+2025-01-26 03:20:56,360 - SubtitleMerger - DEBUG - Using patterns - Episode: \d+, Sub1: Nanako, Sub2: smol
+2025-01-26 03:20:56,362 - SubtitleMerger - INFO - Found 13 sub1 files and 24 sub2 files
+2025-01-26 03:20:56,362 - SubtitleMerger - DEBUG - Sub1 files found:
+2025-01-26 03:20:56,363 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 01v2 (1080p).srt
+2025-01-26 03:20:56,363 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 02 (1080p).srt
+2025-01-26 03:20:56,364 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 03 (1080p).srt
+2025-01-26 03:20:56,364 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 04 (1080p).srt
+2025-01-26 03:20:56,364 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 05 (1080p) - Modified.srt
+2025-01-26 03:20:56,364 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 05 (1080p).srt
+2025-01-26 03:20:56,365 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 06 (1080p).srt
+2025-01-26 03:20:56,366 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 07v2 (1080p).srt
+2025-01-26 03:20:56,366 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 08 (1080p).srt
+2025-01-26 03:20:56,366 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 10 (1080p).srt
+2025-01-26 03:20:56,366 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 11 (1080p).srt
+2025-01-26 03:20:56,366 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 12 END (1080p).srt
+2025-01-26 03:20:56,367 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 09 (1080p).srt
+2025-01-26 03:20:56,367 - SubtitleMerger - DEBUG - Sub2 files found:
+2025-01-26 03:20:56,367 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E01v2 (BD 1080p HEVC Opus) [723EEC4B]-Clean.srt
+2025-01-26 03:20:56,367 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E01v2 (BD 1080p HEVC Opus) [723EEC4B].2.eng.srt
+2025-01-26 03:20:56,368 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E02v2 (BD 1080p HEVC Opus) [62E2EA43]-Clean.srt
+2025-01-26 03:20:56,369 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E03v2 (BD 1080p HEVC Opus) [21B57B18]-Clean.srt
+2025-01-26 03:20:56,369 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E03v2 (BD 1080p HEVC Opus) [21B57B18].2.eng.srt
+2025-01-26 03:20:56,369 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E04v2 (BD 1080p HEVC Opus) [254B9CE3]-Clean.srt
+2025-01-26 03:20:56,369 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E04v2 (BD 1080p HEVC Opus) [254B9CE3].2.eng.srt
+2025-01-26 03:20:56,369 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E05v2 (BD 1080p HEVC Opus) [E1A212D8]-Clean.srt
+2025-01-26 03:20:56,370 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E02v2 (BD 1080p HEVC Opus) [62E2EA43].2.eng.srt
+2025-01-26 03:20:56,370 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E05v2 (BD 1080p HEVC Opus) [E1A212D8].2.eng.srt
+2025-01-26 03:20:56,370 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E08v2 (BD 1080p HEVC Opus) [4229C5E6].2.eng.srt
+2025-01-26 03:20:56,371 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E11v2 (BD 1080p HEVC Opus) [BA8B7984].2.eng.srt
+2025-01-26 03:20:56,371 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E06v2 (BD 1080p HEVC Opus) [5FF11A49]-Clean.srt
+2025-01-26 03:20:56,371 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E06v2 (BD 1080p HEVC Opus) [5FF11A49].2.eng.srt
+2025-01-26 03:20:56,372 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E07v2 (BD 1080p HEVC Opus) [F97CC8C5]-Clean.srt
+2025-01-26 03:20:56,372 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E07v2 (BD 1080p HEVC Opus) [F97CC8C5].2.eng.srt
+2025-01-26 03:20:56,373 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E08v2 (BD 1080p HEVC Opus) [4229C5E6]-Clean.srt
+2025-01-26 03:20:56,373 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E09v2 (BD 1080p HEVC Opus) [E91BABB2]-Clean.srt
+2025-01-26 03:20:56,373 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E09v2 (BD 1080p HEVC Opus) [E91BABB2].2.eng.srt
+2025-01-26 03:20:56,374 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E10v2 (BD 1080p HEVC Opus) [B2A00ACC]-Clean.srt
+2025-01-26 03:20:56,374 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E10v2 (BD 1080p HEVC Opus) [B2A00ACC].2.eng.srt
+2025-01-26 03:20:56,375 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E11v2 (BD 1080p HEVC Opus) [BA8B7984]-Clean.srt
+2025-01-26 03:20:56,375 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E12v2 (BD 1080p HEVC Opus) [EC9C787B]-Clean.srt
+2025-01-26 03:20:56,375 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E12v2 (BD 1080p HEVC Opus) [EC9C787B].2.eng.srt
+2025-01-26 03:26:52,210 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 03:26:52,260 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 03:27:06,650 - SubtitleMerger - DEBUG - Settings updated for Sub2Pattern
+2025-01-26 03:27:07,295 - SubtitleMerger - DEBUG - Settings updated for Sub2Pattern
+2025-01-26 03:27:08,968 - SubtitleMerger - DEBUG - Settings updated for Sub2Pattern
+2025-01-26 03:27:09,631 - SubtitleMerger - DEBUG - Settings updated for Sub2Pattern
+2025-01-26 03:27:09,991 - SubtitleMerger - DEBUG - Settings updated for Sub2Pattern
+2025-01-26 03:27:10,488 - SubtitleMerger - DEBUG - Settings updated for Sub2Pattern
+2025-01-26 03:27:10,823 - SubtitleMerger - DEBUG - Settings updated for Sub2Pattern
+2025-01-26 03:27:10,999 - SubtitleMerger - DEBUG - Settings updated for Sub2Pattern
+2025-01-26 03:27:11,408 - SubtitleMerger - DEBUG - Settings updated for Sub2Pattern
+2025-01-26 03:27:29,032 - SubtitleMerger - DEBUG - All settings saved successfully
+2025-01-26 03:27:29,032 - SubtitleMerger - INFO - Starting merge operation...
+2025-01-26 03:27:29,032 - SubtitleMerger - INFO - Input directory: /home/half-arch/Documents/Subs/Onii-chan wa Oshimai! v2
+2025-01-26 03:27:29,033 - SubtitleMerger - INFO - Video directory: /mnt/ehdd/[smol] Onii-chan wa Oshimai! v2 (BD 1080p HEVC Opus)
+2025-01-26 03:27:29,033 - SubtitleMerger - DEBUG - Using patterns - Episode: \d+, Sub1: Nanako, Sub2: smol.*Cleaned
+2025-01-26 03:27:29,035 - SubtitleMerger - INFO - Found 12 sub1 files and 0 sub2 files
+2025-01-26 03:27:29,036 - SubtitleMerger - DEBUG - Sub1 files found:
+2025-01-26 03:27:29,036 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 01v2 (1080p).srt
+2025-01-26 03:27:29,036 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 02 (1080p).srt
+2025-01-26 03:27:29,036 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 03 (1080p).srt
+2025-01-26 03:27:29,036 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 04 (1080p).srt
+2025-01-26 03:27:29,037 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 05 (1080p).srt
+2025-01-26 03:27:29,037 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 06 (1080p).srt
+2025-01-26 03:27:29,037 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 07v2 (1080p).srt
+2025-01-26 03:27:29,038 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 08 (1080p).srt
+2025-01-26 03:27:29,038 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 10 (1080p).srt
+2025-01-26 03:27:29,038 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 11 (1080p).srt
+2025-01-26 03:27:29,038 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 12 END (1080p).srt
+2025-01-26 03:27:29,039 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 09 (1080p).srt
+2025-01-26 03:27:29,039 - SubtitleMerger - DEBUG - Sub2 files found:
+2025-01-26 03:27:29,039 - SubtitleMerger - ERROR - No subtitle files found matching the patterns
+2025-01-26 03:30:23,851 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 03:30:23,908 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 03:31:23,325 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 03:32:16,532 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 03:32:16,587 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 03:32:29,665 - SubtitleMerger - DEBUG - Saved sub2_pattern to settings
+2025-01-26 03:32:33,353 - SubtitleMerger - DEBUG - Saved sub2_pattern to settings
+2025-01-26 03:32:37,141 - SubtitleMerger - DEBUG - Saved sub2_pattern to settings
+2025-01-26 03:32:42,078 - SubtitleMerger - DEBUG - Saved sub2_pattern to settings
+2025-01-26 03:32:44,137 - SubtitleMerger - DEBUG - Saved sub2_pattern to settings
+2025-01-26 03:32:58,576 - SubtitleMerger - DEBUG - Saved last_subtitle_directory to settings
+2025-01-26 03:33:08,177 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 03:33:17,925 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 03:33:18,892 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 03:33:18,970 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 03:33:22,978 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 03:33:25,154 - SubtitleMerger - DEBUG - All settings saved successfully
+2025-01-26 03:33:25,154 - SubtitleMerger - INFO - Starting merge operation...
+2025-01-26 03:33:25,155 - SubtitleMerger - INFO - Input directory: /home/half-arch/Documents/Subs/Onii-chan wa Oshimai! v2
+2025-01-26 03:33:25,155 - SubtitleMerger - INFO - Video directory: /mnt/ehdd/[smol] Onii-chan wa Oshimai! v2 (BD 1080p HEVC Opus)
+2025-01-26 03:33:25,156 - SubtitleMerger - DEBUG - Using patterns - Episode: \d+, Sub1: Nanako, Sub2: \[smol\].*Cleaned
+2025-01-26 03:33:25,159 - SubtitleMerger - INFO - Found 12 sub1 files and 0 sub2 files
+2025-01-26 03:33:25,159 - SubtitleMerger - DEBUG - Sub1 files found:
+2025-01-26 03:33:25,160 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 01v2 (1080p).srt
+2025-01-26 03:33:25,160 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 02 (1080p).srt
+2025-01-26 03:33:25,160 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 03 (1080p).srt
+2025-01-26 03:33:25,161 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 04 (1080p).srt
+2025-01-26 03:33:25,161 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 05 (1080p).srt
+2025-01-26 03:33:25,161 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 06 (1080p).srt
+2025-01-26 03:33:25,161 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 07v2 (1080p).srt
+2025-01-26 03:33:25,162 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 08 (1080p).srt
+2025-01-26 03:33:25,162 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 10 (1080p).srt
+2025-01-26 03:33:25,162 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 11 (1080p).srt
+2025-01-26 03:33:25,162 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 12 END (1080p).srt
+2025-01-26 03:33:25,163 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 09 (1080p).srt
+2025-01-26 03:33:25,163 - SubtitleMerger - DEBUG - Sub2 files found:
+2025-01-26 03:33:25,163 - SubtitleMerger - ERROR - No subtitle files found matching the patterns
+2025-01-26 03:33:35,833 - SubtitleMerger - DEBUG - Saved sub2_pattern to settings
+2025-01-26 03:33:36,540 - SubtitleMerger - DEBUG - Saved sub2_pattern to settings
+2025-01-26 03:33:38,129 - SubtitleMerger - DEBUG - Saved sub2_pattern to settings
+2025-01-26 03:33:38,402 - SubtitleMerger - DEBUG - Saved sub2_pattern to settings
+2025-01-26 03:33:43,522 - SubtitleMerger - DEBUG - All settings saved successfully
+2025-01-26 03:33:43,523 - SubtitleMerger - INFO - Starting merge operation...
+2025-01-26 03:33:43,523 - SubtitleMerger - INFO - Input directory: /home/half-arch/Documents/Subs/Onii-chan wa Oshimai! v2
+2025-01-26 03:33:43,523 - SubtitleMerger - INFO - Video directory: /mnt/ehdd/[smol] Onii-chan wa Oshimai! v2 (BD 1080p HEVC Opus)
+2025-01-26 03:33:43,524 - SubtitleMerger - DEBUG - Using patterns - Episode: \d+, Sub1: Nanako, Sub2: smol
+2025-01-26 03:33:43,526 - SubtitleMerger - INFO - Found 12 sub1 files and 24 sub2 files
+2025-01-26 03:33:43,526 - SubtitleMerger - DEBUG - Sub1 files found:
+2025-01-26 03:33:43,527 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 01v2 (1080p).srt
+2025-01-26 03:33:43,527 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 02 (1080p).srt
+2025-01-26 03:33:43,527 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 03 (1080p).srt
+2025-01-26 03:33:43,528 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 04 (1080p).srt
+2025-01-26 03:33:43,528 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 05 (1080p).srt
+2025-01-26 03:33:43,528 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 06 (1080p).srt
+2025-01-26 03:33:43,528 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 07v2 (1080p).srt
+2025-01-26 03:33:43,529 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 08 (1080p).srt
+2025-01-26 03:33:43,529 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 10 (1080p).srt
+2025-01-26 03:33:43,529 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 11 (1080p).srt
+2025-01-26 03:33:43,529 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 12 END (1080p).srt
+2025-01-26 03:33:43,530 - SubtitleMerger - DEBUG -   [NanakoRaws] Onii-chan wa Oshimai! - 09 (1080p).srt
+2025-01-26 03:33:43,530 - SubtitleMerger - DEBUG - Sub2 files found:
+2025-01-26 03:33:43,530 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E01v2 (BD 1080p HEVC Opus) [723EEC4B]-Clean.srt
+2025-01-26 03:33:43,530 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E01v2 (BD 1080p HEVC Opus) [723EEC4B].2.eng.srt
+2025-01-26 03:33:43,531 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E02v2 (BD 1080p HEVC Opus) [62E2EA43]-Clean.srt
+2025-01-26 03:33:43,531 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E03v2 (BD 1080p HEVC Opus) [21B57B18]-Clean.srt
+2025-01-26 03:33:43,531 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E03v2 (BD 1080p HEVC Opus) [21B57B18].2.eng.srt
+2025-01-26 03:33:43,531 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E04v2 (BD 1080p HEVC Opus) [254B9CE3]-Clean.srt
+2025-01-26 03:33:43,532 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E04v2 (BD 1080p HEVC Opus) [254B9CE3].2.eng.srt
+2025-01-26 03:33:43,532 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E05v2 (BD 1080p HEVC Opus) [E1A212D8]-Clean.srt
+2025-01-26 03:33:43,532 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E02v2 (BD 1080p HEVC Opus) [62E2EA43].2.eng.srt
+2025-01-26 03:33:43,532 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E05v2 (BD 1080p HEVC Opus) [E1A212D8].2.eng.srt
+2025-01-26 03:33:43,533 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E08v2 (BD 1080p HEVC Opus) [4229C5E6].2.eng.srt
+2025-01-26 03:33:43,533 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E11v2 (BD 1080p HEVC Opus) [BA8B7984].2.eng.srt
+2025-01-26 03:33:43,533 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E06v2 (BD 1080p HEVC Opus) [5FF11A49]-Clean.srt
+2025-01-26 03:33:43,533 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E06v2 (BD 1080p HEVC Opus) [5FF11A49].2.eng.srt
+2025-01-26 03:33:43,534 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E07v2 (BD 1080p HEVC Opus) [F97CC8C5]-Clean.srt
+2025-01-26 03:33:43,534 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E07v2 (BD 1080p HEVC Opus) [F97CC8C5].2.eng.srt
+2025-01-26 03:33:43,534 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E08v2 (BD 1080p HEVC Opus) [4229C5E6]-Clean.srt
+2025-01-26 03:33:43,534 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E09v2 (BD 1080p HEVC Opus) [E91BABB2]-Clean.srt
+2025-01-26 03:33:43,535 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E09v2 (BD 1080p HEVC Opus) [E91BABB2].2.eng.srt
+2025-01-26 03:33:43,535 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E10v2 (BD 1080p HEVC Opus) [B2A00ACC]-Clean.srt
+2025-01-26 03:33:43,535 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E10v2 (BD 1080p HEVC Opus) [B2A00ACC].2.eng.srt
+2025-01-26 03:33:43,535 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E11v2 (BD 1080p HEVC Opus) [BA8B7984]-Clean.srt
+2025-01-26 03:33:43,535 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E12v2 (BD 1080p HEVC Opus) [EC9C787B]-Clean.srt
+2025-01-26 03:33:43,536 - SubtitleMerger - DEBUG -   [smol] Onii-chan wa Oshimai! - S01E12v2 (BD 1080p HEVC Opus) [EC9C787B].2.eng.srt
+2025-01-26 03:33:43,536 - SubtitleMerger - DEBUG - Found sub1 for episode 01: [NanakoRaws] Onii-chan wa Oshimai! - 01v2 (1080p).srt
+2025-01-26 03:33:43,536 - SubtitleMerger - DEBUG - Found sub1 for episode 02: [NanakoRaws] Onii-chan wa Oshimai! - 02 (1080p).srt
+2025-01-26 03:33:43,536 - SubtitleMerger - DEBUG - Found sub1 for episode 03: [NanakoRaws] Onii-chan wa Oshimai! - 03 (1080p).srt
+2025-01-26 03:33:43,537 - SubtitleMerger - DEBUG - Found sub1 for episode 04: [NanakoRaws] Onii-chan wa Oshimai! - 04 (1080p).srt
+2025-01-26 03:33:43,537 - SubtitleMerger - DEBUG - Found sub1 for episode 05: [NanakoRaws] Onii-chan wa Oshimai! - 05 (1080p).srt
+2025-01-26 03:33:43,537 - SubtitleMerger - DEBUG - Found sub1 for episode 06: [NanakoRaws] Onii-chan wa Oshimai! - 06 (1080p).srt
+2025-01-26 03:33:43,538 - SubtitleMerger - DEBUG - Found sub1 for episode 07: [NanakoRaws] Onii-chan wa Oshimai! - 07v2 (1080p).srt
+2025-01-26 03:33:43,538 - SubtitleMerger - DEBUG - Found sub1 for episode 08: [NanakoRaws] Onii-chan wa Oshimai! - 08 (1080p).srt
+2025-01-26 03:33:43,538 - SubtitleMerger - DEBUG - Found sub1 for episode 10: [NanakoRaws] Onii-chan wa Oshimai! - 10 (1080p).srt
+2025-01-26 03:33:43,538 - SubtitleMerger - DEBUG - Found sub1 for episode 11: [NanakoRaws] Onii-chan wa Oshimai! - 11 (1080p).srt
+2025-01-26 03:33:43,538 - SubtitleMerger - DEBUG - Found sub1 for episode 12: [NanakoRaws] Onii-chan wa Oshimai! - 12 END (1080p).srt
+2025-01-26 03:33:43,539 - SubtitleMerger - DEBUG - Found sub1 for episode 09: [NanakoRaws] Onii-chan wa Oshimai! - 09 (1080p).srt
+2025-01-26 03:33:43,539 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E01v2 (BD 1080p HEVC Opus) [723EEC4B]-Clean.srt
+2025-01-26 03:33:43,539 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E01v2 (BD 1080p HEVC Opus) [723EEC4B].2.eng.srt
+2025-01-26 03:33:43,539 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E02v2 (BD 1080p HEVC Opus) [62E2EA43]-Clean.srt
+2025-01-26 03:33:43,540 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E03v2 (BD 1080p HEVC Opus) [21B57B18]-Clean.srt
+2025-01-26 03:33:43,540 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E03v2 (BD 1080p HEVC Opus) [21B57B18].2.eng.srt
+2025-01-26 03:33:43,541 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E04v2 (BD 1080p HEVC Opus) [254B9CE3]-Clean.srt
+2025-01-26 03:33:43,541 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E04v2 (BD 1080p HEVC Opus) [254B9CE3].2.eng.srt
+2025-01-26 03:33:43,541 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E05v2 (BD 1080p HEVC Opus) [E1A212D8]-Clean.srt
+2025-01-26 03:33:43,541 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E02v2 (BD 1080p HEVC Opus) [62E2EA43].2.eng.srt
+2025-01-26 03:33:43,541 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E05v2 (BD 1080p HEVC Opus) [E1A212D8].2.eng.srt
+2025-01-26 03:33:43,542 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E08v2 (BD 1080p HEVC Opus) [4229C5E6].2.eng.srt
+2025-01-26 03:33:43,542 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E11v2 (BD 1080p HEVC Opus) [BA8B7984].2.eng.srt
+2025-01-26 03:33:43,542 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E06v2 (BD 1080p HEVC Opus) [5FF11A49]-Clean.srt
+2025-01-26 03:33:43,542 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E06v2 (BD 1080p HEVC Opus) [5FF11A49].2.eng.srt
+2025-01-26 03:33:43,542 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E07v2 (BD 1080p HEVC Opus) [F97CC8C5]-Clean.srt
+2025-01-26 03:33:43,543 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E07v2 (BD 1080p HEVC Opus) [F97CC8C5].2.eng.srt
+2025-01-26 03:33:43,543 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E08v2 (BD 1080p HEVC Opus) [4229C5E6]-Clean.srt
+2025-01-26 03:33:43,543 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E09v2 (BD 1080p HEVC Opus) [E91BABB2]-Clean.srt
+2025-01-26 03:33:43,543 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E09v2 (BD 1080p HEVC Opus) [E91BABB2].2.eng.srt
+2025-01-26 03:33:43,544 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E10v2 (BD 1080p HEVC Opus) [B2A00ACC]-Clean.srt
+2025-01-26 03:33:43,544 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E10v2 (BD 1080p HEVC Opus) [B2A00ACC].2.eng.srt
+2025-01-26 03:33:43,544 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E11v2 (BD 1080p HEVC Opus) [BA8B7984]-Clean.srt
+2025-01-26 03:33:43,544 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E12v2 (BD 1080p HEVC Opus) [EC9C787B]-Clean.srt
+2025-01-26 03:33:43,545 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E12v2 (BD 1080p HEVC Opus) [EC9C787B].2.eng.srt
+2025-01-26 03:33:43,545 - SubtitleMerger - INFO - Found 12 video files
+2025-01-26 03:33:45,784 - SubtitleMerger - INFO - Copied subtitle files for episode 01
+2025-01-26 03:33:45,938 - SubtitleMerger - INFO - Successfully merged subtitles for episode 01
+2025-01-26 03:33:45,959 - SubtitleMerger - INFO - Copied subtitle files for episode 01
+2025-01-26 03:33:46,052 - SubtitleMerger - INFO - Successfully merged subtitles for episode 01
+2025-01-26 03:33:46,055 - SubtitleMerger - INFO - Copied subtitle files for episode 01
+2025-01-26 03:33:46,145 - SubtitleMerger - INFO - Successfully merged subtitles for episode 01
+2025-01-26 03:33:46,148 - SubtitleMerger - INFO - Copied subtitle files for episode 01
+2025-01-26 03:33:46,236 - SubtitleMerger - INFO - Successfully merged subtitles for episode 01
+2025-01-26 03:33:46,239 - SubtitleMerger - INFO - Copied subtitle files for episode 01
+2025-01-26 03:33:46,339 - SubtitleMerger - INFO - Successfully merged subtitles for episode 01
+2025-01-26 03:33:46,342 - SubtitleMerger - INFO - Copied subtitle files for episode 01
+2025-01-26 03:33:46,436 - SubtitleMerger - INFO - Successfully merged subtitles for episode 01
+2025-01-26 03:33:46,440 - SubtitleMerger - INFO - Copied subtitle files for episode 01
+2025-01-26 03:33:46,528 - SubtitleMerger - INFO - Successfully merged subtitles for episode 01
+2025-01-26 03:33:46,536 - SubtitleMerger - INFO - Copied subtitle files for episode 01
+2025-01-26 03:33:46,628 - SubtitleMerger - INFO - Successfully merged subtitles for episode 01
+2025-01-26 03:33:46,635 - SubtitleMerger - INFO - Copied subtitle files for episode 01
+2025-01-26 03:33:46,734 - SubtitleMerger - INFO - Successfully merged subtitles for episode 01
+2025-01-26 03:33:46,741 - SubtitleMerger - INFO - Copied subtitle files for episode 01
+2025-01-26 03:33:46,835 - SubtitleMerger - INFO - Successfully merged subtitles for episode 01
+2025-01-26 03:33:46,838 - SubtitleMerger - INFO - Copied subtitle files for episode 01
+2025-01-26 03:33:46,925 - SubtitleMerger - INFO - Successfully merged subtitles for episode 01
+2025-01-26 03:33:46,929 - SubtitleMerger - INFO - Copied subtitle files for episode 01
+2025-01-26 03:33:47,025 - SubtitleMerger - INFO - Successfully merged subtitles for episode 01
+2025-01-26 03:33:47,025 - SubtitleMerger - INFO - Merge operation completed
+2025-01-26 03:40:17,954 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 03:40:18,004 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 03:45:42,285 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 03:45:42,349 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 03:46:06,813 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 03:46:09,989 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 03:46:23,203 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 03:46:27,584 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 03:46:34,383 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 03:46:35,833 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 03:46:52,926 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 03:46:56,685 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 03:46:56,999 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 03:47:16,896 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 03:47:16,944 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 03:48:25,770 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 03:48:25,824 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 03:49:48,783 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 03:49:48,837 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 03:49:59,345 - SubtitleMerger - ERROR - Error saving all settings: 'DirectoryTab' object has no attribute 'sub1_font_slider'
+2025-01-26 03:49:59,345 - SubtitleMerger - INFO - Starting merge operation...
+2025-01-26 03:49:59,345 - SubtitleMerger - INFO - Input directory: /home/half-arch/Documents/Subs/Onii-chan wa Oshimai! v2
+2025-01-26 03:49:59,346 - SubtitleMerger - INFO - Video directory: /mnt/ehdd/[smol] Onii-chan wa Oshimai! v2 (BD 1080p HEVC Opus)
+2025-01-26 03:49:59,347 - SubtitleMerger - DEBUG - Using patterns - Sub1: Nanako, Sub2: smol
+2025-01-26 03:49:59,347 - SubtitleMerger - DEBUG - Episode patterns - Sub1: (\d+)(?:v\d+)? (?:\(1080p\)|END), Sub2: S\d+E(\d+)
+2025-01-26 03:49:59,349 - SubtitleMerger - INFO - Found 12 sub1 files and 24 sub2 files
+2025-01-26 03:49:59,351 - SubtitleMerger - DEBUG - Found sub1 for episode 01: [NanakoRaws] Onii-chan wa Oshimai! - 01v2 (1080p).srt
+2025-01-26 03:49:59,351 - SubtitleMerger - DEBUG - Found sub1 for episode 02: [NanakoRaws] Onii-chan wa Oshimai! - 02 (1080p).srt
+2025-01-26 03:49:59,351 - SubtitleMerger - DEBUG - Found sub1 for episode 03: [NanakoRaws] Onii-chan wa Oshimai! - 03 (1080p).srt
+2025-01-26 03:49:59,351 - SubtitleMerger - DEBUG - Found sub1 for episode 04: [NanakoRaws] Onii-chan wa Oshimai! - 04 (1080p).srt
+2025-01-26 03:49:59,351 - SubtitleMerger - DEBUG - Found sub1 for episode 05: [NanakoRaws] Onii-chan wa Oshimai! - 05 (1080p).srt
+2025-01-26 03:49:59,352 - SubtitleMerger - DEBUG - Found sub1 for episode 06: [NanakoRaws] Onii-chan wa Oshimai! - 06 (1080p).srt
+2025-01-26 03:49:59,352 - SubtitleMerger - DEBUG - Found sub1 for episode 07: [NanakoRaws] Onii-chan wa Oshimai! - 07v2 (1080p).srt
+2025-01-26 03:49:59,352 - SubtitleMerger - DEBUG - Found sub1 for episode 08: [NanakoRaws] Onii-chan wa Oshimai! - 08 (1080p).srt
+2025-01-26 03:49:59,352 - SubtitleMerger - DEBUG - Found sub1 for episode 10: [NanakoRaws] Onii-chan wa Oshimai! - 10 (1080p).srt
+2025-01-26 03:49:59,353 - SubtitleMerger - DEBUG - Found sub1 for episode 11: [NanakoRaws] Onii-chan wa Oshimai! - 11 (1080p).srt
+2025-01-26 03:49:59,353 - SubtitleMerger - DEBUG - Found sub1 for episode 12: [NanakoRaws] Onii-chan wa Oshimai! - 12 END (1080p).srt
+2025-01-26 03:49:59,353 - SubtitleMerger - DEBUG - Found sub1 for episode 09: [NanakoRaws] Onii-chan wa Oshimai! - 09 (1080p).srt
+2025-01-26 03:49:59,354 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E01v2 (BD 1080p HEVC Opus) [723EEC4B]-Clean.srt
+2025-01-26 03:49:59,354 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E01v2 (BD 1080p HEVC Opus) [723EEC4B].2.eng.srt
+2025-01-26 03:49:59,354 - SubtitleMerger - DEBUG - Found sub2 for episode 02: [smol] Onii-chan wa Oshimai! - S01E02v2 (BD 1080p HEVC Opus) [62E2EA43]-Clean.srt
+2025-01-26 03:49:59,355 - SubtitleMerger - DEBUG - Found sub2 for episode 03: [smol] Onii-chan wa Oshimai! - S01E03v2 (BD 1080p HEVC Opus) [21B57B18]-Clean.srt
+2025-01-26 03:49:59,355 - SubtitleMerger - DEBUG - Found sub2 for episode 03: [smol] Onii-chan wa Oshimai! - S01E03v2 (BD 1080p HEVC Opus) [21B57B18].2.eng.srt
+2025-01-26 03:49:59,355 - SubtitleMerger - DEBUG - Found sub2 for episode 04: [smol] Onii-chan wa Oshimai! - S01E04v2 (BD 1080p HEVC Opus) [254B9CE3]-Clean.srt
+2025-01-26 03:49:59,356 - SubtitleMerger - DEBUG - Found sub2 for episode 04: [smol] Onii-chan wa Oshimai! - S01E04v2 (BD 1080p HEVC Opus) [254B9CE3].2.eng.srt
+2025-01-26 03:49:59,356 - SubtitleMerger - DEBUG - Found sub2 for episode 05: [smol] Onii-chan wa Oshimai! - S01E05v2 (BD 1080p HEVC Opus) [E1A212D8]-Clean.srt
+2025-01-26 03:49:59,356 - SubtitleMerger - DEBUG - Found sub2 for episode 02: [smol] Onii-chan wa Oshimai! - S01E02v2 (BD 1080p HEVC Opus) [62E2EA43].2.eng.srt
+2025-01-26 03:49:59,357 - SubtitleMerger - DEBUG - Found sub2 for episode 05: [smol] Onii-chan wa Oshimai! - S01E05v2 (BD 1080p HEVC Opus) [E1A212D8].2.eng.srt
+2025-01-26 03:49:59,357 - SubtitleMerger - DEBUG - Found sub2 for episode 08: [smol] Onii-chan wa Oshimai! - S01E08v2 (BD 1080p HEVC Opus) [4229C5E6].2.eng.srt
+2025-01-26 03:49:59,357 - SubtitleMerger - DEBUG - Found sub2 for episode 11: [smol] Onii-chan wa Oshimai! - S01E11v2 (BD 1080p HEVC Opus) [BA8B7984].2.eng.srt
+2025-01-26 03:49:59,358 - SubtitleMerger - DEBUG - Found sub2 for episode 06: [smol] Onii-chan wa Oshimai! - S01E06v2 (BD 1080p HEVC Opus) [5FF11A49]-Clean.srt
+2025-01-26 03:49:59,359 - SubtitleMerger - DEBUG - Found sub2 for episode 06: [smol] Onii-chan wa Oshimai! - S01E06v2 (BD 1080p HEVC Opus) [5FF11A49].2.eng.srt
+2025-01-26 03:49:59,359 - SubtitleMerger - DEBUG - Found sub2 for episode 07: [smol] Onii-chan wa Oshimai! - S01E07v2 (BD 1080p HEVC Opus) [F97CC8C5]-Clean.srt
+2025-01-26 03:49:59,359 - SubtitleMerger - DEBUG - Found sub2 for episode 07: [smol] Onii-chan wa Oshimai! - S01E07v2 (BD 1080p HEVC Opus) [F97CC8C5].2.eng.srt
+2025-01-26 03:49:59,359 - SubtitleMerger - DEBUG - Found sub2 for episode 08: [smol] Onii-chan wa Oshimai! - S01E08v2 (BD 1080p HEVC Opus) [4229C5E6]-Clean.srt
+2025-01-26 03:49:59,360 - SubtitleMerger - DEBUG - Found sub2 for episode 09: [smol] Onii-chan wa Oshimai! - S01E09v2 (BD 1080p HEVC Opus) [E91BABB2]-Clean.srt
+2025-01-26 03:49:59,360 - SubtitleMerger - DEBUG - Found sub2 for episode 09: [smol] Onii-chan wa Oshimai! - S01E09v2 (BD 1080p HEVC Opus) [E91BABB2].2.eng.srt
+2025-01-26 03:49:59,360 - SubtitleMerger - DEBUG - Found sub2 for episode 10: [smol] Onii-chan wa Oshimai! - S01E10v2 (BD 1080p HEVC Opus) [B2A00ACC]-Clean.srt
+2025-01-26 03:49:59,360 - SubtitleMerger - DEBUG - Found sub2 for episode 10: [smol] Onii-chan wa Oshimai! - S01E10v2 (BD 1080p HEVC Opus) [B2A00ACC].2.eng.srt
+2025-01-26 03:49:59,361 - SubtitleMerger - DEBUG - Found sub2 for episode 11: [smol] Onii-chan wa Oshimai! - S01E11v2 (BD 1080p HEVC Opus) [BA8B7984]-Clean.srt
+2025-01-26 03:49:59,361 - SubtitleMerger - DEBUG - Found sub2 for episode 12: [smol] Onii-chan wa Oshimai! - S01E12v2 (BD 1080p HEVC Opus) [EC9C787B]-Clean.srt
+2025-01-26 03:49:59,361 - SubtitleMerger - DEBUG - Found sub2 for episode 12: [smol] Onii-chan wa Oshimai! - S01E12v2 (BD 1080p HEVC Opus) [EC9C787B].2.eng.srt
+2025-01-26 03:49:59,362 - SubtitleMerger - INFO - Found 12 video files
+2025-01-26 03:49:59,362 - SubtitleMerger - ERROR - Error processing video file /mnt/ehdd/[smol] Onii-chan wa Oshimai! v2 (BD 1080p HEVC Opus)/[smol] Onii-chan wa Oshimai! - S01E01v2 (BD 1080p HEVC Opus) [723EEC4B].mkv: 'DirectoryTab' object has no attribute 'episode_pattern'
+2025-01-26 03:49:59,363 - SubtitleMerger - ERROR - Error processing video file /mnt/ehdd/[smol] Onii-chan wa Oshimai! v2 (BD 1080p HEVC Opus)/[smol] Onii-chan wa Oshimai! - S01E02v2 (BD 1080p HEVC Opus) [62E2EA43].mkv: 'DirectoryTab' object has no attribute 'episode_pattern'
+2025-01-26 03:49:59,363 - SubtitleMerger - ERROR - Error processing video file /mnt/ehdd/[smol] Onii-chan wa Oshimai! v2 (BD 1080p HEVC Opus)/[smol] Onii-chan wa Oshimai! - S01E03v2 (BD 1080p HEVC Opus) [21B57B18].mkv: 'DirectoryTab' object has no attribute 'episode_pattern'
+2025-01-26 03:49:59,364 - SubtitleMerger - ERROR - Error processing video file /mnt/ehdd/[smol] Onii-chan wa Oshimai! v2 (BD 1080p HEVC Opus)/[smol] Onii-chan wa Oshimai! - S01E05v2 (BD 1080p HEVC Opus) [E1A212D8].mkv: 'DirectoryTab' object has no attribute 'episode_pattern'
+2025-01-26 03:49:59,364 - SubtitleMerger - ERROR - Error processing video file /mnt/ehdd/[smol] Onii-chan wa Oshimai! v2 (BD 1080p HEVC Opus)/[smol] Onii-chan wa Oshimai! - S01E06v2 (BD 1080p HEVC Opus) [5FF11A49].mkv: 'DirectoryTab' object has no attribute 'episode_pattern'
+2025-01-26 03:49:59,365 - SubtitleMerger - ERROR - Error processing video file /mnt/ehdd/[smol] Onii-chan wa Oshimai! v2 (BD 1080p HEVC Opus)/[smol] Onii-chan wa Oshimai! - S01E07v2 (BD 1080p HEVC Opus) [F97CC8C5].mkv: 'DirectoryTab' object has no attribute 'episode_pattern'
+2025-01-26 03:49:59,366 - SubtitleMerger - ERROR - Error processing video file /mnt/ehdd/[smol] Onii-chan wa Oshimai! v2 (BD 1080p HEVC Opus)/[smol] Onii-chan wa Oshimai! - S01E08v2 (BD 1080p HEVC Opus) [4229C5E6].mkv: 'DirectoryTab' object has no attribute 'episode_pattern'
+2025-01-26 03:49:59,366 - SubtitleMerger - ERROR - Error processing video file /mnt/ehdd/[smol] Onii-chan wa Oshimai! v2 (BD 1080p HEVC Opus)/[smol] Onii-chan wa Oshimai! - S01E09v2 (BD 1080p HEVC Opus) [E91BABB2].mkv: 'DirectoryTab' object has no attribute 'episode_pattern'
+2025-01-26 03:49:59,367 - SubtitleMerger - ERROR - Error processing video file /mnt/ehdd/[smol] Onii-chan wa Oshimai! v2 (BD 1080p HEVC Opus)/[smol] Onii-chan wa Oshimai! - S01E10v2 (BD 1080p HEVC Opus) [B2A00ACC].mkv: 'DirectoryTab' object has no attribute 'episode_pattern'
+2025-01-26 03:49:59,367 - SubtitleMerger - ERROR - Error processing video file /mnt/ehdd/[smol] Onii-chan wa Oshimai! v2 (BD 1080p HEVC Opus)/[smol] Onii-chan wa Oshimai! - S01E11v2 (BD 1080p HEVC Opus) [BA8B7984].mkv: 'DirectoryTab' object has no attribute 'episode_pattern'
+2025-01-26 03:49:59,368 - SubtitleMerger - ERROR - Error processing video file /mnt/ehdd/[smol] Onii-chan wa Oshimai! v2 (BD 1080p HEVC Opus)/[smol] Onii-chan wa Oshimai! - S01E12v2 (BD 1080p HEVC Opus) [EC9C787B].mkv: 'DirectoryTab' object has no attribute 'episode_pattern'
+2025-01-26 03:49:59,368 - SubtitleMerger - ERROR - Error processing video file /mnt/ehdd/[smol] Onii-chan wa Oshimai! v2 (BD 1080p HEVC Opus)/[smol] Onii-chan wa Oshimai! - S01E04v2 (BD 1080p HEVC Opus) [254B9CE3].mkv: 'DirectoryTab' object has no attribute 'episode_pattern'
+2025-01-26 03:49:59,369 - SubtitleMerger - INFO - Merge operation completed
+2025-01-26 03:50:50,974 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 03:50:51,025 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 03:50:59,380 - SubtitleMerger - DEBUG - All settings saved successfully
+2025-01-26 03:50:59,380 - SubtitleMerger - INFO - Starting merge operation...
+2025-01-26 03:50:59,380 - SubtitleMerger - INFO - Input directory: /home/half-arch/Documents/Subs/Onii-chan wa Oshimai! v2
+2025-01-26 03:50:59,380 - SubtitleMerger - INFO - Video directory: /mnt/ehdd/[smol] Onii-chan wa Oshimai! v2 (BD 1080p HEVC Opus)
+2025-01-26 03:50:59,382 - SubtitleMerger - DEBUG - Using patterns - Sub1: Nanako, Sub2: smol
+2025-01-26 03:50:59,382 - SubtitleMerger - DEBUG - Episode patterns - Sub1: (\d+)(?:v\d+)? (?:\(1080p\)|END), Sub2: S\d+E(\d+)
+2025-01-26 03:50:59,385 - SubtitleMerger - INFO - Found 12 sub1 files and 24 sub2 files
+2025-01-26 03:50:59,385 - SubtitleMerger - DEBUG - Found sub1 for episode 01: [NanakoRaws] Onii-chan wa Oshimai! - 01v2 (1080p).srt
+2025-01-26 03:50:59,386 - SubtitleMerger - DEBUG - Found sub1 for episode 02: [NanakoRaws] Onii-chan wa Oshimai! - 02 (1080p).srt
+2025-01-26 03:50:59,386 - SubtitleMerger - DEBUG - Found sub1 for episode 03: [NanakoRaws] Onii-chan wa Oshimai! - 03 (1080p).srt
+2025-01-26 03:50:59,386 - SubtitleMerger - DEBUG - Found sub1 for episode 04: [NanakoRaws] Onii-chan wa Oshimai! - 04 (1080p).srt
+2025-01-26 03:50:59,386 - SubtitleMerger - DEBUG - Found sub1 for episode 05: [NanakoRaws] Onii-chan wa Oshimai! - 05 (1080p).srt
+2025-01-26 03:50:59,386 - SubtitleMerger - DEBUG - Found sub1 for episode 06: [NanakoRaws] Onii-chan wa Oshimai! - 06 (1080p).srt
+2025-01-26 03:50:59,387 - SubtitleMerger - DEBUG - Found sub1 for episode 07: [NanakoRaws] Onii-chan wa Oshimai! - 07v2 (1080p).srt
+2025-01-26 03:50:59,387 - SubtitleMerger - DEBUG - Found sub1 for episode 08: [NanakoRaws] Onii-chan wa Oshimai! - 08 (1080p).srt
+2025-01-26 03:50:59,387 - SubtitleMerger - DEBUG - Found sub1 for episode 10: [NanakoRaws] Onii-chan wa Oshimai! - 10 (1080p).srt
+2025-01-26 03:50:59,387 - SubtitleMerger - DEBUG - Found sub1 for episode 11: [NanakoRaws] Onii-chan wa Oshimai! - 11 (1080p).srt
+2025-01-26 03:50:59,387 - SubtitleMerger - DEBUG - Found sub1 for episode 12: [NanakoRaws] Onii-chan wa Oshimai! - 12 END (1080p).srt
+2025-01-26 03:50:59,388 - SubtitleMerger - DEBUG - Found sub1 for episode 09: [NanakoRaws] Onii-chan wa Oshimai! - 09 (1080p).srt
+2025-01-26 03:50:59,388 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E01v2 (BD 1080p HEVC Opus) [723EEC4B]-Clean.srt
+2025-01-26 03:50:59,388 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E01v2 (BD 1080p HEVC Opus) [723EEC4B].2.eng.srt
+2025-01-26 03:50:59,388 - SubtitleMerger - DEBUG - Found sub2 for episode 02: [smol] Onii-chan wa Oshimai! - S01E02v2 (BD 1080p HEVC Opus) [62E2EA43]-Clean.srt
+2025-01-26 03:50:59,388 - SubtitleMerger - DEBUG - Found sub2 for episode 03: [smol] Onii-chan wa Oshimai! - S01E03v2 (BD 1080p HEVC Opus) [21B57B18]-Clean.srt
+2025-01-26 03:50:59,389 - SubtitleMerger - DEBUG - Found sub2 for episode 03: [smol] Onii-chan wa Oshimai! - S01E03v2 (BD 1080p HEVC Opus) [21B57B18].2.eng.srt
+2025-01-26 03:50:59,389 - SubtitleMerger - DEBUG - Found sub2 for episode 04: [smol] Onii-chan wa Oshimai! - S01E04v2 (BD 1080p HEVC Opus) [254B9CE3]-Clean.srt
+2025-01-26 03:50:59,389 - SubtitleMerger - DEBUG - Found sub2 for episode 04: [smol] Onii-chan wa Oshimai! - S01E04v2 (BD 1080p HEVC Opus) [254B9CE3].2.eng.srt
+2025-01-26 03:50:59,389 - SubtitleMerger - DEBUG - Found sub2 for episode 05: [smol] Onii-chan wa Oshimai! - S01E05v2 (BD 1080p HEVC Opus) [E1A212D8]-Clean.srt
+2025-01-26 03:50:59,390 - SubtitleMerger - DEBUG - Found sub2 for episode 02: [smol] Onii-chan wa Oshimai! - S01E02v2 (BD 1080p HEVC Opus) [62E2EA43].2.eng.srt
+2025-01-26 03:50:59,390 - SubtitleMerger - DEBUG - Found sub2 for episode 05: [smol] Onii-chan wa Oshimai! - S01E05v2 (BD 1080p HEVC Opus) [E1A212D8].2.eng.srt
+2025-01-26 03:50:59,390 - SubtitleMerger - DEBUG - Found sub2 for episode 08: [smol] Onii-chan wa Oshimai! - S01E08v2 (BD 1080p HEVC Opus) [4229C5E6].2.eng.srt
+2025-01-26 03:50:59,391 - SubtitleMerger - DEBUG - Found sub2 for episode 11: [smol] Onii-chan wa Oshimai! - S01E11v2 (BD 1080p HEVC Opus) [BA8B7984].2.eng.srt
+2025-01-26 03:50:59,391 - SubtitleMerger - DEBUG - Found sub2 for episode 06: [smol] Onii-chan wa Oshimai! - S01E06v2 (BD 1080p HEVC Opus) [5FF11A49]-Clean.srt
+2025-01-26 03:50:59,391 - SubtitleMerger - DEBUG - Found sub2 for episode 06: [smol] Onii-chan wa Oshimai! - S01E06v2 (BD 1080p HEVC Opus) [5FF11A49].2.eng.srt
+2025-01-26 03:50:59,391 - SubtitleMerger - DEBUG - Found sub2 for episode 07: [smol] Onii-chan wa Oshimai! - S01E07v2 (BD 1080p HEVC Opus) [F97CC8C5]-Clean.srt
+2025-01-26 03:50:59,392 - SubtitleMerger - DEBUG - Found sub2 for episode 07: [smol] Onii-chan wa Oshimai! - S01E07v2 (BD 1080p HEVC Opus) [F97CC8C5].2.eng.srt
+2025-01-26 03:50:59,392 - SubtitleMerger - DEBUG - Found sub2 for episode 08: [smol] Onii-chan wa Oshimai! - S01E08v2 (BD 1080p HEVC Opus) [4229C5E6]-Clean.srt
+2025-01-26 03:50:59,392 - SubtitleMerger - DEBUG - Found sub2 for episode 09: [smol] Onii-chan wa Oshimai! - S01E09v2 (BD 1080p HEVC Opus) [E91BABB2]-Clean.srt
+2025-01-26 03:50:59,393 - SubtitleMerger - DEBUG - Found sub2 for episode 09: [smol] Onii-chan wa Oshimai! - S01E09v2 (BD 1080p HEVC Opus) [E91BABB2].2.eng.srt
+2025-01-26 03:50:59,394 - SubtitleMerger - DEBUG - Found sub2 for episode 10: [smol] Onii-chan wa Oshimai! - S01E10v2 (BD 1080p HEVC Opus) [B2A00ACC]-Clean.srt
+2025-01-26 03:50:59,394 - SubtitleMerger - DEBUG - Found sub2 for episode 10: [smol] Onii-chan wa Oshimai! - S01E10v2 (BD 1080p HEVC Opus) [B2A00ACC].2.eng.srt
+2025-01-26 03:50:59,394 - SubtitleMerger - DEBUG - Found sub2 for episode 11: [smol] Onii-chan wa Oshimai! - S01E11v2 (BD 1080p HEVC Opus) [BA8B7984]-Clean.srt
+2025-01-26 03:50:59,394 - SubtitleMerger - DEBUG - Found sub2 for episode 12: [smol] Onii-chan wa Oshimai! - S01E12v2 (BD 1080p HEVC Opus) [EC9C787B]-Clean.srt
+2025-01-26 03:50:59,394 - SubtitleMerger - DEBUG - Found sub2 for episode 12: [smol] Onii-chan wa Oshimai! - S01E12v2 (BD 1080p HEVC Opus) [EC9C787B].2.eng.srt
+2025-01-26 03:50:59,395 - SubtitleMerger - INFO - Found 12 video files
+2025-01-26 03:51:01,159 - SubtitleMerger - INFO - Copied subtitle files for episode 01
+2025-01-26 03:51:01,579 - SubtitleMerger - INFO - Successfully merged subtitles for episode 01
+2025-01-26 03:51:01,592 - SubtitleMerger - INFO - Copied subtitle files for episode 02
+2025-01-26 03:51:01,668 - SubtitleMerger - INFO - Successfully merged subtitles for episode 02
+2025-01-26 03:51:01,680 - SubtitleMerger - INFO - Copied subtitle files for episode 03
+2025-01-26 03:51:01,757 - SubtitleMerger - INFO - Successfully merged subtitles for episode 03
+2025-01-26 03:51:01,771 - SubtitleMerger - INFO - Copied subtitle files for episode 05
+2025-01-26 03:51:01,872 - SubtitleMerger - INFO - Successfully merged subtitles for episode 05
+2025-01-26 03:51:01,883 - SubtitleMerger - INFO - Copied subtitle files for episode 06
+2025-01-26 03:51:02,039 - SubtitleMerger - INFO - Successfully merged subtitles for episode 06
+2025-01-26 03:51:02,055 - SubtitleMerger - INFO - Copied subtitle files for episode 07
+2025-01-26 03:51:02,182 - SubtitleMerger - INFO - Successfully merged subtitles for episode 07
+2025-01-26 03:51:02,196 - SubtitleMerger - INFO - Copied subtitle files for episode 08
+2025-01-26 03:51:02,285 - SubtitleMerger - INFO - Successfully merged subtitles for episode 08
+2025-01-26 03:51:02,296 - SubtitleMerger - INFO - Copied subtitle files for episode 09
+2025-01-26 03:51:02,377 - SubtitleMerger - INFO - Successfully merged subtitles for episode 09
+2025-01-26 03:51:02,390 - SubtitleMerger - INFO - Copied subtitle files for episode 10
+2025-01-26 03:51:02,469 - SubtitleMerger - INFO - Successfully merged subtitles for episode 10
+2025-01-26 03:51:02,481 - SubtitleMerger - INFO - Copied subtitle files for episode 11
+2025-01-26 03:51:02,568 - SubtitleMerger - INFO - Successfully merged subtitles for episode 11
+2025-01-26 03:51:02,578 - SubtitleMerger - INFO - Copied subtitle files for episode 12
+2025-01-26 03:51:02,668 - SubtitleMerger - INFO - Successfully merged subtitles for episode 12
+2025-01-26 03:51:02,680 - SubtitleMerger - INFO - Copied subtitle files for episode 04
+2025-01-26 03:51:02,866 - SubtitleMerger - INFO - Successfully merged subtitles for episode 04
+2025-01-26 03:51:02,867 - SubtitleMerger - INFO - Merge operation completed
+2025-01-26 03:58:55,937 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 03:58:55,987 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:01:25,713 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:01:25,770 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:01:28,459 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 04:01:28,476 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 04:01:28,486 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 04:02:50,447 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:02:50,502 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:03:07,236 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 04:03:07,636 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 04:03:07,980 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 04:03:08,235 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 04:03:19,259 - SubtitleMerger - DEBUG - Scale changed to 378%
+2025-01-26 04:03:19,260 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 04:03:19,273 - SubtitleMerger - DEBUG - Scale changed to 378%
+2025-01-26 04:03:19,274 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 04:03:28,001 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 04:03:28,299 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 04:03:28,308 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 04:03:28,316 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 04:03:28,324 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 04:03:28,332 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 04:05:47,603 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,672 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,672 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,673 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,673 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,674 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,674 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,675 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,676 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,676 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,677 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,677 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,678 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,679 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,679 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,680 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,681 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,681 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,682 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,682 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,684 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,684 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,685 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,686 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,686 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,687 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,687 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,688 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,688 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,689 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,689 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,690 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,690 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,691 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,691 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,692 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,692 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,693 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,694 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,694 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,695 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,695 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,696 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,696 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,697 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,697 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,698 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,698 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,699 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,699 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,700 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,700 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,701 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,701 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,702 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,702 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,703 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,703 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,704 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,704 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,705 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,705 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,706 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,706 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,707 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,707 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,708 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,708 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,709 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,709 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,710 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,710 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,711 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,711 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,712 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,712 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,713 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,714 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,714 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,715 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,715 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,716 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,716 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,717 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,717 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,718 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,718 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,719 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,719 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,720 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,720 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,720 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,721 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,721 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,722 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,723 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,723 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,724 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,724 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,725 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,725 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,726 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,727 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,727 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,728 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,728 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,729 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,729 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,730 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,731 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,731 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,732 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,732 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,733 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,734 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,735 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,736 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,737 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,737 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,738 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,739 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,739 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,740 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,741 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,741 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,742 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,743 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,743 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,744 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,744 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,745 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,745 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,746 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,746 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,746 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,747 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,747 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,748 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,748 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,749 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,749 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,750 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,751 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,751 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,752 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,752 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,752 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,753 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,754 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,754 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,754 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,755 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,756 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,756 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,757 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,758 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,759 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,759 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,760 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,760 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,761 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,762 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,762 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,763 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,763 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,764 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,764 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,765 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,765 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,766 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,767 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,767 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,768 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,769 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,770 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,770 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,771 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,772 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,772 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,773 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,774 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,775 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,776 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,776 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,777 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,778 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,778 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,779 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,780 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,780 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,781 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,782 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,783 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,784 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,785 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,785 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,786 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,787 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,788 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,788 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,789 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,790 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,790 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,791 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,792 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,792 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,793 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,794 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,794 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,795 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,796 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,797 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,797 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,798 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,799 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,799 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,800 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,801 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,801 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,802 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,803 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,803 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,804 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,805 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,805 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,806 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,807 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,807 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,808 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,809 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,810 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,811 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,812 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,813 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,814 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,815 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,815 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,816 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,817 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,818 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,818 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,819 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,820 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,820 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,821 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,821 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,822 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,823 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,823 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,824 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,825 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,825 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,826 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,826 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,827 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,828 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,828 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,829 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,830 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,830 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,831 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,831 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,832 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,833 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,833 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,834 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,835 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,835 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,836 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,836 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,837 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,838 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,839 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,840 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,840 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,841 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,842 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,842 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,843 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,844 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,844 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,845 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,846 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,846 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,847 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,848 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,848 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,849 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,850 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,850 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,851 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,852 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,853 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,854 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,854 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,855 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,856 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,856 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,857 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,857 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,858 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,859 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,859 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,860 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,860 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,861 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,862 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,862 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,863 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,864 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,865 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,865 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,866 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,867 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,867 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,868 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,869 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,869 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,870 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,871 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,871 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,872 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,872 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,873 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,874 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,874 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,875 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,876 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,876 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,877 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,877 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,878 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,879 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,879 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,880 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,881 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,881 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,882 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,883 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,883 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,884 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,884 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,885 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,886 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,886 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,887 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,888 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,888 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,889 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,890 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,891 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,891 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,892 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,893 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,893 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,894 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,895 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,895 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,896 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,897 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,897 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,898 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,899 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,899 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,900 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,901 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,901 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,902 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,903 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,903 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,904 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,905 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,905 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,906 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,907 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,907 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,908 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,909 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,909 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,910 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,910 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,911 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,912 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,912 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,913 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,914 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,914 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,915 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,916 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,917 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,918 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,919 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,919 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,920 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,921 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,921 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,922 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,923 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,923 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,924 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,925 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,926 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,927 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,928 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,929 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,930 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,931 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,931 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,932 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,933 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,934 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,935 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,935 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,936 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,937 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,938 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,938 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,939 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,940 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,941 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,942 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,942 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,943 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,944 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,945 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,946 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,947 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,949 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,950 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,951 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,951 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,952 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,953 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,954 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,955 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,955 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,956 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,957 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,958 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,959 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,959 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,960 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,961 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,962 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,963 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,963 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,964 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,965 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,966 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,967 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,968 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,968 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,969 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,970 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,971 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,971 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,972 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,973 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,974 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,974 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,975 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,976 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,977 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,978 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,978 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,980 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,981 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,982 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,983 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,984 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,985 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,986 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,987 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,988 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,989 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,990 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,991 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,991 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,993 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,994 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,995 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,996 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,996 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,997 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,998 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:47,999 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:48,000 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:48,001 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:48,001 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:48,002 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:48,003 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:05:48,004 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:06:39,806 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:06:39,864 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:06:49,614 - SubtitleMerger - DEBUG - Saved sub2_font_size to settings
+2025-01-26 04:06:49,621 - SubtitleMerger - DEBUG - Saved sub2_font_size to settings
+2025-01-26 04:06:49,956 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 04:06:49,963 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 04:06:49,966 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 04:06:49,973 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 04:06:50,005 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 04:06:50,356 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 04:06:50,366 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 04:06:50,373 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 04:06:50,381 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 04:06:50,388 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 04:06:50,405 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 04:06:55,541 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 04:07:01,807 - SubtitleMerger - DEBUG - Scale changed to 350%
+2025-01-26 04:07:01,809 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 04:07:01,824 - SubtitleMerger - DEBUG - Scale changed to 350%
+2025-01-26 04:07:01,824 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 04:07:01,835 - SubtitleMerger - DEBUG - Scale adjusted to 350%
+2025-01-26 04:07:01,835 - SubtitleMerger - DEBUG - Saved ui_scale to settings
+2025-01-26 04:07:01,836 - SubtitleMerger - DEBUG - Scale decreased to 350%
+2025-01-26 04:07:01,868 - SubtitleMerger - DEBUG - Scale changed to 325%
+2025-01-26 04:07:01,869 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 04:07:01,880 - SubtitleMerger - DEBUG - Scale changed to 325%
+2025-01-26 04:07:01,881 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 04:07:01,892 - SubtitleMerger - DEBUG - Scale adjusted to 325%
+2025-01-26 04:07:01,892 - SubtitleMerger - DEBUG - Saved ui_scale to settings
+2025-01-26 04:07:01,892 - SubtitleMerger - DEBUG - Scale decreased to 325%
+2025-01-26 04:07:19,954 - SubtitleMerger - DEBUG - Scale changed to 315%
+2025-01-26 04:07:19,955 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 04:07:19,969 - SubtitleMerger - DEBUG - Scale changed to 315%
+2025-01-26 04:07:19,969 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 04:07:20,004 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:07:20,005 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 04:07:20,018 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:07:20,019 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 04:10:24,641 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:10:24,684 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:12:35,207 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:12:35,261 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:12:50,008 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:12:50,051 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:07,571 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:07,614 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:13:07,614 - SubtitleMerger - ERROR - Error saving settings: 'SingleFilesTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:13:07,616 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:13:07,617 - SubtitleMerger - ERROR - Error saving settings: 'SingleFilesTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:13:07,629 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:07,632 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:13:07,632 - SubtitleMerger - ERROR - Error saving settings: 'DirectoryTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:13:07,635 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:13:07,635 - SubtitleMerger - ERROR - Error saving settings: 'DirectoryTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:13:29,884 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,943 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:13:29,943 - SubtitleMerger - ERROR - Error saving settings: 'SingleFilesTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:13:29,945 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:13:29,945 - SubtitleMerger - ERROR - Error saving settings: 'SingleFilesTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:13:29,955 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,956 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,956 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,957 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,957 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,958 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,958 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,958 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,959 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,959 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,960 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,960 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,961 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,961 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,962 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,962 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,962 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,963 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,963 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,964 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,964 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,965 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,965 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,966 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,966 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,967 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,967 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,968 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,968 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,969 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,969 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,970 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,970 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,970 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,971 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,972 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,972 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,973 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,974 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,974 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,975 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,975 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,975 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,976 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,976 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,977 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,977 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,978 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,978 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,979 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,979 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,979 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,980 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,980 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,981 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,981 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,982 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,982 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,983 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,983 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,983 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,984 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,984 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,985 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,985 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,986 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,986 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,987 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,987 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,988 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,988 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,988 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,989 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,989 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,990 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,991 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,992 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,992 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,993 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,993 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,993 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,994 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,995 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,995 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,996 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,996 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,997 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,997 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,997 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,998 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,998 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:29,999 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,000 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,000 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,001 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,002 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,003 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,003 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,004 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,004 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,005 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,005 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,006 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,007 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,007 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,008 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,008 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,009 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,010 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,010 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,010 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,011 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,012 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,012 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,013 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,014 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,014 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,015 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,015 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,016 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,016 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,017 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,017 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,018 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,018 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,019 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,019 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,020 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,020 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,021 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,022 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,022 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,023 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,023 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,024 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,024 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,025 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,025 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,026 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,027 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,027 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,028 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,028 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,029 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,029 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,030 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,031 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,031 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,032 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,032 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,033 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,034 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,034 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,035 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,036 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,036 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,037 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,038 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,038 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,039 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,039 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,040 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,040 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,041 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,042 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,042 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,043 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,043 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,044 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,045 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,045 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,046 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,046 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,047 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,047 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,048 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,049 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,049 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,050 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,050 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,051 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,052 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,052 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,053 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,053 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,054 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,055 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,055 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,056 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,056 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,057 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,058 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,059 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,060 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,060 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,061 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,062 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,062 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,063 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,064 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,065 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,065 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,066 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,067 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,067 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,068 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,069 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,069 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,070 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,071 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,071 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,072 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,073 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,073 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,074 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,075 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,075 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,076 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,077 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,077 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,078 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,078 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,079 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,080 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,080 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,081 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,082 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,082 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,083 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,084 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,084 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,085 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,086 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,087 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,087 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,088 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,089 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,089 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,090 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,091 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,091 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,092 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,093 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,093 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,094 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,095 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,095 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,096 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,097 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,097 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,098 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,099 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,100 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,101 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,101 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,102 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,103 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,103 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,104 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,105 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,105 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,106 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,107 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,107 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,108 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,109 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,109 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,110 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,111 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,111 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,112 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,113 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,114 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,115 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,115 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,116 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,117 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,117 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,118 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,119 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,119 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,120 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,121 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,121 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,122 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,123 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,124 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,125 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,126 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,126 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,127 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,128 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,129 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,130 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,131 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,131 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,132 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,133 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,133 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,134 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,135 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,136 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,137 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,138 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,138 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,139 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,140 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,141 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,142 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,143 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,144 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,145 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,146 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,147 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,147 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,148 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,149 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,150 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,151 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,152 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,153 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,153 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,154 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,155 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,156 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,156 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,157 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,158 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,159 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,159 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,160 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,161 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,161 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,162 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,163 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,163 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,164 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,165 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,165 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,166 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,167 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,168 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,168 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,169 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,170 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,170 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,171 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,172 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,173 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,174 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,174 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,175 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,176 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,177 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,177 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,178 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,179 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,179 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,180 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,181 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,181 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,182 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,183 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,184 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,184 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,185 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,190 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,191 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,192 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,192 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,193 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,194 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,195 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,195 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,196 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,197 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,197 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,198 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,199 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,200 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,201 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,201 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,202 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,203 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,204 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,204 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,205 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,206 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,207 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,208 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,209 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,209 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,210 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,211 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,211 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,212 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,213 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,213 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,214 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,215 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,216 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,216 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,217 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,218 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,218 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,219 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,220 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,221 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,221 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,222 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,223 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,224 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,225 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,225 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,226 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,227 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,227 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,228 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,229 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,230 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,231 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,232 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,233 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,234 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,236 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,237 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,239 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,240 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,242 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,243 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,244 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,244 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,246 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,247 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,248 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,249 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,250 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,251 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,252 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,252 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,253 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,254 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,255 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,256 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,257 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,258 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,258 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,259 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,260 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,261 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,262 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,263 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,264 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,264 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,265 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,266 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,267 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,268 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,269 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,269 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,270 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,271 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,272 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,273 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,274 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,275 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,276 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,277 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,278 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,279 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,282 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,283 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,284 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,284 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,287 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,288 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,291 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,292 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,293 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,294 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,296 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,297 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,298 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,300 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,301 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,302 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,303 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,304 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,305 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,306 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:30,307 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:36,025 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:36,077 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:13:36,077 - SubtitleMerger - ERROR - Error saving settings: 'SingleFilesTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:13:36,079 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:13:36,080 - SubtitleMerger - ERROR - Error saving settings: 'SingleFilesTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:13:36,093 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:13:36,095 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:13:36,095 - SubtitleMerger - ERROR - Error saving settings: 'DirectoryTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:13:36,097 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:13:36,097 - SubtitleMerger - ERROR - Error saving settings: 'DirectoryTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:13:40,815 - SubtitleMerger - DEBUG - Saved sub2_font_size to settings
+2025-01-26 04:13:40,821 - SubtitleMerger - DEBUG - Saved sub2_font_size to settings
+2025-01-26 04:13:40,826 - SubtitleMerger - DEBUG - Saved sub2_font_size to settings
+2025-01-26 04:13:41,207 - SubtitleMerger - DEBUG - Saved sub2_font_size to settings
+2025-01-26 04:13:41,223 - SubtitleMerger - DEBUG - Saved sub2_font_size to settings
+2025-01-26 04:14:02,961 - SubtitleMerger - DEBUG - Saved sub2_font_size to settings
+2025-01-26 04:14:02,971 - SubtitleMerger - DEBUG - Saved sub2_font_size to settings
+2025-01-26 04:14:02,983 - SubtitleMerger - DEBUG - Saved sub2_font_size to settings
+2025-01-26 04:14:03,039 - SubtitleMerger - DEBUG - Saved sub2_font_size to settings
+2025-01-26 04:14:28,191 - SubtitleMerger - DEBUG - Saved sub2_font_size to settings
+2025-01-26 04:14:28,201 - SubtitleMerger - DEBUG - Saved sub2_font_size to settings
+2025-01-26 04:14:28,207 - SubtitleMerger - DEBUG - Saved sub2_font_size to settings
+2025-01-26 04:14:28,223 - SubtitleMerger - DEBUG - Saved sub2_font_size to settings
+2025-01-26 04:14:28,256 - SubtitleMerger - DEBUG - Saved sub2_font_size to settings
+2025-01-26 04:14:36,751 - SubtitleMerger - DEBUG - Saved sub2_font_size to settings
+2025-01-26 04:14:51,466 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 04:14:55,451 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 04:15:36,225 - SubtitleMerger - DEBUG - Saved last_subtitle_directory to settings
+2025-01-26 04:15:39,425 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:15:51,807 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:15:59,584 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:16:07,047 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:16:09,488 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:16:09,988 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:16:10,045 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:16:10,094 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:16:10,143 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:16:10,200 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:16:10,244 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:16:10,294 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:16:10,346 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:16:10,397 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:16:10,768 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:16:11,425 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:16:13,088 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:16:15,441 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:16:25,737 - SubtitleMerger - DEBUG - Saved sub2_font_size to settings
+2025-01-26 04:16:25,744 - SubtitleMerger - DEBUG - Saved sub2_font_size to settings
+2025-01-26 04:17:08,233 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:17:38,602 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:17:46,033 - SubtitleMerger - DEBUG - All settings saved successfully
+2025-01-26 04:17:46,033 - SubtitleMerger - INFO - Starting merge operation...
+2025-01-26 04:17:46,033 - SubtitleMerger - INFO - Input directory: /home/half-arch/Documents/Subs/Onii-chan wa Oshimai! v2
+2025-01-26 04:17:46,035 - SubtitleMerger - INFO - Video directory: /mnt/ehdd/[smol] Onii-chap HEVC Opus)/mnt/ehdd/[smol] Onii-cha
+2025-01-26 04:17:46,036 - SubtitleMerger - DEBUG - Using patterns - Sub1: Nanako, Sub2: smol
+2025-01-26 04:17:46,036 - SubtitleMerger - DEBUG - Episode patterns - Sub1: (\d+)(?:v\d+)? (?:\(1080p\)|END), Sub2: S\d+E(\d+)
+2025-01-26 04:17:46,036 - SubtitleMerger - DEBUG - Styles - Sub1: color=Yellow, size=24, Sub2: size=8
+2025-01-26 04:17:46,044 - SubtitleMerger - INFO - Found 12 sub1 files and 24 sub2 files
+2025-01-26 04:17:46,045 - SubtitleMerger - DEBUG - Found sub1 for episode 01: [NanakoRaws] Onii-chan wa Oshimai! - 01v2 (1080p).srt
+2025-01-26 04:17:46,045 - SubtitleMerger - DEBUG - Found sub1 for episode 02: [NanakoRaws] Onii-chan wa Oshimai! - 02 (1080p).srt
+2025-01-26 04:17:46,045 - SubtitleMerger - DEBUG - Found sub1 for episode 03: [NanakoRaws] Onii-chan wa Oshimai! - 03 (1080p).srt
+2025-01-26 04:17:46,045 - SubtitleMerger - DEBUG - Found sub1 for episode 04: [NanakoRaws] Onii-chan wa Oshimai! - 04 (1080p).srt
+2025-01-26 04:17:46,046 - SubtitleMerger - DEBUG - Found sub1 for episode 05: [NanakoRaws] Onii-chan wa Oshimai! - 05 (1080p).srt
+2025-01-26 04:17:46,046 - SubtitleMerger - DEBUG - Found sub1 for episode 06: [NanakoRaws] Onii-chan wa Oshimai! - 06 (1080p).srt
+2025-01-26 04:17:46,046 - SubtitleMerger - DEBUG - Found sub1 for episode 07: [NanakoRaws] Onii-chan wa Oshimai! - 07v2 (1080p).srt
+2025-01-26 04:17:46,047 - SubtitleMerger - DEBUG - Found sub1 for episode 08: [NanakoRaws] Onii-chan wa Oshimai! - 08 (1080p).srt
+2025-01-26 04:17:46,047 - SubtitleMerger - DEBUG - Found sub1 for episode 10: [NanakoRaws] Onii-chan wa Oshimai! - 10 (1080p).srt
+2025-01-26 04:17:46,047 - SubtitleMerger - DEBUG - Found sub1 for episode 11: [NanakoRaws] Onii-chan wa Oshimai! - 11 (1080p).srt
+2025-01-26 04:17:46,047 - SubtitleMerger - DEBUG - Found sub1 for episode 12: [NanakoRaws] Onii-chan wa Oshimai! - 12 END (1080p).srt
+2025-01-26 04:17:46,047 - SubtitleMerger - DEBUG - Found sub1 for episode 09: [NanakoRaws] Onii-chan wa Oshimai! - 09 (1080p).srt
+2025-01-26 04:17:46,048 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E01v2 (BD 1080p HEVC Opus) [723EEC4B]-Clean.srt
+2025-01-26 04:17:46,048 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E01v2 (BD 1080p HEVC Opus) [723EEC4B].2.eng.srt
+2025-01-26 04:17:46,048 - SubtitleMerger - DEBUG - Found sub2 for episode 02: [smol] Onii-chan wa Oshimai! - S01E02v2 (BD 1080p HEVC Opus) [62E2EA43]-Clean.srt
+2025-01-26 04:17:46,048 - SubtitleMerger - DEBUG - Found sub2 for episode 03: [smol] Onii-chan wa Oshimai! - S01E03v2 (BD 1080p HEVC Opus) [21B57B18]-Clean.srt
+2025-01-26 04:17:46,048 - SubtitleMerger - DEBUG - Found sub2 for episode 03: [smol] Onii-chan wa Oshimai! - S01E03v2 (BD 1080p HEVC Opus) [21B57B18].2.eng.srt
+2025-01-26 04:17:46,049 - SubtitleMerger - DEBUG - Found sub2 for episode 04: [smol] Onii-chan wa Oshimai! - S01E04v2 (BD 1080p HEVC Opus) [254B9CE3]-Clean.srt
+2025-01-26 04:17:46,049 - SubtitleMerger - DEBUG - Found sub2 for episode 04: [smol] Onii-chan wa Oshimai! - S01E04v2 (BD 1080p HEVC Opus) [254B9CE3].2.eng.srt
+2025-01-26 04:17:46,049 - SubtitleMerger - DEBUG - Found sub2 for episode 05: [smol] Onii-chan wa Oshimai! - S01E05v2 (BD 1080p HEVC Opus) [E1A212D8]-Clean.srt
+2025-01-26 04:17:46,049 - SubtitleMerger - DEBUG - Found sub2 for episode 02: [smol] Onii-chan wa Oshimai! - S01E02v2 (BD 1080p HEVC Opus) [62E2EA43].2.eng.srt
+2025-01-26 04:17:46,050 - SubtitleMerger - DEBUG - Found sub2 for episode 05: [smol] Onii-chan wa Oshimai! - S01E05v2 (BD 1080p HEVC Opus) [E1A212D8].2.eng.srt
+2025-01-26 04:17:46,050 - SubtitleMerger - DEBUG - Found sub2 for episode 08: [smol] Onii-chan wa Oshimai! - S01E08v2 (BD 1080p HEVC Opus) [4229C5E6].2.eng.srt
+2025-01-26 04:17:46,050 - SubtitleMerger - DEBUG - Found sub2 for episode 11: [smol] Onii-chan wa Oshimai! - S01E11v2 (BD 1080p HEVC Opus) [BA8B7984].2.eng.srt
+2025-01-26 04:17:46,050 - SubtitleMerger - DEBUG - Found sub2 for episode 06: [smol] Onii-chan wa Oshimai! - S01E06v2 (BD 1080p HEVC Opus) [5FF11A49]-Clean.srt
+2025-01-26 04:17:46,051 - SubtitleMerger - DEBUG - Found sub2 for episode 06: [smol] Onii-chan wa Oshimai! - S01E06v2 (BD 1080p HEVC Opus) [5FF11A49].2.eng.srt
+2025-01-26 04:17:46,051 - SubtitleMerger - DEBUG - Found sub2 for episode 07: [smol] Onii-chan wa Oshimai! - S01E07v2 (BD 1080p HEVC Opus) [F97CC8C5]-Clean.srt
+2025-01-26 04:17:46,051 - SubtitleMerger - DEBUG - Found sub2 for episode 07: [smol] Onii-chan wa Oshimai! - S01E07v2 (BD 1080p HEVC Opus) [F97CC8C5].2.eng.srt
+2025-01-26 04:17:46,051 - SubtitleMerger - DEBUG - Found sub2 for episode 08: [smol] Onii-chan wa Oshimai! - S01E08v2 (BD 1080p HEVC Opus) [4229C5E6]-Clean.srt
+2025-01-26 04:17:46,052 - SubtitleMerger - DEBUG - Found sub2 for episode 09: [smol] Onii-chan wa Oshimai! - S01E09v2 (BD 1080p HEVC Opus) [E91BABB2]-Clean.srt
+2025-01-26 04:17:46,052 - SubtitleMerger - DEBUG - Found sub2 for episode 09: [smol] Onii-chan wa Oshimai! - S01E09v2 (BD 1080p HEVC Opus) [E91BABB2].2.eng.srt
+2025-01-26 04:17:46,052 - SubtitleMerger - DEBUG - Found sub2 for episode 10: [smol] Onii-chan wa Oshimai! - S01E10v2 (BD 1080p HEVC Opus) [B2A00ACC]-Clean.srt
+2025-01-26 04:17:46,052 - SubtitleMerger - DEBUG - Found sub2 for episode 10: [smol] Onii-chan wa Oshimai! - S01E10v2 (BD 1080p HEVC Opus) [B2A00ACC].2.eng.srt
+2025-01-26 04:17:46,053 - SubtitleMerger - DEBUG - Found sub2 for episode 11: [smol] Onii-chan wa Oshimai! - S01E11v2 (BD 1080p HEVC Opus) [BA8B7984]-Clean.srt
+2025-01-26 04:17:46,053 - SubtitleMerger - DEBUG - Found sub2 for episode 12: [smol] Onii-chan wa Oshimai! - S01E12v2 (BD 1080p HEVC Opus) [EC9C787B]-Clean.srt
+2025-01-26 04:17:46,053 - SubtitleMerger - DEBUG - Found sub2 for episode 12: [smol] Onii-chan wa Oshimai! - S01E12v2 (BD 1080p HEVC Opus) [EC9C787B].2.eng.srt
+2025-01-26 04:17:46,054 - SubtitleMerger - INFO - Found 0 video files
+2025-01-26 04:17:46,054 - SubtitleMerger - INFO - Merge operation completed
+2025-01-26 04:18:10,721 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:18:11,221 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:18:11,271 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:18:11,322 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:18:11,373 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:18:11,422 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:18:11,473 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:18:22,338 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:18:22,973 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:18:26,610 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:19:11,541 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:19:16,279 - SubtitleMerger - DEBUG - All settings saved successfully
+2025-01-26 04:19:16,280 - SubtitleMerger - INFO - Starting merge operation...
+2025-01-26 04:19:16,280 - SubtitleMerger - INFO - Input directory: /home/half-arch/Documents/Subs/Onii-chan wa Oshimai! v2
+2025-01-26 04:19:16,280 - SubtitleMerger - INFO - Video directory: /mnt/ehdd/[smol] Onii-chan wa Oshimai! v2 (BD 1080p HEVC Opus)
+2025-01-26 04:19:16,283 - SubtitleMerger - DEBUG - Using patterns - Sub1: Nanako, Sub2: smol
+2025-01-26 04:19:16,283 - SubtitleMerger - DEBUG - Episode patterns - Sub1: (\d+)(?:v\d+)? (?:\(1080p\)|END), Sub2: S\d+E(\d+)
+2025-01-26 04:19:16,283 - SubtitleMerger - DEBUG - Styles - Sub1: color=Yellow, size=24, Sub2: size=8
+2025-01-26 04:19:16,286 - SubtitleMerger - INFO - Found 12 sub1 files and 24 sub2 files
+2025-01-26 04:19:16,286 - SubtitleMerger - DEBUG - Found sub1 for episode 01: [NanakoRaws] Onii-chan wa Oshimai! - 01v2 (1080p).srt
+2025-01-26 04:19:16,286 - SubtitleMerger - DEBUG - Found sub1 for episode 02: [NanakoRaws] Onii-chan wa Oshimai! - 02 (1080p).srt
+2025-01-26 04:19:16,287 - SubtitleMerger - DEBUG - Found sub1 for episode 03: [NanakoRaws] Onii-chan wa Oshimai! - 03 (1080p).srt
+2025-01-26 04:19:16,287 - SubtitleMerger - DEBUG - Found sub1 for episode 04: [NanakoRaws] Onii-chan wa Oshimai! - 04 (1080p).srt
+2025-01-26 04:19:16,287 - SubtitleMerger - DEBUG - Found sub1 for episode 05: [NanakoRaws] Onii-chan wa Oshimai! - 05 (1080p).srt
+2025-01-26 04:19:16,287 - SubtitleMerger - DEBUG - Found sub1 for episode 06: [NanakoRaws] Onii-chan wa Oshimai! - 06 (1080p).srt
+2025-01-26 04:19:16,289 - SubtitleMerger - DEBUG - Found sub1 for episode 07: [NanakoRaws] Onii-chan wa Oshimai! - 07v2 (1080p).srt
+2025-01-26 04:19:16,289 - SubtitleMerger - DEBUG - Found sub1 for episode 08: [NanakoRaws] Onii-chan wa Oshimai! - 08 (1080p).srt
+2025-01-26 04:19:16,289 - SubtitleMerger - DEBUG - Found sub1 for episode 10: [NanakoRaws] Onii-chan wa Oshimai! - 10 (1080p).srt
+2025-01-26 04:19:16,289 - SubtitleMerger - DEBUG - Found sub1 for episode 11: [NanakoRaws] Onii-chan wa Oshimai! - 11 (1080p).srt
+2025-01-26 04:19:16,290 - SubtitleMerger - DEBUG - Found sub1 for episode 12: [NanakoRaws] Onii-chan wa Oshimai! - 12 END (1080p).srt
+2025-01-26 04:19:16,290 - SubtitleMerger - DEBUG - Found sub1 for episode 09: [NanakoRaws] Onii-chan wa Oshimai! - 09 (1080p).srt
+2025-01-26 04:19:16,290 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E01v2 (BD 1080p HEVC Opus) [723EEC4B]-Clean.srt
+2025-01-26 04:19:16,290 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E01v2 (BD 1080p HEVC Opus) [723EEC4B].2.eng.srt
+2025-01-26 04:19:16,291 - SubtitleMerger - DEBUG - Found sub2 for episode 02: [smol] Onii-chan wa Oshimai! - S01E02v2 (BD 1080p HEVC Opus) [62E2EA43]-Clean.srt
+2025-01-26 04:19:16,291 - SubtitleMerger - DEBUG - Found sub2 for episode 03: [smol] Onii-chan wa Oshimai! - S01E03v2 (BD 1080p HEVC Opus) [21B57B18]-Clean.srt
+2025-01-26 04:19:16,291 - SubtitleMerger - DEBUG - Found sub2 for episode 03: [smol] Onii-chan wa Oshimai! - S01E03v2 (BD 1080p HEVC Opus) [21B57B18].2.eng.srt
+2025-01-26 04:19:16,292 - SubtitleMerger - DEBUG - Found sub2 for episode 04: [smol] Onii-chan wa Oshimai! - S01E04v2 (BD 1080p HEVC Opus) [254B9CE3]-Clean.srt
+2025-01-26 04:19:16,292 - SubtitleMerger - DEBUG - Found sub2 for episode 04: [smol] Onii-chan wa Oshimai! - S01E04v2 (BD 1080p HEVC Opus) [254B9CE3].2.eng.srt
+2025-01-26 04:19:16,292 - SubtitleMerger - DEBUG - Found sub2 for episode 05: [smol] Onii-chan wa Oshimai! - S01E05v2 (BD 1080p HEVC Opus) [E1A212D8]-Clean.srt
+2025-01-26 04:19:16,292 - SubtitleMerger - DEBUG - Found sub2 for episode 02: [smol] Onii-chan wa Oshimai! - S01E02v2 (BD 1080p HEVC Opus) [62E2EA43].2.eng.srt
+2025-01-26 04:19:16,293 - SubtitleMerger - DEBUG - Found sub2 for episode 05: [smol] Onii-chan wa Oshimai! - S01E05v2 (BD 1080p HEVC Opus) [E1A212D8].2.eng.srt
+2025-01-26 04:19:16,293 - SubtitleMerger - DEBUG - Found sub2 for episode 08: [smol] Onii-chan wa Oshimai! - S01E08v2 (BD 1080p HEVC Opus) [4229C5E6].2.eng.srt
+2025-01-26 04:19:16,293 - SubtitleMerger - DEBUG - Found sub2 for episode 11: [smol] Onii-chan wa Oshimai! - S01E11v2 (BD 1080p HEVC Opus) [BA8B7984].2.eng.srt
+2025-01-26 04:19:16,293 - SubtitleMerger - DEBUG - Found sub2 for episode 06: [smol] Onii-chan wa Oshimai! - S01E06v2 (BD 1080p HEVC Opus) [5FF11A49]-Clean.srt
+2025-01-26 04:19:16,294 - SubtitleMerger - DEBUG - Found sub2 for episode 06: [smol] Onii-chan wa Oshimai! - S01E06v2 (BD 1080p HEVC Opus) [5FF11A49].2.eng.srt
+2025-01-26 04:19:16,294 - SubtitleMerger - DEBUG - Found sub2 for episode 07: [smol] Onii-chan wa Oshimai! - S01E07v2 (BD 1080p HEVC Opus) [F97CC8C5]-Clean.srt
+2025-01-26 04:19:16,294 - SubtitleMerger - DEBUG - Found sub2 for episode 07: [smol] Onii-chan wa Oshimai! - S01E07v2 (BD 1080p HEVC Opus) [F97CC8C5].2.eng.srt
+2025-01-26 04:19:16,294 - SubtitleMerger - DEBUG - Found sub2 for episode 08: [smol] Onii-chan wa Oshimai! - S01E08v2 (BD 1080p HEVC Opus) [4229C5E6]-Clean.srt
+2025-01-26 04:19:16,295 - SubtitleMerger - DEBUG - Found sub2 for episode 09: [smol] Onii-chan wa Oshimai! - S01E09v2 (BD 1080p HEVC Opus) [E91BABB2]-Clean.srt
+2025-01-26 04:19:16,295 - SubtitleMerger - DEBUG - Found sub2 for episode 09: [smol] Onii-chan wa Oshimai! - S01E09v2 (BD 1080p HEVC Opus) [E91BABB2].2.eng.srt
+2025-01-26 04:19:16,295 - SubtitleMerger - DEBUG - Found sub2 for episode 10: [smol] Onii-chan wa Oshimai! - S01E10v2 (BD 1080p HEVC Opus) [B2A00ACC]-Clean.srt
+2025-01-26 04:19:16,296 - SubtitleMerger - DEBUG - Found sub2 for episode 10: [smol] Onii-chan wa Oshimai! - S01E10v2 (BD 1080p HEVC Opus) [B2A00ACC].2.eng.srt
+2025-01-26 04:19:16,296 - SubtitleMerger - DEBUG - Found sub2 for episode 11: [smol] Onii-chan wa Oshimai! - S01E11v2 (BD 1080p HEVC Opus) [BA8B7984]-Clean.srt
+2025-01-26 04:19:16,296 - SubtitleMerger - DEBUG - Found sub2 for episode 12: [smol] Onii-chan wa Oshimai! - S01E12v2 (BD 1080p HEVC Opus) [EC9C787B]-Clean.srt
+2025-01-26 04:19:16,296 - SubtitleMerger - DEBUG - Found sub2 for episode 12: [smol] Onii-chan wa Oshimai! - S01E12v2 (BD 1080p HEVC Opus) [EC9C787B].2.eng.srt
+2025-01-26 04:19:16,297 - SubtitleMerger - INFO - Found 12 video files
+2025-01-26 04:19:16,301 - SubtitleMerger - INFO - Copied subtitle files for episode 01
+2025-01-26 04:19:16,312 - SubtitleMerger - ERROR - Error merging subtitles for episode 01: name 'COLORS' is not defined
+2025-01-26 04:19:16,315 - SubtitleMerger - INFO - Copied subtitle files for episode 02
+2025-01-26 04:19:16,324 - SubtitleMerger - ERROR - Error merging subtitles for episode 02: name 'COLORS' is not defined
+2025-01-26 04:19:16,327 - SubtitleMerger - INFO - Copied subtitle files for episode 03
+2025-01-26 04:19:16,335 - SubtitleMerger - ERROR - Error merging subtitles for episode 03: name 'COLORS' is not defined
+2025-01-26 04:19:16,338 - SubtitleMerger - INFO - Copied subtitle files for episode 05
+2025-01-26 04:19:16,346 - SubtitleMerger - ERROR - Error merging subtitles for episode 05: name 'COLORS' is not defined
+2025-01-26 04:19:16,350 - SubtitleMerger - INFO - Copied subtitle files for episode 06
+2025-01-26 04:19:16,358 - SubtitleMerger - ERROR - Error merging subtitles for episode 06: name 'COLORS' is not defined
+2025-01-26 04:19:16,694 - SubtitleMerger - INFO - Copied subtitle files for episode 07
+2025-01-26 04:19:16,703 - SubtitleMerger - ERROR - Error merging subtitles for episode 07: name 'COLORS' is not defined
+2025-01-26 04:19:16,707 - SubtitleMerger - INFO - Copied subtitle files for episode 08
+2025-01-26 04:19:16,716 - SubtitleMerger - ERROR - Error merging subtitles for episode 08: name 'COLORS' is not defined
+2025-01-26 04:19:16,719 - SubtitleMerger - INFO - Copied subtitle files for episode 09
+2025-01-26 04:19:16,727 - SubtitleMerger - ERROR - Error merging subtitles for episode 09: name 'COLORS' is not defined
+2025-01-26 04:19:16,730 - SubtitleMerger - INFO - Copied subtitle files for episode 10
+2025-01-26 04:19:16,739 - SubtitleMerger - ERROR - Error merging subtitles for episode 10: name 'COLORS' is not defined
+2025-01-26 04:19:16,742 - SubtitleMerger - INFO - Copied subtitle files for episode 11
+2025-01-26 04:19:16,751 - SubtitleMerger - ERROR - Error merging subtitles for episode 11: name 'COLORS' is not defined
+2025-01-26 04:19:16,754 - SubtitleMerger - INFO - Copied subtitle files for episode 12
+2025-01-26 04:19:16,763 - SubtitleMerger - ERROR - Error merging subtitles for episode 12: name 'COLORS' is not defined
+2025-01-26 04:19:16,767 - SubtitleMerger - INFO - Copied subtitle files for episode 04
+2025-01-26 04:19:16,776 - SubtitleMerger - ERROR - Error merging subtitles for episode 04: name 'COLORS' is not defined
+2025-01-26 04:19:16,776 - SubtitleMerger - INFO - Merge operation completed
+2025-01-26 04:25:54,995 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:25:55,053 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:25:55,053 - SubtitleMerger - ERROR - Error saving settings: 'SingleFilesTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:25:55,056 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:25:55,056 - SubtitleMerger - ERROR - Error saving settings: 'SingleFilesTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:25:55,067 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:25:55,069 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:25:55,069 - SubtitleMerger - ERROR - Error saving settings: 'DirectoryTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:25:55,071 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:25:55,071 - SubtitleMerger - ERROR - Error saving settings: 'DirectoryTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:26:23,575 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:26:31,146 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:26:33,116 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:26:37,140 - SubtitleMerger - DEBUG - All settings saved successfully
+2025-01-26 04:26:37,141 - SubtitleMerger - INFO - Starting merge operation...
+2025-01-26 04:26:37,143 - SubtitleMerger - INFO - Input directory: /home/half-arch/Documents/Subs/Onii-chan wa Oshimai! v2
+2025-01-26 04:26:37,143 - SubtitleMerger - INFO - Video directory: /mnt/ehdd/[smol] Onii-chan wa Oshimai! v2 (BD 1080p HEVC Opus)
+2025-01-26 04:26:37,143 - SubtitleMerger - DEBUG - Using patterns - Sub1: Nanako, Sub2: smol
+2025-01-26 04:26:37,143 - SubtitleMerger - DEBUG - Episode patterns - Sub1: (\d+)(?:v\d+)? (?:\(1080p\)|END), Sub2: S\d+E(\d+)
+2025-01-26 04:26:37,143 - SubtitleMerger - DEBUG - Styles - Sub1: color=Yellow, size=24, Sub2: size=8
+2025-01-26 04:26:37,146 - SubtitleMerger - INFO - Found 12 sub1 files and 24 sub2 files
+2025-01-26 04:26:37,147 - SubtitleMerger - DEBUG - Found sub1 for episode 01: [NanakoRaws] Onii-chan wa Oshimai! - 01v2 (1080p).srt
+2025-01-26 04:26:37,147 - SubtitleMerger - DEBUG - Found sub1 for episode 02: [NanakoRaws] Onii-chan wa Oshimai! - 02 (1080p).srt
+2025-01-26 04:26:37,147 - SubtitleMerger - DEBUG - Found sub1 for episode 03: [NanakoRaws] Onii-chan wa Oshimai! - 03 (1080p).srt
+2025-01-26 04:26:37,148 - SubtitleMerger - DEBUG - Found sub1 for episode 04: [NanakoRaws] Onii-chan wa Oshimai! - 04 (1080p).srt
+2025-01-26 04:26:37,148 - SubtitleMerger - DEBUG - Found sub1 for episode 05: [NanakoRaws] Onii-chan wa Oshimai! - 05 (1080p).srt
+2025-01-26 04:26:37,148 - SubtitleMerger - DEBUG - Found sub1 for episode 06: [NanakoRaws] Onii-chan wa Oshimai! - 06 (1080p).srt
+2025-01-26 04:26:37,148 - SubtitleMerger - DEBUG - Found sub1 for episode 07: [NanakoRaws] Onii-chan wa Oshimai! - 07v2 (1080p).srt
+2025-01-26 04:26:37,149 - SubtitleMerger - DEBUG - Found sub1 for episode 08: [NanakoRaws] Onii-chan wa Oshimai! - 08 (1080p).srt
+2025-01-26 04:26:37,149 - SubtitleMerger - DEBUG - Found sub1 for episode 10: [NanakoRaws] Onii-chan wa Oshimai! - 10 (1080p).srt
+2025-01-26 04:26:37,149 - SubtitleMerger - DEBUG - Found sub1 for episode 11: [NanakoRaws] Onii-chan wa Oshimai! - 11 (1080p).srt
+2025-01-26 04:26:37,150 - SubtitleMerger - DEBUG - Found sub1 for episode 12: [NanakoRaws] Onii-chan wa Oshimai! - 12 END (1080p).srt
+2025-01-26 04:26:37,150 - SubtitleMerger - DEBUG - Found sub1 for episode 09: [NanakoRaws] Onii-chan wa Oshimai! - 09 (1080p).srt
+2025-01-26 04:26:37,150 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E01v2 (BD 1080p HEVC Opus) [723EEC4B]-Clean.srt
+2025-01-26 04:26:37,151 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E01v2 (BD 1080p HEVC Opus) [723EEC4B].2.eng.srt
+2025-01-26 04:26:37,152 - SubtitleMerger - DEBUG - Found sub2 for episode 02: [smol] Onii-chan wa Oshimai! - S01E02v2 (BD 1080p HEVC Opus) [62E2EA43]-Clean.srt
+2025-01-26 04:26:37,152 - SubtitleMerger - DEBUG - Found sub2 for episode 03: [smol] Onii-chan wa Oshimai! - S01E03v2 (BD 1080p HEVC Opus) [21B57B18]-Clean.srt
+2025-01-26 04:26:37,152 - SubtitleMerger - DEBUG - Found sub2 for episode 03: [smol] Onii-chan wa Oshimai! - S01E03v2 (BD 1080p HEVC Opus) [21B57B18].2.eng.srt
+2025-01-26 04:26:37,153 - SubtitleMerger - DEBUG - Found sub2 for episode 04: [smol] Onii-chan wa Oshimai! - S01E04v2 (BD 1080p HEVC Opus) [254B9CE3]-Clean.srt
+2025-01-26 04:26:37,153 - SubtitleMerger - DEBUG - Found sub2 for episode 04: [smol] Onii-chan wa Oshimai! - S01E04v2 (BD 1080p HEVC Opus) [254B9CE3].2.eng.srt
+2025-01-26 04:26:37,154 - SubtitleMerger - DEBUG - Found sub2 for episode 05: [smol] Onii-chan wa Oshimai! - S01E05v2 (BD 1080p HEVC Opus) [E1A212D8]-Clean.srt
+2025-01-26 04:26:37,154 - SubtitleMerger - DEBUG - Found sub2 for episode 02: [smol] Onii-chan wa Oshimai! - S01E02v2 (BD 1080p HEVC Opus) [62E2EA43].2.eng.srt
+2025-01-26 04:26:37,154 - SubtitleMerger - DEBUG - Found sub2 for episode 05: [smol] Onii-chan wa Oshimai! - S01E05v2 (BD 1080p HEVC Opus) [E1A212D8].2.eng.srt
+2025-01-26 04:26:37,154 - SubtitleMerger - DEBUG - Found sub2 for episode 08: [smol] Onii-chan wa Oshimai! - S01E08v2 (BD 1080p HEVC Opus) [4229C5E6].2.eng.srt
+2025-01-26 04:26:37,155 - SubtitleMerger - DEBUG - Found sub2 for episode 11: [smol] Onii-chan wa Oshimai! - S01E11v2 (BD 1080p HEVC Opus) [BA8B7984].2.eng.srt
+2025-01-26 04:26:37,155 - SubtitleMerger - DEBUG - Found sub2 for episode 06: [smol] Onii-chan wa Oshimai! - S01E06v2 (BD 1080p HEVC Opus) [5FF11A49]-Clean.srt
+2025-01-26 04:26:37,155 - SubtitleMerger - DEBUG - Found sub2 for episode 06: [smol] Onii-chan wa Oshimai! - S01E06v2 (BD 1080p HEVC Opus) [5FF11A49].2.eng.srt
+2025-01-26 04:26:37,155 - SubtitleMerger - DEBUG - Found sub2 for episode 07: [smol] Onii-chan wa Oshimai! - S01E07v2 (BD 1080p HEVC Opus) [F97CC8C5]-Clean.srt
+2025-01-26 04:26:37,156 - SubtitleMerger - DEBUG - Found sub2 for episode 07: [smol] Onii-chan wa Oshimai! - S01E07v2 (BD 1080p HEVC Opus) [F97CC8C5].2.eng.srt
+2025-01-26 04:26:37,156 - SubtitleMerger - DEBUG - Found sub2 for episode 08: [smol] Onii-chan wa Oshimai! - S01E08v2 (BD 1080p HEVC Opus) [4229C5E6]-Clean.srt
+2025-01-26 04:26:37,156 - SubtitleMerger - DEBUG - Found sub2 for episode 09: [smol] Onii-chan wa Oshimai! - S01E09v2 (BD 1080p HEVC Opus) [E91BABB2]-Clean.srt
+2025-01-26 04:26:37,156 - SubtitleMerger - DEBUG - Found sub2 for episode 09: [smol] Onii-chan wa Oshimai! - S01E09v2 (BD 1080p HEVC Opus) [E91BABB2].2.eng.srt
+2025-01-26 04:26:37,157 - SubtitleMerger - DEBUG - Found sub2 for episode 10: [smol] Onii-chan wa Oshimai! - S01E10v2 (BD 1080p HEVC Opus) [B2A00ACC]-Clean.srt
+2025-01-26 04:26:37,157 - SubtitleMerger - DEBUG - Found sub2 for episode 10: [smol] Onii-chan wa Oshimai! - S01E10v2 (BD 1080p HEVC Opus) [B2A00ACC].2.eng.srt
+2025-01-26 04:26:37,157 - SubtitleMerger - DEBUG - Found sub2 for episode 11: [smol] Onii-chan wa Oshimai! - S01E11v2 (BD 1080p HEVC Opus) [BA8B7984]-Clean.srt
+2025-01-26 04:26:37,158 - SubtitleMerger - DEBUG - Found sub2 for episode 12: [smol] Onii-chan wa Oshimai! - S01E12v2 (BD 1080p HEVC Opus) [EC9C787B]-Clean.srt
+2025-01-26 04:26:37,158 - SubtitleMerger - DEBUG - Found sub2 for episode 12: [smol] Onii-chan wa Oshimai! - S01E12v2 (BD 1080p HEVC Opus) [EC9C787B].2.eng.srt
+2025-01-26 04:26:37,159 - SubtitleMerger - INFO - Found 12 video files
+2025-01-26 04:26:37,168 - SubtitleMerger - INFO - Copied subtitle files for episode 01
+2025-01-26 04:26:37,203 - SubtitleMerger - ERROR - Error merging subtitles for episode 01: name 'COLORS' is not defined
+2025-01-26 04:26:37,210 - SubtitleMerger - INFO - Copied subtitle files for episode 02
+2025-01-26 04:26:37,218 - SubtitleMerger - ERROR - Error merging subtitles for episode 02: name 'COLORS' is not defined
+2025-01-26 04:26:37,224 - SubtitleMerger - INFO - Copied subtitle files for episode 03
+2025-01-26 04:26:37,229 - SubtitleMerger - ERROR - Error merging subtitles for episode 03: name 'COLORS' is not defined
+2025-01-26 04:26:37,233 - SubtitleMerger - INFO - Copied subtitle files for episode 05
+2025-01-26 04:26:37,242 - SubtitleMerger - ERROR - Error merging subtitles for episode 05: name 'COLORS' is not defined
+2025-01-26 04:26:37,247 - SubtitleMerger - INFO - Copied subtitle files for episode 06
+2025-01-26 04:26:37,255 - SubtitleMerger - ERROR - Error merging subtitles for episode 06: name 'COLORS' is not defined
+2025-01-26 04:26:37,259 - SubtitleMerger - INFO - Copied subtitle files for episode 07
+2025-01-26 04:26:37,271 - SubtitleMerger - ERROR - Error merging subtitles for episode 07: name 'COLORS' is not defined
+2025-01-26 04:26:37,274 - SubtitleMerger - INFO - Copied subtitle files for episode 08
+2025-01-26 04:26:37,281 - SubtitleMerger - ERROR - Error merging subtitles for episode 08: name 'COLORS' is not defined
+2025-01-26 04:26:37,284 - SubtitleMerger - INFO - Copied subtitle files for episode 09
+2025-01-26 04:26:37,289 - SubtitleMerger - ERROR - Error merging subtitles for episode 09: name 'COLORS' is not defined
+2025-01-26 04:26:37,293 - SubtitleMerger - INFO - Copied subtitle files for episode 10
+2025-01-26 04:26:37,299 - SubtitleMerger - ERROR - Error merging subtitles for episode 10: name 'COLORS' is not defined
+2025-01-26 04:26:37,306 - SubtitleMerger - INFO - Copied subtitle files for episode 11
+2025-01-26 04:26:37,312 - SubtitleMerger - ERROR - Error merging subtitles for episode 11: name 'COLORS' is not defined
+2025-01-26 04:26:37,344 - SubtitleMerger - INFO - Copied subtitle files for episode 12
+2025-01-26 04:26:37,351 - SubtitleMerger - ERROR - Error merging subtitles for episode 12: name 'COLORS' is not defined
+2025-01-26 04:26:37,356 - SubtitleMerger - INFO - Copied subtitle files for episode 04
+2025-01-26 04:26:37,365 - SubtitleMerger - ERROR - Error merging subtitles for episode 04: name 'COLORS' is not defined
+2025-01-26 04:26:37,366 - SubtitleMerger - INFO - Merge operation completed
+2025-01-26 04:29:14,933 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:29:14,981 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:29:14,981 - SubtitleMerger - ERROR - Error saving settings: 'SingleFilesTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:29:14,984 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:29:14,984 - SubtitleMerger - ERROR - Error saving settings: 'SingleFilesTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:29:14,995 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:29:14,997 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:29:14,997 - SubtitleMerger - ERROR - Error saving settings: 'DirectoryTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:29:14,999 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:29:14,999 - SubtitleMerger - ERROR - Error saving settings: 'DirectoryTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:29:49,156 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:29:49,197 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:29:49,197 - SubtitleMerger - ERROR - Error saving settings: 'SingleFilesTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:29:49,199 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:29:49,199 - SubtitleMerger - ERROR - Error saving settings: 'SingleFilesTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:29:49,211 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:29:49,213 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:29:49,213 - SubtitleMerger - ERROR - Error saving settings: 'DirectoryTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:29:49,215 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:29:49,215 - SubtitleMerger - ERROR - Error saving settings: 'DirectoryTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:30:17,198 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:30:17,240 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:30:17,240 - SubtitleMerger - ERROR - Error saving settings: 'SingleFilesTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:30:17,242 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:30:17,242 - SubtitleMerger - ERROR - Error saving settings: 'SingleFilesTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:30:17,252 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:30:17,254 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:30:17,254 - SubtitleMerger - ERROR - Error saving settings: 'DirectoryTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:30:17,256 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:30:17,256 - SubtitleMerger - ERROR - Error saving settings: 'DirectoryTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:30:30,139 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:30:30,184 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:30:30,184 - SubtitleMerger - ERROR - Error saving settings: 'SingleFilesTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:30:30,186 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:30:30,187 - SubtitleMerger - ERROR - Error saving settings: 'SingleFilesTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:30:30,199 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:30:30,201 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:30:30,202 - SubtitleMerger - ERROR - Error saving settings: 'DirectoryTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:30:30,205 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:30:30,205 - SubtitleMerger - ERROR - Error saving settings: 'DirectoryTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:30:40,959 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:30:40,999 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:30:40,999 - SubtitleMerger - ERROR - Error saving settings: 'SingleFilesTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:30:41,001 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:30:41,001 - SubtitleMerger - ERROR - Error saving settings: 'SingleFilesTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:30:41,012 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:30:41,014 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:30:41,014 - SubtitleMerger - ERROR - Error saving settings: 'DirectoryTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:30:41,016 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:30:41,017 - SubtitleMerger - ERROR - Error saving settings: 'DirectoryTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:30:51,669 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:30:51,712 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:30:51,712 - SubtitleMerger - ERROR - Error saving settings: 'SingleFilesTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:30:51,714 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:30:51,715 - SubtitleMerger - ERROR - Error saving settings: 'SingleFilesTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:30:51,726 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:30:51,728 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:30:51,728 - SubtitleMerger - ERROR - Error saving settings: 'DirectoryTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:30:51,730 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:30:51,730 - SubtitleMerger - ERROR - Error saving settings: 'DirectoryTab' object has no attribute 'sub1_font_slider'

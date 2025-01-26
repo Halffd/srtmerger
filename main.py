@@ -4,15 +4,59 @@
 import datetime
 import codecs
 import re
+from typing import Union
 
-RED = '#FF003B'
-BLUE = '#00ADFF'
-GREEN = '#B4FF00'
-WHITE = '#FFFFFF'
-YELLOW = '#FFEB00'
+# Standard color constants
+COLORS = {
+    'RED': '#FF003B',
+    'BLUE': '#00ADFF',
+    'GREEN': '#B4FF00',
+    'WHITE': '#FFFFFF',
+    'YELLOW': '#FFEB00',
+    'CYAN': '#00FFFF',
+    'MAGENTA': '#FF00FF',
+    'ORANGE': '#FFA500',
+    'PURPLE': '#800080',
+    'PINK': '#FFC0CB'
+}
 
 TIME_PATTERN = r'\d{1,2}:\d{1,2}:\d{1,2},\d{1,5} --> \d{1,2}:\d{1,2}:\d{1,2},\d{1,5}\r\n'
 
+def normalize_color(color: Union[str, None]) -> Union[str, None]:
+    """
+    Normalize color input to a valid hex color code.
+    Accepts:
+    - Named colors from COLORS dict
+    - Hex codes with or without #
+    - RGB tuples as string "(r,g,b)"
+    """
+    if not color:
+        return None
+        
+    # Strip whitespace and convert to uppercase for comparison
+    color = color.strip().upper()
+    
+    # If it's a predefined color name
+    if color in COLORS:
+        return COLORS[color]
+        
+    # If it's already a valid hex code with #
+    if re.match(r'^#[0-9A-F]{6}$', color):
+        return color
+        
+    # If it's a hex code without #
+    if re.match(r'^[0-9A-F]{6}$', color):
+        return f'#{color}'
+        
+    # If it's an RGB tuple string
+    rgb_match = re.match(r'^\((\d+),\s*(\d+),\s*(\d+)\)$', color)
+    if rgb_match:
+        r, g, b = map(int, rgb_match.groups())
+        if all(0 <= x <= 255 for x in (r, g, b)):
+            return f'#{r:02x}{g:02x}{b:02x}'.upper()
+    
+    # If no valid format is found, return default white
+    return COLORS['WHITE']
 
 class Merger():
     """
@@ -28,6 +72,7 @@ class Merger():
         self.output_path = output_path
         self.output_name = output_name
         self.output_encoding = output_encoding
+        self.font_sizes = []  # Store font sizes for each subtitle
 
     def _insert_bom(self, content, encoding):
         encoding = encoding.replace('-', '')\
@@ -50,20 +95,40 @@ class Merger():
             return codecs.BOM_UTF32 + content
         return content
 
-    def _set_subtitle_color(self, subtitle, color):
+    def _set_subtitle_style(self, subtitle, color=None, size=None):
         """
-        Set a color for subtitle
+        Set color and size for subtitle. Color can be:
+        - Named color from COLORS dict
+        - Hex code (with or without #)
+        - RGB tuple as string "(r,g,b)"
+        Size should be a number representing the font size.
         """
-        return '<font color="{!s}">{!s}</font>'.format(
-            color, subtitle) if color else subtitle
+        # Remove any existing font tags
+        subtitle = re.sub(r'<font[^>]*>(.*?)</font>', r'\1', subtitle)
+        
+        # Normalize color
+        color = normalize_color(color)
+        
+        # Build style attributes
+        style_attrs = []
+        if color:
+            style_attrs.append(f'color="{color}"')
+        if size:
+            style_attrs.append(f'size="{size}"')
+        
+        style = ' '.join(style_attrs)
+        return f'<font {style}>{subtitle}</font>' if style else subtitle
 
     def _put_subtitle_top(self, subtitle):
         """
-        Put the subtitle at the top of the screen 
+        Put the subtitle at the top of the screen with adjusted positioning
         """
+        # Remove any existing alignment tags
+        subtitle = re.sub(r'{\\\an\d}', '', subtitle)
+        # Use \an8 for top position with adjusted vertical spacing
         return '{\\an8}' + subtitle
 
-    def _split_dialogs(self, dialogs, subtitle, color=None, top=False):
+    def _split_dialogs(self, dialogs, subtitle, color=None, size=None, top=False):
         for dialog in dialogs:
             if dialog.startswith('\r\n'):
                 dialog = dialog.replace('\r\n', '', 1)
@@ -74,33 +139,50 @@ class Merger():
             try:
                 if dialog.startswith('\r\n'):
                     dialog = dialog[2:]
-                time = dialog.split('\n', 2)[1].split('-->')[0].split(',')[0]
+                time = dialog.split('\n', 2)[1]  # Get full timestamp line
+                timestamp = time.split('-->')[0].strip()  # Get start time
             except Exception as e:
                 continue
-            timestamp = datetime.datetime.strptime(
-                time, '%H:%M:%S').timestamp()
-            text_and_time = dialog.split('\n', 1)[1]
-            texts = text_and_time.split('\n')[1:]
-            time = text_and_time.split('\n')[0]
-            text = ""
-            for t in texts:
-                text += t + '\n'
-            if text == '' or text == '\n':
+
+            try:
+                # Parse timestamp for sorting
+                timestamp = datetime.datetime.strptime(
+                    timestamp, '%H:%M:%S,%f').timestamp()
+                
+                text_and_time = dialog.split('\n', 1)[1]
+                texts = text_and_time.split('\n')[1:]
+                text = ""
+                for t in texts:
+                    text += t + '\n'
+                if text == '' or text == '\n':
+                    continue
+                
+                # Apply style
+                text = text.rstrip()  # Remove trailing newlines
+                if size:
+                    text = f'<font face="Gandhi Sans" size="{size}">{text}</font>'
+                if color:
+                    text = f'<font color="{color}">{text}</font>'
+                
+                # Apply positioning
+                if top:
+                    text = '{\\an8}' + text
+                
+                # Keep the original timestamp line
+                text_and_time = f'{time}\n{text}\n'
+                
+                # Combine with existing dialog for same timestamp
+                if timestamp in subtitle['dialogs']:
+                    # Add to existing dialog
+                    prev_text = subtitle['dialogs'][timestamp].split('\n', 2)[2].strip()
+                    text_and_time = f'{time}\n{prev_text}\n{text}\n'
+                
+                subtitle['dialogs'][timestamp] = text_and_time
+                self.timestamps.append(timestamp)
+                
+            except Exception as e:
+                self.logger.error(f"Error processing dialog: {e}")
                 continue
-            text = self._set_subtitle_color(text, color)
-            if top is True:
-                text = self._put_subtitle_top(text)
-            text_and_time = '%s\n%s\n' % (time, text)
-            # Previuos dialog for same timestamp
-            prev_dialog_for_same_timestamp = subtitle['dialogs'][timestamp] = subtitle['dialogs'].get(
-                timestamp, '')
-            prev_dialog_without_timestamp = re.sub(
-                TIME_PATTERN, '', prev_dialog_for_same_timestamp)
-            if re.findall(TIME_PATTERN, text_and_time):
-                time = re.findall(TIME_PATTERN, text_and_time)[0]
-            subtitle['dialogs'][timestamp] = text_and_time + \
-                prev_dialog_without_timestamp
-            self.timestamps.append(timestamp)
 
     def _encode(self, text):
         codec = self.output_encoding
@@ -111,11 +193,25 @@ class Merger():
                   (repr(text), codec, e))
             return b'An error has been occured in encoing by specifed `output_encoding`'
 
-    def add(self, subtitle_address, codec="utf-8", color=WHITE, top=False):
+    def add(self, subtitle_address, codec="utf-8", color=COLORS['WHITE'], size=None, top=False):
+        """
+        Add a subtitle file to be merged.
+        
+        Args:
+            subtitle_address (str): Path to the subtitle file
+            codec (str): Character encoding of the subtitle file
+            color (str): Color for the subtitle text. Can be:
+                        - Named color from COLORS dict
+                        - Hex code (with or without #)
+                        - RGB tuple as string "(r,g,b)"
+            size (int): Font size for the subtitle text
+            top (bool): Whether to position the subtitle at the top
+        """
         subtitle = {
             'address': subtitle_address,
             'codec': codec,
             'color': color,
+            'size': size,
             'dialogs': {}
         }
         with open(subtitle_address, 'r') as file:
@@ -123,7 +219,7 @@ class Merger():
             dialogs = re.split('\r\n\r|\n\n', data)
             subtitle['data'] = data
             subtitle['raw_dialogs'] = dialogs
-            self._split_dialogs(dialogs, subtitle, color, top)
+            self._split_dialogs(dialogs, subtitle, color, size, top)
             self.subtitles.append(subtitle)
 
     def get_output_path(self):
