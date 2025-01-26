@@ -1766,3 +1766,145 @@
 2025-01-26 04:30:51,728 - SubtitleMerger - ERROR - Error saving settings: 'DirectoryTab' object has no attribute 'sub1_font_slider'
 2025-01-26 04:30:51,730 - SubtitleMerger - DEBUG - Scale changed to 305%
 2025-01-26 04:30:51,730 - SubtitleMerger - ERROR - Error saving settings: 'DirectoryTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:32:31,738 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:32:31,780 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:32:31,780 - SubtitleMerger - ERROR - Error saving settings: 'SingleFilesTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:32:31,782 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:32:31,782 - SubtitleMerger - ERROR - Error saving settings: 'SingleFilesTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:32:31,794 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:32:31,795 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:32:31,795 - SubtitleMerger - ERROR - Error saving settings: 'DirectoryTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:32:31,798 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:32:31,798 - SubtitleMerger - ERROR - Error saving settings: 'DirectoryTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:36:25,002 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:36:25,045 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:36:25,045 - SubtitleMerger - ERROR - Error saving settings: 'SingleFilesTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:36:25,047 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:36:25,047 - SubtitleMerger - ERROR - Error saving settings: 'SingleFilesTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:36:25,058 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:36:25,060 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:36:25,061 - SubtitleMerger - ERROR - Error saving settings: 'DirectoryTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:36:25,062 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:36:25,063 - SubtitleMerger - ERROR - Error saving settings: 'DirectoryTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:36:45,546 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 04:36:51,875 - SubtitleMerger - INFO - Found 13 sub1 files and 24 sub2 files
+2025-01-26 04:36:51,875 - SubtitleMerger - INFO - Found 14 video files
+2025-01-26 04:36:51,876 - SubtitleMerger - DEBUG - Found sub1 for episode 01: [NanakoRaws] Onii-chan wa Oshimai! - 01v2 (1080p).srt
+2025-01-26 04:36:51,877 - SubtitleMerger - DEBUG - Found sub1 for episode 02: [NanakoRaws] Onii-chan wa Oshimai! - 02 (1080p).srt
+2025-01-26 04:36:51,878 - SubtitleMerger - DEBUG - Found sub1 for episode 03: [NanakoRaws] Onii-chan wa Oshimai! - 03 (1080p).srt
+2025-01-26 04:36:51,878 - SubtitleMerger - DEBUG - Found sub1 for episode 04: [NanakoRaws] Onii-chan wa Oshimai! - 04 (1080p).srt
+2025-01-26 04:36:51,878 - SubtitleMerger - DEBUG - Found sub1 for episode 05: [NanakoRaws] Onii-chan wa Oshimai! - 05 (1080p) - Modified.srt
+2025-01-26 04:36:51,878 - SubtitleMerger - DEBUG - Found sub1 for episode 06: [NanakoRaws] Onii-chan wa Oshimai! - 06 (1080p).srt
+2025-01-26 04:36:51,879 - SubtitleMerger - DEBUG - Found sub1 for episode 07: [NanakoRaws] Onii-chan wa Oshimai! - 07v2 (1080p).srt
+2025-01-26 04:36:51,879 - SubtitleMerger - DEBUG - Found sub1 for episode 08: [NanakoRaws] Onii-chan wa Oshimai! - 08 (1080p).srt
+2025-01-26 04:36:51,880 - SubtitleMerger - DEBUG - Found sub1 for episode 10: [NanakoRaws] Onii-chan wa Oshimai! - 10 (1080p).srt
+2025-01-26 04:36:51,881 - SubtitleMerger - DEBUG - Found sub1 for episode 11: [NanakoRaws] Onii-chan wa Oshimai! - 11 (1080p).srt
+2025-01-26 04:36:51,881 - SubtitleMerger - DEBUG - Found sub1 for episode 12: [NanakoRaws] Onii-chan wa Oshimai! - 12 END (1080p).srt
+2025-01-26 04:36:51,881 - SubtitleMerger - DEBUG - Found sub1 for episode 09: [NanakoRaws] Onii-chan wa Oshimai! - 09 (1080p).srt
+2025-01-26 04:36:51,882 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E01v2 (BD 1080p HEVC Opus) [723EEC4B]-Clean.srt
+2025-01-26 04:36:51,882 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E01v2 (BD 1080p HEVC Opus) [723EEC4B].2.eng.srt
+2025-01-26 04:36:51,882 - SubtitleMerger - DEBUG - Found sub2 for episode 02: [smol] Onii-chan wa Oshimai! - S01E02v2 (BD 1080p HEVC Opus) [62E2EA43]-Clean.srt
+2025-01-26 04:36:51,883 - SubtitleMerger - DEBUG - Found sub2 for episode 03: [smol] Onii-chan wa Oshimai! - S01E03v2 (BD 1080p HEVC Opus) [21B57B18]-Clean.srt
+2025-01-26 04:36:51,883 - SubtitleMerger - DEBUG - Found sub2 for episode 03: [smol] Onii-chan wa Oshimai! - S01E03v2 (BD 1080p HEVC Opus) [21B57B18].2.eng.srt
+2025-01-26 04:36:51,883 - SubtitleMerger - DEBUG - Found sub2 for episode 04: [smol] Onii-chan wa Oshimai! - S01E04v2 (BD 1080p HEVC Opus) [254B9CE3]-Clean.srt
+2025-01-26 04:36:51,884 - SubtitleMerger - DEBUG - Found sub2 for episode 04: [smol] Onii-chan wa Oshimai! - S01E04v2 (BD 1080p HEVC Opus) [254B9CE3].2.eng.srt
+2025-01-26 04:36:51,884 - SubtitleMerger - DEBUG - Found sub2 for episode 05: [smol] Onii-chan wa Oshimai! - S01E05v2 (BD 1080p HEVC Opus) [E1A212D8]-Clean.srt
+2025-01-26 04:36:51,886 - SubtitleMerger - DEBUG - Found sub2 for episode 02: [smol] Onii-chan wa Oshimai! - S01E02v2 (BD 1080p HEVC Opus) [62E2EA43].2.eng.srt
+2025-01-26 04:36:51,886 - SubtitleMerger - DEBUG - Found sub2 for episode 05: [smol] Onii-chan wa Oshimai! - S01E05v2 (BD 1080p HEVC Opus) [E1A212D8].2.eng.srt
+2025-01-26 04:36:51,887 - SubtitleMerger - DEBUG - Found sub2 for episode 08: [smol] Onii-chan wa Oshimai! - S01E08v2 (BD 1080p HEVC Opus) [4229C5E6].2.eng.srt
+2025-01-26 04:36:51,888 - SubtitleMerger - DEBUG - Found sub2 for episode 11: [smol] Onii-chan wa Oshimai! - S01E11v2 (BD 1080p HEVC Opus) [BA8B7984].2.eng.srt
+2025-01-26 04:36:51,888 - SubtitleMerger - DEBUG - Found sub2 for episode 06: [smol] Onii-chan wa Oshimai! - S01E06v2 (BD 1080p HEVC Opus) [5FF11A49]-Clean.srt
+2025-01-26 04:36:51,889 - SubtitleMerger - DEBUG - Found sub2 for episode 06: [smol] Onii-chan wa Oshimai! - S01E06v2 (BD 1080p HEVC Opus) [5FF11A49].2.eng.srt
+2025-01-26 04:36:51,890 - SubtitleMerger - DEBUG - Found sub2 for episode 07: [smol] Onii-chan wa Oshimai! - S01E07v2 (BD 1080p HEVC Opus) [F97CC8C5]-Clean.srt
+2025-01-26 04:36:51,890 - SubtitleMerger - DEBUG - Found sub2 for episode 07: [smol] Onii-chan wa Oshimai! - S01E07v2 (BD 1080p HEVC Opus) [F97CC8C5].2.eng.srt
+2025-01-26 04:36:51,891 - SubtitleMerger - DEBUG - Found sub2 for episode 08: [smol] Onii-chan wa Oshimai! - S01E08v2 (BD 1080p HEVC Opus) [4229C5E6]-Clean.srt
+2025-01-26 04:36:51,892 - SubtitleMerger - DEBUG - Found sub2 for episode 09: [smol] Onii-chan wa Oshimai! - S01E09v2 (BD 1080p HEVC Opus) [E91BABB2]-Clean.srt
+2025-01-26 04:36:51,892 - SubtitleMerger - DEBUG - Found sub2 for episode 09: [smol] Onii-chan wa Oshimai! - S01E09v2 (BD 1080p HEVC Opus) [E91BABB2].2.eng.srt
+2025-01-26 04:36:51,893 - SubtitleMerger - DEBUG - Found sub2 for episode 10: [smol] Onii-chan wa Oshimai! - S01E10v2 (BD 1080p HEVC Opus) [B2A00ACC]-Clean.srt
+2025-01-26 04:36:51,893 - SubtitleMerger - DEBUG - Found sub2 for episode 10: [smol] Onii-chan wa Oshimai! - S01E10v2 (BD 1080p HEVC Opus) [B2A00ACC].2.eng.srt
+2025-01-26 04:36:51,893 - SubtitleMerger - DEBUG - Found sub2 for episode 11: [smol] Onii-chan wa Oshimai! - S01E11v2 (BD 1080p HEVC Opus) [BA8B7984]-Clean.srt
+2025-01-26 04:36:51,894 - SubtitleMerger - DEBUG - Found sub2 for episode 12: [smol] Onii-chan wa Oshimai! - S01E12v2 (BD 1080p HEVC Opus) [EC9C787B]-Clean.srt
+2025-01-26 04:36:51,894 - SubtitleMerger - DEBUG - Found sub2 for episode 12: [smol] Onii-chan wa Oshimai! - S01E12v2 (BD 1080p HEVC Opus) [EC9C787B].2.eng.srt
+2025-01-26 04:36:51,894 - SubtitleMerger - ERROR - Error checking for conflicts: Unknown format code 'd' for object of type 'str'
+2025-01-26 04:36:55,440 - SubtitleMerger - INFO - Merge cancelled by user due to conflicts
+2025-01-26 04:37:43,060 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:37:43,112 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:37:43,112 - SubtitleMerger - ERROR - Error saving settings: 'SingleFilesTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:37:43,115 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:37:43,115 - SubtitleMerger - ERROR - Error saving settings: 'SingleFilesTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:37:43,130 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 04:37:43,133 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:37:43,134 - SubtitleMerger - ERROR - Error saving settings: 'DirectoryTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:37:43,136 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 04:37:43,136 - SubtitleMerger - ERROR - Error saving settings: 'DirectoryTab' object has no attribute 'sub1_font_slider'
+2025-01-26 04:37:54,285 - SubtitleMerger - INFO - Found 13 sub1 files and 24 sub2 files
+2025-01-26 04:37:54,286 - SubtitleMerger - INFO - Found 14 video files
+2025-01-26 04:37:54,287 - SubtitleMerger - DEBUG - Found sub1 for episode 01: [NanakoRaws] Onii-chan wa Oshimai! - 01v2 (1080p).srt
+2025-01-26 04:37:54,287 - SubtitleMerger - DEBUG - Found sub1 for episode 02: [NanakoRaws] Onii-chan wa Oshimai! - 02 (1080p).srt
+2025-01-26 04:37:54,288 - SubtitleMerger - DEBUG - Found sub1 for episode 03: [NanakoRaws] Onii-chan wa Oshimai! - 03 (1080p).srt
+2025-01-26 04:37:54,289 - SubtitleMerger - DEBUG - Found sub1 for episode 04: [NanakoRaws] Onii-chan wa Oshimai! - 04 (1080p).srt
+2025-01-26 04:37:54,290 - SubtitleMerger - DEBUG - Found sub1 for episode 05: [NanakoRaws] Onii-chan wa Oshimai! - 05 (1080p) - Modified.srt
+2025-01-26 04:37:54,290 - SubtitleMerger - DEBUG - Found sub1 for episode 06: [NanakoRaws] Onii-chan wa Oshimai! - 06 (1080p).srt
+2025-01-26 04:37:54,290 - SubtitleMerger - DEBUG - Found sub1 for episode 07: [NanakoRaws] Onii-chan wa Oshimai! - 07v2 (1080p).srt
+2025-01-26 04:37:54,291 - SubtitleMerger - DEBUG - Found sub1 for episode 08: [NanakoRaws] Onii-chan wa Oshimai! - 08 (1080p).srt
+2025-01-26 04:37:54,291 - SubtitleMerger - DEBUG - Found sub1 for episode 10: [NanakoRaws] Onii-chan wa Oshimai! - 10 (1080p).srt
+2025-01-26 04:37:54,292 - SubtitleMerger - DEBUG - Found sub1 for episode 11: [NanakoRaws] Onii-chan wa Oshimai! - 11 (1080p).srt
+2025-01-26 04:37:54,292 - SubtitleMerger - DEBUG - Found sub1 for episode 12: [NanakoRaws] Onii-chan wa Oshimai! - 12 END (1080p).srt
+2025-01-26 04:37:54,292 - SubtitleMerger - DEBUG - Found sub1 for episode 09: [NanakoRaws] Onii-chan wa Oshimai! - 09 (1080p).srt
+2025-01-26 04:37:54,292 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E01v2 (BD 1080p HEVC Opus) [723EEC4B]-Clean.srt
+2025-01-26 04:37:54,294 - SubtitleMerger - DEBUG - Found sub2 for episode 01: [smol] Onii-chan wa Oshimai! - S01E01v2 (BD 1080p HEVC Opus) [723EEC4B].2.eng.srt
+2025-01-26 04:37:54,294 - SubtitleMerger - DEBUG - Found sub2 for episode 02: [smol] Onii-chan wa Oshimai! - S01E02v2 (BD 1080p HEVC Opus) [62E2EA43]-Clean.srt
+2025-01-26 04:37:54,294 - SubtitleMerger - DEBUG - Found sub2 for episode 03: [smol] Onii-chan wa Oshimai! - S01E03v2 (BD 1080p HEVC Opus) [21B57B18]-Clean.srt
+2025-01-26 04:37:54,294 - SubtitleMerger - DEBUG - Found sub2 for episode 03: [smol] Onii-chan wa Oshimai! - S01E03v2 (BD 1080p HEVC Opus) [21B57B18].2.eng.srt
+2025-01-26 04:37:54,295 - SubtitleMerger - DEBUG - Found sub2 for episode 04: [smol] Onii-chan wa Oshimai! - S01E04v2 (BD 1080p HEVC Opus) [254B9CE3]-Clean.srt
+2025-01-26 04:37:54,295 - SubtitleMerger - DEBUG - Found sub2 for episode 04: [smol] Onii-chan wa Oshimai! - S01E04v2 (BD 1080p HEVC Opus) [254B9CE3].2.eng.srt
+2025-01-26 04:37:54,295 - SubtitleMerger - DEBUG - Found sub2 for episode 05: [smol] Onii-chan wa Oshimai! - S01E05v2 (BD 1080p HEVC Opus) [E1A212D8]-Clean.srt
+2025-01-26 04:37:54,295 - SubtitleMerger - DEBUG - Found sub2 for episode 02: [smol] Onii-chan wa Oshimai! - S01E02v2 (BD 1080p HEVC Opus) [62E2EA43].2.eng.srt
+2025-01-26 04:37:54,296 - SubtitleMerger - DEBUG - Found sub2 for episode 05: [smol] Onii-chan wa Oshimai! - S01E05v2 (BD 1080p HEVC Opus) [E1A212D8].2.eng.srt
+2025-01-26 04:37:54,296 - SubtitleMerger - DEBUG - Found sub2 for episode 08: [smol] Onii-chan wa Oshimai! - S01E08v2 (BD 1080p HEVC Opus) [4229C5E6].2.eng.srt
+2025-01-26 04:37:54,296 - SubtitleMerger - DEBUG - Found sub2 for episode 11: [smol] Onii-chan wa Oshimai! - S01E11v2 (BD 1080p HEVC Opus) [BA8B7984].2.eng.srt
+2025-01-26 04:37:54,296 - SubtitleMerger - DEBUG - Found sub2 for episode 06: [smol] Onii-chan wa Oshimai! - S01E06v2 (BD 1080p HEVC Opus) [5FF11A49]-Clean.srt
+2025-01-26 04:37:54,297 - SubtitleMerger - DEBUG - Found sub2 for episode 06: [smol] Onii-chan wa Oshimai! - S01E06v2 (BD 1080p HEVC Opus) [5FF11A49].2.eng.srt
+2025-01-26 04:37:54,297 - SubtitleMerger - DEBUG - Found sub2 for episode 07: [smol] Onii-chan wa Oshimai! - S01E07v2 (BD 1080p HEVC Opus) [F97CC8C5]-Clean.srt
+2025-01-26 04:37:54,297 - SubtitleMerger - DEBUG - Found sub2 for episode 07: [smol] Onii-chan wa Oshimai! - S01E07v2 (BD 1080p HEVC Opus) [F97CC8C5].2.eng.srt
+2025-01-26 04:37:54,298 - SubtitleMerger - DEBUG - Found sub2 for episode 08: [smol] Onii-chan wa Oshimai! - S01E08v2 (BD 1080p HEVC Opus) [4229C5E6]-Clean.srt
+2025-01-26 04:37:54,299 - SubtitleMerger - DEBUG - Found sub2 for episode 09: [smol] Onii-chan wa Oshimai! - S01E09v2 (BD 1080p HEVC Opus) [E91BABB2]-Clean.srt
+2025-01-26 04:37:54,299 - SubtitleMerger - DEBUG - Found sub2 for episode 09: [smol] Onii-chan wa Oshimai! - S01E09v2 (BD 1080p HEVC Opus) [E91BABB2].2.eng.srt
+2025-01-26 04:37:54,299 - SubtitleMerger - DEBUG - Found sub2 for episode 10: [smol] Onii-chan wa Oshimai! - S01E10v2 (BD 1080p HEVC Opus) [B2A00ACC]-Clean.srt
+2025-01-26 04:37:54,299 - SubtitleMerger - DEBUG - Found sub2 for episode 10: [smol] Onii-chan wa Oshimai! - S01E10v2 (BD 1080p HEVC Opus) [B2A00ACC].2.eng.srt
+2025-01-26 04:37:54,300 - SubtitleMerger - DEBUG - Found sub2 for episode 11: [smol] Onii-chan wa Oshimai! - S01E11v2 (BD 1080p HEVC Opus) [BA8B7984]-Clean.srt
+2025-01-26 04:37:54,301 - SubtitleMerger - DEBUG - Found sub2 for episode 12: [smol] Onii-chan wa Oshimai! - S01E12v2 (BD 1080p HEVC Opus) [EC9C787B]-Clean.srt
+2025-01-26 04:37:54,301 - SubtitleMerger - DEBUG - Found sub2 for episode 12: [smol] Onii-chan wa Oshimai! - S01E12v2 (BD 1080p HEVC Opus) [EC9C787B].2.eng.srt
+2025-01-26 04:37:54,319 - SubtitleMerger - WARNING - Found 22 existing files that would be overwritten
+2025-01-26 04:38:00,243 - SubtitleMerger - DEBUG - All settings saved successfully
+2025-01-26 04:38:00,244 - SubtitleMerger - INFO - Starting merge operation...
+2025-01-26 04:38:00,244 - SubtitleMerger - INFO - Input directory: /home/half-arch/Documents/Subs/Onii-chan wa Oshimai! v2
+2025-01-26 04:38:00,245 - SubtitleMerger - INFO - Video directory: /mnt/ehdd/[smol] Onii-chan wa Oshimai! v2 (BD 1080p HEVC Opus)
+2025-01-26 04:38:00,251 - SubtitleMerger - INFO - Found 14 video files
+2025-01-26 04:38:00,265 - SubtitleMerger - INFO - Copied subtitle files for episode 01
+2025-01-26 04:38:02,028 - SubtitleMerger - INFO - Successfully merged subtitles for episode 01
+2025-01-26 04:38:02,039 - SubtitleMerger - INFO - Copied subtitle files for episode 02
+2025-01-26 04:38:02,068 - SubtitleMerger - INFO - Successfully merged subtitles for episode 02
+2025-01-26 04:38:02,074 - SubtitleMerger - INFO - Copied subtitle files for episode 03
+2025-01-26 04:38:02,107 - SubtitleMerger - INFO - Successfully merged subtitles for episode 03
+2025-01-26 04:38:02,118 - SubtitleMerger - INFO - Copied subtitle files for episode 05
+2025-01-26 04:38:02,145 - SubtitleMerger - INFO - Successfully merged subtitles for episode 05
+2025-01-26 04:38:02,154 - SubtitleMerger - INFO - Copied subtitle files for episode 06
+2025-01-26 04:38:02,193 - SubtitleMerger - INFO - Successfully merged subtitles for episode 06
+2025-01-26 04:38:02,201 - SubtitleMerger - INFO - Copied subtitle files for episode 07
+2025-01-26 04:38:02,228 - SubtitleMerger - INFO - Successfully merged subtitles for episode 07
+2025-01-26 04:38:02,235 - SubtitleMerger - INFO - Copied subtitle files for episode 08
+2025-01-26 04:38:02,257 - SubtitleMerger - INFO - Successfully merged subtitles for episode 08
+2025-01-26 04:38:02,262 - SubtitleMerger - INFO - Copied subtitle files for episode 09
+2025-01-26 04:38:02,284 - SubtitleMerger - INFO - Successfully merged subtitles for episode 09
+2025-01-26 04:38:02,292 - SubtitleMerger - INFO - Copied subtitle files for episode 10
+2025-01-26 04:38:02,321 - SubtitleMerger - INFO - Successfully merged subtitles for episode 10
+2025-01-26 04:38:02,328 - SubtitleMerger - INFO - Copied subtitle files for episode 11
+2025-01-26 04:38:02,353 - SubtitleMerger - INFO - Successfully merged subtitles for episode 11
+2025-01-26 04:38:02,359 - SubtitleMerger - INFO - Copied subtitle files for episode 12
+2025-01-26 04:38:02,382 - SubtitleMerger - INFO - Successfully merged subtitles for episode 12
+2025-01-26 04:38:02,390 - SubtitleMerger - INFO - Copied subtitle files for episode 04
+2025-01-26 04:38:02,419 - SubtitleMerger - INFO - Successfully merged subtitles for episode 04
+2025-01-26 04:38:02,420 - SubtitleMerger - WARNING - Could not find episode number in [smol] Onii-chan wa Oshimai! - NCED - Himegoto Crisisters (BD 1080p HEVC Opus) [FD358CBF].mkv
+2025-01-26 04:38:02,420 - SubtitleMerger - WARNING - Could not find episode number in [smol] Onii-chan wa Oshimai! - NCOP - Iden Tei Tei Meltdown (BD 1080p HEVC Opus) [80AFBF9C].mkv
+2025-01-26 04:38:02,420 - SubtitleMerger - INFO - Merge operation completed

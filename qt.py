@@ -209,6 +209,18 @@ class BaseTab(QWidget):
         # Load settings before UI setup
         self.settings = self.load_settings()
         
+        # Initialize UI elements as class attributes
+        self.sub1_font_slider = None
+        self.sub2_font_slider = None
+        self.sub1_font_spinbox = None
+        self.sub2_font_spinbox = None
+        self.scale_slider = None
+        self.scale_input = None
+        self.color_combo = None
+        self.codec_combo = None
+        self.option_merge_subtitles = None
+        self.option_generate_log = None
+        
         # Create main layout
         main_layout = QVBoxLayout()
         self.setLayout(main_layout)
@@ -877,26 +889,29 @@ class BaseTab(QWidget):
             # Ensure config directory exists
             self.config_dir.mkdir(exist_ok=True)
             
-            settings = {
-                'ui_scale': self.scale_slider.value(),
-                'sub1_font_size': self.sub1_font_slider.value(),
-                'sub2_font_size': self.sub2_font_slider.value(),
-                'color': self.color_combo.currentText(),
-                'codec': self.codec_combo.currentText(),
-                'merge_automatically': self.option_merge_subtitles.isChecked(),
-                'generate_log': self.option_generate_log.isChecked(),
-                'last_directory': getattr(self, 'last_directory', str(Path.home())),
-                'last_video_directory': getattr(self, 'last_video_directory', str(Path.home())),
-                'last_subtitle_directory': getattr(self, 'last_subtitle_directory', str(Path.home())),
-                'sub1_pattern': self.sub1_pattern_entry.text(),
-                'sub2_pattern': self.sub2_pattern_entry.text(),
-                'sub1_episode_pattern': self.sub1_episode_pattern_entry.text(),
-                'sub2_episode_pattern': self.sub2_episode_pattern_entry.text()
-            }
+            settings = {}
             
+            # Only save values for attributes that exist
+            if hasattr(self, 'scale_slider'):
+                settings['ui_scale'] = self.scale_slider.value()
+            if hasattr(self, 'sub1_font_slider'):
+                settings['sub1_font_size'] = self.sub1_font_slider.value()
+            if hasattr(self, 'sub2_font_slider'):
+                settings['sub2_font_size'] = self.sub2_font_slider.value()
+            if hasattr(self, 'color_combo'):
+                settings['color'] = self.color_combo.currentText()
+            if hasattr(self, 'codec_combo'):
+                settings['codec'] = self.codec_combo.currentText()
+            if hasattr(self, 'option_merge_subtitles'):
+                settings['merge_automatically'] = self.option_merge_subtitles.isChecked()
+            if hasattr(self, 'option_generate_log'):
+                settings['generate_log'] = self.option_generate_log.isChecked()
+            
+            # Save to file
             with open(self.settings_file, 'w', encoding='utf-8') as f:
                 json.dump(settings, f, indent=4)
             self.logger.debug("Settings saved successfully")
+            
         except Exception as e:
             self.logger.error(f"Error saving settings: {e}")
 
@@ -909,6 +924,46 @@ class BaseTab(QWidget):
             self.logger.debug(f"Saved {key} to settings")
         except Exception as e:
             self.logger.error(f"Error saving {key} to settings: {e}")
+
+    def save_all_values(self):
+        """Save all current values to settings file."""
+        try:
+            # Update all settings
+            settings_update = {
+                # UI Scale
+                'ui_scale': self.scale_slider.value() if hasattr(self, 'scale_slider') else 375,
+                
+                # Font sizes
+                'sub1_font_size': self.sub1_font_slider.value() if hasattr(self, 'sub1_font_slider') else 16,
+                'sub2_font_size': self.sub2_font_slider.value() if hasattr(self, 'sub2_font_slider') else 16,
+                
+                # Colors and codec
+                'color': self.color_combo.currentText() if hasattr(self, 'color_combo') else 'Yellow',
+                'codec': self.codec_combo.currentText() if hasattr(self, 'codec_combo') else 'UTF-8',
+                
+                # Options
+                'merge_automatically': self.option_merge_subtitles.isChecked() if hasattr(self, 'option_merge_subtitles') else True,
+                'generate_log': self.option_generate_log.isChecked() if hasattr(self, 'option_generate_log') else False,
+            }
+            
+            # Add directory-specific settings if they exist
+            if hasattr(self, 'dir_entry'):
+                settings_update.update({
+                    'last_subtitle_directory': self.dir_entry.text() or str(Path.home()),
+                    'last_directory': str(Path(self.dir_entry.text()).parent) if self.dir_entry.text() else str(Path.home())
+                })
+            
+            if hasattr(self, 'video_dir_entry'):
+                settings_update['last_video_directory'] = str(Path(self.video_dir_entry.text()).parent) if self.video_dir_entry.text() else str(Path.home())
+            
+            # Update settings and save
+            self.settings.update(settings_update)
+            with open(self.settings_file, 'w', encoding='utf-8') as f:
+                json.dump(self.settings, f, indent=4)
+            self.logger.debug("Settings saved successfully")
+            
+        except Exception as e:
+            self.logger.error(f"Error saving settings: {e}")
 
 class SingleFilesTab(BaseTab):
     """Tab for processing single files."""
@@ -1026,380 +1081,41 @@ class SingleFilesTab(BaseTab):
         """Save all current values to settings file."""
         try:
             # Update all settings
-            self.settings.update({
+            settings_update = {
                 # UI Scale
-                'ui_scale': self.scale_slider.value(),
+                'ui_scale': self.scale_slider.value() if hasattr(self, 'scale_slider') else 375,
                 
                 # Font sizes
-                'sub1_font_size': self.sub1_font_slider.value(),
-                'sub2_font_size': self.sub2_font_slider.value(),
+                'sub1_font_size': self.sub1_font_slider.value() if hasattr(self, 'sub1_font_slider') else 16,
+                'sub2_font_size': self.sub2_font_slider.value() if hasattr(self, 'sub2_font_slider') else 16,
                 
                 # Colors and codec
-                'color': self.color_combo.currentText(),
-                'codec': self.codec_combo.currentText(),
+                'color': self.color_combo.currentText() if hasattr(self, 'color_combo') else 'Yellow',
+                'codec': self.codec_combo.currentText() if hasattr(self, 'codec_combo') else 'UTF-8',
                 
                 # Options
-                'merge_automatically': self.option_merge_subtitles.isChecked(),
-                'generate_log': self.option_generate_log.isChecked(),
-                
-                # File paths
-                'last_sub1_file': self.sub1_entry.text(),
-                'last_sub2_file': self.sub2_entry.text(),
-                'last_output_file': self.output_entry.text(),
-                
-                # Directories
-                'last_directory': str(Path(self.sub1_entry.text()).parent) if self.sub1_entry.text() else str(Path.home()),
-                'last_video_directory': str(Path(self.sub2_entry.text()).parent) if self.sub2_entry.text() else str(Path.home())
-            })
+                'merge_automatically': self.option_merge_subtitles.isChecked() if hasattr(self, 'option_merge_subtitles') else True,
+                'generate_log': self.option_generate_log.isChecked() if hasattr(self, 'option_generate_log') else False,
+            }
             
-            # Save to file
+            # Add directory-specific settings if they exist
+            if hasattr(self, 'dir_entry'):
+                settings_update.update({
+                    'last_subtitle_directory': self.dir_entry.text() or str(Path.home()),
+                    'last_directory': str(Path(self.dir_entry.text()).parent) if self.dir_entry.text() else str(Path.home())
+                })
+            
+            if hasattr(self, 'video_dir_entry'):
+                settings_update['last_video_directory'] = str(Path(self.video_dir_entry.text()).parent) if self.video_dir_entry.text() else str(Path.home())
+            
+            # Update settings and save
+            self.settings.update(settings_update)
             with open(self.settings_file, 'w', encoding='utf-8') as f:
                 json.dump(self.settings, f, indent=4)
-            self.logger.debug("All settings saved before merge operation")
+            self.logger.debug("Settings saved successfully")
             
         except Exception as e:
-            self.logger.error(f"Error saving all settings: {e}")
-
-class DirectoryTab(BaseTab):
-    """Tab for processing directories."""
-    
-    def __init__(self, parent=None):
-        # Default patterns for this specific case
-        self.sub1_pattern = 'Nanako'  # Filter for English subs
-        self.sub2_pattern = 'smol.*Clean'  # Filter for Japanese subs
-        self.sub1_episode_pattern = r'(\d+)(?:v\d+)? (?:\(1080p\)|END)'  # Get episode section from Nanako
-        self.sub2_episode_pattern = r'S\d+E(\d+)'  # Get episode section from smol
-        
-        # Now call parent init which will setup UI
-        super().__init__(parent)
-
-    def setup_ui(self):
-        """Setup specific UI for directory tab."""
-        # Call parent's setup_ui first to get all base controls
-        super().setup_ui()
-        
-        # Directory selection group
-        dir_group = QGroupBox("Directory Selection")
-        dir_layout = QVBoxLayout()
-
-        # Input directory
-        input_layout = QHBoxLayout()
-        input_layout.addWidget(QLabel("Subtitles Directory:"))
-        self.dir_entry = QLineEdit()
-        self.dir_entry.setText(self.settings.get('last_subtitle_directory', ''))  # Load saved path
-        self.dir_entry.textChanged.connect(lambda text: self.save_value_to_settings('last_subtitle_directory', text))
-        input_layout.addWidget(self.dir_entry)
-        browse_btn = QPushButton("Browse")
-        browse_btn.clicked.connect(self.browse_directory)
-        input_layout.addWidget(browse_btn)
-        dir_layout.addLayout(input_layout)
-
-        # Video directory
-        video_layout = QHBoxLayout()
-        video_layout.addWidget(QLabel("Videos Directory:"))
-        self.video_dir_entry = QLineEdit()
-        self.video_dir_entry.setText(self.settings.get('last_video_directory', ''))  # Load saved path
-        self.video_dir_entry.textChanged.connect(lambda text: self.save_value_to_settings('last_video_directory', text))
-        video_layout.addWidget(self.video_dir_entry)
-        video_browse_btn = QPushButton("Browse")
-        video_browse_btn.clicked.connect(self.browse_video_directory)
-        video_layout.addWidget(video_browse_btn)
-        dir_layout.addLayout(video_layout)
-
-        # Patterns group
-        patterns_group = QGroupBox("File Patterns")
-        patterns_layout = QVBoxLayout()
-        
-        # Filter patterns
-        filter_group = QGroupBox("Filter Patterns")
-        filter_layout = QVBoxLayout()
-        
-        # Sub1 filter pattern
-        sub1_filter_layout = QHBoxLayout()
-        sub1_filter_layout.addWidget(QLabel("Sub1 Filter:"))
-        self.sub1_pattern_entry = QLineEdit(self.settings.get('sub1_pattern', self.sub1_pattern))
-        self.sub1_pattern_entry.setToolTip("Pattern to identify Sub1 files (e.g., 'Nanako')")
-        self.sub1_pattern_entry.textChanged.connect(lambda text: self.save_value_to_settings('sub1_pattern', text))
-        sub1_filter_layout.addWidget(self.sub1_pattern_entry)
-        filter_layout.addLayout(sub1_filter_layout)
-        
-        # Sub2 filter pattern
-        sub2_filter_layout = QHBoxLayout()
-        sub2_filter_layout.addWidget(QLabel("Sub2 Filter:"))
-        self.sub2_pattern_entry = QLineEdit(self.settings.get('sub2_pattern', self.sub2_pattern))
-        self.sub2_pattern_entry.setToolTip("Pattern to identify Sub2 files (e.g., 'smol.*Clean')")
-        self.sub2_pattern_entry.textChanged.connect(lambda text: self.save_value_to_settings('sub2_pattern', text))
-        sub2_filter_layout.addWidget(self.sub2_pattern_entry)
-        filter_layout.addLayout(sub2_filter_layout)
-        
-        filter_group.setLayout(filter_layout)
-        patterns_layout.addWidget(filter_group)
-        
-        # Episode patterns
-        episode_group = QGroupBox("Episode Number Patterns")
-        episode_layout = QVBoxLayout()
-        
-        # Sub1 episode pattern
-        sub1_ep_layout = QHBoxLayout()
-        sub1_ep_layout.addWidget(QLabel("Sub1 Episode:"))
-        self.sub1_episode_pattern_entry = QLineEdit(self.settings.get('sub1_episode_pattern', self.sub1_episode_pattern))
-        self.sub1_episode_pattern_entry.setToolTip("Pattern to find episode numbers in Sub1 files")
-        self.sub1_episode_pattern_entry.textChanged.connect(lambda text: self.save_value_to_settings('sub1_episode_pattern', text))
-        sub1_ep_layout.addWidget(self.sub1_episode_pattern_entry)
-        episode_layout.addLayout(sub1_ep_layout)
-        
-        # Sub2 episode pattern
-        sub2_ep_layout = QHBoxLayout()
-        sub2_ep_layout.addWidget(QLabel("Sub2 Episode:"))
-        self.sub2_episode_pattern_entry = QLineEdit(self.settings.get('sub2_episode_pattern', self.sub2_episode_pattern))
-        self.sub2_episode_pattern_entry.setToolTip("Pattern to find episode numbers in Sub2 files")
-        self.sub2_episode_pattern_entry.textChanged.connect(lambda text: self.save_value_to_settings('sub2_episode_pattern', text))
-        sub2_ep_layout.addWidget(self.sub2_episode_pattern_entry)
-        episode_layout.addLayout(sub2_ep_layout)
-        
-        episode_group.setLayout(episode_layout)
-        patterns_layout.addWidget(episode_group)
-        
-        patterns_group.setLayout(patterns_layout)
-        dir_layout.addWidget(patterns_group)
-
-        dir_group.setLayout(dir_layout)
-        self.layout.addWidget(dir_group)
-
-        # Reorder widgets to ensure proper layout
-        # First, remove all widgets and store them
-        widgets = []
-        while self.layout.count():
-            item = self.layout.takeAt(0)
-            if item.widget():
-                widgets.append(item.widget())
-        
-        # Add them back in the correct order
-        # 1. UI Scale
-        # 2. Font Size Controls
-        # 3. Color Selection
-        # 4. Directory Group
-        # 5. Merge Button
-        # 6. Log Section
-        for widget in widgets:
-            if isinstance(widget, QGroupBox):
-                if widget.title() == "UI Scale":
-                    self.layout.addWidget(widget)
-                elif widget.title() == "Subtitle Font Sizes":
-                    self.layout.addWidget(widget)
-                elif widget.title() == "Color Selection":
-                    self.layout.addWidget(widget)
-                elif widget.title() == "Directory Selection":
-                    self.layout.addWidget(widget)
-        
-        # Add merge button
-        self.batch_merge_button = QPushButton("Merge Subtitles")
-        self.batch_merge_button.clicked.connect(self.merge_subtitles)
-        self.batch_merge_button.setMinimumHeight(40)
-        self.layout.addWidget(self.batch_merge_button)
-        
-        # Add stretch
-        self.layout.addStretch()
-        
-        # Add log section last
-        for widget in widgets:
-            if isinstance(widget, QGroupBox) and widget.title() == "Logs":
-                self.layout.addWidget(widget)
-
-    def merge_subtitles(self):
-        """Merge the subtitle files in directory."""
-        try:
-            # Save all current values before merging
-            self.save_all_values()
-            
-            input_dir = self.dir_entry.text()
-            video_dir = self.video_dir_entry.text()
-            
-            if not input_dir or not video_dir:
-                self.logger.error("Please select both input and video directories")
-                return
-            
-            self.logger.info("Starting merge operation...")
-            self.logger.info(f"Input directory: {input_dir}")
-            self.logger.info(f"Video directory: {video_dir}")
-            
-            # Get patterns
-            sub1_pattern = self.sub1_pattern_entry.text().strip() or self.sub1_pattern
-            sub2_pattern = self.sub2_pattern_entry.text().strip() or self.sub2_pattern
-            sub1_episode_pattern = self.sub1_episode_pattern_entry.text().strip() or self.sub1_episode_pattern
-            sub2_episode_pattern = self.sub2_episode_pattern_entry.text().strip() or self.sub2_episode_pattern
-            
-            # Get color and font sizes
-            sub1_color = self.color_combo.currentText()
-            sub1_size = self.sub1_font_slider.value()
-            sub2_size = self.sub2_font_slider.value()
-            
-            self.logger.debug(f"Using patterns - Sub1: {sub1_pattern}, Sub2: {sub2_pattern}")
-            self.logger.debug(f"Episode patterns - Sub1: {sub1_episode_pattern}, Sub2: {sub2_episode_pattern}")
-            self.logger.debug(f"Styles - Sub1: color={sub1_color}, size={sub1_size}, Sub2: size={sub2_size}")
-            
-            # Find subtitle files (case insensitive)
-            try:
-                input_path = Path(input_dir)
-                video_path = Path(video_dir)
-                
-                # Filter sub1 files using regex pattern from GUI
-                sub1_files = [f for f in input_path.glob('*.srt') 
-                            if re.search(sub1_pattern.lower(), f.name.lower())
-                            and not f.name.endswith('Modified.srt')]
-                
-                # Filter sub2 files using regex pattern from GUI
-                sub2_files = [f for f in input_path.glob('*.srt')
-                            if re.search(sub2_pattern.lower(), f.name.lower())
-                            and not f.name.endswith('Modified.srt')]
-                
-                self.logger.info(f"Found {len(sub1_files)} sub1 files and {len(sub2_files)} sub2 files")
-                
-            except Exception as e:
-                self.logger.error(f"Error finding subtitle files: {e}")
-                return
-
-            # Create episode pairs dictionary
-            episode_subs = {}
-            
-            # Process sub1 files
-            for sub1 in sub1_files:
-                try:
-                    # First find the episode section using sub1 pattern
-                    ep_match = re.search(sub1_episode_pattern, sub1.stem)
-                    if ep_match:
-                        # Then extract just the number
-                        ep_num_match = re.search(r'\d+', ep_match.group(1))
-                        if ep_num_match:
-                            episode_num = ep_num_match.group().zfill(2)  # Ensure 2-digit format
-                            if episode_num not in episode_subs:
-                                episode_subs[episode_num] = {'sub1': sub1}
-                                self.logger.debug(f"Found sub1 for episode {episode_num}: {sub1.name}")
-                except Exception as e:
-                    self.logger.error(f"Error processing sub1 file {sub1}: {e}")
-            
-            # Process sub2 files
-            for sub2 in sub2_files:
-                try:
-                    # First find the episode section using sub2 pattern
-                    ep_match = re.search(sub2_episode_pattern, sub2.stem)
-                    if ep_match:
-                        # Then extract just the number
-                        ep_num_match = re.search(r'\d+', ep_match.group(1))
-                        if ep_num_match:
-                            episode_num = ep_num_match.group().zfill(2)  # Ensure 2-digit format
-                            if episode_num in episode_subs:
-                                episode_subs[episode_num]['sub2'] = sub2
-                                self.logger.debug(f"Found sub2 for episode {episode_num}: {sub2.name}")
-                except Exception as e:
-                    self.logger.error(f"Error processing sub2 file {sub2}: {e}")
-
-            # Find and process video files
-            video_files = list(video_path.glob('*.mkv'))
-            self.logger.info(f"Found {len(video_files)} video files")
-
-            # Process each video file
-            for video_file in video_files:
-                try:
-                    match = re.search(r'S\d+E(\d+)', video_file.stem)
-                    if not match:
-                        self.logger.warning(f"Could not find episode number in {video_file.name}")
-                        continue
-                    
-                    episode_num = match.group(1).zfill(2)
-                    
-                    if episode_num not in episode_subs or 'sub2' not in episode_subs[episode_num]:
-                        self.logger.warning(f"Missing subtitle pair for episode {episode_num}")
-                        continue
-                    
-                    sub1_file = episode_subs[episode_num]['sub1']
-                    sub2_file = episode_subs[episode_num]['sub2']
-                    
-                    # Copy subtitle files next to video with consistent naming
-                    try:
-                        shutil.copy2(sub1_file, video_file.parent / f'{video_file.stem}.sub1.srt')
-                        shutil.copy2(sub2_file, video_file.parent / f'{video_file.stem}.sub2.srt')
-                        self.logger.info(f"Copied subtitle files for episode {episode_num}")
-                    except Exception as e:
-                        self.logger.error(f"Error copying subtitle files for episode {episode_num}: {e}")
-                        continue
-                    
-                    # Create merger instance and merge
-                    try:
-                        merger = Merger(
-                            output_path=str(video_file.parent),
-                            output_name=f'{video_file.stem}_merged.srt',
-                            output_encoding=self.codec_combo.currentText()
-                        )
-                        
-                        # Add first subtitle with color and size
-                        merger.add(
-                            str(sub1_file),
-                            codec=self.codec_combo.currentText(),
-                            color=sub1_color,
-                            size=sub1_size,
-                            top=False
-                        )
-                        
-                        # Add second subtitle with size (using COLORS from import)
-                        merger.add(
-                            str(sub2_file),
-                            codec=self.codec_combo.currentText(),
-                            color=COLORS['WHITE'],  # Now COLORS is defined
-                            size=sub2_size,
-                            top=True
-                        )
-                        
-                        merger.merge()
-                        self.logger.info(f"Successfully merged subtitles for episode {episode_num}")
-                        
-                    except Exception as e:
-                        self.logger.error(f"Error merging subtitles for episode {episode_num}: {e}")
-                        continue
-                    
-                except Exception as e:
-                    self.logger.error(f"Error processing video file {video_file}: {e}")
-            
-            self.logger.info("Merge operation completed")
-            
-        except Exception as e:
-            self.logger.error(f"Error during merge operation: {e}")
-
-    def save_all_values(self):
-        """Save all current values to settings file."""
-        try:
-            # Update all settings
-            self.settings.update({
-                # UI Scale
-                'ui_scale': self.scale_slider.value(),
-                
-                # Colors and codec
-                'color': self.color_combo.currentText(),
-                'codec': self.codec_combo.currentText(),
-                
-                # Options
-                'merge_automatically': self.option_merge_subtitles.isChecked(),
-                'generate_log': self.option_generate_log.isChecked(),
-                
-                # Patterns
-                'sub1_pattern': self.sub1_pattern_entry.text(),
-                'sub2_pattern': self.sub2_pattern_entry.text(),
-                'sub1_episode_pattern': self.sub1_episode_pattern_entry.text(),
-                'sub2_episode_pattern': self.sub2_episode_pattern_entry.text(),
-                
-                # Directories
-                'last_directory': str(Path(self.dir_entry.text()).parent) if self.dir_entry.text() else str(Path.home()),
-                'last_video_directory': str(Path(self.video_dir_entry.text()).parent) if self.video_dir_entry.text() else str(Path.home()),
-                'last_subtitle_directory': self.dir_entry.text() or str(Path.home())
-            })
-            
-            # Save to file
-            with open(self.settings_file, 'w', encoding='utf-8') as f:
-                json.dump(self.settings, f, indent=4)
-            self.logger.debug("All settings saved successfully")
-            
-        except Exception as e:
-            self.logger.error(f"Error saving all settings: {e}")
+            self.logger.error(f"Error saving settings: {e}")
 
     def browse_directory(self):
         """Browse for an input directory."""
@@ -1453,210 +1169,6 @@ class DirectoryTab(BaseTab):
         if range_value:
             self.logger.debug(f"Episode range changed to {range_value}")
             self.preview_matches()
-
-    def find_episode_matches(self) -> Dict[int, EpisodeMatch]:
-        try:
-            directory = Path(self.dir_entry.text())
-            if not directory.is_dir():
-                raise ValueError("Invalid directory path")
-
-            # Check if video directory is specified and valid
-            use_video_dir = bool(self.video_dir_entry.text().strip())
-            if use_video_dir:
-                video_dir = Path(self.video_dir_entry.text())
-                if not video_dir.is_dir():
-                    raise ValueError("Invalid video directory path")
-                # Create output directory in video dir if using subfolder
-                if self.use_subfolder.isChecked():
-                    output_dir = video_dir / self.subfolder_name.text()
-                else:
-                    output_dir = video_dir
-            else:
-                # Use original directory if no video dir specified
-                output_dir = (
-                    directory / self.subfolder_name.text()
-                    if self.use_subfolder.isChecked()
-                    else directory
-                )
-
-            episode_pattern = re.compile(self.episode_pattern.text())
-            sub1_pattern = re.compile(self.sub1_pattern.text())
-            sub2_pattern = re.compile(self.sub2_pattern.text())
-
-            if not all([episode_pattern, sub1_pattern, sub2_pattern]):
-                raise ValueError("All patterns must be specified")
-
-            episode_range = self.episode_range.get_range()
-
-            matches = {}
-            
-            for file_path in directory.glob("*"):
-                if not file_path.is_file():
-                    continue
-
-                filename = file_path.name
-                
-                # First try to extract episode number
-                episode_match = episode_pattern.search(filename)
-                if not episode_match:
-                    continue
-                
-                episode_num = int(episode_match.group(1))
-                
-                # Check episode range
-                if episode_range:
-                    start, end = episode_range
-                    if not start <= episode_num <= end:
-                        continue
-
-                # Check subtitle patterns
-                is_sub1 = sub1_pattern.search(filename)
-                is_sub2 = sub2_pattern.search(filename)
-
-                if is_sub1 or is_sub2:
-                    if episode_num not in matches:
-                        matches[episode_num] = EpisodeMatch(
-                            episode_num=episode_num,
-                            sub1_path=None,
-                            sub2_path=None
-                        )
-                    
-                    if is_sub1:
-                        matches[episode_num].sub1_path = file_path
-                    if is_sub2:
-                        matches[episode_num].sub2_path = file_path
-
-            # Prepare complete matches
-            complete_matches = {}
-            
-            for episode_num, match in matches.items():
-                if match.sub1_path and match.sub2_path:
-                    if use_video_dir:
-                        # Search for video file with episode number
-                        video_files = list(video_dir.glob(f"*{episode_num:02d}*"))
-                        if video_files:
-                            video_path = video_files[0]
-                            # Use video filename as base for output files
-                            base_name = video_path.stem
-                            match.output_path = output_dir / f"{base_name}.merged.srt"
-                            # Add paths for copying original subtitles
-                            match.sub1_output = output_dir / f"{base_name}.sub1.srt"
-                            match.sub2_output = output_dir / f"{base_name}.sub2.srt"
-                        else:
-                            self.logger.warning(f"No matching video file found for episode {episode_num}")
-                            continue
-                    else:
-                        # Original behavior when no video dir specified
-                        base_pattern = self.base_pattern.text()
-                        match.output_path = output_dir / f"{base_pattern}E{episode_num:02d}_merged.srt"
-
-                    complete_matches[episode_num] = match
-
-            return complete_matches
-
-        except Exception as e:
-            self.logger.error(f"Error finding matches: {str(e)}")
-            QMessageBox.warning(self, "Matching Error", str(e))
-            return {}  
-
-    def preview_matches(self):
-        """Preview matched subtitle pairs before processing."""
-        try:
-            matches = self.find_episode_matches()
-            
-            if not matches:
-                self.logger.warning("No matching files found")
-                return
-
-            # Clear log and show matches
-            self.log_text.clear()
-            self.log_message("Matching episodes found:")
-            
-            for episode_num in sorted(matches.keys()):
-                match = matches[episode_num]
-                self.log_message(f"\nEpisode {episode_num}:")
-                self.log_message(f"  Sub1: {match.sub1_path.name}")
-                self.log_message(f"  Sub2: {match.sub2_path.name}")
-                self.log_message(f"  Output: {match.output_path.name}")
-
-        except Exception as e:
-            self.logger.error(f"Error in preview: {str(e)}")
-            QMessageBox.warning(self, "Preview Error", str(e))
-
-    def batch_merge_subtitles(self):
-        """Merge the subtitle files in directory."""
-        # Save all current values before merging
-        self.save_all_values()
-        
-        input_dir = self.dir_entry.text()
-        video_dir = self.video_dir_entry.text()
-        
-        if not input_dir or not video_dir:
-            self.logger.error("Please select both input and video directories")
-            return
-        
-        try:
-            # Get all video files in the video directory
-            video_files = [f for f in Path(video_dir).glob('**/*') 
-                         if f.suffix.lower() in ['.mp4', '.mkv', '.avi']]
-            
-            if not video_files:
-                self.logger.error("No video files found in the specified directory")
-                return
-            
-            for video_file in video_files:
-                # Use video file name and location for output
-                output_dir = video_file.parent
-                base_name = video_file.stem
-                
-                # Find matching subtitle files in input directory
-                sub_files = sorted(Path(input_dir).glob(f'{base_name}*.srt'))
-                
-                if len(sub_files) >= 2:
-                    sub1_file = sub_files[0]
-                    sub2_file = sub_files[1]
-                    
-                    # Copy original subtitle files next to video with new naming convention
-                    shutil.copy2(sub1_file, output_dir / f'{base_name}.sub1.srt')
-                    shutil.copy2(sub2_file, output_dir / f'{base_name}.sub2.srt')
-                    
-                    self.logger.info(f"Processing {base_name}")
-                    self.logger.debug(f"Sub1: {sub1_file}")
-                    self.logger.debug(f"Sub2: {sub2_file}")
-                    
-                    # Create merger instance
-                    merger = Merger(
-                        output_path=str(output_dir),
-                        output_name=f'{base_name}_merged.srt',
-                        output_encoding=self.codec_combo.currentText()
-                    )
-                    
-                    # Add first subtitle
-                    merger.add(
-                        str(sub1_file),
-                        codec=self.codec_combo.currentText(),
-                        color=self.color_combo.currentText(),
-                        size=self.sub1_font_slider.value(),
-                        top=False
-                    )
-                    
-                    # Add second subtitle
-                    merger.add(
-                        str(sub2_file),
-                        codec=self.codec_combo.currentText(),
-                        color=self.color_combo.currentText(),
-                        size=self.sub2_font_slider.value(),
-                        top=True
-                    )
-                    
-                    # Merge subtitles
-                    merger.merge()
-                    
-                else:
-                    self.logger.warning(f"Not enough subtitle files found for {base_name}")
-            
-        except Exception as e:
-            self.logger.error(f"Error during merge operation: {e}")
 
     def confirm_overwrite(self, existing_files: List[Path]) -> bool:
         """Show confirmation dialog for overwriting existing files."""
