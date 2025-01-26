@@ -1,7 +1,7 @@
 build
 *.srt
 *.ass
-&.mp3
+*.mp3
 *.vtt
 *.sup
 *.mkv

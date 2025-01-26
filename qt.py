@@ -11,7 +11,7 @@ from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
                             QHBoxLayout, QLabel, QLineEdit, QPushButton, 
                             QComboBox, QTextEdit, QFileDialog, QFrame, 
                             QGroupBox, QCheckBox, QTabWidget, QSlider,
-                            QSpinBox, QGridLayout, QMessageBox)
+                            QSpinBox, QGridLayout, QMessageBox, QColorDialog)
 from PyQt6.QtCore import Qt, QRegularExpression, pyqtSignal, QThread
 from PyQt6.QtGui import QRegularExpressionValidator, QTextCursor
 from main import Merger
@@ -219,6 +219,18 @@ class SubtitleMergerGUI(QMainWindow):
         file_handler.setFormatter(file_formatter)
         self.logger.addHandler(file_handler)
 
+        # Add text log handler
+        self.text_log_handler = QTextEditLogger(self.log_text_area)
+        self.text_log_handler.setLevel(logging.INFO)
+        self.logger.addHandler(self.text_log_handler)
+
+    def log_message(self, message):
+        """Log a message to both file and text area."""
+        self.logger.info(message)
+
+    def log_error(self, message):
+        """Log an error message to both file and text area."""
+        self.logger.error(message) 
     def init_ui(self):
         """Initialize the user interface."""
         self.setWindowTitle("Subtitle Merger")
@@ -260,12 +272,29 @@ class SubtitleMergerGUI(QMainWindow):
         dir_layout.addWidget(browse_dir_button)
         dir_group.setLayout(dir_layout)
         layout.addWidget(dir_group)
- # Create color combo box
+        # Create color selection
+        color_group = QGroupBox("Color Selection")
+        color_layout = QVBoxLayout()
+        
+        # Create color combo box with more colors
         self.color_combo = QComboBox()
-        # Add color options
-        self.color_combo.addItems(["Red", "Green", "Blue", "Yellow", "Black", "White"])
-        layout.addWidget(QLabel("Select Color:"))
-        layout.addWidget(self.color_combo)
+        self.color_combo.addItems([
+            "White", "Black", "Red", "Green", "Blue", "Yellow", "Cyan", 
+            "Magenta", "Gray", "Orange", "Purple", "Pink", "Brown",
+            "Navy", "Lime", "Teal", "Maroon"
+        ])
+        
+        # Add color picker button
+        color_picker_btn = QPushButton("Custom Color...")
+        color_picker_btn.clicked.connect(lambda: self.color_combo.setCurrentText(
+            QColorDialog.getColor().name() if QColorDialog.getColor().isValid() else self.color_combo.currentText()
+        ))
+        
+        color_layout.addWidget(QLabel("Select Color:"))
+        color_layout.addWidget(self.color_combo)
+        color_layout.addWidget(color_picker_btn)
+        color_group.setLayout(color_layout)
+        layout.addWidget(color_group)
 
         # Create codec combo box
         self.codec_combo = QComboBox()
@@ -283,12 +312,26 @@ class SubtitleMergerGUI(QMainWindow):
         output_dir_layout.addWidget(browse_output_dir_button)
         output_dir_group.setLayout(output_dir_layout)
         layout.addWidget(output_dir_group)
+        # Add missing attributes
+        self.log_text = self.log_text_area  # Alias for compatibility
+        
+        # Color combo box
+        self.color_combo = QComboBox()
+        self.color_combo.addItems(["White", "Red", "Green", "Blue", "Yellow", "Black"])
+        layout.addWidget(QLabel("Select Color:"))
+        layout.addWidget(self.color_combo)
 
+        # Codec combo box
+        self.codec_combo = QComboBox()
+        self.codec_combo.addItems(["utf-8", "H264", "H265", "VP9"])
+        layout.addWidget(QLabel("Select Codec:"))
+        layout.addWidget(self.codec_combo)
         # Process button
         process_button = QPushButton("Process Directory")
         process_button.clicked.connect(self.process_directory)
         process_button.setMinimumHeight(40)
         layout.addWidget(process_button)
+    # Create options section
     def create_options_section(self, parent_layout):
         """Create an options section with checkboxes and dropdown menus."""
         options_group = QGroupBox("Options")
@@ -524,84 +567,78 @@ class SubtitleMergerGUI(QMainWindow):
             self.preview_matches()
 
     def find_episode_matches(self) -> Dict[int, EpisodeMatch]:
-        """Find matching subtitle pairs based on patterns and episode range."""
         try:
             directory = Path(self.dir_entry.text())
             if not directory.is_dir():
                 raise ValueError("Invalid directory path")
 
-            episode_pattern = self.episode_pattern.text()
-            sub1_pattern = self.sub1_pattern.text()
-            sub2_pattern = self.sub2_pattern.text()
+            episode_pattern = re.compile(self.episode_pattern.text())
+            sub1_pattern = re.compile(self.sub1_pattern.text())
+            sub2_pattern = re.compile(self.sub2_pattern.text())
 
             if not all([episode_pattern, sub1_pattern, sub2_pattern]):
                 raise ValueError("All patterns must be specified")
 
-            # Compile patterns
-            sub1_regex = re.compile(f"{sub1_pattern}.*{episode_pattern}")
-            sub2_regex = re.compile(f"{sub2_pattern}.*{episode_pattern}")
-            print(f"{sub1_pattern}.*{episode_pattern}")
-            print(f"{sub2_pattern}.*{episode_pattern}")
-            # Get episode range
             episode_range = self.episode_range.get_range()
 
             matches = {}
             
-            # Find all subtitle files
             for file_path in directory.glob("*"):
                 if not file_path.is_file():
                     continue
 
                 filename = file_path.name
-                print('- ', filename)
-                # Check for subtitle matches
-                for regex, sub_index in [(sub1_regex, 0), (sub2_regex, 1)]:
-                    print(regex, sub_index)
-                    match = regex.match(filename)
-                    if match:
-                        episode_num = int(match.group(1))
-                        print(episode_num)
-                        # Check episode range
-                        if episode_range:
-                            start, end = episode_range
-                            if not start <= episode_num <= end:
-                                continue
+                
+                # First try to extract episode number
+                episode_match = episode_pattern.search(filename)
+                if not episode_match:
+                    continue
+                
+                episode_num = int(episode_match.group(1))
+                
+                # Check episode range
+                if episode_range:
+                    start, end = episode_range
+                    if not start <= episode_num <= end:
+                        continue
 
-                        # Create or update match entry
-                        if episode_num not in matches:
-                            matches[episode_num] = EpisodeMatch(
-                                episode_num=episode_num,
-                                sub1_path=None,
-                                sub2_path=None
-                            )
-                        
-                        # Set the appropriate subtitle path
-                        if sub_index == 0:
-                            matches[episode_num].sub1_path = file_path
-                        else:
-                            matches[episode_num].sub2_path = file_path
+                # Check subtitle patterns
+                is_sub1 = sub1_pattern.search(filename)
+                is_sub2 = sub2_pattern.search(filename)
 
-            # Remove incomplete matches and set output paths
+                if is_sub1 or is_sub2:
+                    if episode_num not in matches:
+                        matches[episode_num] = EpisodeMatch(
+                            episode_num=episode_num,
+                            sub1_path=None,
+                            sub2_path=None
+                        )
+                    
+                    if is_sub1:
+                        matches[episode_num].sub1_path = file_path
+                    if is_sub2:
+                        matches[episode_num].sub2_path = file_path
+
+            # Prepare complete matches
             complete_matches = {}
             output_dir = (
                 directory / self.subfolder_name.text()
                 if self.use_subfolder.isChecked()
                 else directory
             )
-            print('Output ', output_dir)
             
             for episode_num, match in matches.items():
-                print(episode_num)
                 if match.sub1_path and match.sub2_path:
+                    base_pattern = self.base_pattern.text() if hasattr(self, 'base_pattern') else 'Show'
                     match.output_path = output_dir / f"{base_pattern}E{episode_num:02d}_merged.srt"
                     complete_matches[episode_num] = match
-            print(complete_matches)
+
             return complete_matches
 
         except Exception as e:
             self.logger.error(f"Error finding matches: {str(e)}")
-            raise
-
+            QMessageBox.warning(self, "Matching Error", str(e))
+            return {}  
     def preview_matches(self):
         """Preview matched subtitle pairs before processing."""
         try:
