@@ -1982,3 +1982,198 @@
 2025-01-26 05:11:49,460 - SubtitleMerger - DEBUG - Found sub2 for episode 12: [smol] Onii-chan wa Oshimai! - S01E12v2 (BD 1080p HEVC Opus) [EC9C787B].2.eng.srt
 2025-01-26 05:11:49,461 - SubtitleMerger - INFO - Found 0 video files
 2025-01-26 05:11:49,462 - SubtitleMerger - INFO - Merge operation completed
+2025-01-26 05:21:13,259 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 05:21:13,308 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 05:21:13,308 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 05:21:13,311 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 05:21:13,311 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 05:21:13,325 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 05:21:13,327 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 05:21:13,327 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 05:21:13,329 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 05:21:13,330 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 05:21:19,904 - SubtitleMerger - DEBUG - Scale changed to 308%
+2025-01-26 05:21:19,905 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 05:21:19,922 - SubtitleMerger - DEBUG - Scale changed to 308%
+2025-01-26 05:21:19,923 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 05:26:48,169 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 05:26:48,225 - SubtitleMerger - DEBUG - Scale changed to 308%
+2025-01-26 05:26:48,225 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 05:26:48,227 - SubtitleMerger - DEBUG - Scale changed to 308%
+2025-01-26 05:26:48,228 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 05:26:48,239 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 05:26:48,241 - SubtitleMerger - DEBUG - Scale changed to 308%
+2025-01-26 05:26:48,241 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 05:26:48,243 - SubtitleMerger - DEBUG - Scale changed to 308%
+2025-01-26 05:26:48,243 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 05:29:10,702 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 05:29:10,753 - SubtitleMerger - DEBUG - Scale changed to 308%
+2025-01-26 05:29:10,753 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 05:29:10,755 - SubtitleMerger - DEBUG - Scale changed to 308%
+2025-01-26 05:29:10,756 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 05:29:10,771 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 05:29:10,773 - SubtitleMerger - DEBUG - Scale changed to 308%
+2025-01-26 05:29:10,774 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 05:29:10,777 - SubtitleMerger - DEBUG - Scale changed to 308%
+2025-01-26 05:29:10,777 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 05:31:31,575 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 05:31:31,635 - SubtitleMerger - DEBUG - Scale changed to 308%
+2025-01-26 05:31:31,636 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 05:31:31,639 - SubtitleMerger - DEBUG - Scale changed to 308%
+2025-01-26 05:31:31,639 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 05:31:31,650 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 05:31:31,653 - SubtitleMerger - DEBUG - Scale changed to 308%
+2025-01-26 05:31:31,653 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 05:31:31,655 - SubtitleMerger - DEBUG - Scale changed to 308%
+2025-01-26 05:31:31,655 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 05:31:31,690 - SubtitleMerger - DEBUG - Scale changed to 308%
+2025-01-26 05:31:31,691 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 05:31:31,701 - SubtitleMerger - DEBUG - Scale changed to 308%
+2025-01-26 05:31:31,701 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 05:31:34,583 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 05:31:34,584 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 05:31:34,600 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 05:31:34,600 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 05:31:34,626 - SubtitleMerger - DEBUG - Scale changed to 302%
+2025-01-26 05:31:34,626 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 05:31:34,637 - SubtitleMerger - DEBUG - Scale changed to 302%
+2025-01-26 05:31:34,637 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 05:31:34,664 - SubtitleMerger - DEBUG - Scale changed to 296%
+2025-01-26 05:31:34,665 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 05:31:34,674 - SubtitleMerger - DEBUG - Scale changed to 296%
+2025-01-26 05:31:34,675 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 05:31:45,520 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 05:31:45,521 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 05:31:45,552 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 05:31:45,553 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 05:31:45,582 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 05:31:45,583 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 05:31:45,866 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 05:31:45,877 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 05:31:45,885 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 05:31:45,900 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 05:31:46,236 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 05:31:46,260 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 05:32:04,593 - SubtitleMerger - DEBUG - Saved sub1_pattern to settings
+2025-01-26 05:32:05,132 - SubtitleMerger - DEBUG - Saved sub1_pattern to settings
+2025-01-26 05:32:05,748 - SubtitleMerger - DEBUG - Saved sub1_pattern to settings
+2025-01-26 05:32:06,148 - SubtitleMerger - DEBUG - Saved sub1_pattern to settings
+2025-01-26 05:32:10,180 - SubtitleMerger - DEBUG - Saved sub1_pattern to settings
+2025-01-26 05:32:10,749 - SubtitleMerger - DEBUG - Saved sub1_pattern to settings
+2025-01-26 05:32:34,495 - SubtitleMerger - DEBUG - Saved last_subtitle_directory to settings
+2025-01-26 05:32:38,654 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 05:32:59,596 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 05:35:01,133 - SubtitleMerger - DEBUG - Saved sub1_episode_pattern to settings
+2025-01-26 05:35:01,637 - SubtitleMerger - DEBUG - Saved sub1_episode_pattern to settings
+2025-01-26 05:35:02,238 - SubtitleMerger - DEBUG - Saved sub1_episode_pattern to settings
+2025-01-26 05:35:06,350 - SubtitleMerger - DEBUG - All settings saved successfully
+2025-01-26 05:35:06,350 - SubtitleMerger - INFO - Starting merge operation...
+2025-01-26 05:35:06,351 - SubtitleMerger - INFO - Input directory: /home/half-arch
+2025-01-26 05:35:06,351 - SubtitleMerger - INFO - Video directory: /home/half-arch
+2025-01-26 05:35:06,352 - SubtitleMerger - DEBUG - Using patterns - Sub1: Nanako, Sub2: smol.*Clean
+2025-01-26 05:35:06,353 - SubtitleMerger - DEBUG - Episode patterns - Sub1: (\d+)(?:v\d+)? (?:\(1080p\)|END), Sub2: S\d+E(\d+)
+2025-01-26 05:35:06,353 - SubtitleMerger - DEBUG - Styles - Sub1: color=Yellow, size=24, Sub2: size=8
+2025-01-26 05:35:06,355 - SubtitleMerger - INFO - Found 0 sub1 files and 0 sub2 files
+2025-01-26 05:35:06,356 - SubtitleMerger - INFO - Found 1 video files
+2025-01-26 05:35:06,357 - SubtitleMerger - WARNING - Could not find episode number in Game Theory： FNAF, BURN Them All (Ultimate Timeline) [X2LyUpsd8uY].mkv
+2025-01-26 05:35:06,364 - SubtitleMerger - INFO - Merge operation completed
+2025-01-26 06:19:47,936 - SubtitleMerger - DEBUG - Saved last_subtitle_directory to settings
+2025-01-26 06:19:49,152 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 06:19:50,890 - SubtitleMerger - DEBUG - Saved last_video_directory to settings
+2025-01-26 06:19:52,352 - SubtitleMerger - DEBUG - Saved last_subtitle_directory to settings
+2025-01-26 07:44:33,039 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 07:44:33,087 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 07:44:33,087 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 07:44:33,089 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 07:44:33,089 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 07:56:05,718 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 07:56:05,781 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 07:56:05,781 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 07:56:05,783 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 07:56:05,784 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 07:56:05,797 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 07:56:05,799 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 07:56:05,800 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 07:56:05,803 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 07:56:05,803 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 07:56:05,974 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 07:56:05,974 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 07:56:05,989 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 07:56:05,990 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 07:57:44,566 - SubtitleMerger - DEBUG - Pattern settings saved
+2025-01-26 07:57:45,496 - SubtitleMerger - DEBUG - Pattern settings saved
+2025-01-26 07:57:45,727 - SubtitleMerger - DEBUG - Pattern settings saved
+2025-01-26 07:57:46,446 - SubtitleMerger - DEBUG - Pattern settings saved
+2025-01-26 07:57:46,694 - SubtitleMerger - DEBUG - Pattern settings saved
+2025-01-26 07:57:47,192 - SubtitleMerger - DEBUG - Pattern settings saved
+2025-01-26 07:57:51,622 - SubtitleMerger - DEBUG - Pattern settings saved
+2025-01-26 07:57:55,286 - SubtitleMerger - DEBUG - Pattern settings saved
+2025-01-26 07:57:56,126 - SubtitleMerger - DEBUG - Pattern settings saved
+2025-01-26 07:57:56,281 - SubtitleMerger - DEBUG - Pattern settings saved
+2025-01-26 07:57:56,727 - SubtitleMerger - DEBUG - Pattern settings saved
+2025-01-26 07:57:56,966 - SubtitleMerger - DEBUG - Pattern settings saved
+2025-01-26 07:57:57,454 - SubtitleMerger - DEBUG - Pattern settings saved
+2025-01-26 07:58:19,951 - SubtitleMerger - DEBUG - Pattern settings saved
+2025-01-26 07:58:48,009 - SubtitleMerger - DEBUG - Directory settings saved
+2025-01-26 07:58:51,024 - SubtitleMerger - DEBUG - Directory settings saved
+2025-01-26 07:58:58,607 - SubtitleMerger - DEBUG - Directory settings saved
+2025-01-26 07:59:02,834 - SubtitleMerger - DEBUG - Directory settings saved
+2025-01-26 07:59:34,496 - SubtitleMerger - INFO - Starting merge operation...
+2025-01-26 07:59:34,500 - SubtitleMerger - INFO - Input directory: a
+2025-01-26 07:59:34,504 - SubtitleMerger - INFO - Video directory: a
+2025-01-26 07:59:34,506 - SubtitleMerger - DEBUG - Using patterns - Sub1: Amazon, Sub2: smol.*Clean
+2025-01-26 07:59:34,508 - SubtitleMerger - DEBUG - Episode patterns - Sub1: S\d+E(\d+), Sub2: S\d+E(\d+)
+2025-01-26 07:59:34,510 - SubtitleMerger - DEBUG - Styles - Sub1: color=Yellow, size=8, Sub2: size=8
+2025-01-26 07:59:34,511 - SubtitleMerger - INFO - Found 0 sub1 files and 0 sub2 files
+2025-01-26 07:59:34,512 - SubtitleMerger - INFO - Found 0 video files
+2025-01-26 07:59:34,512 - SubtitleMerger - INFO - Merge operation completed
+2025-01-26 08:01:13,904 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 08:01:13,953 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:01:13,953 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:01:13,955 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:01:13,955 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:01:13,965 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 08:01:13,967 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:01:13,967 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:01:13,968 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:01:13,969 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:02:23,310 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 08:02:23,360 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:02:23,360 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:02:23,362 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:02:23,362 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:02:23,373 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 08:02:23,375 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:02:23,375 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:02:23,377 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:02:23,377 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:02:23,477 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:02:23,478 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 08:02:23,489 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:02:23,489 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 08:02:30,065 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 08:02:30,081 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 08:02:30,408 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 08:02:30,416 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 08:02:30,428 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 08:02:30,433 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 08:02:30,449 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 08:02:30,816 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 08:02:30,825 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 08:02:30,833 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 08:02:30,840 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 08:02:30,865 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-26 08:10:13,308 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 08:10:13,346 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:10:13,347 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:10:13,348 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:10:13,349 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:10:13,359 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 08:10:13,361 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:10:13,362 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:10:13,364 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:10:13,364 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:10:13,391 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:10:13,391 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 08:10:13,400 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:10:13,401 - SubtitleMerger - DEBUG - Settings saved successfully
