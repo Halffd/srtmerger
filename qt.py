@@ -197,6 +197,12 @@ class SubtitleMergerGUI(QMainWindow):
     def __init__(self):
         super().__init__()
         self.merge_worker = None
+        
+        # Create log text area first
+        self.log_text_area = QTextEdit()
+        self.log_text_area.setReadOnly(True)
+        
+        # Now setup logging and UI
         self.setup_logging()
         self.init_ui()
         
@@ -298,6 +304,7 @@ class SubtitleMergerGUI(QMainWindow):
 
         # Create codec combo box
         self.codec_combo = QComboBox()
+
         # Add codec options
         self.codec_combo.addItems(["H264", "H265", "VP9", "AV1"])
         layout.addWidget(QLabel("Select Codec:"))
@@ -452,8 +459,8 @@ class SubtitleMergerGUI(QMainWindow):
         Set up the directory processing tab."""
         layout = QVBoxLayout(tab)
 
-        # Directory selection
-        dir_group = QGroupBox("Directory Selection")
+        # Input directory selection
+        dir_group = QGroupBox("Input Directory Selection")
         dir_layout = QHBoxLayout()
         self.dir_entry = QLineEdit()
         browse_dir_button = QPushButton("Browse")
@@ -462,6 +469,17 @@ class SubtitleMergerGUI(QMainWindow):
         dir_layout.addWidget(browse_dir_button)
         dir_group.setLayout(dir_layout)
         layout.addWidget(dir_group)
+
+        # Video directory selection (optional)
+        video_dir_group = QGroupBox("Video Directory Selection (Optional)")
+        video_dir_layout = QHBoxLayout()
+        self.video_dir_entry = QLineEdit()
+        browse_video_dir_button = QPushButton("Browse")
+        browse_video_dir_button.clicked.connect(self.browse_video_directory)
+        video_dir_layout.addWidget(self.video_dir_entry)
+        video_dir_layout.addWidget(browse_video_dir_button)
+        video_dir_group.setLayout(video_dir_layout)
+        layout.addWidget(video_dir_group)
 
         # File matching patterns
         patterns_group = QGroupBox("File Matching Patterns")
@@ -572,6 +590,25 @@ class SubtitleMergerGUI(QMainWindow):
             if not directory.is_dir():
                 raise ValueError("Invalid directory path")
 
+            # Check if video directory is specified and valid
+            use_video_dir = bool(self.video_dir_entry.text().strip())
+            if use_video_dir:
+                video_dir = Path(self.video_dir_entry.text())
+                if not video_dir.is_dir():
+                    raise ValueError("Invalid video directory path")
+                # Create output directory in video dir if using subfolder
+                if self.use_subfolder.isChecked():
+                    output_dir = video_dir / self.subfolder_name.text()
+                else:
+                    output_dir = video_dir
+            else:
+                # Use original directory if no video dir specified
+                output_dir = (
+                    directory / self.subfolder_name.text()
+                    if self.use_subfolder.isChecked()
+                    else directory
+                )
+
             episode_pattern = re.compile(self.episode_pattern.text())
             sub1_pattern = re.compile(self.sub1_pattern.text())
             sub2_pattern = re.compile(self.sub2_pattern.text())
@@ -621,16 +658,28 @@ class SubtitleMergerGUI(QMainWindow):
 
             # Prepare complete matches
             complete_matches = {}
-            output_dir = (
-                directory / self.subfolder_name.text()
-                if self.use_subfolder.isChecked()
-                else directory
-            )
             
             for episode_num, match in matches.items():
                 if match.sub1_path and match.sub2_path:
-                    base_pattern = self.base_pattern.text() if hasattr(self, 'base_pattern') else 'Show'
-                    match.output_path = output_dir / f"{base_pattern}E{episode_num:02d}_merged.srt"
+                    if use_video_dir:
+                        # Search for video file with episode number
+                        video_files = list(video_dir.glob(f"*{episode_num:02d}*"))
+                        if video_files:
+                            video_path = video_files[0]
+                            # Use video filename as base for output files
+                            base_name = video_path.stem
+                            match.output_path = output_dir / f"{base_name}.merged.srt"
+                            # Add paths for copying original subtitles
+                            match.sub1_output = output_dir / f"{base_name}.sub1.srt"
+                            match.sub2_output = output_dir / f"{base_name}.sub2.srt"
+                        else:
+                            self.logger.warning(f"No matching video file found for episode {episode_num}")
+                            continue
+                    else:
+                        # Original behavior when no video dir specified
+                        base_pattern = self.base_pattern.text()
+                        match.output_path = output_dir / f"{base_pattern}E{episode_num:02d}_merged.srt"
+
                     complete_matches[episode_num] = match
 
             return complete_matches
@@ -670,20 +719,32 @@ class SubtitleMergerGUI(QMainWindow):
             if not matches:
                 raise ValueError("No matching pairs found to merge!")
 
-            # Confirm overwrite if files exist
-            existing_files = [
-                match.output_path
-                for match in matches.values()
-                if match.output_path.exists()
-            ]
-            print(existing_files)
+            # Check for existing files
+            existing_files = []
+            for match in matches.values():
+                if match.output_path.exists():
+                    existing_files.append(match.output_path)
+                if hasattr(match, 'sub1_output') and match.sub1_output.exists():
+                    existing_files.append(match.sub1_output)
+                if hasattr(match, 'sub2_output') and match.sub2_output.exists():
+                    existing_files.append(match.sub2_output)
+
             if existing_files and not self.confirm_overwrite(existing_files):
                 return
 
             # Create output directory if needed
-            if self.use_subfolder.isChecked():
-                output_dir = Path(self.dir_entry.text()) / self.subfolder_name.text()
-                output_dir.mkdir(exist_ok=True)
+            output_dir = match.output_path.parent
+            output_dir.mkdir(exist_ok=True)
+
+            # Copy original subtitles if video directory is specified
+            if self.video_dir_entry.text().strip():
+                for match in matches.values():
+                    if hasattr(match, 'sub1_output'):
+                        self.logger.info(f"Copying {match.sub1_path.name} to {match.sub1_output}")
+                        match.sub1_path.copy(match.sub1_output)
+                    if hasattr(match, 'sub2_output'):
+                        self.logger.info(f"Copying {match.sub2_path.name} to {match.sub2_output}")
+                        match.sub2_path.copy(match.sub2_output)
 
             # Prepare merger arguments
             merger_args = {
@@ -751,6 +812,14 @@ class SubtitleMergerGUI(QMainWindow):
                 
         self.logger.info("Application closing")
         event.accept()
+
+    def browse_video_directory(self):
+        """Browse for a video directory."""
+        self.logger.debug("Attempting to browse for video directory...")
+        directory = QFileDialog.getExistingDirectory(self, "Select Video Directory")
+        if directory:
+            self.video_dir_entry.setText(directory)
+            self.logger.debug(f"Video directory set: {directory}")
 
 def main():
     """Main application entry point."""
