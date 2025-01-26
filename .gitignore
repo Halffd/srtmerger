@@ -10,3 +10,4 @@ conf
 cfg
 config
 log
+__pycache__
