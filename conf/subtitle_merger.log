@@ -2177,3 +2177,163 @@
 2025-01-26 08:10:13,391 - SubtitleMerger - DEBUG - Settings saved successfully
 2025-01-26 08:10:13,400 - SubtitleMerger - DEBUG - Scale changed to 305%
 2025-01-26 08:10:13,401 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 08:12:26,876 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 08:12:26,924 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:12:26,924 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:12:26,926 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:12:26,926 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:12:26,936 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 08:12:26,938 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:12:26,938 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:12:26,940 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:12:26,940 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:12:26,967 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:12:26,968 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 08:12:26,978 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:12:26,979 - SubtitleMerger - DEBUG - Settings saved successfully
+2025-01-26 08:15:07,584 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 08:15:07,630 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:15:07,630 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:15:07,632 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:15:07,632 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:15:07,641 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 08:16:25,556 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 08:16:25,598 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:16:25,598 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:16:25,600 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:16:25,600 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:16:25,610 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 08:16:33,918 - SubtitleMerger - DEBUG - Pattern settings saved
+2025-01-26 08:16:34,419 - SubtitleMerger - DEBUG - Pattern settings saved
+2025-01-26 08:16:34,467 - SubtitleMerger - DEBUG - Pattern settings saved
+2025-01-26 08:16:34,518 - SubtitleMerger - DEBUG - Pattern settings saved
+2025-01-26 08:16:34,568 - SubtitleMerger - DEBUG - Pattern settings saved
+2025-01-26 08:16:41,160 - SubtitleMerger - DEBUG - Directory settings saved
+2025-01-26 08:16:42,358 - SubtitleMerger - DEBUG - Directory settings saved
+2025-01-26 08:16:46,791 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 08:16:46,842 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:16:46,842 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:16:46,844 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:16:46,844 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:16:46,856 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 08:18:23,272 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 08:18:23,312 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:18:23,312 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:18:23,314 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:18:23,314 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:18:23,323 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 08:18:23,325 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:18:23,325 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:18:23,327 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:18:23,327 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:19:04,689 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 08:19:04,738 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:19:04,738 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:19:04,739 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:19:04,739 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:19:04,751 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-26 08:19:04,752 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:19:04,753 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:19:04,754 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-26 08:19:04,754 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-26 08:19:36,810 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-26 08:19:37,311 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-26 08:19:37,361 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-26 08:19:37,413 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-26 08:19:37,460 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-26 08:19:37,513 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-26 08:19:37,562 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-26 08:19:37,613 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-26 08:19:37,662 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-26 08:19:37,714 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-26 08:19:38,479 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-26 08:19:38,980 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-26 08:19:39,030 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-26 08:19:39,080 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-26 08:19:39,130 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-26 08:19:39,456 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-26 08:19:39,955 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-26 08:19:40,005 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-26 08:19:40,056 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-26 08:19:40,105 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-26 08:19:40,155 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-26 08:19:40,205 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-26 08:19:40,257 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:06:32,827 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-27 09:06:32,864 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-27 09:06:32,864 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-27 09:06:32,866 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-27 09:06:32,866 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-27 09:06:32,874 - SubtitleMerger - DEBUG - Settings loaded successfully
+2025-01-27 09:06:32,876 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-27 09:06:32,876 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-27 09:06:32,877 - SubtitleMerger - DEBUG - Scale changed to 305%
+2025-01-27 09:06:32,877 - SubtitleMerger - ERROR - Error saving settings: 'NoneType' object has no attribute 'value'
+2025-01-27 09:06:50,827 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-27 09:06:51,142 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-27 09:06:51,158 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-27 09:06:51,173 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-27 09:06:51,181 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-27 09:06:51,189 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-27 09:06:51,197 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-27 09:06:51,533 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-27 09:06:51,550 - SubtitleMerger - DEBUG - Saved sub1_font_size to settings
+2025-01-27 09:41:19,859 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:41:55,183 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:42:03,126 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:42:03,626 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:42:03,676 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:42:03,727 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:42:03,777 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:42:04,078 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:42:04,487 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:42:05,614 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:42:06,382 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:42:07,703 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:42:08,375 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:42:08,735 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:42:09,526 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:42:09,623 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:43:11,255 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:43:11,463 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:43:11,903 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:43:12,222 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:43:12,607 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:43:14,143 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:43:22,544 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:43:22,960 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:43:23,383 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:43:23,959 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:43:24,119 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:43:24,440 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:43:24,759 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:43:25,039 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:43:25,511 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:43:25,679 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:43:26,327 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:43:26,735 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:43:27,175 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:43:27,583 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:43:27,807 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:43:28,231 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:43:28,671 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:43:35,591 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:43:35,807 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:43:36,183 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:43:36,407 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:44:20,754 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:44:31,672 - SubtitleMerger - ERROR - Error saving directory settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:45:31,720 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:45:32,200 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:45:32,528 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:45:32,888 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:45:33,208 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:45:34,505 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:46:02,024 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:46:02,392 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:46:02,784 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:46:03,016 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:46:59,913 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:47:03,793 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:47:05,200 - SubtitleMerger - ERROR - Error saving pattern settings: BaseTab.save_settings() takes 1 positional argument but 2 were given
+2025-01-27 09:47:20,809 - SubtitleMerger - ERROR - Error testing patterns: 'QMessageBox' object has no attribute 'exec_'

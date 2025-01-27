@@ -1267,18 +1267,19 @@ class DirectoryTab(BaseTab):
         # Call parent init first
         super().__init__(parent)
         
-        # Initialize UI elements
+        # Initialize UI elements specific to DirectoryTab
         self.dir_entry = None
         self.video_dir_entry = None
         self.sub1_pattern_entry = None
         self.sub2_pattern_entry = None
         self.sub1_episode_pattern_entry = None
         self.sub2_episode_pattern_entry = None
+        self.batch_merge_button = None
         
         # Setup UI
-        self.setup_ui()
+        self.setup_directory_ui()
 
-    def _create_directory_entry(self, label: str, setting_key: str, browse_text: str, browse_func) -> QHBoxLayout:
+    def _create_directory_entry(self, label: str, setting_key: str, browse_text: str, browse_func) -> tuple[QHBoxLayout, QLineEdit]:
         """Helper to create a directory entry layout."""
         layout = QHBoxLayout()
         layout.addWidget(QLabel(label))
@@ -1307,10 +1308,8 @@ class DirectoryTab(BaseTab):
         
         return layout, entry
 
-    def setup_ui(self):
-        """Setup specific UI for directory tab."""
-        super().setup_ui()
-        
+    def setup_directory_ui(self):
+        """Setup directory-specific UI elements."""
         # Directory selection group
         dir_group = QGroupBox("Directory Selection")
         dir_layout = QVBoxLayout()
@@ -1398,37 +1397,45 @@ class DirectoryTab(BaseTab):
         self.layout.addStretch()
 
         # Add log section last
-        for widget in self.findChildren(QGroupBox):
-            if widget.title() == "Logs":
-                self.layout.addWidget(widget)
+        self.setup_log_section()
 
     def save_directory_settings(self):
         """Save directory settings when they change."""
         try:
-            self.settings.update({
+            self.save_settings({
                 'last_subtitle_directory': self.dir_entry.text(),
                 'last_video_directory': self.video_dir_entry.text()
             })
-            with open(self.settings_file, 'w', encoding='utf-8') as f:
-                json.dump(self.settings, f, indent=4)
-            self.logger.debug("Directory settings saved")
         except Exception as e:
             self.logger.error(f"Error saving directory settings: {e}")
 
     def save_pattern_settings(self):
         """Save all pattern settings when they change."""
         try:
-            self.settings.update({
+            self.save_settings({
                 'sub1_pattern': self.sub1_pattern_entry.text(),
                 'sub2_pattern': self.sub2_pattern_entry.text(),
                 'sub1_episode_pattern': self.sub1_episode_pattern_entry.text(),
                 'sub2_episode_pattern': self.sub2_episode_pattern_entry.text()
             })
-            with open(self.settings_file, 'w', encoding='utf-8') as f:
-                json.dump(self.settings, f, indent=4)
-            self.logger.debug("Pattern settings saved")
         except Exception as e:
             self.logger.error(f"Error saving pattern settings: {e}")
+
+    def browse_directory(self):
+        """Browse for an input directory."""
+        initial_dir = self.settings.get('last_subtitle_directory', str(Path.home()))
+        directory = QFileDialog.getExistingDirectory(self, "Select Directory", initial_dir)
+        if directory:
+            self.dir_entry.setText(directory)
+            self.save_directory_settings()
+
+    def browse_video_directory(self):
+        """Browse for a video directory."""
+        initial_dir = self.settings.get('last_video_directory', str(Path.home()))
+        directory = QFileDialog.getExistingDirectory(self, "Select Video Directory", initial_dir)
+        if directory:
+            self.video_dir_entry.setText(directory)
+            self.save_directory_settings()
 
     def test_patterns(self):
         """Test the current patterns against files in the selected directory."""
@@ -1490,151 +1497,6 @@ class DirectoryTab(BaseTab):
         except Exception as e:
             self.logger.error(f"Error testing patterns: {e}")
             QMessageBox.critical(self, "Error", f"Error testing patterns: {e}")
-
-    def browse_directory(self):
-        """Browse for an input directory."""
-        initial_dir = self.settings.get('last_subtitle_directory', str(Path.home()))
-        directory = QFileDialog.getExistingDirectory(self, "Select Directory", initial_dir)
-        if directory:
-            self.dir_entry.setText(directory)
-            self.save_directory_settings()
-
-    def browse_video_directory(self):
-        """Browse for a video directory."""
-        initial_dir = self.settings.get('last_video_directory', str(Path.home()))
-        directory = QFileDialog.getExistingDirectory(self, "Select Video Directory", initial_dir)
-        if directory:
-            self.video_dir_entry.setText(directory)
-            self.save_directory_settings()
-
-    def find_episode_matches(self) -> Dict[int, EpisodeMatch]:
-        try:
-            directory = Path(self.dir_entry.text())
-            if not directory.is_dir():
-                raise ValueError("Invalid directory path")
-
-            # Check if video directory is specified and valid
-            use_video_dir = bool(self.video_dir_entry.text().strip())
-            if use_video_dir:
-                video_dir = Path(self.video_dir_entry.text())
-                if not video_dir.is_dir():
-                    raise ValueError("Invalid video directory path")
-                # Create output directory in video dir if using subfolder
-                if self.use_subfolder.isChecked():
-                    output_dir = video_dir / self.subfolder_name.text()
-                else:
-                    output_dir = video_dir
-            else:
-                # Use original directory if no video dir specified
-                output_dir = (
-                    directory / self.subfolder_name.text()
-                    if self.use_subfolder.isChecked()
-                    else directory
-                )
-
-            episode_pattern = re.compile(self.episode_pattern.text())
-            sub1_pattern = re.compile(self.sub1_pattern.text())
-            sub2_pattern = re.compile(self.sub2_pattern.text())
-
-            if not all([episode_pattern, sub1_pattern, sub2_pattern]):
-                raise ValueError("All patterns must be specified")
-
-            episode_range = self.episode_range.get_range()
-
-            matches = {}
-            
-            for file_path in directory.glob("*"):
-                if not file_path.is_file():
-                    continue
-
-                filename = file_path.name
-                
-                # First try to extract episode number
-                episode_match = episode_pattern.search(filename)
-                if not episode_match:
-                    continue
-                
-                episode_num = int(episode_match.group(1))
-                
-                # Check episode range
-                if episode_range:
-                    start, end = episode_range
-                    if not start <= episode_num <= end:
-                        continue
-
-                # Check subtitle patterns
-                is_sub1 = sub1_pattern.search(filename)
-                is_sub2 = sub2_pattern.search(filename)
-
-                if is_sub1 or is_sub2:
-                    if episode_num not in matches:
-                        matches[episode_num] = EpisodeMatch(
-                            episode_num=episode_num,
-                            sub1_path=None,
-                            sub2_path=None
-                        )
-                    
-                    if is_sub1:
-                        matches[episode_num].sub1_path = file_path
-                    if is_sub2:
-                        matches[episode_num].sub2_path = file_path
-
-            # Prepare complete matches
-            complete_matches = {}
-            
-            for episode_num, match in matches.items():
-                if match.sub1_path and match.sub2_path:
-                    if use_video_dir:
-                        # Search for video file with episode number
-                        video_files = list(video_dir.glob(f"*{episode_num:02d}*"))
-                        if video_files:
-                            video_path = video_files[0]
-                            # Use video filename as base for output files
-                            base_name = video_path.stem
-                            match.output_path = output_dir / f"{base_name}.merged.srt"
-                            # Add paths for copying original subtitles
-                            match.sub1_output = output_dir / f"{base_name}.sub1.srt"
-                            match.sub2_output = output_dir / f"{base_name}.sub2.srt"
-                        else:
-                            self.logger.warning(f"No matching video file found for episode {episode_num}")
-                            continue
-                    else:
-                        # Original behavior when no video dir specified
-                        base_pattern = self.base_pattern.text()
-                        match.output_path = output_dir / f"{base_pattern}E{episode_num:02d}_merged.srt"
-
-                    complete_matches[episode_num] = match
-
-            return complete_matches
-
-        except Exception as e:
-            self.logger.error(f"Error finding matches: {str(e)}")
-            QMessageBox.warning(self, "Matching Error", str(e))
-            return {}  
-
-    def preview_matches(self):
-        """Preview matched subtitle pairs before processing."""
-        try:
-            matches = self.find_episode_matches()
-            
-            if not matches:
-                self.logger.warning("No matching files found")
-                return
-
-            # Clear log and show matches
-            self.log_text.clear()
-            self.log_message("Matching episodes found:")
-            
-            for episode_num in sorted(matches.keys()):
-                match = matches[episode_num]
-                self.log_message(f"\nEpisode {episode_num}:")
-                self.log_message(f"  Sub1: {match.sub1_path.name}")
-                self.log_message(f"  Sub2: {match.sub2_path.name}")
-                self.log_message(f"  Output: {match.output_path.name}")
-
-        except Exception as e:
-            self.logger.error(f"Error in preview: {str(e)}")
-            QMessageBox.warning(self, "Preview Error", str(e))
 
     def merge_subtitles(self):
         """Merge the subtitle files in directory."""

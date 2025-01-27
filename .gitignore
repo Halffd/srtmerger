@@ -6,6 +6,8 @@ build
 *.sup
 *.mkv
 *.mp4
+*.log
+conf/*
 conf
 cfg
 config
