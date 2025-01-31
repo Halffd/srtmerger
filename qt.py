@@ -597,7 +597,7 @@ class BaseTab(QWidget):
         self.scale_input.setMaximum(500)
         self.scale_input.setValue(375)
         self.scale_input.setSuffix("%")
-        self.scale_input.setFixedWidth(80)
+        self.scale_input.setFixedWidth(70)
         controls_layout.addWidget(self.scale_input)
         
         scale_layout.addLayout(controls_layout)
@@ -627,14 +627,14 @@ class BaseTab(QWidget):
         
         self.sub1_font_slider = QSlider(Qt.Orientation.Horizontal)
         self.sub1_font_slider.setMinimum(8)
-        self.sub1_font_slider.setMaximum(72)
+        self.sub1_font_slider.setMaximum(52)
         self.sub1_font_slider.setValue(self.settings.get('sub1_font_size', 16))
         self.sub1_font_slider.setTickPosition(QSlider.TickPosition.TicksBelow)
         self.sub1_font_slider.setTickInterval(4)
         
         self.sub1_font_spinbox = QSpinBox()
         self.sub1_font_spinbox.setMinimum(8)
-        self.sub1_font_spinbox.setMaximum(72)
+        self.sub1_font_spinbox.setMaximum(52)
         self.sub1_font_spinbox.setValue(self.settings.get('sub1_font_size', 16))
         self.sub1_font_spinbox.setSuffix("px")
         
@@ -648,14 +648,14 @@ class BaseTab(QWidget):
         
         self.sub2_font_slider = QSlider(Qt.Orientation.Horizontal)
         self.sub2_font_slider.setMinimum(8)
-        self.sub2_font_slider.setMaximum(72)
+        self.sub2_font_slider.setMaximum(52)
         self.sub2_font_slider.setValue(self.settings.get('sub2_font_size', 16))
         self.sub2_font_slider.setTickPosition(QSlider.TickPosition.TicksBelow)
         self.sub2_font_slider.setTickInterval(4)
         
         self.sub2_font_spinbox = QSpinBox()
         self.sub2_font_spinbox.setMinimum(8)
-        self.sub2_font_spinbox.setMaximum(72)
+        self.sub2_font_spinbox.setMaximum(52)
         self.sub2_font_spinbox.setValue(self.settings.get('sub2_font_size', 16))
         self.sub2_font_spinbox.setSuffix("px")
         
@@ -860,7 +860,7 @@ class BaseTab(QWidget):
     def load_settings(self) -> dict:
         """Load settings from JSON file."""
         default_settings = {
-            'ui_scale': 375,
+            'ui_scale': 275,
             'sub1_font_size': 16,
             'sub2_font_size': 16,
             'color': 'Yellow',
@@ -870,10 +870,10 @@ class BaseTab(QWidget):
             'last_directory': str(Path.home()),
             'last_video_directory': str(Path.home()),
             'last_subtitle_directory': str(Path.home()),
-            'sub1_pattern': 'Nanako',
-            'sub2_pattern': 'smol.*Clean',
-            'sub1_episode_pattern': r'(\d+)(?:v\d+)? (?:\(1080p\)|END)',
-            'sub2_episode_pattern': r'S\d+E(\d+)',
+            'sub1_pattern': r'\[Some-Stuffs\]_Pocket_Monsters_\(2019\)_\d+.*(?<!Clean)\.srt$',  # Match base subtitles without Clean
+            'sub2_pattern': r'\[Some-Stuffs\]_Pocket_Monsters_\(2019\)_\d+.*-Clean\.srt$',  # Match files ending with Clean.srt
+            'sub1_episode_pattern': r'_(\d{3})_',  # Match episode numbers between underscores
+            'sub2_episode_pattern': r'_(\d{3})_',  # Match episode numbers between underscores
             'episode_pattern': r'\d+'  # Legacy support
         }
         
@@ -894,33 +894,35 @@ class BaseTab(QWidget):
             self.logger.error(f"Error loading settings: {e}")
             return default_settings
 
-    def save_settings(self):
+    def save_settings(self, settings=None):
         """Save current settings to JSON file."""
         try:
             # Ensure config directory exists
             self.config_dir.mkdir(exist_ok=True)
             
-            settings = {}
-            
-            # Only save values for attributes that exist
-            if hasattr(self, 'scale_slider'):
-                settings['ui_scale'] = self.scale_slider.value()
-            if hasattr(self, 'sub1_font_slider'):
-                settings['sub1_font_size'] = self.sub1_font_slider.value()
-            if hasattr(self, 'sub2_font_slider'):
-                settings['sub2_font_size'] = self.sub2_font_slider.value()
-            if hasattr(self, 'color_combo'):
-                settings['color'] = self.color_combo.currentText()
-            if hasattr(self, 'codec_combo'):
-                settings['codec'] = self.codec_combo.currentText()
-            if hasattr(self, 'option_merge_subtitles'):
-                settings['merge_automatically'] = self.option_merge_subtitles.isChecked()
-            if hasattr(self, 'option_generate_log'):
-                settings['generate_log'] = self.option_generate_log.isChecked()
+            if settings:
+                # Update settings with provided values
+                self.settings.update(settings)
+            else:
+                # Only save values for attributes that exist
+                if hasattr(self, 'scale_slider'):
+                    self.settings['ui_scale'] = self.scale_slider.value()
+                if hasattr(self, 'sub1_font_slider'):
+                    self.settings['sub1_font_size'] = self.sub1_font_slider.value()
+                if hasattr(self, 'sub2_font_slider'):
+                    self.settings['sub2_font_size'] = self.sub2_font_slider.value()
+                if hasattr(self, 'color_combo'):
+                    self.settings['color'] = self.color_combo.currentText()
+                if hasattr(self, 'codec_combo'):
+                    self.settings['codec'] = self.codec_combo.currentText()
+                if hasattr(self, 'option_merge_subtitles'):
+                    self.settings['merge_automatically'] = self.option_merge_subtitles.isChecked()
+                if hasattr(self, 'option_generate_log'):
+                    self.settings['generate_log'] = self.option_generate_log.isChecked()
             
             # Save to file
             with open(self.settings_file, 'w', encoding='utf-8') as f:
-                json.dump(settings, f, indent=4)
+                json.dump(self.settings, f, indent=4)
             self.logger.debug("Settings saved successfully")
             
         except Exception as e:
@@ -975,6 +977,68 @@ class BaseTab(QWidget):
             
         except Exception as e:
             self.logger.error(f"Error saving settings: {e}")
+
+    def test_patterns(self):
+        """Test the current patterns against files in the selected directory."""
+        input_dir = self.dir_entry.text()
+        if not input_dir:
+            self.logger.error("Please select an input directory first")
+            return
+
+        try:
+            input_path = Path(input_dir)
+            
+            # Get current patterns from UI
+            sub1_pattern = self.sub1_pattern_entry.text()
+            sub2_pattern = self.sub2_pattern_entry.text()
+            sub1_ep_pattern = self.sub1_episode_pattern_entry.text()
+            sub2_ep_pattern = self.sub2_episode_pattern_entry.text()
+            
+            # Find matching files
+            sub1_files = [f for f in input_path.glob('*.srt') 
+                         if re.search(sub1_pattern, f.name, re.IGNORECASE)]
+            sub2_files = [f for f in input_path.glob('*.srt')
+                         if re.search(sub2_pattern, f.name, re.IGNORECASE)]
+            self.logger.debug('Sub 1', sub1_files)
+            self.logger.debug('Sub 2', sub2_files)
+            # Test episode number extraction
+            sub1_episodes = []
+            sub2_episodes = []
+            
+            for f in sub1_files[:5]:  # Test first 5 files
+                match = re.search(sub1_ep_pattern, f.stem)
+                if match:
+                    sub1_episodes.append((f.name, match.group(1)))
+                    
+            for f in sub2_files[:5]:  # Test first 5 files
+                match = re.search(sub2_ep_pattern, f.stem)
+                if match:
+                    sub2_episodes.append((f.name, match.group(1)))
+            
+            # Show results
+            msg = QMessageBox()
+            msg.setWindowTitle("Pattern Test Results")
+            
+            results = [
+                f"Sub1 Pattern ({sub1_pattern}):",
+                f"Found {len(sub1_files)} matching files",
+                "\nExample matches with episode numbers:",
+                *[f"{name} -> Episode {ep}" for name, ep in sub1_episodes],
+                "\nSub2 Pattern ({sub2_pattern}):",
+                f"Found {len(sub2_files)} matching files",
+                "\nExample matches with episode numbers:",
+                *[f"{name} -> Episode {ep}" for name, ep in sub2_episodes]
+            ]
+            
+            msg.setText("\n".join(results))
+            msg.exec()
+            
+        except re.error as e:
+            self.logger.error(f"Invalid regular expression: {e}")
+            QMessageBox.critical(self, "Error", f"Invalid regular expression: {e}")
+        except Exception as e:
+            self.logger.error(f"Error testing patterns: {e}")
+            QMessageBox.critical(self, "Error", f"Error testing patterns: {e}")
 
 class SingleFilesTab(BaseTab):
     """Tab for processing single files."""
@@ -1046,6 +1110,8 @@ class SingleFilesTab(BaseTab):
             sub1_color = self.color_combo.currentText()
             sub1_size = self.sub1_font_slider.value()
             sub2_size = self.sub2_font_slider.value()
+            
+            self.logger.debug(f"Styles - Sub1: color={sub1_color}, size={sub1_size}, Sub2: size={sub2_size}")
             
             # Create output path
             output_path = Path(sub1_file).parent
@@ -1476,7 +1542,8 @@ class DirectoryTab(BaseTab):
             # Show results
             msg = QMessageBox()
             msg.setWindowTitle("Pattern Test Results")
-            
+            self.logger.debug('Sub 1', sub1_files)
+            self.logger.debug('Sub 2', sub2_files)
             results = [
                 f"Sub1 Pattern ({sub1_pattern}):",
                 f"Found {len(sub1_files)} matching files",
@@ -1489,7 +1556,7 @@ class DirectoryTab(BaseTab):
             ]
             
             msg.setText("\n".join(results))
-            msg.exec_()
+            msg.exec()
             
         except re.error as e:
             self.logger.error(f"Invalid regular expression: {e}")
@@ -1501,8 +1568,8 @@ class DirectoryTab(BaseTab):
     def merge_subtitles(self):
         """Merge the subtitle files in directory."""
         try:
-            input_dir = self.dir_entry.text()
-            video_dir = self.video_dir_entry.text()
+            input_dir = self.dir_entry.text().strip()  # Strip whitespace and newlines
+            video_dir = self.video_dir_entry.text().strip()  # Strip whitespace and newlines
             
             if not input_dir or not video_dir:
                 self.logger.error("Please select both input and video directories")
@@ -1515,8 +1582,8 @@ class DirectoryTab(BaseTab):
             # Get patterns from GUI entries
             sub1_pattern = self.sub1_pattern_entry.text()
             sub2_pattern = self.sub2_pattern_entry.text()
-            sub1_episode_pattern = self.sub1_episode_pattern_entry.text()
-            sub2_episode_pattern = self.sub2_episode_pattern_entry.text()
+            sub1_ep_pattern = self.sub1_episode_pattern_entry.text()
+            sub2_ep_pattern = self.sub2_episode_pattern_entry.text()
             
             # Get color and font sizes
             sub1_color = self.color_combo.currentText()
@@ -1524,7 +1591,7 @@ class DirectoryTab(BaseTab):
             sub2_size = self.sub2_font_slider.value()
             
             self.logger.debug(f"Using patterns - Sub1: {sub1_pattern}, Sub2: {sub2_pattern}")
-            self.logger.debug(f"Episode patterns - Sub1: {sub1_episode_pattern}, Sub2: {sub2_episode_pattern}")
+            self.logger.debug(f"Episode patterns - Sub1: {sub1_ep_pattern}, Sub2: {sub2_ep_pattern}")
             self.logger.debug(f"Styles - Sub1: color={sub1_color}, size={sub1_size}, Sub2: size={sub2_size}")
             
             # Find subtitle files (case insensitive)
@@ -1532,17 +1599,29 @@ class DirectoryTab(BaseTab):
                 input_path = Path(input_dir)
                 video_path = Path(video_dir)
                 
+                # List all srt files for logging
+                all_srt_files = list(input_path.glob('*.srt'))
+                self.logger.debug(f"Found {len(all_srt_files)} total .srt files")
+                for srt_file in all_srt_files:
+                    self.logger.debug(f"Found SRT file: {srt_file.name}")
+                
                 # Filter sub1 files using regex pattern from GUI
-                sub1_files = [f for f in input_path.glob('*.srt') 
-                            if re.search(sub1_pattern, f.name, re.IGNORECASE)
-                            and not f.name.endswith('Modified.srt')]
+                sub1_files = [f for f in all_srt_files 
+                            if re.search(sub1_pattern, f.name, re.IGNORECASE)]
                 
                 # Filter sub2 files using regex pattern from GUI
-                sub2_files = [f for f in input_path.glob('*.srt')
-                            if re.search(sub2_pattern, f.name, re.IGNORECASE)
-                            and not f.name.endswith('Modified.srt')]
+                sub2_files = [f for f in all_srt_files
+                            if re.search(sub2_pattern, f.name, re.IGNORECASE)]
                 
                 self.logger.info(f"Found {len(sub1_files)} sub1 files and {len(sub2_files)} sub2 files")
+                
+                # Log matched files
+                self.logger.debug("Sub1 matched files:")
+                for f in sub1_files:
+                    self.logger.debug(f"  - {f.name}")
+                self.logger.debug("Sub2 matched files:")
+                for f in sub2_files:
+                    self.logger.debug(f"  - {f.name}")
                 
             except Exception as e:
                 self.logger.error(f"Error finding subtitle files: {e}")
@@ -1554,90 +1633,123 @@ class DirectoryTab(BaseTab):
             # Process sub1 files
             for sub1 in sub1_files:
                 try:
-                    ep_match = re.search(sub1_episode_pattern, sub1.stem)
+                    ep_match = re.search(sub1_ep_pattern, sub1.stem)
+                    self.logger.debug(f"{ep_match} - {sub1}")
                     if ep_match:
-                        ep_num = ep_match.group(1).zfill(2)
+                        ep_num = ep_match.group(1)
                         if ep_num not in episode_subs:
                             episode_subs[ep_num] = {'sub1': sub1}
                             self.logger.debug(f"Found sub1 for episode {ep_num}: {sub1.name}")
+                        else:
+                            self.logger.warning(f"Duplicate sub1 for episode {ep_num}: {sub1.name}")
+                    else:
+                        self.logger.warning(f"Could not extract episode number from sub1 file: {sub1.name}")
                 except Exception as e:
                     self.logger.error(f"Error processing sub1 file {sub1}: {e}")
             
             # Process sub2 files
             for sub2 in sub2_files:
                 try:
-                    ep_match = re.search(sub2_episode_pattern, sub2.stem)
+                    ep_match = re.search(sub2_ep_pattern, sub2.stem)
+                    self.logger.debug(f"{ep_match} - {sub2}")
                     if ep_match:
-                        ep_num = ep_match.group(1).zfill(2)
+                        ep_num = ep_match.group(1)
                         if ep_num in episode_subs:
                             episode_subs[ep_num]['sub2'] = sub2
                             self.logger.debug(f"Found sub2 for episode {ep_num}: {sub2.name}")
+                        else:
+                            self.logger.warning(f"Found sub2 but no sub1 for episode {ep_num}: {sub2.name}")
+                    else:
+                        self.logger.warning(f"Could not extract episode number from sub2 file: {sub2.name}")
                 except Exception as e:
                     self.logger.error(f"Error processing sub2 file {sub2}: {e}")
 
-            # Find and process video files
-            video_files = [f for f in Path(video_dir).glob('**/*') 
-                         if f.suffix.lower() in ['.mp4', '.mkv', '.avi']]
+            # Log episode pairs
+            self.logger.debug("Episode pairs found:")
+            for ep_num, subs in episode_subs.items():
+                sub1_name = subs.get('sub1', 'missing').name if 'sub1' in subs else 'missing'
+                sub2_name = subs.get('sub2', 'missing').name if 'sub2' in subs else 'missing'
+                self.logger.debug(f"Episode {ep_num}: sub1={sub1_name}, sub2={sub2_name}")
+
+            # Find and process video files - only look for MKV files
+            video_files = [f for f in Path(video_dir).glob('**/*.mkv')]
             
             self.logger.info(f"Found {len(video_files)} video files")
 
             # Process each video file
             for video_file in video_files:
+                self.logger.debug(f"Found video file: {video_file.name}")
                 try:
-                    match = re.search(r'S\d+E(\d+)', video_file.stem)
+                    # Extract episode number using the sub2 episode pattern
+                    match = re.search(sub2_ep_pattern, video_file.stem)
                     if not match:
-                        self.logger.warning(f"Could not find episode number in {video_file.name}")
+                        match = re.search(r'(\d+)', video_file.stem)
+                        if not match:
+                            self.logger.warning(f"Could not find episode number in {video_file.name}")
+                            continue
+                    
+                    ep_num = match.group(1)  # Get the episode number
+                    self.logger.debug(f"Extracted episode number {ep_num} from {video_file.name}")
+                    
+                    if ep_num not in episode_subs:
+                        self.logger.warning(f"No subtitles found for episode {ep_num}")
+                        continue
+                    if 'sub2' not in episode_subs[ep_num]:
+                        self.logger.warning(f"Missing sub2 for episode {ep_num}")
                         continue
                     
-                    episode_num = match.group(1).zfill(2)
-                    
-                    if episode_num not in episode_subs or 'sub2' not in episode_subs[episode_num]:
-                        self.logger.warning(f"Missing subtitle pair for episode {episode_num}")
-                        continue
-                    
-                    sub1_file = episode_subs[episode_num]['sub1']
-                    sub2_file = episode_subs[episode_num]['sub2']
+                    sub1_file = episode_subs[ep_num]['sub1']
+                    sub2_file = episode_subs[ep_num]['sub2']
+                    self.logger.debug(f"Processing episode {ep_num} with sub1={sub1_file.name}, sub2={sub2_file.name}")
                     
                     # Copy subtitle files next to video with consistent naming
                     try:
-                        shutil.copy2(sub1_file, video_file.parent / f'{video_file.stem}.sub1.srt')
-                        shutil.copy2(sub2_file, video_file.parent / f'{video_file.stem}.sub2.srt')
-                        self.logger.info(f"Copied subtitle files for episode {episode_num}")
+                        sub1_dest = video_file.parent / f'{video_file.stem}.sub1.srt'
+                        sub2_dest = video_file.parent / f'{video_file.stem}.sub2.srt'
+                        shutil.copy2(sub1_file, sub1_dest)
+                        shutil.copy2(sub2_file, sub2_dest)
+                        self.logger.info(f"Copied subtitle files for episode {ep_num}")
+                        self.logger.debug(f"  - {sub1_file.name} -> {sub1_dest.name}")
+                        self.logger.debug(f"  - {sub2_file.name} -> {sub2_dest.name}")
                     except Exception as e:
-                        self.logger.error(f"Error copying subtitle files for episode {episode_num}: {e}")
+                        self.logger.error(f"Error copying subtitle files for episode {ep_num}: {e}")
                         continue
                     
                     # Create merger instance and merge
                     try:
+                        output_name = f'{video_file.stem}.merged.srt'
+                        self.logger.debug(f"Creating merger for episode {ep_num}, output={output_name}")
                         merger = Merger(
                             output_path=str(video_file.parent),
-                            output_name=f'{video_file.stem}_merged.srt',
+                            output_name=output_name,
                             output_encoding=self.codec_combo.currentText()
                         )
                         
                         # Add first subtitle with color and size
+                        self.logger.debug(f"Adding sub1 with color={sub1_color}, size={sub1_size}")
                         merger.add(
                             str(sub1_file),
                             codec=self.codec_combo.currentText(),
                             color=sub1_color,
                             size=sub1_size,
-                            top=False
+                            #top=False
                         )
                         
                         # Add second subtitle with size
+                        self.logger.debug(f"Adding sub2 with size={sub2_size}")
                         merger.add(
                             str(sub2_file),
                             codec=self.codec_combo.currentText(),
                             color=COLORS['WHITE'],
                             size=sub2_size,
-                            top=True
+                            #top=True
                         )
                         
                         merger.merge()
-                        self.logger.info(f"Successfully merged subtitles for episode {episode_num}")
+                        self.logger.info(f"Successfully merged subtitles for episode {ep_num}")
                         
                     except Exception as e:
-                        self.logger.error(f"Error merging subtitles for episode {episode_num}: {e}")
+                        self.logger.error(f"Error merging subtitles for episode {ep_num}: {e}")
                         continue
                     
                 except Exception as e:
@@ -1784,7 +1896,7 @@ def main():
     app = QApplication(sys.argv)
     
     # Set application-wide dark theme
-    app.setStyle("Fusion")  # Use Fusion style for better dark theme support
+    #app.setStyle("Fusion")  # Use Fusion style for better dark theme support
     
     window = SubtitleMergerGUI()
     window.show()

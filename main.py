@@ -111,7 +111,7 @@ class Merger():
                   (repr(text), codec, e))
             return b'An error has been occured in encoing by specifed `output_encoding`'
 
-    def add(self, subtitle_address, codec="utf-8", color=WHITE, top=False):
+    def add(self, subtitle_address, codec="utf-8", color=WHITE, top=False, size=12):
         subtitle = {
             'address': subtitle_address,
             'codec': codec,

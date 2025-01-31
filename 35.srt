@@ -1,18 +1,18 @@
 ﻿1
 00:00:01,390 --> 00:00:04,980
 <font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>Satoshi, who aims to battle
- the Supreme Monarch, Dande... </b></font>
+ the Supreme Monarch, Dande... {Copy-paste from episode 24 START}</b></font>
 </font>
 
 2
 00:00:02,388 --> 00:00:05,057
-<font color="default">＜最強の王者 ﾀﾞﾝﾃﾞとのﾊﾞﾄﾙを
+<font color="yellow">＜最強の王者 ﾀﾞﾝﾃﾞとのﾊﾞﾄﾙを
 目指す ｻﾄｼ｡
 </font>
 
 3
 00:00:05,057 --> 00:00:10,062
-<font color="default">すべてのﾎﾟｹﾓﾝをｹﾞｯﾄし ﾐｭｳに
+<font color="yellow">すべてのﾎﾟｹﾓﾝをｹﾞｯﾄし ﾐｭｳに
 たどり着くという夢を持つ ｺﾞｳ｡
 </font>
 
@@ -24,29 +24,29 @@
 
 5
 00:00:10,062 --> 00:00:15,384
-<font color="default">これは そんな２人の日常と冒険を
+<font color="yellow">これは そんな２人の日常と冒険を
 描く物語である＞
 </font>
 
 6
 00:00:10,110 --> 00:00:15,220
-<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>This is the story of their lives and adventures. </b></font>
+<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>This is the story of their lives and adventures. {Copy-paste from episode 24 END}</b></font>
 </font>
 
 7
 00:00:15,384 --> 00:00:18,184
-<font color="default">(ﾗﾋﾞﾌｯﾄ)ﾋﾞﾌﾋﾞﾌ｡
+<font color="yellow">(ﾗﾋﾞﾌｯﾄ)ﾋﾞﾌﾋﾞﾌ｡
 (ﾋﾟｶﾁｭｳ)ﾋﾟｶﾋﾟｶ！
 </font>
 
 8
 00:00:22,241 --> 00:00:35,438
-<font color="default">(ﾎﾟｹﾓﾝたちの鳴き声)
+<font color="yellow">(ﾎﾟｹﾓﾝたちの鳴き声)
 </font>
 
 9
 00:00:35,438 --> 00:00:39,542
-<font color="default">(ｻﾄｼ)だいぶにぎやかになったな｡
+<font color="yellow">(ｻﾄｼ)だいぶにぎやかになったな｡
 (ｺﾞｳ)だろ？
 </font>
 
@@ -62,7 +62,7 @@
 
 12
 00:00:39,542 --> 00:00:41,727
-<font color="default">まだまだｹﾞｯﾄするんだろ？
+<font color="yellow">まだまだｹﾞｯﾄするんだろ？
 ああ｡
 </font>
 
@@ -74,7 +74,7 @@
 
 14
 00:00:41,727 --> 00:00:45,131
-<font color="default">次は何ｹﾞｯﾄすんの？
+<font color="yellow">次は何ｹﾞｯﾄすんの？
 もちろん[外:583134B86E7D90960F64C5B863196978]
 </font>
 
@@ -95,7 +95,7 @@
 
 18
 00:00:45,131 --> 00:00:49,552
-<font color="default">出会ったﾎﾟｹﾓﾝ 全部！
+<font color="yellow">出会ったﾎﾟｹﾓﾝ 全部！
 ｱﾊﾊ… やっぱそっか｡
 </font>
 
@@ -111,7 +111,7 @@
 
 21
 00:00:49,552 --> 00:00:53,222
-<font color="default">(ｷｸﾅ)ｻﾄｼくん ｺﾞｳくん
+<font color="yellow">(ｷｸﾅ)ｻﾄｼくん ｺﾞｳくん
 おやつ買ってきたわよ｡
 </font>
 
@@ -123,7 +123,7 @@
 
 23
 00:00:53,222 --> 00:00:57,722
-<font color="default">ｶﾌｪｽﾍﾟｰｽに置いとくから食べて｡
+<font color="yellow">ｶﾌｪｽﾍﾟｰｽに置いとくから食べて｡
 (２人)は～い！
 </font>
 
@@ -140,7 +140,7 @@
 
 26
 00:01:02,648 --> 00:01:05,217
-<font color="default">どうも｡
+<font color="yellow">どうも｡
 </font>
 
 27
@@ -150,7 +150,7 @@
 
 28
 00:01:05,217 --> 00:01:08,554
-<font color="default">おなかすいてたから
+<font color="yellow">おなかすいてたから
 ちょうどよかった｡
 </font>
 
@@ -162,7 +162,7 @@
 
 30
 00:01:08,554 --> 00:01:10,556
-<font color="default">ﾋﾟｶｰ！
+<font color="yellow">ﾋﾟｶｰ！
 これもおいしいぞ｡
 </font>
 
@@ -173,7 +173,7 @@
 
 32
 00:01:10,556 --> 00:01:15,561
-<font color="default">食べてみろよ ﾋﾟｶﾁｭｳ｡
+<font color="yellow">食べてみろよ ﾋﾟｶﾁｭｳ｡
 ﾋﾟｶﾁｭｰ ﾋﾟｰｶ｡
 </font>
 
@@ -184,7 +184,7 @@
 
 34
 00:01:15,561 --> 00:01:17,730
-<font color="default">うまっ！
+<font color="yellow">うまっ！
 ﾋﾟｶﾁｭｰ｡
 </font>
 
@@ -195,7 +195,7 @@
 
 36
 00:01:17,730 --> 00:01:21,233
-<font color="default">ﾎﾝﾄ仲いいよな ｻﾄｼとﾋﾟｶﾁｭｳ｡
+<font color="yellow">ﾎﾝﾄ仲いいよな ｻﾄｼとﾋﾟｶﾁｭｳ｡
 </font>
 
 37
@@ -205,13 +205,13 @@
 
 38
 00:01:21,233 --> 00:01:23,733
-<font color="default">ﾋﾞﾌ｡
+<font color="yellow">ﾋﾞﾌ｡
 (ﾒｯｿﾝ)ﾒｿ～｡
 </font>
 
 39
 00:01:27,723 --> 00:01:30,059
-<font color="default">決めた！
+<font color="yellow">決めた！
 </font>
 
 40
@@ -221,7 +221,7 @@
 
 41
 00:01:30,059 --> 00:01:32,561
-<font color="default">どうした？ ｺﾞｳ｡
+<font color="yellow">どうした？ ｺﾞｳ｡
 ﾋﾟｶ？
 </font>
 
@@ -232,7 +232,7 @@
 
 43
 00:01:32,561 --> 00:01:35,231
-<font color="default">俺もﾋﾟｶﾁｭｳをｹﾞｯﾄする！
+<font color="yellow">俺もﾋﾟｶﾁｭｳをｹﾞｯﾄする！
 </font>
 
 44
@@ -242,7 +242,7 @@
 
 45
 00:01:35,231 --> 00:01:38,734
-<font color="default">え～ なんだよ 急に!?
+<font color="yellow">え～ なんだよ 急に!?
 ﾋﾟｶﾁｭｰ？
 </font>
 
@@ -253,7 +253,7 @@
 
 47
 00:01:38,734 --> 00:01:41,220
-<font color="default">すべてのﾎﾟｹﾓﾝをｹﾞｯﾄするには[外:583134B86E7D90960F64C5B863196978]
+<font color="yellow">すべてのﾎﾟｹﾓﾝをｹﾞｯﾄするには[外:583134B86E7D90960F64C5B863196978]
 </font>
 
 48
@@ -263,7 +263,7 @@
 
 49
 00:01:41,220 --> 00:01:44,390
-<font color="default">ﾋﾟｶﾁｭｳだって
+<font color="yellow">ﾋﾟｶﾁｭｳだって
 ｹﾞｯﾄするしかないっしょ！
 </font>
 
@@ -275,7 +275,7 @@
 
 51
 00:01:44,390 --> 00:01:47,990
-<font color="default">それはそうだけど…｡
+<font color="yellow">それはそうだけど…｡
 待ってろ ﾋﾟｶﾁｭｳ！
 </font>
 
@@ -296,7 +296,7 @@
 
 55
 00:01:52,064 --> 00:01:56,051
-<font color="default">とは言ったものの…
+<font color="yellow">とは言ったものの…
 なかなかいないんだな｡
 </font>
 
@@ -312,7 +312,7 @@
 
 58
 00:01:56,051 --> 00:01:59,572
-<font color="default">(ｻｸﾗｷﾞ)ﾋﾟｶﾁｭｳを探しているのかい？
+<font color="yellow">(ｻｸﾗｷﾞ)ﾋﾟｶﾁｭｳを探しているのかい？
 ｻｸﾗｷﾞ所長｡
 </font>
 
@@ -323,7 +323,7 @@
 
 60
 00:01:59,572 --> 00:02:04,059
-<font color="default">最近 ﾋﾟｶﾁｭｳが大量発生している
+<font color="yellow">最近 ﾋﾟｶﾁｭｳが大量発生している
 という報告があってね｡
 </font>
 
@@ -335,7 +335,7 @@
 
 62
 00:02:04,059 --> 00:02:06,912
-<font color="default">ﾘｻｰﾁﾌｪﾛｰとして
+<font color="yellow">ﾘｻｰﾁﾌｪﾛｰとして
 調査に行ってもらおうと[外:583134B86E7D90960F64C5B863196978]
 </font>
 
@@ -347,7 +347,7 @@
 
 64
 00:02:06,912 --> 00:02:11,550
-<font color="default">思っていたところなんだ｡
+<font color="yellow">思っていたところなんだ｡
 大量発生!? いくいく！
 </font>
 
@@ -359,7 +359,7 @@
 
 66
 00:02:11,550 --> 00:02:14,053
-<font color="default">(ｷｸﾅ)この辺りよ｡
+<font color="yellow">(ｷｸﾅ)この辺りよ｡
 </font>
 
 67
@@ -369,17 +369,17 @@
 
 68
 00:02:13,860 --> 00:02:16,260
-<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>It’s always been a Pikachu habitat, </b></font>
+<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>It’s always been a Pikachu habitat, {Added what I think was a missing "a" before "Pikachu habitat". - Toa - Toa}</b></font>
 </font>
 
 69
 00:02:14,053 --> 00:02:16,222
-<font color="default">もともとﾋﾟｶﾁｭｳの生息場所だけど[外:583134B86E7D90960F64C5B863196978]
+<font color="yellow">もともとﾋﾟｶﾁｭｳの生息場所だけど[外:583134B86E7D90960F64C5B863196978]
 </font>
 
 70
 00:02:16,222 --> 00:02:18,891
-<font color="default">たくさん集まってるのは
+<font color="yellow">たくさん集まってるのは
 珍しいのよ｡
 </font>
 
@@ -391,7 +391,7 @@
 
 72
 00:02:18,891 --> 00:02:22,711
-<font color="default">(ﾚﾝｼﾞ)ﾋﾟｶﾁｭｳがいっぱい…
+<font color="yellow">(ﾚﾝｼﾞ)ﾋﾟｶﾁｭｳがいっぱい…
 きっとかわいいんだろうな｡
 </font>
 
@@ -403,7 +403,7 @@
 
 74
 00:02:22,711 --> 00:02:24,880
-<font color="default">ﾋﾟｶ？
+<font color="yellow">ﾋﾟｶ？
 ね～｡
 </font>
 
@@ -414,7 +414,7 @@
 
 76
 00:02:24,880 --> 00:02:27,316
-<font color="default">じゃあ 早速 いってきます！
+<font color="yellow">じゃあ 早速 いってきます！
 </font>
 
 77
@@ -424,7 +424,7 @@
 
 78
 00:02:27,316 --> 00:02:30,516
-<font color="default">あ～ 待てよ ｺﾞｳ！
+<font color="yellow">あ～ 待てよ ｺﾞｳ！
 ﾋﾟｶﾁｭｰ！
 </font>
 
@@ -656,7 +656,7 @@
 
 105
 00:04:08,400 --> 00:04:11,904
-<font color="default">＜ﾋﾟｶﾁｭｳを探しに
+<font color="yellow">＜ﾋﾟｶﾁｭｳを探しに
 山へとやってきた ｻﾄｼたち｡
 </font>
 
@@ -668,7 +668,7 @@
 
 107
 00:04:11,904 --> 00:04:15,391
-<font color="default">ｺﾞｳは 無事に
+<font color="yellow">ｺﾞｳは 無事に
 ｹﾞｯﾄできるのだろうか＞
 </font>
 
@@ -679,7 +679,7 @@
 
 109
 00:04:15,391 --> 00:04:21,247
-<font color="default">この辺りのはずなんだけど…｡
+<font color="yellow">この辺りのはずなんだけど…｡
 ﾒｿ～｡
 </font>
 
@@ -690,7 +690,7 @@
 
 111
 00:04:21,247 --> 00:04:24,583
-<font color="default">いた ﾋﾟｶﾁｭｳだ 早速ｹﾞｯﾄ！
+<font color="yellow">いた ﾋﾟｶﾁｭｳだ 早速ｹﾞｯﾄ！
 </font>
 
 112
@@ -701,7 +701,7 @@
 
 113
 00:04:24,583 --> 00:04:27,236
-<font color="default">ﾓﾝｽﾀｰﾎﾞｰﾙ ｺﾞｰ！
+<font color="yellow">ﾓﾝｽﾀｰﾎﾞｰﾙ ｺﾞｰ！
 </font>
 
 114
@@ -711,12 +711,12 @@
 
 115
 00:04:27,236 --> 00:04:29,405
-<font color="default">ﾋﾟｶ！
+<font color="yellow">ﾋﾟｶ！
 </font>
 
 116
 00:04:29,405 --> 00:04:31,907
-<font color="default">ﾀﾞﾒか～｡
+<font color="yellow">ﾀﾞﾒか～｡
 ｺﾞｳ あっちにも！
 </font>
 
@@ -732,7 +732,7 @@
 
 119
 00:04:31,907 --> 00:04:35,277
-<font color="default">なに!? いた～ これでどうだ！
+<font color="yellow">なに!? いた～ これでどうだ！
 </font>
 
 120
@@ -747,22 +747,22 @@
 
 122
 00:04:35,277 --> 00:04:37,580
-<font color="default">ｶｰﾌﾞﾎﾞｰﾙ ｺﾞｰ！
+<font color="yellow">ｶｰﾌﾞﾎﾞｰﾙ ｺﾞｰ！
 </font>
 
 123
 00:04:35,270 --> 00:04:37,830
-<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>Curveball, go! </b></font>
+<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>Curveball, go! {STRIKE! —Puto}</b></font>
 </font>
 
 124
 00:04:37,580 --> 00:04:39,565
-<font color="default">ﾋﾟｶ｡
+<font color="yellow">ﾋﾟｶ｡
 </font>
 
 125
 00:04:39,565 --> 00:04:43,469
-<font color="default">いたっ！
+<font color="yellow">いたっ！
 </font>
 
 126
@@ -772,7 +772,7 @@
 
 127
 00:04:43,469 --> 00:04:47,907
-<font color="default">あ～ いっちゃった｡
+<font color="yellow">あ～ いっちゃった｡
 ﾋﾟｶ… ﾋﾟｶ？
 </font>
 
@@ -783,22 +783,22 @@
 
 129
 00:04:47,907 --> 00:04:51,760
-<font color="default">ﾋﾟｶﾁｭ…｡
+<font color="yellow">ﾋﾟｶﾁｭ…｡
 </font>
 
 130
 00:04:51,760 --> 00:04:57,082
-<font color="default">ﾋﾟｶ！ ﾋﾟｯ ﾋﾟｯ…｡
+<font color="yellow">ﾋﾟｶ！ ﾋﾟｯ ﾋﾟｯ…｡
 </font>
 
 131
 00:04:57,082 --> 00:04:59,919
-<font color="default">ﾋﾟｯ！
+<font color="yellow">ﾋﾟｯ！
 </font>
 
 132
 00:04:59,919 --> 00:05:05,491
-<font color="default">ﾋﾟｶ！
+<font color="yellow">ﾋﾟｶ！
 あ ありがとう…｡
 </font>
 
@@ -809,12 +809,12 @@
 
 134
 00:05:05,491 --> 00:05:08,394
-<font color="default">ﾋﾟｶ！
+<font color="yellow">ﾋﾟｶ！
 </font>
 
 135
 00:05:08,394 --> 00:05:10,579
-<font color="default">ﾋﾟｶﾋﾟｶ｡
+<font color="yellow">ﾋﾟｶﾋﾟｶ｡
 </font>
 
 136
@@ -824,30 +824,30 @@
 
 137
 00:05:10,579 --> 00:05:13,582
-<font color="default">くれるの？ ありがとう｡
+<font color="yellow">くれるの？ ありがとう｡
 ﾋﾟｶ｡
 </font>
 
 138
 00:05:13,582 --> 00:05:16,251
-<font color="default">ﾒｿ～｡
+<font color="yellow">ﾒｿ～｡
 </font>
 
 139
 00:05:16,251 --> 00:05:19,951
-<font color="default">ﾋﾟｯ？
+<font color="yellow">ﾋﾟｯ？
 ﾋﾟｶﾁｭｰ｡
 </font>
 
 140
 00:05:23,409 --> 00:05:25,894
-<font color="default">ﾋﾟｶ｡
+<font color="yellow">ﾋﾟｶ｡
 ﾋﾟｶﾁｭｰ｡
 </font>
 
 141
 00:05:25,894 --> 00:05:28,397
-<font color="default">ずいぶん世話好きなﾋﾟｶﾁｭｳだな｡
+<font color="yellow">ずいぶん世話好きなﾋﾟｶﾁｭｳだな｡
 </font>
 
 142
@@ -857,7 +857,7 @@
 
 143
 00:05:28,397 --> 00:05:31,567
-<font color="default">ん？ しっぽの形が…｡
+<font color="yellow">ん？ しっぽの形が…｡
 </font>
 
 144
@@ -867,13 +867,13 @@
 
 145
 00:05:31,567 --> 00:05:34,253
-<font color="default">ﾋﾟｶﾋﾟｶ｡
+<font color="yellow">ﾋﾟｶﾋﾟｶ｡
 ﾋﾟｶ｡
 </font>
 
 146
 00:05:34,253 --> 00:05:38,641
-<font color="default">(ｽﾏﾎﾛﾄﾑ)ﾋﾟｶﾁｭｳ… ねずみﾎﾟｹﾓﾝ｡
+<font color="yellow">(ｽﾏﾎﾛﾄﾑ)ﾋﾟｶﾁｭｳ… ねずみﾎﾟｹﾓﾝ｡
 でんきﾀｲﾌﾟ｡
 </font>
 
@@ -885,7 +885,7 @@
 
 148
 00:05:38,641 --> 00:05:40,909
-<font color="default">ほっぺの両側に電気袋を持つ｡
+<font color="yellow">ほっぺの両側に電気袋を持つ｡
 </font>
 
 149
@@ -896,14 +896,14 @@
 
 150
 00:05:40,909 --> 00:05:46,298
-<font color="default">ﾋﾟﾝﾁのときに放電する｡
+<font color="yellow">ﾋﾟﾝﾁのときに放電する｡
 ｵｽとﾒｽでは しっぽの形が違う｡
 </font>
 
 151
 00:05:41,240 --> 00:05:43,190
 <font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>If threatened, it looses
- electric charges from the sacs!</b></font>
+ electric charges from the sacs!{Fire Red dex entry -Starfish}</b></font>
 </font>
 
 152
@@ -914,7 +914,7 @@
 
 153
 00:05:46,298 --> 00:05:49,084
-<font color="default">ってことは あの子はﾒｽだな｡
+<font color="yellow">ってことは あの子はﾒｽだな｡
 </font>
 
 154
@@ -924,7 +924,7 @@
 
 155
 00:05:49,084 --> 00:05:51,570
-<font color="default">ｺﾞｳ 今なら
+<font color="yellow">ｺﾞｳ 今なら
 ｹﾞｯﾄできるんじゃないか？
 </font>
 
@@ -936,7 +936,7 @@
 
 157
 00:05:51,570 --> 00:05:53,956
-<font color="default">そうか よし｡
+<font color="yellow">そうか よし｡
 </font>
 
 158
@@ -946,7 +946,7 @@
 
 159
 00:05:53,956 --> 00:05:56,956
-<font color="default">ｺﾞｰ｡
+<font color="yellow">ｺﾞｰ｡
 ﾋﾟｶ｡
 </font>
 
@@ -957,7 +957,7 @@
 
 161
 00:06:02,731 --> 00:06:06,251
-<font color="default">(ｽﾏﾎﾛﾄﾑ)ﾋﾟｶﾁｭｳが新しく
+<font color="yellow">(ｽﾏﾎﾛﾄﾑ)ﾋﾟｶﾁｭｳが新しく
 図鑑に登録されます｡
 </font>
 
@@ -969,7 +969,7 @@
 
 163
 00:06:06,251 --> 00:06:10,239
-<font color="default">ﾋﾟｶﾁｭｳ ｹﾞｯﾄだぜ｡
+<font color="yellow">ﾋﾟｶﾁｭｳ ｹﾞｯﾄだぜ｡
 ﾋﾞﾌ｡
 ﾒｿ！
 </font>
@@ -986,7 +986,7 @@
 
 166
 00:06:10,239 --> 00:06:12,241
-<font color="default">やったな！
+<font color="yellow">やったな！
 ﾋﾟｶ！
 </font>
 
@@ -997,17 +997,17 @@
 
 168
 00:06:12,241 --> 00:06:14,393
-<font color="default">出てこい！
+<font color="yellow">出てこい！
 </font>
 
 169
 00:06:14,393 --> 00:06:16,812
-<font color="default">ﾋﾟｶﾋﾟｶ｡
+<font color="yellow">ﾋﾟｶﾋﾟｶ｡
 </font>
 
 170
 00:06:16,812 --> 00:06:20,899
-<font color="default">これから よろしくな ﾋﾟｶﾁｭｳ｡
+<font color="yellow">これから よろしくな ﾋﾟｶﾁｭｳ｡
 ﾋﾟ～ｶ｡
 </font>
 
@@ -1018,12 +1018,12 @@
 
 172
 00:06:20,899 --> 00:06:24,236
-<font color="default">ﾁｭｰ！
+<font color="yellow">ﾁｭｰ！
 </font>
 
 173
 00:06:24,236 --> 00:06:28,090
-<font color="default">な なんで…｡
+<font color="yellow">な なんで…｡
 ﾋﾟｶ？
 </font>
 
@@ -1039,13 +1039,13 @@
 
 176
 00:06:28,090 --> 00:06:30,659
-<font color="default">ﾋﾟｶﾁｭｳの
+<font color="yellow">ﾋﾟｶﾁｭｳの
 あいさつみたいなもんだから｡
 </font>
 
 177
 00:06:30,659 --> 00:06:34,229
-<font color="default">まぁ そのうち慣れるって｡
+<font color="yellow">まぁ そのうち慣れるって｡
 ﾋﾟｶﾋﾟｶ！
 </font>
 
@@ -1056,19 +1056,19 @@
 
 179
 00:06:34,229 --> 00:06:37,249
-<font color="default">ﾋﾞﾌ｡
+<font color="yellow">ﾋﾞﾌ｡
 ﾒｿ｡
 ﾋﾟｶ｡
 </font>
 
 180
 00:06:37,249 --> 00:06:39,918
-<font color="default">ﾋﾟｯ ﾋﾟｰｶﾋﾟｶ！
+<font color="yellow">ﾋﾟｯ ﾋﾟｰｶﾋﾟｶ！
 </font>
 
 181
 00:06:39,918 --> 00:06:42,921
-<font color="default">どっか行くのか？
+<font color="yellow">どっか行くのか？
 ﾋﾟｰｶﾁｭｰ！
 </font>
 
@@ -1079,12 +1079,12 @@
 
 183
 00:06:42,921 --> 00:06:44,907
-<font color="default">ﾋﾟｰｶ！
+<font color="yellow">ﾋﾟｰｶ！
 </font>
 
 184
 00:06:44,907 --> 00:06:47,507
-<font color="default">行ってみようぜ｡
+<font color="yellow">行ってみようぜ｡
 おう！
 </font>
 
@@ -1100,12 +1100,12 @@
 
 187
 00:06:54,500 --> 00:07:03,142
-<font color="default">[外:37F6ECF37A0A3EF8DFF083CCC8754F81]～
+<font color="yellow">[外:37F6ECF37A0A3EF8DFF083CCC8754F81]～
 </font>
 
 188
 00:07:03,142 --> 00:07:05,928
-<font color="default">うわぁ ﾋﾟｶﾁｭｳがこんなに｡
+<font color="yellow">うわぁ ﾋﾟｶﾁｭｳがこんなに｡
 </font>
 
 189
@@ -1115,7 +1115,7 @@
 
 190
 00:07:05,928 --> 00:07:10,228
-<font color="default">これがｻｸﾗｷﾞ所長の言ってた
+<font color="yellow">これがｻｸﾗｷﾞ所長の言ってた
 ﾋﾟｶﾁｭｳ大量発生か｡
 </font>
 
@@ -1127,7 +1127,7 @@
 
 192
 00:07:12,401 --> 00:07:14,420
-<font color="default">(ｺｼﾞﾛｳ)ﾋﾟｶﾁｭｳ大量発生！
+<font color="yellow">(ｺｼﾞﾛｳ)ﾋﾟｶﾁｭｳ大量発生！
 </font>
 
 193
@@ -1138,7 +1138,7 @@
 
 194
 00:07:14,420 --> 00:07:18,223
-<font color="default">って聞いて 来てみれば…｡
+<font color="yellow">って聞いて 来てみれば…｡
 (ﾆｬｰｽ)ｼﾞｬﾘﾎﾞｰｲたちも来てるﾆｬ｡
 </font>
 
@@ -1149,7 +1149,7 @@
 
 196
 00:07:18,223 --> 00:07:20,209
-<font color="default">(ﾑｻｼ)ちょうどいいじゃない｡
+<font color="yellow">(ﾑｻｼ)ちょうどいいじゃない｡
 </font>
 
 197
@@ -1165,13 +1165,13 @@
 
 199
 00:07:20,209 --> 00:07:24,580
-<font color="default">ﾋﾟｶﾁｭｳ大量ｹﾞｯﾄのついでに
+<font color="yellow">ﾋﾟｶﾁｭｳ大量ｹﾞｯﾄのついでに
 あのﾋﾟｶﾁｭｳも手に入れるﾁｬﾝｽよ｡
 </font>
 
 200
 00:07:24,580 --> 00:07:26,882
-<font color="default">だな～｡
+<font color="yellow">だな～｡
 (ｿｰﾅﾝｽ)ｿ～ﾅﾝｽ！
 </font>
 
@@ -1182,12 +1182,12 @@
 
 202
 00:07:26,882 --> 00:07:28,884
-<font color="default">ﾋﾟｶ！
+<font color="yellow">ﾋﾟｶ！
 </font>
 
 203
 00:07:28,884 --> 00:07:32,387
-<font color="default">ﾋﾟｯ ﾋﾟｯ…｡
+<font color="yellow">ﾋﾟｯ ﾋﾟｯ…｡
 何か探してるのか？
 </font>
 
@@ -1198,17 +1198,17 @@
 
 205
 00:07:32,387 --> 00:07:34,890
-<font color="default">ﾋﾟｶ｡
+<font color="yellow">ﾋﾟｶ｡
 </font>
 
 206
 00:07:34,890 --> 00:07:37,709
-<font color="default">ﾋﾟｶ！ ﾋﾟｯｶﾋﾟｶ｡
+<font color="yellow">ﾋﾟｶ！ ﾋﾟｯｶﾋﾟｶ｡
 </font>
 
 207
 00:07:37,709 --> 00:07:40,412
-<font color="default">ﾋﾟｶ｡
+<font color="yellow">ﾋﾟｶ｡
 なんだ？ なんだ？
 </font>
 
@@ -1219,12 +1219,12 @@
 
 209
 00:07:40,412 --> 00:07:43,048
-<font color="default">ﾋﾟｯ ﾋﾟｯ ﾋﾟｯ…｡
+<font color="yellow">ﾋﾟｯ ﾋﾟｯ ﾋﾟｯ…｡
 </font>
 
 210
 00:07:43,048 --> 00:07:47,448
-<font color="default">ﾋﾟｶﾁｭ… ﾋﾟｶ！
+<font color="yellow">ﾋﾟｶﾁｭ… ﾋﾟｶ！
 (ﾋﾟｶﾁｭｳたち)ﾋﾟｶ！
 </font>
 
@@ -1235,27 +1235,27 @@
 
 212
 00:07:49,421 --> 00:07:51,723
-<font color="default">あれは… 雷の石！
+<font color="yellow">あれは… 雷の石！
 </font>
 
 213
 00:07:51,723 --> 00:07:55,577
-<font color="default">ﾋﾟ～ ｶ～ ﾁｭ～！
+<font color="yellow">ﾋﾟ～ ｶ～ ﾁｭ～！
 </font>
 
 214
 00:07:55,577 --> 00:08:05,554
-<font color="default">[外:37F6ECF37A0A3EF8DFF083CCC8754F81]～
+<font color="yellow">[外:37F6ECF37A0A3EF8DFF083CCC8754F81]～
 </font>
 
 215
 00:08:05,554 --> 00:08:07,890
-<font color="default">(ﾗｲﾁｭｳ)ﾗｲﾗｲ！
+<font color="yellow">(ﾗｲﾁｭｳ)ﾗｲﾗｲ！
 </font>
 
 216
 00:08:07,890 --> 00:08:10,425
-<font color="default">進化した！
+<font color="yellow">進化した！
 なるほど｡
 </font>
 
@@ -1266,12 +1266,12 @@
 
 218
 00:08:08,940 --> 00:08:10,050
-<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>I see. </b></font>
+<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>I see. {RULE BREAKER! - Toa}</b></font>
 </font>
 
 219
 00:08:10,425 --> 00:08:15,080
-<font color="default">雷の石にさわると
+<font color="yellow">雷の石にさわると
 ﾗｲﾁｭｳに進化するのか｡
 </font>
 
@@ -1283,7 +1283,7 @@
 
 221
 00:08:15,080 --> 00:08:18,734
-<font color="default">そうか ﾋﾟｶﾁｭｳは
+<font color="yellow">そうか ﾋﾟｶﾁｭｳは
 これを探して集まっていたんだ｡
 </font>
 
@@ -1295,7 +1295,7 @@
 
 223
 00:08:18,734 --> 00:08:20,934
-<font color="default">すげえ！
+<font color="yellow">すげえ！
 </font>
 
 224
@@ -1305,31 +1305,31 @@
 
 225
 00:08:25,390 --> 00:08:28,393
-<font color="default">ﾋﾟｶ｡
+<font color="yellow">ﾋﾟｶ｡
 ﾋﾟｶ！ ﾋﾟｶﾋﾟｶ｡
 </font>
 
 226
 00:08:28,393 --> 00:08:31,246
-<font color="default">ﾋﾟｶ｡
+<font color="yellow">ﾋﾟｶ｡
 ﾋﾟｶﾁｭｰ｡
 </font>
 
 227
 00:08:31,246 --> 00:08:33,799
-<font color="default">ﾋﾟｰｶ｡
+<font color="yellow">ﾋﾟｰｶ｡
 ﾋﾟｶﾋﾟｶ｡
 </font>
 
 228
 00:08:33,799 --> 00:08:39,221
-<font color="default">ﾋﾟｶ｡
+<font color="yellow">ﾋﾟｶ｡
 ﾋﾟｶﾁｭｰ！
 </font>
 
 229
 00:08:39,221 --> 00:08:41,390
-<font color="default">落ち着けって ﾋﾟｶﾁｭｳ｡
+<font color="yellow">落ち着けって ﾋﾟｶﾁｭｳ｡
 </font>
 
 230
@@ -1339,13 +1339,13 @@
 
 231
 00:08:41,390 --> 00:08:46,061
-<font color="default">ﾋﾟｶ｡
+<font color="yellow">ﾋﾟｶ｡
 ﾋﾟｶﾋﾟｶ…｡
 </font>
 
 232
 00:08:46,061 --> 00:08:48,761
-<font color="default">あっ ﾋﾟｶﾁｭｳ！
+<font color="yellow">あっ ﾋﾟｶﾁｭｳ！
 </font>
 
 233
@@ -1355,12 +1355,12 @@
 
 234
 00:08:51,400 --> 00:08:53,986
-<font color="default">ﾗｲﾗｰｲ！
+<font color="yellow">ﾗｲﾗｰｲ！
 </font>
 
 235
 00:08:53,986 --> 00:08:57,706
-<font color="default">お前 まさか…｡
+<font color="yellow">お前 まさか…｡
 進化した？
 </font>
 
@@ -1376,18 +1376,18 @@
 
 238
 00:08:57,706 --> 00:09:01,176
-<font color="default">ﾗｰｲ！
+<font color="yellow">ﾗｰｲ！
 </font>
 
 239
 00:09:01,176 --> 00:09:03,745
-<font color="default">ﾋﾟｶﾁｭｰ！
+<font color="yellow">ﾋﾟｶﾁｭｰ！
 ﾋﾟｶﾋﾟｶ｡
 </font>
 
 240
 00:09:03,745 --> 00:09:07,745
-<font color="default">あっ 違った｡
+<font color="yellow">あっ 違った｡
 だよな…｡
 </font>
 
@@ -1403,7 +1403,7 @@
 
 243
 00:09:09,751 --> 00:09:14,056
-<font color="default">ﾋﾟｶﾋﾟｰｶ！
+<font color="yellow">ﾋﾟｶﾋﾟｰｶ！
 雷の石で強くなれるﾁｬﾝｽなのに[外:583134B86E7D90960F64C5B863196978]
 </font>
 
@@ -1415,7 +1415,7 @@
 
 245
 00:09:14,056 --> 00:09:17,059
-<font color="default">ﾋﾟｶﾁｭｳは進化したくないのか？
+<font color="yellow">ﾋﾟｶﾁｭｳは進化したくないのか？
 ああ｡
 </font>
 
@@ -1431,7 +1431,7 @@
 
 248
 00:09:17,059 --> 00:09:21,046
-<font color="default">俺のﾋﾟｶﾁｭｳ ﾋﾟｶﾁｭｳのまま
+<font color="yellow">俺のﾋﾟｶﾁｭｳ ﾋﾟｶﾁｭｳのまま
 強くなりたいんだって｡
 </font>
 
@@ -1443,7 +1443,7 @@
 
 250
 00:09:21,046 --> 00:09:26,235
-<font color="default">ごめんな そういうわけだから
+<font color="yellow">ごめんな そういうわけだから
 雷の石はいらないよ｡
 </font>
 
@@ -1455,12 +1455,12 @@
 
 252
 00:09:26,235 --> 00:09:29,888
-<font color="default">ﾋﾟ-ｶ… ﾋﾟｶ｡
+<font color="yellow">ﾋﾟ-ｶ… ﾋﾟｶ｡
 </font>
 
 253
 00:09:29,888 --> 00:09:32,724
-<font color="default">ん？ 持っててくれって？
+<font color="yellow">ん？ 持っててくれって？
 </font>
 
 254
@@ -1470,7 +1470,7 @@
 
 255
 00:09:32,724 --> 00:09:34,877
-<font color="default">自分で使わなくていいのか？
+<font color="yellow">自分で使わなくていいのか？
 </font>
 
 256
@@ -1480,19 +1480,19 @@
 
 257
 00:09:34,877 --> 00:09:37,896
-<font color="default">ﾋﾟｶ！
+<font color="yellow">ﾋﾟｶ！
 ﾋﾟｰｶ？
 </font>
 
 258
 00:09:37,896 --> 00:09:41,066
-<font color="default">ﾋﾟｶﾋﾟｶ｡
+<font color="yellow">ﾋﾟｶﾋﾟｶ｡
 ﾋﾟｶﾁｭｰ｡
 </font>
 
 259
 00:09:41,066 --> 00:09:43,936
-<font color="default">なんか ｺｲﾂも
+<font color="yellow">なんか ｺｲﾂも
 進化したくないみたいだ｡
 </font>
 
@@ -1504,7 +1504,7 @@
 
 261
 00:09:43,936 --> 00:09:47,222
-<font color="default">だな｡ 進化は
+<font color="yellow">だな｡ 進化は
 自分がそうしたいって[外:583134B86E7D90960F64C5B863196978]
 </font>
 
@@ -1521,18 +1521,18 @@
 
 264
 00:09:47,222 --> 00:09:49,541
-<font color="default">思ったときでいいよな｡
+<font color="yellow">思ったときでいいよな｡
 ﾋﾟｶﾁｭｰ！
 </font>
 
 265
 00:09:49,541 --> 00:09:52,411
-<font color="default">ﾋﾟｶ！
+<font color="yellow">ﾋﾟｶ！
 </font>
 
 266
 00:09:52,411 --> 00:09:55,898
-<font color="default">(ﾛｹｯﾄ団)ﾜﾊﾊﾊ…｡
+<font color="yellow">(ﾛｹｯﾄ団)ﾜﾊﾊﾊ…｡
 (ﾑｻｼ)ここにいるﾋﾟｶﾁｭｳは[外:583134B86E7D90960F64C5B863196978]
 </font>
 
@@ -1543,7 +1543,7 @@
 
 268
 00:09:55,898 --> 00:09:59,398
-<font color="default">全部 私たちがいただくわ！
+<font color="yellow">全部 私たちがいただくわ！
 なんだ!?
 </font>
 
@@ -1554,7 +1554,7 @@
 
 270
 00:10:03,222 --> 00:10:06,041
-<font color="default">なんだかんだと言われたら｡
+<font color="yellow">なんだかんだと言われたら｡
 </font>
 
 271
@@ -1564,7 +1564,7 @@
 
 272
 00:10:06,041 --> 00:10:09,878
-<font color="default">答えてあげるが世の情け｡
+<font color="yellow">答えてあげるが世の情け｡
 </font>
 
 273
@@ -1575,7 +1575,7 @@
 
 274
 00:10:09,878 --> 00:10:12,381
-<font color="default">世界の破壊を防ぐため｡
+<font color="yellow">世界の破壊を防ぐため｡
 </font>
 
 275
@@ -1585,7 +1585,7 @@
 
 276
 00:10:12,381 --> 00:10:15,901
-<font color="default">世界の平和を守るため｡
+<font color="yellow">世界の平和を守るため｡
 </font>
 
 277
@@ -1595,7 +1595,7 @@
 
 278
 00:10:15,901 --> 00:10:18,804
-<font color="default">愛と真実の悪を貫く｡
+<font color="yellow">愛と真実の悪を貫く｡
 </font>
 
 279
@@ -1606,7 +1606,7 @@
 
 280
 00:10:18,804 --> 00:10:21,873
-<font color="default">ﾗﾌﾞﾘｰﾁｬｰﾐｰな敵役｡
+<font color="yellow">ﾗﾌﾞﾘｰﾁｬｰﾐｰな敵役｡
 </font>
 
 281
@@ -1616,7 +1616,7 @@
 
 282
 00:10:21,873 --> 00:10:24,559
-<font color="default">ﾑｻｼ｡
+<font color="yellow">ﾑｻｼ｡
 ｺｼﾞﾛｳ｡
 </font>
 
@@ -1629,7 +1629,7 @@
 
 284
 00:10:24,559 --> 00:10:27,462
-<font color="default">銀河を駆ける
+<font color="yellow">銀河を駆ける
 ﾛｹｯﾄ団の２人には｡
 </font>
 
@@ -1641,7 +1641,7 @@
 
 286
 00:10:27,462 --> 00:10:31,383
-<font color="default">ﾎﾜｲﾄﾎｰﾙ｡
+<font color="yellow">ﾎﾜｲﾄﾎｰﾙ｡
 白い明日が待ってるぜ｡
 </font>
 
@@ -1658,13 +1658,13 @@
 
 289
 00:10:31,383 --> 00:10:34,683
-<font color="default">ﾆｬｰﾝてﾆｬ！
+<font color="yellow">ﾆｬｰﾝてﾆｬ！
 ｿ～ﾅﾝｽ！
 </font>
 
 290
 00:10:37,589 --> 00:10:40,242
-<font color="default">ﾛｹｯﾄ団！
+<font color="yellow">ﾛｹｯﾄ団！
 またお前たちか！
 </font>
 
@@ -1680,18 +1680,18 @@
 
 293
 00:10:40,242 --> 00:10:42,244
-<font color="default">ﾋﾟｶ！
+<font color="yellow">ﾋﾟｶ！
 ﾆｬ？
 </font>
 
 294
 00:10:42,244 --> 00:10:44,413
-<font color="default">ﾋﾟｶﾋﾟｶ｡
+<font color="yellow">ﾋﾟｶﾋﾟｶ｡
 </font>
 
 295
 00:10:44,413 --> 00:10:46,748
-<font color="default">あ ありがとﾆｬ｡
+<font color="yellow">あ ありがとﾆｬ｡
 </font>
 
 296
@@ -1701,7 +1701,7 @@
 
 297
 00:10:46,748 --> 00:10:49,301
-<font color="default">ありがと…｡
+<font color="yellow">ありがと…｡
 どうも…｡
 </font>
 
@@ -1717,12 +1717,12 @@
 
 300
 00:10:49,301 --> 00:10:52,301
-<font color="default">ｿ～ﾅﾝｽ｡
+<font color="yellow">ｿ～ﾅﾝｽ｡
 </font>
 
 301
 00:10:54,406 --> 00:10:57,926
-<font color="default">ｼﾞｭｰｼｰ… って違うでしょ！
+<font color="yellow">ｼﾞｭｰｼｰ… って違うでしょ！
 </font>
 
 302
@@ -1737,12 +1737,12 @@
 
 304
 00:10:57,926 --> 00:11:01,763
-<font color="default">わぁ！
+<font color="yellow">わぁ！
 </font>
 
 305
 00:11:01,763 --> 00:11:04,266
-<font color="default">危ないって｡
+<font color="yellow">危ないって｡
 ﾋﾟｶ？
 </font>
 
@@ -1753,7 +1753,7 @@
 
 307
 00:11:04,266 --> 00:11:06,566
-<font color="default">やっちゃって｡
+<font color="yellow">やっちゃって｡
 ほいﾆｬ｡
 </font>
 
@@ -1769,7 +1769,7 @@
 
 310
 00:11:09,404 --> 00:11:11,504
-<font color="default">いけ！
+<font color="yellow">いけ！
 </font>
 
 311
@@ -1779,7 +1779,7 @@
 
 312
 00:11:15,577 --> 00:11:17,596
-<font color="default">いただきﾆｬｰｽ｡
+<font color="yellow">いただきﾆｬｰｽ｡
 </font>
 
 313
@@ -1789,12 +1789,12 @@
 
 314
 00:11:17,596 --> 00:11:20,766
-<font color="default">ﾋﾟｶ… ﾋﾟｶ｡
+<font color="yellow">ﾋﾟｶ… ﾋﾟｶ｡
 </font>
 
 315
 00:11:20,766 --> 00:11:23,266
-<font color="default">何するんだ！
+<font color="yellow">何するんだ！
 ﾋﾟｶﾋﾟｶ！
 </font>
 
@@ -1805,7 +1805,7 @@
 
 317
 00:11:32,020 --> 00:11:35,730
-<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>You waste your time! 
+<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>You waste your time! {MUDA MUDA! -Dio}
  This device was made specifically for Pikachu!</b></font>
 </font>
 
@@ -1843,7 +1843,7 @@
 
 324
 00:12:06,048 --> 00:12:08,050
-<font color="default">ﾋﾟｶﾁｭ…｡
+<font color="yellow">ﾋﾟｶﾁｭ…｡
 </font>
 
 325
@@ -1854,12 +1854,12 @@
 
 326
 00:12:08,050 --> 00:12:12,221
-<font color="default">ﾋﾟｶﾋﾟｶ ﾁｭ～！
+<font color="yellow">ﾋﾟｶﾋﾟｶ ﾁｭ～！
 </font>
 
 327
 00:12:12,221 --> 00:12:15,574
-<font color="default">ﾑﾀﾞﾑﾀﾞ！ ﾋﾟｶﾁｭｳ専用の特製装置だ｡
+<font color="yellow">ﾑﾀﾞﾑﾀﾞ！ ﾋﾟｶﾁｭｳ専用の特製装置だ｡
 </font>
 
 328
@@ -1869,17 +1869,17 @@
 
 329
 00:12:15,574 --> 00:12:18,227
-<font color="default">電気対策は ばっちりさ｡
+<font color="yellow">電気対策は ばっちりさ｡
 </font>
 
 330
 00:12:16,040 --> 00:12:18,280
-<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>Quit yapping! </b></font>
+<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>Quit yapping! {As far as I know, it should be "yapping" and not "yappering" so I changed it to that. - Toa}</b></font>
 </font>
 
 331
 00:12:18,227 --> 00:12:21,413
-<font color="default">ﾎﾟﾁｯとﾆｬ｡
+<font color="yellow">ﾎﾟﾁｯとﾆｬ｡
 ﾋﾟｶﾁｭｰ！
 </font>
 
@@ -1890,7 +1890,7 @@
 
 333
 00:12:21,413 --> 00:12:34,226
-<font color="default">[外:37F6ECF37A0A3EF8DFF083CCC8754F81]～
+<font color="yellow">[外:37F6ECF37A0A3EF8DFF083CCC8754F81]～
 </font>
 
 334
@@ -1905,12 +1905,12 @@
 
 336
 00:12:34,226 --> 00:12:36,226
-<font color="default">ﾆｬんとか入ったﾆｬ｡
+<font color="yellow">ﾆｬんとか入ったﾆｬ｡
 </font>
 
 337
 00:12:34,230 --> 00:12:36,900
-<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>I wonder, what’ll I get? </b></font>
+<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>I wonder, what’ll I get? {I probably should've noted this when it first came up, but suggesting "I wonder, what'll I get?". - Toa}</b></font>
 </font>
 
 338
@@ -1920,19 +1920,19 @@
 
 339
 00:12:38,214 --> 00:12:40,232
-<font color="default">ああ…｡
+<font color="yellow">ああ…｡
 ﾋﾟｶ！
 </font>
 
 340
 00:12:40,232 --> 00:12:43,385
-<font color="default">やめろ！
+<font color="yellow">やめろ！
 ﾋﾟｶﾋﾟｶ！
 </font>
 
 341
 00:12:43,385 --> 00:12:48,040
-<font color="default">ﾋﾟｶﾁｭｳに言われて やめられますか｡
+<font color="yellow">ﾋﾟｶﾁｭｳに言われて やめられますか｡
 みんなまとめてｹﾞｯﾄﾆｬ｡
 </font>
 
@@ -1944,7 +1944,7 @@
 
 343
 00:12:48,040 --> 00:12:52,728
-<font color="default">もちろん ﾋﾟｶﾁｭｳ ｱﾝﾀもね｡
+<font color="yellow">もちろん ﾋﾟｶﾁｭｳ ｱﾝﾀもね｡
 ｿ～ﾅﾝｽ！
 </font>
 
@@ -1956,7 +1956,7 @@
 
 345
 00:12:52,728 --> 00:12:54,880
-<font color="default">させるか！
+<font color="yellow">させるか！
 ﾋﾟｶ！
 </font>
 
@@ -1968,30 +1968,30 @@
 
 347
 00:12:54,880 --> 00:12:56,899
-<font color="default">ﾗｲ｡
+<font color="yellow">ﾗｲ｡
 ﾗｲ｡
 ﾗｲ｡
 </font>
 
 348
 00:12:56,899 --> 00:13:00,553
-<font color="default">ｺﾞﾁｬｺﾞﾁｬうるさいわね！
+<font color="yellow">ｺﾞﾁｬｺﾞﾁｬうるさいわね！
 (ﾛｹｯﾄ団)ｶﾞﾁｬ ｶﾓｰﾝ！
 </font>
 
 349
 00:13:00,553 --> 00:13:04,223
-<font color="default">(ﾍﾟﾘｯﾊﾟｰ)ﾊﾞﾊﾞﾊﾞﾊﾞｯ ﾊﾞｲ～！
+<font color="yellow">(ﾍﾟﾘｯﾊﾟｰ)ﾊﾞﾊﾞﾊﾞﾊﾞｯ ﾊﾞｲ～！
 </font>
 
 350
 00:13:04,223 --> 00:13:06,423
-<font color="default">ﾊﾞｲｯ！
+<font color="yellow">ﾊﾞｲｯ！
 </font>
 
 351
 00:13:05,460 --> 00:13:06,680
-<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>They’re strong, meow!</b></font>
+<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>They’re strong, meow!{Buneary is using the power of its BURNING HATRED OF EVERYONE!!!!! (Seriously. In the game, they are pre-programmed to HATE you when you first catch them. Only Pokémon with a base friendship of zero. And it EVOLVES FROM HAVING A HIGH FRIENDSHIP LEVEL. Buneary is a DOUCHE. -Starfish}</b></font>
 </font>
 
 352
@@ -2006,70 +2006,70 @@
 
 354
 00:13:08,394 --> 00:13:11,564
-<font color="default">ﾆｬ とぅ～！
+<font color="yellow">ﾆｬ とぅ～！
 </font>
 
 355
 00:13:10,620 --> 00:13:12,680
 <font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>Mimiroll!
- Chirp Chirp Punch!</b></font>
+ Chirp Chirp Punch!{ピヨピヨパンチ. “Dizzy Punch” in the English TL. -Starfish}{RULE BREAKER! - Toa}</b></font>
 </font>
 
 356
 00:13:11,564 --> 00:13:14,400
-<font color="default">(ﾑｻｼ)ﾛｹｯﾄ｡
+<font color="yellow">(ﾑｻｼ)ﾛｹｯﾄ｡
 (ｺｼﾞﾛｳ)ｶﾞﾁｬｯﾄ｡
 </font>
 
 357
 00:13:13,600 --> 00:13:15,270
-<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>Rabbifoot! Double Kick! </b></font>
+<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>Rabbifoot! Double Kick! {Not using Rule Breaker this one but pointing it out in case you want to. - Toa}</b></font>
 </font>
 
 358
 00:13:14,400 --> 00:13:17,720
-<font color="default">(ｺｼﾞﾛｳ/ﾑｻｼ)何が出るかと…｡
+<font color="yellow">(ｺｼﾞﾛｳ/ﾑｻｼ)何が出るかと…｡
 </font>
 
 359
 00:13:17,720 --> 00:13:19,720
-<font color="default">(２人)ｼｰｸﾚｯﾄ！
+<font color="yellow">(２人)ｼｰｸﾚｯﾄ！
 </font>
 
 360
 00:13:19,400 --> 00:13:21,540
-<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>Pikachu! Iron Tail! </b></font>
+<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>Pikachu! Iron Tail! {RULE BREAKER - Toa}</b></font>
 </font>
 
 361
 00:13:22,530 --> 00:13:23,940
-<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>Speed Star! </b></font>
+<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>Speed Star! {RULE BREAKER! - Toa}</b></font>
 </font>
 
 362
 00:13:23,092 --> 00:13:25,110
-<font color="default">(ﾐﾐﾛﾙ)ﾐﾐﾛｰ！
+<font color="yellow">(ﾐﾐﾛﾙ)ﾐﾐﾛｰ！
 </font>
 
 363
 00:13:25,110 --> 00:13:27,213
-<font color="default">(ﾁﾗｰﾐｨ)ﾗﾗｰﾐ！
+<font color="yellow">(ﾁﾗｰﾐｨ)ﾗﾗｰﾐ！
 </font>
 
 364
 00:13:27,213 --> 00:13:29,215
-<font color="default">ｳｻｷﾞﾎﾟｹﾓﾝ ﾐﾐﾛﾙ？
+<font color="yellow">ｳｻｷﾞﾎﾟｹﾓﾝ ﾐﾐﾛﾙ？
 </font>
 
 365
 00:13:29,215 --> 00:13:32,551
-<font color="default">ﾐｰﾐ｡
+<font color="yellow">ﾐｰﾐ｡
 ﾁﾝﾁﾗﾎﾟｹﾓﾝ ﾁﾗｰﾐｨ？
 </font>
 
 366
 00:13:32,551 --> 00:13:34,553
-<font color="default">ﾗｰﾐ！
+<font color="yellow">ﾗｰﾐ！
 </font>
 
 367
@@ -2097,7 +2097,7 @@
 
 368
 00:13:34,553 --> 00:13:37,723
-<font color="default">こんなかわいいので大丈夫？
+<font color="yellow">こんなかわいいので大丈夫？
 </font>
 
 369
@@ -2139,7 +2139,7 @@
 
 370
 00:13:37,723 --> 00:13:41,060
-<font color="default">ﾐﾐﾛ…！
+<font color="yellow">ﾐﾐﾛ…！
 ﾗｰﾐ！
 </font>
 
@@ -2159,13 +2159,13 @@
 
 373
 00:13:41,060 --> 00:13:44,613
-<font color="default">ﾐﾐｰ！
+<font color="yellow">ﾐﾐｰ！
 ﾋﾟｶ！
 </font>
 
 374
 00:13:44,613 --> 00:13:47,032
-<font color="default">お～ 強いのﾆｬ｡
+<font color="yellow">お～ 強いのﾆｬ｡
 </font>
 
 375
@@ -2175,7 +2175,7 @@
 
 376
 00:13:47,032 --> 00:13:50,553
-<font color="default">やるじゃない｡
+<font color="yellow">やるじゃない｡
 おっしゃ！
 ｿ～ﾅﾝｽ！
 </font>
@@ -2187,24 +2187,24 @@
 
 378
 00:13:50,553 --> 00:13:54,206
-<font color="default">ﾐﾐﾛﾙ ﾋﾟﾖﾋﾟﾖﾊﾟﾝﾁ！
+<font color="yellow">ﾐﾐﾛﾙ ﾋﾟﾖﾋﾟﾖﾊﾟﾝﾁ！
 ﾐﾐ！
 </font>
 
 379
 00:13:53,400 --> 00:13:55,520
-<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>Chillarmy! Round-Trip Slap! </b></font>
+<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>Chillarmy! Round-Trip Slap! {This line snapped to the wrong keyframe (after Kojiro says “Chillarmy!” so I manually retimed the start and added 150 ms, but it was close enough to the keyframe (100 ms) that I figured I’d snap it. Also, used RULE BREAKER on the end of the line. - Toa}</b></font>
 </font>
 
 380
 00:13:54,206 --> 00:13:56,225
-<font color="default">ﾗﾋﾞﾌｯﾄ にどげり！
+<font color="yellow">ﾗﾋﾞﾌｯﾄ にどげり！
 ﾋﾞﾌ｡
 </font>
 
 381
 00:13:56,225 --> 00:13:59,562
-<font color="default">ﾐﾐ！
+<font color="yellow">ﾐﾐ！
 ﾋﾞﾌ！
 </font>
 
@@ -2215,7 +2215,7 @@
 
 383
 00:13:59,562 --> 00:14:02,881
-<font color="default">ﾋﾟｶﾁｭｳ ｱｲｱﾝﾃｰﾙ！
+<font color="yellow">ﾋﾟｶﾁｭｳ ｱｲｱﾝﾃｰﾙ！
 ﾁｭｰ！
 </font>
 
@@ -2226,7 +2226,7 @@
 
 385
 00:14:02,881 --> 00:14:06,885
-<font color="default">ｽﾋﾟｰﾄﾞｽﾀｰ！
+<font color="yellow">ｽﾋﾟｰﾄﾞｽﾀｰ！
 ﾗﾐ！ ﾗｰﾐ！
 </font>
 
@@ -2242,7 +2242,7 @@
 
 388
 00:14:06,885 --> 00:14:09,585
-<font color="default">ﾋﾟｶ！
+<font color="yellow">ﾋﾟｶ！
 </font>
 
 389
@@ -2294,7 +2294,7 @@
 
 398
 00:14:36,403 --> 00:14:41,758
-<font color="default">ﾋﾟｶ ﾋﾟｶﾁｭｰ ﾋﾟｶﾋﾟｶ！
+<font color="yellow">ﾋﾟｶ ﾋﾟｶﾁｭｰ ﾋﾟｶﾋﾟｶ！
 </font>
 
 399
@@ -2314,13 +2314,13 @@
 
 402
 00:14:41,758 --> 00:14:44,544
-<font color="default">ﾐﾐﾛﾙ でんこうせっか！
+<font color="yellow">ﾐﾐﾛﾙ でんこうせっか！
 こっちも でんこうせっか！
 </font>
 
 403
 00:14:44,544 --> 00:14:46,563
-<font color="default">ﾋﾟｯ ﾋﾟｯ ﾋﾟｯ…｡
+<font color="yellow">ﾋﾟｯ ﾋﾟｯ ﾋﾟｯ…｡
 </font>
 
 404
@@ -2330,12 +2330,12 @@
 
 405
 00:14:46,563 --> 00:14:48,565
-<font color="default">ﾐｯ ﾐｯ ﾐｯ…｡
+<font color="yellow">ﾐｯ ﾐｯ ﾐｯ…｡
 </font>
 
 406
 00:14:48,565 --> 00:14:50,550
-<font color="default">ﾋﾟｶ！
+<font color="yellow">ﾋﾟｶ！
 ﾐﾐ！
 </font>
 
@@ -2346,7 +2346,7 @@
 
 408
 00:14:50,550 --> 00:14:53,219
-<font color="default">ﾁﾗｰﾐｨ おうふくﾋﾞﾝﾀ！
+<font color="yellow">ﾁﾗｰﾐｨ おうふくﾋﾞﾝﾀ！
 ﾁﾗｰﾐｰ！
 </font>
 
@@ -2357,31 +2357,31 @@
 
 410
 00:14:53,219 --> 00:14:55,722
-<font color="default">よけろ！
+<font color="yellow">よけろ！
 ﾒｿ！
 </font>
 
 411
 00:14:55,722 --> 00:14:58,224
-<font color="default">ﾒｯｿﾝ 大丈夫か？
+<font color="yellow">ﾒｯｿﾝ 大丈夫か？
 ﾒｿ～｡
 </font>
 
 412
 00:14:58,224 --> 00:15:00,226
-<font color="default">ﾗﾋﾞﾌｯﾄ にどげり！
+<font color="yellow">ﾗﾋﾞﾌｯﾄ にどげり！
 ﾋﾞﾌ！
 </font>
 
 413
 00:15:00,226 --> 00:15:02,545
-<font color="default">ﾐｯ…｡
+<font color="yellow">ﾐｯ…｡
 ﾁﾗｰﾐｨ！
 </font>
 
 414
 00:15:02,545 --> 00:15:06,082
-<font color="default">今のうちに みんな逃げろ！
+<font color="yellow">今のうちに みんな逃げろ！
 ﾋﾟｶﾋﾟｶ！
 </font>
 
@@ -2398,12 +2398,12 @@
 
 417
 00:15:06,082 --> 00:15:08,735
-<font color="default">逃さない ﾐﾐﾛﾙ はたく！
+<font color="yellow">逃さない ﾐﾐﾛﾙ はたく！
 </font>
 
 418
 00:15:08,735 --> 00:15:10,737
-<font color="default">ﾐﾐﾛｰ ﾐｯ！
+<font color="yellow">ﾐﾐﾛｰ ﾐｯ！
 </font>
 
 419
@@ -2414,13 +2414,13 @@
 
 420
 00:15:10,737 --> 00:15:12,722
-<font color="default">いらっしゃいﾆｬｰｽ｡
+<font color="yellow">いらっしゃいﾆｬｰｽ｡
 ﾋﾟｶ！
 </font>
 
 421
 00:15:12,722 --> 00:15:14,741
-<font color="default">でんこうせっか！
+<font color="yellow">でんこうせっか！
 </font>
 
 422
@@ -2431,18 +2431,18 @@
 
 423
 00:15:14,741 --> 00:15:16,726
-<font color="default">ﾋﾞﾌ ﾋﾞﾌ…｡
+<font color="yellow">ﾋﾞﾌ ﾋﾞﾌ…｡
 </font>
 
 424
 00:15:16,726 --> 00:15:18,745
-<font color="default">くすぐる｡
+<font color="yellow">くすぐる｡
 ﾗﾐ！
 </font>
 
 425
 00:15:18,745 --> 00:15:21,398
-<font color="default">ﾗﾐ ﾗﾐ！
+<font color="yellow">ﾗﾐ ﾗﾐ！
 </font>
 
 426
@@ -2453,7 +2453,7 @@
 
 427
 00:15:21,398 --> 00:15:23,767
-<font color="default">ｵﾗ ｵﾗ ｵﾗ…｡
+<font color="yellow">ｵﾗ ｵﾗ ｵﾗ…｡
 </font>
 
 428
@@ -2468,7 +2468,7 @@
 
 430
 00:15:23,767 --> 00:15:27,337
-<font color="default">ﾋﾟｯ ﾋﾟｯ ﾋﾟｯ…｡
+<font color="yellow">ﾋﾟｯ ﾋﾟｯ ﾋﾟｯ…｡
 ﾋﾟｶﾋﾟｶ！
 </font>
 
@@ -2479,7 +2479,7 @@
 
 432
 00:15:27,337 --> 00:15:29,239
-<font color="default">ﾋﾟｶﾁｭｳ！
+<font color="yellow">ﾋﾟｶﾁｭｳ！
 </font>
 
 433
@@ -2489,31 +2489,31 @@
 
 434
 00:15:29,239 --> 00:15:31,224
-<font color="default">よし 入った！
+<font color="yellow">よし 入った！
 (ﾑｻｼ)引き上げよ！
 </font>
 
 435
 00:15:31,224 --> 00:15:33,426
-<font color="default">ﾗｼﾞｬｰ！
+<font color="yellow">ﾗｼﾞｬｰ！
 待て！
 </font>
 
 436
 00:15:33,426 --> 00:15:36,579
-<font color="default">待たない！
+<font color="yellow">待たない！
 うわぁ…｡
 </font>
 
 437
 00:15:36,579 --> 00:15:39,582
-<font color="default">なんだ これ！
+<font color="yellow">なんだ これ！
 (咳き込む声)
 </font>
 
 438
 00:15:39,582 --> 00:15:42,452
-<font color="default">ﾒｿ～！
+<font color="yellow">ﾒｿ～！
 どこだ？
 </font>
 
@@ -2524,7 +2524,7 @@
 
 440
 00:15:42,452 --> 00:15:45,752
-<font color="default">逃げられた…｡
+<font color="yellow">逃げられた…｡
 </font>
 
 441
@@ -2544,7 +2544,7 @@
 
 444
 00:15:47,724 --> 00:15:50,043
-<font color="default">ﾋﾟｶﾁｭｳ！
+<font color="yellow">ﾋﾟｶﾁｭｳ！
 </font>
 
 445
@@ -2554,7 +2554,7 @@
 
 446
 00:15:50,043 --> 00:15:52,743
-<font color="default">ﾋﾟｶﾋﾟｶ…｡
+<font color="yellow">ﾋﾟｶﾋﾟｶ…｡
 </font>
 
 447
@@ -2576,7 +2576,7 @@
 
 450
 00:15:57,384 --> 00:15:59,703
-<font color="default">ﾋﾟｶﾋﾟｶ…｡
+<font color="yellow">ﾋﾟｶﾋﾟｶ…｡
 ﾋﾟｶﾋﾟｶ…｡
 ﾋﾟｶﾋﾟｶ…｡
 </font>
@@ -2589,12 +2589,12 @@
 
 452
 00:15:59,703 --> 00:16:01,738
-<font color="default">大量ｹﾞｯﾄ 成功｡
+<font color="yellow">大量ｹﾞｯﾄ 成功｡
 </font>
 
 453
 00:16:01,738 --> 00:16:04,791
-<font color="default">とうとうｼﾞｬﾘﾎﾞｰｲのﾋﾟｶﾁｭｳも
+<font color="yellow">とうとうｼﾞｬﾘﾎﾞｰｲのﾋﾟｶﾁｭｳも
 捕まえた｡
 </font>
 
@@ -2605,7 +2605,7 @@
 
 455
 00:16:04,791 --> 00:16:09,062
-<font color="default">きっと ｻｶｷ様も お喜びになるﾆｬ｡
+<font color="yellow">きっと ｻｶｷ様も お喜びになるﾆｬ｡
 ｿ～ﾅﾝｽ！
 </font>
 
@@ -2626,7 +2626,7 @@
 
 459
 00:16:09,062 --> 00:16:13,733
-<font color="default">そうそう こんな強いﾋﾟｶﾁｭｳ
+<font color="yellow">そうそう こんな強いﾋﾟｶﾁｭｳ
 他にいないし｡
 </font>
 
@@ -2642,7 +2642,7 @@
 
 462
 00:16:13,733 --> 00:16:17,053
-<font color="default">ｼﾞｬﾘﾎﾞｰｲのﾋﾟｶﾁｭｳ どれ？
+<font color="yellow">ｼﾞｬﾘﾎﾞｰｲのﾋﾟｶﾁｭｳ どれ？
 </font>
 
 463
@@ -2652,7 +2652,7 @@
 
 464
 00:16:17,053 --> 00:16:20,874
-<font color="default">ど どれだ？
+<font color="yellow">ど どれだ？
 見分けがつかないﾆｬ｡
 </font>
 
@@ -2663,12 +2663,12 @@
 
 466
 00:16:20,874 --> 00:16:22,892
-<font color="default">ｿ～ﾅﾝｽ｡
+<font color="yellow">ｿ～ﾅﾝｽ｡
 </font>
 
 467
 00:16:22,892 --> 00:16:25,245
-<font color="default">ちゃんと この中に
+<font color="yellow">ちゃんと この中に
 いるんでしょうね？
 </font>
 
@@ -2679,17 +2679,19 @@
 
 469
 00:16:25,245 --> 00:16:28,245
-<font color="default">いるはずだが…｡
+<font color="yellow">いるはずだが…｡
 </font>
 
 470
 00:16:25,250 --> 00:16:27,760
-<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>What’s with all this flab?!</b></font>
+<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>What’s with all this flab?!{purunpurun seems to be wobbly/jiggly.
+But 'lump'... since she grabs onto some of fatchu's fat, kinda seems like 'lump' could refer to that one lump rather than the whole Pikachu being fat.
+completely boring idea: What's with this fatso?! -bluesun}{Maybe "What's with all this flab?!"? - Toa}</b></font>
 </font>
 
 471
 00:16:37,257 --> 00:16:40,377
-<font color="default">ｺｲﾂ？
+<font color="yellow">ｺｲﾂ？
 それはﾒｽ｡
 </font>
 
@@ -2701,7 +2703,7 @@
 
 473
 00:16:40,377 --> 00:16:44,564
-<font color="default">(ｺｼﾞﾛｳ)じゃあ こっち？
+<font color="yellow">(ｺｼﾞﾛｳ)じゃあ こっち？
 (ﾑｻｼ)なんか顔が違う気がする｡
 </font>
 
@@ -2713,30 +2715,30 @@
 
 475
 00:16:44,564 --> 00:16:48,051
-<font color="default">(ｺｼﾞﾛｳ)んじゃ これ｡
+<font color="yellow">(ｺｼﾞﾛｳ)んじゃ これ｡
 (ﾑｻｼ)かわいくない！
 </font>
 
 476
 00:16:48,051 --> 00:16:51,254
-<font color="default">(ｺｼﾞﾛｳ)ｺｲﾂ！
+<font color="yellow">(ｺｼﾞﾛｳ)ｺｲﾂ！
 (ﾑｻｼ)弱そう！
 </font>
 
 477
 00:16:51,254 --> 00:16:53,239
-<font color="default">どれも違うじゃないの｡
+<font color="yellow">どれも違うじゃないの｡
 </font>
 
 478
 00:16:53,239 --> 00:16:57,394
-<font color="default">ｼﾞｬﾘﾎﾞｰｲのﾋﾟｶﾁｭｳくん
+<font color="yellow">ｼﾞｬﾘﾎﾞｰｲのﾋﾟｶﾁｭｳくん
 お返事するﾆｬ｡
 </font>
 
 479
 00:16:57,394 --> 00:17:00,747
-<font color="default">(ﾋﾟｶﾁｭｳたち)ﾋﾟｶﾁｭｰ！
+<font color="yellow">(ﾋﾟｶﾁｭｳたち)ﾋﾟｶﾁｭｰ！
 ｳｿつくﾆｬ！
 </font>
 
@@ -2748,7 +2750,7 @@
 
 481
 00:17:00,747 --> 00:17:03,817
-<font color="default">(ﾑｻｼ)あっ あれじゃないの？
+<font color="yellow">(ﾑｻｼ)あっ あれじゃないの？
 (ｺｼﾞﾛｳ)ｺｲﾂじゃないし…｡
 </font>
 
@@ -2759,7 +2761,7 @@
 
 483
 00:17:03,817 --> 00:17:06,920
-<font color="default">それは？
+<font color="yellow">それは？
 違うだろ｡
 </font>
 
@@ -2770,7 +2772,7 @@
 
 485
 00:17:06,920 --> 00:17:10,090
-<font color="default">ったくもう 貸しなさいよ！
+<font color="yellow">ったくもう 貸しなさいよ！
 </font>
 
 486
@@ -2785,7 +2787,7 @@
 
 488
 00:17:10,090 --> 00:17:14,290
-<font color="default">え～と… ｺｲﾂか！
+<font color="yellow">え～と… ｺｲﾂか！
 </font>
 
 489
@@ -2806,7 +2808,7 @@
 
 492
 00:17:18,732 --> 00:17:21,618
-<font color="default">ﾊﾊﾊ…｡
+<font color="yellow">ﾊﾊﾊ…｡
 たぶん違うな｡
 </font>
 
@@ -2822,7 +2824,7 @@
 
 495
 00:17:21,618 --> 00:17:23,636
-<font color="default">なによ このﾌﾟﾙﾝﾌﾟﾙﾝは｡
+<font color="yellow">なによ このﾌﾟﾙﾝﾌﾟﾙﾝは｡
 </font>
 
 496
@@ -2832,45 +2834,45 @@
 
 497
 00:17:23,636 --> 00:17:26,906
-<font color="default">ﾋﾟｰｶﾁｭｰ！
+<font color="yellow">ﾋﾟｰｶﾁｭｰ！
 うわぁ！
 </font>
 
 498
 00:17:23,020 --> 00:17:24,480
-<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>Mimiroll! Pound! </b></font>
+<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>Mimiroll! Pound! {RULE BREAKER! - Toa}</b></font>
 </font>
 
 499
 00:17:25,350 --> 00:17:26,600
-<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>Lightning Speed! </b></font>
+<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>Lightning Speed! {Same as above. - Toa}</b></font>
 </font>
 
 500
 00:17:26,906 --> 00:17:30,206
-<font color="default">(ﾛｹｯﾄ団)わぁ…｡
+<font color="yellow">(ﾛｹｯﾄ団)わぁ…｡
 ﾋﾟｶ…｡
 </font>
 
 501
 00:17:30,700 --> 00:17:32,530
-<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>Messon! Water Gun!</b></font>
+<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>Messon! Water Gun!{0/10 he doesn’t fire it from his eyes. -Starfish}{that would just look creepy —Puto}</b></font>
 </font>
 
 502
 00:17:35,582 --> 00:17:37,917
-<font color="default">どっちに行ったか わかれば…｡
+<font color="yellow">どっちに行ったか わかれば…｡
 </font>
 
 503
 00:17:37,917 --> 00:17:41,571
-<font color="default">ﾋﾟｶﾁｭｳたちを全部奪っていくなんて
+<font color="yellow">ﾋﾟｶﾁｭｳたちを全部奪っていくなんて
 ｱｲﾂら…｡
 </font>
 
 504
 00:17:41,571 --> 00:17:44,071
-<font color="default">ﾋﾞﾌ｡
+<font color="yellow">ﾋﾞﾌ｡
 ん？
 </font>
 
@@ -2881,7 +2883,7 @@
 
 506
 00:17:47,200 --> 00:17:49,240
-<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>No way! </b></font>
+<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>No way! {This line feels weirdly long to me even though it’s within regulation (exactly 350 ms between the end of its lead-out and the start of the next line’s lead-in). - Toa}</b></font>
 </font>
 
 507
@@ -2901,24 +2903,24 @@
 
 510
 00:17:53,249 --> 00:17:57,237
-<font color="default">そうか 仲間なんだもんな｡
+<font color="yellow">そうか 仲間なんだもんな｡
 </font>
 
 511
 00:17:57,237 --> 00:18:00,540
-<font color="default">ﾋﾟｯ？
+<font color="yellow">ﾋﾟｯ？
 絶対みんなを助けよう｡
 </font>
 
 512
 00:18:00,540 --> 00:18:03,209
-<font color="default">一緒に｡
+<font color="yellow">一緒に｡
 ﾋﾟｶ！
 </font>
 
 513
 00:18:03,209 --> 00:18:06,729
-<font color="default">何だ？
+<font color="yellow">何だ？
 あっちだ！
 </font>
 
@@ -2930,52 +2932,52 @@
 
 515
 00:18:06,729 --> 00:18:08,898
-<font color="default">(ﾋﾟｶﾁｭｳたち)ﾋﾟ～｡
+<font color="yellow">(ﾋﾟｶﾁｭｳたち)ﾋﾟ～｡
 </font>
 
 516
 00:18:07,730 --> 00:18:10,860
-<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>You get in, too, meow! </b></font>
+<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>You get in, too, meow! {Same as line 234 (except keyframe instead of next line lead-in). - Toa}</b></font>
 </font>
 
 517
 00:18:08,898 --> 00:18:12,385
-<font color="default">ちょっと静かに！
+<font color="yellow">ちょっと静かに！
 (ﾆｬｰｽ)ｼﾞｬﾘﾎﾞｰｲたちに見つかるﾆｬ｡
 </font>
 
 518
 00:18:12,385 --> 00:18:14,404
-<font color="default">見つけた ﾛｹｯﾄ団！
+<font color="yellow">見つけた ﾛｹｯﾄ団！
 </font>
 
 519
 00:18:14,404 --> 00:18:18,057
-<font color="default">ほら やっぱり｡
+<font color="yellow">ほら やっぱり｡
 今度は逃がさない！
 </font>
 
 520
 00:18:18,057 --> 00:18:20,727
-<font color="default">ﾋﾟｶﾁｭｳを返せ！
+<font color="yellow">ﾋﾟｶﾁｭｳを返せ！
 ﾐﾐﾛﾙ はたく！
 </font>
 
 521
 00:18:20,727 --> 00:18:22,896
-<font color="default">ﾐﾐﾛｰ！
+<font color="yellow">ﾐﾐﾛｰ！
 でんこうせっか！
 </font>
 
 522
 00:18:22,896 --> 00:18:26,399
-<font color="default">ﾋﾞﾌ！
+<font color="yellow">ﾋﾞﾌ！
 ﾐﾐ…｡
 </font>
 
 523
 00:18:26,399 --> 00:18:29,999
-<font color="default">ﾒｯｿﾝ みずでっぽう！
+<font color="yellow">ﾒｯｿﾝ みずでっぽう！
 ﾒｿ～！
 </font>
 
@@ -2986,7 +2988,7 @@
 
 525
 00:18:29,250 --> 00:18:31,600
-<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>Okay... Go! </b></font>
+<font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>Okay... Go! {Gotta be honest, that's a pretty clever way of breaking the machine —Puto}</b></font>
 </font>
 
 526
@@ -2996,7 +2998,7 @@
 
 527
 00:18:49,908 --> 00:18:52,428
-<font color="default">ﾋﾟｶﾋﾟｶ…｡
+<font color="yellow">ﾋﾟｶﾋﾟｶ…｡
 ﾋﾟｶﾋﾟｶ…｡
 ﾋﾟｶ！
 </font>
@@ -3008,18 +3010,18 @@
 
 529
 00:18:52,428 --> 00:18:54,430
-<font color="default">ﾋﾟｶ？
+<font color="yellow">ﾋﾟｶ？
 </font>
 
 530
 00:18:52,800 --> 00:18:56,310
 <font color="#FFFFFF"><font face="Candara" size="55" color="#f6fbf6"><b>Pikachu went in,
- and Raichu came out, meow!</b></font>
+ and Raichu came out, meow!{meh. Alolan Raichu is best Raichu. —Puto}</b></font>
 </font>
 
 531
 00:18:54,430 --> 00:18:57,030
-<font color="default">ﾋﾟｶﾋﾟｶ ﾋﾟｶ！
+<font color="yellow">ﾋﾟｶﾋﾟｶ ﾋﾟｶ！
 </font>
 
 532
@@ -3030,7 +3032,7 @@
 
 533
 00:18:59,485 --> 00:19:02,237
-<font color="default">ﾋﾟｶﾁｭｳたちを返せ！
+<font color="yellow">ﾋﾟｶﾁｭｳたちを返せ！
 や～だよ～！
 </font>
 
@@ -3041,29 +3043,29 @@
 
 535
 00:19:02,237 --> 00:19:04,239
-<font color="default">ﾍﾍｯ 当たらないぜ｡
+<font color="yellow">ﾍﾍｯ 当たらないぜ｡
 </font>
 
 536
 00:19:04,239 --> 00:19:07,126
-<font color="default">この ちょこまかと！
+<font color="yellow">この ちょこまかと！
 ｳｷ～！
 </font>
 
 537
 00:19:07,126 --> 00:19:10,262
-<font color="default">おとなしくするﾆｬ｡
+<font color="yellow">おとなしくするﾆｬ｡
 ｿ～ﾅﾝｽ！
 </font>
 
 538
 00:19:10,262 --> 00:19:12,247
-<font color="default">ﾋﾟｯ ﾋﾟｯ…｡
+<font color="yellow">ﾋﾟｯ ﾋﾟｯ…｡
 </font>
 
 539
 00:19:12,247 --> 00:19:16,301
-<font color="default">ﾋﾟｶ… ﾋﾟｶ｡
+<font color="yellow">ﾋﾟｶ… ﾋﾟｶ｡
 ﾋﾟｶﾁｭｰ｡
 </font>
 
@@ -3084,22 +3086,22 @@
 
 543
 00:19:16,301 --> 00:19:19,571
-<font color="default">あっ さっきのﾒｽﾋﾟｶﾁｭｳ｡
+<font color="yellow">あっ さっきのﾒｽﾋﾟｶﾁｭｳ｡
 </font>
 
 544
 00:19:19,571 --> 00:19:21,590
-<font color="default">ﾋﾟｶ！
+<font color="yellow">ﾋﾟｶ！
 </font>
 
 545
 00:19:21,590 --> 00:19:24,243
-<font color="default">おﾐｬｰも入るのﾆｬ！
+<font color="yellow">おﾐｬｰも入るのﾆｬ！
 </font>
 
 546
 00:19:24,243 --> 00:19:26,543
-<font color="default">ﾋﾟｶ… ﾁｭｰ！
+<font color="yellow">ﾋﾟｶ… ﾁｭｰ！
 </font>
 
 547
@@ -3109,38 +3111,38 @@
 
 548
 00:19:29,598 --> 00:19:31,598
-<font color="default">ﾋﾟｯ…｡
+<font color="yellow">ﾋﾟｯ…｡
 </font>
 
 549
 00:19:34,253 --> 00:19:37,106
-<font color="default">ﾋﾟｯ ﾋﾟｶ！
+<font color="yellow">ﾋﾟｯ ﾋﾟｶ！
 </font>
 
 550
 00:19:37,106 --> 00:19:40,092
-<font color="default">ﾋﾟｶﾁｭｰ！
+<font color="yellow">ﾋﾟｶﾁｭｰ！
 </font>
 
 551
 00:19:40,092 --> 00:19:42,995
-<font color="default">これか？
+<font color="yellow">これか？
 ﾋﾟｶ！
 </font>
 
 552
 00:19:42,995 --> 00:19:45,931
-<font color="default">よし いけ～！
+<font color="yellow">よし いけ～！
 </font>
 
 553
 00:19:45,931 --> 00:19:53,255
-<font color="default">[外:37F6ECF37A0A3EF8DFF083CCC8754F81]～
+<font color="yellow">[外:37F6ECF37A0A3EF8DFF083CCC8754F81]～
 </font>
 
 554
 00:19:53,255 --> 00:19:55,257
-<font color="default">何ﾆｬ？
+<font color="yellow">何ﾆｬ？
 </font>
 
 555
@@ -3150,7 +3152,7 @@
 
 556
 00:19:55,257 --> 00:19:57,276
-<font color="default">ﾆｬｯ…｡
+<font color="yellow">ﾆｬｯ…｡
 </font>
 
 557
@@ -3166,28 +3168,28 @@
 
 559
 00:19:57,276 --> 00:20:02,931
-<font color="default">[外:37F6ECF37A0A3EF8DFF083CCC8754F81]～
+<font color="yellow">[外:37F6ECF37A0A3EF8DFF083CCC8754F81]～
 </font>
 
 560
 00:20:02,931 --> 00:20:04,933
-<font color="default">ﾗｲﾗｲ！
+<font color="yellow">ﾗｲﾗｲ！
 </font>
 
 561
 00:20:04,933 --> 00:20:07,403
-<font color="default">な なに!?
+<font color="yellow">な なに!?
 ﾋﾟｶﾁｭｳを吸い込んだら[外:583134B86E7D90960F64C5B863196978]
 </font>
 
 562
 00:20:07,403 --> 00:20:09,421
-<font color="default">ﾗｲﾁｭｳになったのﾆｬ｡
+<font color="yellow">ﾗｲﾁｭｳになったのﾆｬ｡
 </font>
 
 563
 00:20:09,421 --> 00:20:13,258
-<font color="default">(ｽﾏﾎﾛﾄﾑ)ﾗｲﾁｭｳが新しく
+<font color="yellow">(ｽﾏﾎﾛﾄﾑ)ﾗｲﾁｭｳが新しく
 図鑑に登録されます｡
 </font>
 
@@ -3198,24 +3200,24 @@
 
 565
 00:20:13,258 --> 00:20:15,577
-<font color="default">よし！
+<font color="yellow">よし！
 ﾗｲ！
 </font>
 
 566
 00:20:15,577 --> 00:20:17,729
-<font color="default">ﾗｲ…｡
+<font color="yellow">ﾗｲ…｡
 ﾗｲﾗｲ ﾗｲ！
 </font>
 
 567
 00:20:17,729 --> 00:20:21,150
-<font color="default">(ﾗｲﾁｭｳたち)ﾗｰｲﾁｭｰ！
+<font color="yellow">(ﾗｲﾁｭｳたち)ﾗｰｲﾁｭｰ！
 </font>
 
 568
 00:20:21,150 --> 00:20:23,068
-<font color="default">(ﾛｹｯﾄ団)わぁ！
+<font color="yellow">(ﾛｹｯﾄ団)わぁ！
 </font>
 
 569
@@ -3225,54 +3227,54 @@
 
 570
 00:20:23,068 --> 00:20:26,422
-<font color="default">ﾋﾟｶ！
+<font color="yellow">ﾋﾟｶ！
 ﾋﾟｶ！
 ﾋﾟｶﾋﾟｶ！
 </font>
 
 571
 00:20:26,422 --> 00:20:28,740
-<font color="default">ﾋﾟｶﾁｭｳたちが…｡
+<font color="yellow">ﾋﾟｶﾁｭｳたちが…｡
 待ちなさい！
 </font>
 
 572
 00:20:28,740 --> 00:20:30,742
-<font color="default">待つﾆｬ！
+<font color="yellow">待つﾆｬ！
 ﾋﾟｶ…｡
 </font>
 
 573
 00:20:30,742 --> 00:20:32,895
-<font color="default">ﾋﾟｶ…｡
+<font color="yellow">ﾋﾟｶ…｡
 ﾋﾟｶ…｡
 </font>
 
 574
 00:20:32,895 --> 00:20:37,433
-<font color="default">ﾋﾟｶﾁｭｰ！
+<font color="yellow">ﾋﾟｶﾁｭｰ！
 ﾋﾟｶ！
 </font>
 
 575
 00:20:37,433 --> 00:20:39,918
-<font color="default">ﾋﾟｶﾁｭｰ ﾋﾟｶﾁｭｰ…｡
+<font color="yellow">ﾋﾟｶﾁｭｰ ﾋﾟｶﾁｭｰ…｡
 </font>
 
 576
 00:20:39,918 --> 00:20:42,354
-<font color="default">(ﾋﾟｶﾁｭｳたち)ﾋﾟｶﾁｭｰ ﾋﾟｶﾁｭｰ…｡
+<font color="yellow">(ﾋﾟｶﾁｭｳたち)ﾋﾟｶﾁｭｰ ﾋﾟｶﾁｭｰ…｡
 </font>
 
 577
 00:20:42,354 --> 00:20:44,273
-<font color="default">ﾆｬ？
+<font color="yellow">ﾆｬ？
 何？
 </font>
 
 578
 00:20:44,273 --> 00:20:55,601
-<font color="default">(ﾋﾟｶﾁｭｳたち)ﾋﾟｶﾁｭｰ ﾋﾟｶﾁｭｰ…｡
+<font color="yellow">(ﾋﾟｶﾁｭｳたち)ﾋﾟｶﾁｭｰ ﾋﾟｶﾁｭｰ…｡
 </font>
 
 579
@@ -3293,12 +3295,12 @@
 
 582
 00:20:55,601 --> 00:20:58,604
-<font color="default">ﾋﾟｶﾋﾟｶ！ ﾋﾟｶ！
+<font color="yellow">ﾋﾟｶﾋﾟｶ！ ﾋﾟｶ！
 </font>
 
 583
 00:20:58,604 --> 00:21:01,773
-<font color="default">ﾋﾟｯ！
+<font color="yellow">ﾋﾟｯ！
 ﾋﾟｶ！
 ﾋﾟｯ！
 </font>
@@ -3311,7 +3313,7 @@
 
 585
 00:21:01,773 --> 00:21:04,760
-<font color="default">わぁ｡
+<font color="yellow">わぁ｡
 </font>
 
 586
@@ -3321,7 +3323,7 @@
 
 587
 00:21:04,760 --> 00:21:07,629
-<font color="default">ﾋﾟｯ｡
+<font color="yellow">ﾋﾟｯ｡
 ﾋﾟｯ｡
 </font>
 
@@ -3337,7 +3339,7 @@
 
 590
 00:21:07,629 --> 00:21:10,182
-<font color="default">えっ まさか…｡
+<font color="yellow">えっ まさか…｡
 ｳｿでしょ…｡
 </font>
 
@@ -3353,7 +3355,7 @@
 
 593
 00:21:10,182 --> 00:21:13,085
-<font color="default">よし 今だ 10万ﾎﾞﾙﾄ！
+<font color="yellow">よし 今だ 10万ﾎﾞﾙﾄ！
 </font>
 
 594
@@ -3363,17 +3365,17 @@
 
 595
 00:21:13,085 --> 00:21:17,439
-<font color="default">ﾋﾟｰｶｰ…｡
+<font color="yellow">ﾋﾟｰｶｰ…｡
 </font>
 
 596
 00:21:17,439 --> 00:21:21,760
-<font color="default">(ﾋﾟｶﾁｭｳたち)ﾁｭｰ！
+<font color="yellow">(ﾋﾟｶﾁｭｳたち)ﾁｭｰ！
 </font>
 
 597
 00:21:21,760 --> 00:21:23,760
-<font color="default">(ﾛｹｯﾄ団)わぁ！
+<font color="yellow">(ﾛｹｯﾄ団)わぁ！
 </font>
 
 598
@@ -3384,17 +3386,17 @@
 
 599
 00:21:25,914 --> 00:21:29,935
-<font color="default">(ﾛｹｯﾄ団)ヤなｶﾝｼﾞ～！
+<font color="yellow">(ﾛｹｯﾄ団)ヤなｶﾝｼﾞ～！
 </font>
 
 600
 00:21:29,935 --> 00:21:31,935
-<font color="default">(ｿｰﾅﾝｽ)ｿ～ﾅﾝｽ！
+<font color="yellow">(ｿｰﾅﾝｽ)ｿ～ﾅﾝｽ！
 </font>
 
 601
 00:21:33,906 --> 00:21:37,743
-<font color="default">ﾋﾟｶﾋﾟ！
+<font color="yellow">ﾋﾟｶﾋﾟ！
 ﾋﾟｶﾁｭｳ よかった！
 </font>
 
@@ -3405,7 +3407,7 @@
 
 603
 00:21:37,743 --> 00:21:40,746
-<font color="default">ﾋﾟｶﾁｭｰ｡
+<font color="yellow">ﾋﾟｶﾁｭｰ｡
 (ﾗｲﾁｭｳ)ﾗｲﾗｲ！
 </font>
 
@@ -3417,7 +3419,7 @@
 
 605
 00:21:40,746 --> 00:21:43,615
-<font color="default">ﾋﾟｶ｡
+<font color="yellow">ﾋﾟｶ｡
 ﾗｰｲ…｡
 </font>
 
@@ -3896,7 +3898,7 @@
 
 630
 00:22:22,082 --> 00:22:25,119
-<font color="default">ﾋﾟｯ…｡
+<font color="yellow">ﾋﾟｯ…｡
 ﾗｰｲ…｡
 </font>
 
@@ -3943,7 +3945,7 @@
 
 634
 00:22:25,119 --> 00:22:27,819
-<font color="default">ﾗｲ…｡
+<font color="yellow">ﾗｲ…｡
 ﾗｲ…｡
 </font>
 
@@ -4029,7 +4031,7 @@
 
 641
 00:22:31,392 --> 00:22:40,701
-<font color="default">[外:37F6ECF37A0A3EF8DFF083CCC8754F81]～
+<font color="yellow">[外:37F6ECF37A0A3EF8DFF083CCC8754F81]～
 </font>
 
 642
@@ -4159,7 +4161,7 @@
 
 651
 00:22:40,701 --> 00:22:43,053
-<font color="default">ﾗｲﾗｰｲ ﾗｲﾗｰｲ！
+<font color="yellow">ﾗｲﾗｰｲ ﾗｲﾗｰｲ！
 </font>
 
 652
@@ -4197,7 +4199,7 @@
 
 655
 00:22:43,053 --> 00:22:46,607
-<font color="default">すごい！
+<font color="yellow">すごい！
 やっぱかわいい！
 </font>
 
@@ -4219,7 +4221,7 @@
 
 658
 00:22:46,607 --> 00:22:50,694
-<font color="default">ﾋﾟｶﾁｭｳ大量発生には
+<font color="yellow">ﾋﾟｶﾁｭｳ大量発生には
 雷の石が関係していたのか｡
 </font>
 
@@ -4230,7 +4232,7 @@
 
 660
 00:22:50,694 --> 00:22:54,748
-<font color="default">ｺﾞｳ ｻﾄｼ 新しいﾃﾞｰﾀをありがとう｡
+<font color="yellow">ｺﾞｳ ｻﾄｼ 新しいﾃﾞｰﾀをありがとう｡
 (２人)はい｡
 </font>
 
@@ -4246,18 +4248,18 @@
 
 663
 00:22:54,748 --> 00:22:56,884
-<font color="default">ﾗﾗｲﾁｭ｡
+<font color="yellow">ﾗﾗｲﾁｭ｡
 </font>
 
 664
 00:22:56,884 --> 00:22:58,902
-<font color="default">おや？
+<font color="yellow">おや？
 えっ 僕にも？
 </font>
 
 665
 00:22:58,902 --> 00:23:01,739
-<font color="default">ありがとう｡
+<font color="yellow">ありがとう｡
 ｻﾝｷｭｰ ﾗｲﾁｭｳ｡
 </font>
 
@@ -4430,18 +4432,18 @@
 
 667
 00:23:01,739 --> 00:23:03,724
-<font color="default">ﾗｲ｡
+<font color="yellow">ﾗｲ｡
 どうも｡
 </font>
 
 668
 00:23:03,724 --> 00:23:05,743
-<font color="default">ﾗﾗｲﾁｭ｡
+<font color="yellow">ﾗﾗｲﾁｭ｡
 </font>
 
 669
 00:23:05,743 --> 00:23:09,146
-<font color="default">ﾗﾗｲﾁｭ｡
+<font color="yellow">ﾗﾗｲﾁｭ｡
 ﾒｿ｡
 </font>
 
@@ -4452,7 +4454,7 @@
 
 671
 00:23:09,146 --> 00:23:11,048
-<font color="default">ﾋﾟｶ ﾋﾟｶﾋﾟｶ｡
+<font color="yellow">ﾋﾟｶ ﾋﾟｶﾋﾟｶ｡
 </font>
 
 672
@@ -4462,7 +4464,7 @@
 
 673
 00:23:11,048 --> 00:23:14,735
-<font color="default">ﾗﾗｲﾁｭ｡
+<font color="yellow">ﾗﾗｲﾁｭ｡
 ﾋﾟｶ…｡
 </font>
 
@@ -4479,7 +4481,7 @@
 
 676
 00:23:14,735 --> 00:23:18,222
-<font color="default">ﾋﾟｶﾁｭｳをｹﾞｯﾄするつもりだったけど｡
+<font color="yellow">ﾋﾟｶﾁｭｳをｹﾞｯﾄするつもりだったけど｡
 </font>
 
 677
@@ -4489,7 +4491,7 @@
 
 678
 00:23:18,222 --> 00:23:21,725
-<font color="default">ﾒｿ～｡
+<font color="yellow">ﾒｿ～｡
 </font>
 
 679
@@ -4500,7 +4502,7 @@
 
 680
 00:23:21,725 --> 00:23:25,412
-<font color="default">ﾗｰｲ！
+<font color="yellow">ﾗｰｲ！
 ﾋﾟｶﾋﾟｶ…｡
 ﾋﾞﾌ！
 </font>
@@ -4513,7 +4515,7 @@
 
 682
 00:23:25,412 --> 00:23:28,399
-<font color="default">＜新たに仲間に加わったﾗｲﾁｭｳ｡
+<font color="yellow">＜新たに仲間に加わったﾗｲﾁｭｳ｡
 </font>
 
 683
@@ -4523,7 +4525,7 @@
 
 684
 00:23:28,399 --> 00:23:31,085
-<font color="default">すべてのﾎﾟｹﾓﾝをｹﾞｯﾄして[外:583134B86E7D90960F64C5B863196978]
+<font color="yellow">すべてのﾎﾟｹﾓﾝをｹﾞｯﾄして[外:583134B86E7D90960F64C5B863196978]
 </font>
 
 685
@@ -4543,13 +4545,13 @@
 
 687
 00:23:31,085 --> 00:23:33,420
-<font color="default">ﾐｭｳにたどり着くという
+<font color="yellow">ﾐｭｳにたどり着くという
 ｺﾞｳの夢に[外:583134B86E7D90960F64C5B863196978]
 </font>
 
 688
 00:23:33,420 --> 00:23:35,420
-<font color="default">また一歩近づいた＞
+<font color="yellow">また一歩近づいた＞
 </font>
 
 689
@@ -4559,22 +4561,22 @@
 
 690
 00:29:44,374 --> 00:29:46,410
-<font color="default">今回 ご紹介するのは
+<font color="yellow">今回 ご紹介するのは
 ﾊﾜｲにいながら…｡
 </font>
 
 691
 00:29:46,410 --> 00:29:48,410
-<font color="default">＜ ちょうど[外:8E5B873AC8E1BF84246B281B3548C2FF]
+<font color="yellow">＜ ちょうど[外:8E5B873AC8E1BF84246B281B3548C2FF]
 </font>
 
 692
 00:29:51,298 --> 00:29:55,569
-<font color="default">こちらですね
+<font color="yellow">こちらですね
 Sweet Home Cafeさんです｡
 </font>
 
 693
 00:29:55,569 --> 00:29:58,769
-<font color="default">＜ﾊﾜｲで[外:8E5B873AC8E1BF84246B281B3548C2FF]
+<font color="yellow">＜ﾊﾜｲで[外:8E5B873AC8E1BF84246B281B3548C2FF]
 </font>
