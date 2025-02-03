@@ -12,7 +12,7 @@ from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
                             QComboBox, QTextEdit, QFileDialog, QFrame, 
                             QGroupBox, QCheckBox, QTabWidget, QSlider,
                             QSpinBox, QGridLayout, QMessageBox, QColorDialog,
-                            QScrollArea, QScrollBar)
+                            QScrollArea, QScrollBar, QDoubleSpinBox)
 from PyQt6.QtCore import Qt, QRegularExpression, pyqtSignal, QThread, QEvent
 from PyQt6.QtGui import QRegularExpressionValidator, QTextCursor
 from main import Merger
@@ -221,6 +221,81 @@ class BaseTab(QWidget):
         # Load settings before UI setup
         self.settings = self.load_settings()
         
+        # Define default style
+        self.default_style = """
+            QWidget {
+                background-color: #1a1a2e;
+                color: #e0e0e0;
+                font-size: 11px;
+            }
+            QLineEdit, QTextEdit, QComboBox, QSpinBox, QDoubleSpinBox {
+                background-color: #16213e;
+                border: 1px solid #0f3460;
+                padding: 2px;
+                color: #e0e0e0;
+            }
+            QPushButton {
+                background-color: #0f3460;
+                border: 1px solid #533483;
+                padding: 3px 8px;
+                min-height: 20px;
+            }
+            QPushButton:hover {
+                background-color: #533483;
+            }
+            QGroupBox {
+                border: 1px solid #533483;
+                margin-top: 0.5em;
+                padding-top: 0.5em;
+            }
+            QGroupBox::title {
+                subcontrol-origin: margin;
+                left: 10px;
+                padding: 0 3px;
+            }
+            QSlider::groove:horizontal {
+                border: 1px solid #533483;
+                height: 4px;
+                background: #16213e;
+            }
+            QSlider::handle:horizontal {
+                background: #533483;
+                width: 12px;
+                margin: -4px 0;
+            }
+            QCheckBox {
+                spacing: 3px;
+            }
+            QCheckBox::indicator {
+                width: 14px;
+                height: 14px;
+                background-color: #16213e;
+                border: 1px solid #533483;
+            }
+            QCheckBox::indicator:checked {
+                background-color: #533483;
+            }
+            QTabWidget::pane {
+                border: 1px solid #533483;
+                background-color: #1a1a2e;
+            }
+            QTabWidget::tab-bar {
+                left: 5px;
+            }
+            QTabBar::tab {
+                background-color: #16213e;
+                border: 1px solid #533483;
+                padding: 5px 10px;
+                margin-right: 2px;
+            }
+            QTabBar::tab:selected {
+                background-color: #0f3460;
+            }
+            QTabBar::tab:hover {
+                background-color: #533483;
+            }
+        """
+        
         # Initialize UI elements as class attributes
         self.sub1_font_slider = None
         self.sub2_font_slider = None
@@ -232,6 +307,9 @@ class BaseTab(QWidget):
         self.codec_combo = None
         self.option_merge_subtitles = None
         self.option_generate_log = None
+        
+        # Set style sheet
+        self.setStyleSheet(self.default_style)
         
         # Create main layout
         main_layout = QVBoxLayout()
@@ -1052,101 +1130,152 @@ class SingleFilesTab(BaseTab):
         """Setup specific UI for single files tab."""
         super().setup_ui()
         
-        # File selection
+        main_layout = QHBoxLayout()  # Use horizontal layout for main container
+        left_panel = QVBoxLayout()
+        right_panel = QVBoxLayout()
+        
+        # File selection group (left panel)
         file_group = QGroupBox("Input Files")
         file_layout = QVBoxLayout()
+        file_layout.setSpacing(2)
         
         # First subtitle
         sub1_layout = QHBoxLayout()
         self.sub1_entry = QLineEdit()
-        browse_sub1_button = QPushButton("Browse Sub 1")
+        browse_sub1_button = QPushButton("Browse")
         browse_sub1_button.clicked.connect(lambda: self.browse_file(self.sub1_entry, "Select First Subtitle"))
-        sub1_layout.addWidget(QLabel("Subtitle 1:"))
+        sub1_layout.addWidget(QLabel("Sub 1:"))
         sub1_layout.addWidget(self.sub1_entry)
         sub1_layout.addWidget(browse_sub1_button)
         
         # Second subtitle
         sub2_layout = QHBoxLayout()
         self.sub2_entry = QLineEdit()
-        browse_sub2_button = QPushButton("Browse Sub 2")
+        browse_sub2_button = QPushButton("Browse")
         browse_sub2_button.clicked.connect(lambda: self.browse_file(self.sub2_entry, "Select Second Subtitle"))
-        sub2_layout.addWidget(QLabel("Subtitle 2:"))
+        sub2_layout.addWidget(QLabel("Sub 2:"))
         sub2_layout.addWidget(self.sub2_entry)
         sub2_layout.addWidget(browse_sub2_button)
         
         file_layout.addLayout(sub1_layout)
         file_layout.addLayout(sub2_layout)
         file_group.setLayout(file_layout)
-        
-        # Add to main layout at the top
-        self.layout.insertWidget(0, file_group)
+        left_panel.addWidget(file_group)
 
-        # Add sync controls group
-        sync_group = QGroupBox("Subtitle Synchronization")
+        # Basic sync controls (left panel)
+        sync_group = QGroupBox("Basic Sync")
         sync_layout = QVBoxLayout()
+        sync_layout.setSpacing(2)
 
-        # ALASS auto-sync checkbox
-        self.use_alass = QCheckBox("Use ALASS Auto-sync for Subtitle 1")
-        self.use_alass.setChecked(self.settings.get('use_alass', False))
-        self.use_alass.stateChanged.connect(lambda state: self.save_value_to_settings('use_alass', bool(state)))
-        sync_layout.addWidget(self.use_alass)
-
-        # Manual sync controls for Subtitle 1
-        sub1_sync_layout = QHBoxLayout()
-        sub1_sync_layout.addWidget(QLabel("Subtitle 1 Delay:"))
+        # Manual sync controls for both subtitles in a grid
+        sync_grid = QGridLayout()
+        sync_grid.setSpacing(2)
         
+        # Sub 1 sync
+        sync_grid.addWidget(QLabel("Sub 1:"), 0, 0)
         self.sub1_sync_slider = QSlider(Qt.Orientation.Horizontal)
-        self.sub1_sync_slider.setMinimum(-10000)  # -10 seconds
-        self.sub1_sync_slider.setMaximum(10000)   # +10 seconds
-        self.sub1_sync_slider.setValue(0)
-        self.sub1_sync_slider.setTickPosition(QSlider.TickPosition.TicksBelow)
-        self.sub1_sync_slider.setTickInterval(1000)
-        
+        self.sub1_sync_slider.setMinimum(-10000)
+        self.sub1_sync_slider.setMaximum(10000)
         self.sub1_sync_spinbox = QSpinBox()
         self.sub1_sync_spinbox.setMinimum(-10000)
         self.sub1_sync_spinbox.setMaximum(10000)
-        self.sub1_sync_spinbox.setValue(0)
         self.sub1_sync_spinbox.setSuffix(" ms")
+        sync_grid.addWidget(self.sub1_sync_slider, 0, 1)
+        sync_grid.addWidget(self.sub1_sync_spinbox, 0, 2)
         
-        sub1_sync_layout.addWidget(self.sub1_sync_slider)
-        sub1_sync_layout.addWidget(self.sub1_sync_spinbox)
-        sync_layout.addLayout(sub1_sync_layout)
-
-        # Manual sync controls for Subtitle 2
-        sub2_sync_layout = QHBoxLayout()
-        sub2_sync_layout.addWidget(QLabel("Subtitle 2 Delay:"))
-        
+        # Sub 2 sync
+        sync_grid.addWidget(QLabel("Sub 2:"), 1, 0)
         self.sub2_sync_slider = QSlider(Qt.Orientation.Horizontal)
         self.sub2_sync_slider.setMinimum(-10000)
         self.sub2_sync_slider.setMaximum(10000)
-        self.sub2_sync_slider.setValue(0)
-        self.sub2_sync_slider.setTickPosition(QSlider.TickPosition.TicksBelow)
-        self.sub2_sync_slider.setTickInterval(1000)
-        
         self.sub2_sync_spinbox = QSpinBox()
         self.sub2_sync_spinbox.setMinimum(-10000)
         self.sub2_sync_spinbox.setMaximum(10000)
-        self.sub2_sync_spinbox.setValue(0)
         self.sub2_sync_spinbox.setSuffix(" ms")
+        sync_grid.addWidget(self.sub2_sync_slider, 1, 1)
+        sync_grid.addWidget(self.sub2_sync_spinbox, 1, 2)
         
-        sub2_sync_layout.addWidget(self.sub2_sync_slider)
-        sub2_sync_layout.addWidget(self.sub2_sync_spinbox)
-        sync_layout.addLayout(sub2_sync_layout)
+        sync_layout.addLayout(sync_grid)
+        sync_group.setLayout(sync_layout)
+        left_panel.addWidget(sync_group)
+
+        # ALASS settings (right panel)
+        alass_group = QGroupBox("ALASS Settings")
+        alass_layout = QVBoxLayout()
+        alass_layout.setSpacing(2)
+
+        # Enable ALASS checkbox
+        self.use_alass = QCheckBox("Enable ALASS Auto-sync")
+        self.use_alass.setChecked(self.settings.get('use_alass', False))
+        alass_layout.addWidget(self.use_alass)
+
+        # Disable FPS guessing checkbox
+        self.disable_fps_guessing = QCheckBox("Disable FPS Guessing")
+        self.disable_fps_guessing.setChecked(self.settings.get('disable_fps_guessing', False))
+        self.disable_fps_guessing.setToolTip("Disable automatic FPS detection")
+        alass_layout.addWidget(self.disable_fps_guessing)
+
+        # ALASS parameters grid
+        params_grid = QGridLayout()
+        params_grid.setSpacing(2)
+
+        # Interval
+        params_grid.addWidget(QLabel("Interval:"), 0, 0)
+        self.alass_interval = QSpinBox()
+        self.alass_interval.setRange(0, 10000)
+        self.alass_interval.setValue(self.settings.get('alass_interval', 100))
+        self.alass_interval.setSuffix(" ms")
+        params_grid.addWidget(self.alass_interval, 0, 1)
+
+        # Split penalty
+        params_grid.addWidget(QLabel("Split Penalty:"), 1, 0)
+        self.alass_split_penalty = QDoubleSpinBox()
+        self.alass_split_penalty.setRange(0, 1000)
+        self.alass_split_penalty.setValue(self.settings.get('alass_split_penalty', 10))
+        self.alass_split_penalty.setSingleStep(0.1)
+        params_grid.addWidget(self.alass_split_penalty, 1, 1)
+
+        # FPS settings
+        params_grid.addWidget(QLabel("Sub FPS:"), 2, 0)
+        self.alass_sub_fps = QDoubleSpinBox()
+        self.alass_sub_fps.setRange(0, 120)
+        self.alass_sub_fps.setValue(self.settings.get('alass_sub_fps', 23.976))
+        self.alass_sub_fps.setSingleStep(0.001)
+        params_grid.addWidget(self.alass_sub_fps, 2, 1)
+
+        params_grid.addWidget(QLabel("Ref FPS:"), 3, 0)
+        self.alass_ref_fps = QDoubleSpinBox()
+        self.alass_ref_fps.setRange(0, 120)
+        self.alass_ref_fps.setValue(self.settings.get('alass_ref_fps', 23.976))
+        self.alass_ref_fps.setSingleStep(0.001)
+        params_grid.addWidget(self.alass_ref_fps, 3, 1)
+
+        alass_layout.addLayout(params_grid)
+        alass_group.setLayout(alass_layout)
+        right_panel.addWidget(alass_group)
+
+        # Add panels to main layout
+        main_layout.addLayout(left_panel, stretch=1)
+        main_layout.addLayout(right_panel, stretch=1)
+        
+        # Merge button at the bottom
+        self.merge_button = QPushButton("Merge Subtitles")
+        self.merge_button.clicked.connect(self.merge_subtitles)
+        self.merge_button.setMinimumHeight(30)
+        
+        # Final layout assembly
+        container = QWidget()
+        container_layout = QVBoxLayout()
+        container_layout.addLayout(main_layout)
+        container_layout.addWidget(self.merge_button)
+        container.setLayout(container_layout)
+        self.layout.insertWidget(0, container)
 
         # Connect sync control signals
         self.sub1_sync_slider.valueChanged.connect(self.sub1_sync_spinbox.setValue)
         self.sub1_sync_spinbox.valueChanged.connect(self.sub1_sync_slider.setValue)
         self.sub2_sync_slider.valueChanged.connect(self.sub2_sync_spinbox.setValue)
         self.sub2_sync_spinbox.valueChanged.connect(self.sub2_sync_slider.setValue)
-
-        sync_group.setLayout(sync_layout)
-        self.layout.insertWidget(1, sync_group)
-        
-        # Merge button
-        self.merge_button = QPushButton("Merge Subtitles")
-        self.merge_button.clicked.connect(self.merge_subtitles)
-        self.merge_button.setMinimumHeight(40)
-        self.layout.addWidget(self.merge_button)
 
     def sync_subtitle_with_alass(self, video_path: str, subtitle_path: str) -> str:
         """Synchronize subtitle with ALASS using the video as reference."""
@@ -1159,10 +1288,23 @@ class SingleFilesTab(BaseTab):
             temp_dir = Path(subtitle_path).parent
             synced_path = temp_dir / f"synced_{Path(subtitle_path).name}"
 
-            # Run ALASS
-            cmd = [self.alass_path, video_path, subtitle_path, str(synced_path)]
-            self.logger.debug(f"Running ALASS command: {' '.join(cmd)}")
+            # Build ALASS command with parameters
+            cmd = [
+                self.alass_path,
+                "--interval", str(self.alass_interval.value()),
+                "--split-penalty", str(self.alass_split_penalty.value()),
+                "--sub-fps-inc", str(self.alass_sub_fps.value()),
+                "--sub-fps-ref", str(self.alass_ref_fps.value())
+            ]
+
+            # Add disable-fps-guessing if checked
+            if self.disable_fps_guessing.isChecked():
+                cmd.append("--disable-fps-guessing")
+
+            # Add input/output files
+            cmd.extend([video_path, subtitle_path, str(synced_path)])
             
+            self.logger.debug(f"Running ALASS command: {' '.join(cmd)}")
             process = subprocess.run(cmd, capture_output=True, text=True)
             
             if process.returncode != 0:
