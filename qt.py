@@ -18,6 +18,7 @@ from PyQt6.QtGui import QRegularExpressionValidator, QTextCursor
 from main import Merger
 import json
 import shutil
+import subprocess
 
 WHITE = '#FFFFFF'
 BLUE = '#0000FF'
@@ -1045,6 +1046,7 @@ class SingleFilesTab(BaseTab):
     
     def __init__(self, parent=None):
         super().__init__(parent)
+        self.alass_path = shutil.which('alass') or '/usr/bin/alass'
         
     def setup_ui(self):
         """Setup specific UI for single files tab."""
@@ -1078,21 +1080,102 @@ class SingleFilesTab(BaseTab):
         
         # Add to main layout at the top
         self.layout.insertWidget(0, file_group)
+
+        # Add sync controls group
+        sync_group = QGroupBox("Subtitle Synchronization")
+        sync_layout = QVBoxLayout()
+
+        # ALASS auto-sync checkbox
+        self.use_alass = QCheckBox("Use ALASS Auto-sync for Subtitle 1")
+        self.use_alass.setChecked(self.settings.get('use_alass', False))
+        self.use_alass.stateChanged.connect(lambda state: self.save_value_to_settings('use_alass', bool(state)))
+        sync_layout.addWidget(self.use_alass)
+
+        # Manual sync controls for Subtitle 1
+        sub1_sync_layout = QHBoxLayout()
+        sub1_sync_layout.addWidget(QLabel("Subtitle 1 Delay:"))
+        
+        self.sub1_sync_slider = QSlider(Qt.Orientation.Horizontal)
+        self.sub1_sync_slider.setMinimum(-10000)  # -10 seconds
+        self.sub1_sync_slider.setMaximum(10000)   # +10 seconds
+        self.sub1_sync_slider.setValue(0)
+        self.sub1_sync_slider.setTickPosition(QSlider.TickPosition.TicksBelow)
+        self.sub1_sync_slider.setTickInterval(1000)
+        
+        self.sub1_sync_spinbox = QSpinBox()
+        self.sub1_sync_spinbox.setMinimum(-10000)
+        self.sub1_sync_spinbox.setMaximum(10000)
+        self.sub1_sync_spinbox.setValue(0)
+        self.sub1_sync_spinbox.setSuffix(" ms")
+        
+        sub1_sync_layout.addWidget(self.sub1_sync_slider)
+        sub1_sync_layout.addWidget(self.sub1_sync_spinbox)
+        sync_layout.addLayout(sub1_sync_layout)
+
+        # Manual sync controls for Subtitle 2
+        sub2_sync_layout = QHBoxLayout()
+        sub2_sync_layout.addWidget(QLabel("Subtitle 2 Delay:"))
+        
+        self.sub2_sync_slider = QSlider(Qt.Orientation.Horizontal)
+        self.sub2_sync_slider.setMinimum(-10000)
+        self.sub2_sync_slider.setMaximum(10000)
+        self.sub2_sync_slider.setValue(0)
+        self.sub2_sync_slider.setTickPosition(QSlider.TickPosition.TicksBelow)
+        self.sub2_sync_slider.setTickInterval(1000)
+        
+        self.sub2_sync_spinbox = QSpinBox()
+        self.sub2_sync_spinbox.setMinimum(-10000)
+        self.sub2_sync_spinbox.setMaximum(10000)
+        self.sub2_sync_spinbox.setValue(0)
+        self.sub2_sync_spinbox.setSuffix(" ms")
+        
+        sub2_sync_layout.addWidget(self.sub2_sync_slider)
+        sub2_sync_layout.addWidget(self.sub2_sync_spinbox)
+        sync_layout.addLayout(sub2_sync_layout)
+
+        # Connect sync control signals
+        self.sub1_sync_slider.valueChanged.connect(self.sub1_sync_spinbox.setValue)
+        self.sub1_sync_spinbox.valueChanged.connect(self.sub1_sync_slider.setValue)
+        self.sub2_sync_slider.valueChanged.connect(self.sub2_sync_spinbox.setValue)
+        self.sub2_sync_spinbox.valueChanged.connect(self.sub2_sync_slider.setValue)
+
+        sync_group.setLayout(sync_layout)
+        self.layout.insertWidget(1, sync_group)
         
         # Merge button
         self.merge_button = QPushButton("Merge Subtitles")
         self.merge_button.clicked.connect(self.merge_subtitles)
         self.merge_button.setMinimumHeight(40)
         self.layout.addWidget(self.merge_button)
-    
-    def browse_file(self, entry: QLineEdit, title: str):
-        """Browse for a subtitle file."""
-        file_path, _ = QFileDialog.getOpenFileName(
-            self, title, "", "Subtitle Files (*.srt);;All Files (*)"
-        )
-        if file_path:
-            entry.setText(file_path)
-    
+
+    def sync_subtitle_with_alass(self, video_path: str, subtitle_path: str) -> str:
+        """Synchronize subtitle with ALASS using the video as reference."""
+        try:
+            if not os.path.exists(self.alass_path):
+                self.logger.error(f"ALASS not found at {self.alass_path}")
+                return subtitle_path
+
+            # Create temporary file for synced subtitle
+            temp_dir = Path(subtitle_path).parent
+            synced_path = temp_dir / f"synced_{Path(subtitle_path).name}"
+
+            # Run ALASS
+            cmd = [self.alass_path, video_path, subtitle_path, str(synced_path)]
+            self.logger.debug(f"Running ALASS command: {' '.join(cmd)}")
+            
+            process = subprocess.run(cmd, capture_output=True, text=True)
+            
+            if process.returncode != 0:
+                self.logger.error(f"ALASS sync failed: {process.stderr}")
+                return subtitle_path
+                
+            self.logger.info(f"ALASS sync successful, output saved to {synced_path}")
+            return str(synced_path)
+            
+        except Exception as e:
+            self.logger.error(f"Error during ALASS sync: {e}")
+            return subtitle_path
+
     def merge_subtitles(self):
         """Merge the subtitle files."""
         # Save all current values before merging
@@ -1116,6 +1199,15 @@ class SingleFilesTab(BaseTab):
             # Create output path
             output_path = Path(sub1_file).parent
             base_name = Path(sub1_file).stem
+
+            # Process subtitle 1 with ALASS if enabled
+            if self.use_alass.isChecked():
+                # Ask for video file
+                video_file, _ = QFileDialog.getOpenFileName(
+                    self, "Select Reference Video", "", "Video Files (*.mkv *.mp4);;All Files (*)"
+                )
+                if video_file:
+                    sub1_file = self.sync_subtitle_with_alass(video_file, sub1_file)
             
             # Create merger instance
             merger = Merger(
@@ -1124,22 +1216,22 @@ class SingleFilesTab(BaseTab):
                 output_encoding=self.codec_combo.currentText()
             )
             
-            # Add first subtitle with color and size
+            # Add first subtitle with color, size and sync delay
             merger.add(
                 sub1_file,
                 codec=self.codec_combo.currentText(),
                 color=sub1_color,
                 size=sub1_size,
-                top=False
+                time_offset=self.sub1_sync_spinbox.value()
             )
             
-            # Add second subtitle with size
+            # Add second subtitle with size and sync delay
             merger.add(
                 sub2_file,
                 codec=self.codec_combo.currentText(),
-                color=COLORS['WHITE'],  # Now COLORS is defined
+                color=COLORS['WHITE'],
                 size=sub2_size,
-                top=True
+                time_offset=self.sub2_sync_spinbox.value()
             )
             
             merger.merge()
@@ -1147,184 +1239,14 @@ class SingleFilesTab(BaseTab):
             
         except Exception as e:
             self.logger.error(f"Error during merge operation: {e}")
-    
-    def on_merge_completed(self):
-        """Handle completion of merge operation."""
-        self.merge_button.setEnabled(True)
-        self.merge_worker = None
-        self.log_text.append("Merge operation completed")
 
-    def save_all_values(self):
-        """Save all current values to settings file."""
-        try:
-            # Update all settings
-            settings_update = {
-                # UI Scale
-                'ui_scale': self.scale_slider.value() if hasattr(self, 'scale_slider') else 375,
-                
-                # Font sizes
-                'sub1_font_size': self.sub1_font_slider.value() if hasattr(self, 'sub1_font_slider') else 16,
-                'sub2_font_size': self.sub2_font_slider.value() if hasattr(self, 'sub2_font_slider') else 16,
-                
-                # Colors and codec
-                'color': self.color_combo.currentText() if hasattr(self, 'color_combo') else 'Yellow',
-                'codec': self.codec_combo.currentText() if hasattr(self, 'codec_combo') else 'UTF-8',
-                
-                # Options
-                'merge_automatically': self.option_merge_subtitles.isChecked() if hasattr(self, 'option_merge_subtitles') else True,
-                'generate_log': self.option_generate_log.isChecked() if hasattr(self, 'option_generate_log') else False,
-            }
-            
-            # Add directory-specific settings if they exist
-            if hasattr(self, 'dir_entry'):
-                settings_update.update({
-                    'last_subtitle_directory': self.dir_entry.text() or str(Path.home()),
-                    'last_directory': str(Path(self.dir_entry.text()).parent) if self.dir_entry.text() else str(Path.home())
-                })
-            
-            if hasattr(self, 'video_dir_entry'):
-                settings_update['last_video_directory'] = str(Path(self.video_dir_entry.text()).parent) if self.video_dir_entry.text() else str(Path.home())
-            
-            # Update settings and save
-            self.settings.update(settings_update)
-            with open(self.settings_file, 'w', encoding='utf-8') as f:
-                json.dump(self.settings, f, indent=4)
-            self.logger.debug("Settings saved successfully")
-            
-        except Exception as e:
-            self.logger.error(f"Error saving settings: {e}")
-
-    def browse_directory(self):
-        """Browse for an input directory."""
-        initial_dir = self.settings.get('last_subtitle_directory', str(Path.home()))
-        directory = QFileDialog.getExistingDirectory(self, "Select Directory", initial_dir)
-        if directory:
-            self.dir_entry.setText(directory)
-            self.save_value_to_settings('last_subtitle_directory', directory)
-            self.logger.debug(f"Subtitle directory set: {directory}")
-
-    def browse_video_directory(self):
-        """Browse for a video directory."""
-        initial_dir = self.settings.get('last_video_directory', str(Path.home()))
-        directory = QFileDialog.getExistingDirectory(self, "Select Video Directory", initial_dir)
-        if directory:
-            self.video_dir_entry.setText(directory)
-            self.save_value_to_settings('last_video_directory', directory)
-            self.logger.debug(f"Video directory set: {directory}")
-
-    def test_patterns(self):
-        """Test if the current patterns are valid regex patterns."""
-        patterns = {
-            'Base Pattern': self.base_pattern.text(),
-            'Episode Pattern': self.episode_pattern.text(),
-            'Subtitle 1 Pattern': self.sub1_pattern.text(),
-            'Subtitle 2 Pattern': self.sub2_pattern.text()
-        }
-        
-        invalid_patterns = []
-        for name, pattern in patterns.items():
-            try:
-                re.compile(pattern)
-            except re.error as e:
-                invalid_patterns.append(f"{name}: {str(e)}")
-        
-        if invalid_patterns:
-            QMessageBox.warning(
-                self,
-                "Invalid Patterns",
-                "The following patterns are invalid:\n\n" + "\n".join(invalid_patterns)
-            )
-        else:
-            QMessageBox.information(
-                self,
-                "Valid Patterns",
-                "All patterns are valid regular expressions."
-            )
-
-    def on_range_changed(self, range_value):
-        """Handle changes in the episode range selection."""
-        if range_value:
-            self.logger.debug(f"Episode range changed to {range_value}")
-            self.preview_matches()
-
-    def confirm_overwrite(self, existing_files: List[Path]) -> bool:
-        """Show confirmation dialog for overwriting existing files."""
-        msg = QMessageBox()
-        msg.setIcon(QMessageBox.Icon.Warning)
-        msg.setWindowTitle("Files Already Exist")
-        msg.setText("The following files already exist:\n\n" + 
-                   "\n".join(str(f) for f in existing_files[:5]) + 
-                   ("\n..." if len(existing_files) > 5 else ""))
-        msg.setInformativeText("Do you want to overwrite them?")
-        msg.setStandardButtons(
-            QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No
+    def browse_file(self, entry: QLineEdit, title: str):
+        """Browse for a subtitle file."""
+        file_path, _ = QFileDialog.getOpenFileName(
+            self, title, "", "Subtitle Files (*.srt);;All Files (*)"
         )
-        return msg.exec() == QMessageBox.StandardButton.Yes
-
-    def set_controls_enabled(self, enabled: bool):
-        """Enable or disable controls during processing."""
-        self.batch_merge_button.setEnabled(enabled)
-        self.preview_button.setEnabled(enabled)
-        self.episode_range.setEnabled(enabled)
-
-    def on_merge_completed(self):
-        """Handle completion of the merge process."""
-        self.set_controls_enabled(True)
-        self.merge_worker = None
-        self.logger.info("Batch processing completed")
-
-    def closeEvent(self, event):
-        """Handle application closure."""
-        if hasattr(self, 'merge_worker') and self.merge_worker and self.merge_worker.isRunning():
-            reply = QMessageBox.question(
-                self,
-                'Confirm Exit',
-                'A merge operation is in progress. Do you want to stop it and exit?',
-                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
-                QMessageBox.StandardButton.No
-            )
-            
-            if reply == QMessageBox.StandardButton.Yes:
-                self.merge_worker.stop()
-                self.merge_worker.wait()
-            else:
-                event.ignore()
-                return
-                
-        self.logger.info("Application closing")
-        event.accept()
-
-    def check_existing_files(self, episode_subs: dict) -> bool:
-        """Check if any output files already exist."""
-        existing_files = []
-        
-        for episode_num, subs in episode_subs.items():
-            if 'sub1' in subs and 'sub2' in subs:
-                base_name = f"Episode_{episode_num}"
-                output_path = Path(self.video_dir_entry.text())
-                
-                # Check for potential output files
-                merged_file = output_path / f"{base_name}_merged.srt"
-                sub1_copy = output_path / f"{base_name}.sub1.srt"
-                sub2_copy = output_path / f"{base_name}.sub2.srt"
-                
-                for file in [merged_file, sub1_copy, sub2_copy]:
-                    if file.exists():
-                        existing_files.append(str(file.name))
-        
-        if existing_files:
-            msg = QMessageBox()
-            msg.setIcon(QMessageBox.Icon.Warning)
-            msg.setWindowTitle("Files Already Exist")
-            msg.setText("The following files already exist:\n\n" + 
-                       "\n".join(existing_files) + 
-                       "\n\nDo you want to overwrite them?")
-            msg.setStandardButtons(
-                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No
-            )
-            return msg.exec() == QMessageBox.StandardButton.Yes
-            
-        return True
+        if file_path:
+            entry.setText(file_path)
 
 class DirectoryTab(BaseTab):
     """Tab for processing directories."""
